@@ -1,0 +1,3402 @@
+
+C:\Users\User\Downloads\MT6580S24\MT6580S24>python -c "from pathlib import Path; import re; d=Path('kernel_decompressed.bin').read_bytes(); s=re.findall(rb'[\x20-\x7e]{5,}',d); keys=[b'lcm',b'panel',b'nt5',b'ili',b'jd',b'hx',b'ft',b'gt',b'goodix',b'focal',b'novatek',b'himax',b'imx',b'ov',b'gc',b's5k',b'camera']; [print(x.decode('latin1')) for x in s if any(k in x.lower() for k in keys)]"
+x(@Hx
+DBGCP|
+b&f$b&f4b&fDb&fTb&fdP
+%s version %s (jjx@jjx-2) (gcc version 6.3.1 20170404 (Linaro GCC 6.3-2017.05) ) %s
+Linux version 3.18.79 (jjx@jjx-2) (gcc version 6.3.1 20170404 (Linaro GCC 6.3-2017.05) ) #3 SMP PREEMPT Sat Sep 7 16:58:55 CST 2024
+"vec=%u [action=%s]", REC->vec, __print_symbolic(REC->vec, { HI_SOFTIRQ, "HI" }, { TIMER_SOFTIRQ, "TIMER" }, { NET_TX_SOFTIRQ, "NET_TX" }, { NET_RX_SOFTIRQ, "NET_RX" }, { BLOCK_SOFTIRQ, "BLOCK" }, { BLOCK_IOPOLL_SOFTIRQ, "BLOCK_IOPOLL" }, { TASKLET_SOFTIRQ, "TASKLET" }, { SCHED_SOFTIRQ, "SCHED" }, { HRTIMER_SOFTIRQ, "HRTIMER" }, { RCU_SOFTIRQ, "RCU" })
+"hrtimer=%p function=%pf expires=%llu softexpires=%llu", REC->hrtimer, REC->function, (unsigned long long)(((ktime_t) { .tv64 = REC->expires }).tv64), (unsigned long long)(((ktime_t) { .tv64 = REC->softexpires }).tv64)
+Ft<aF
+HHx;r|
+MP^KGc
+  Remove sub-buffer with rmdir
+   To remove a trigger without a count:
+   To remove a trigger with a count:
+   Filters can be ignored when removing a trigger.
+"ftrace is %s caller=%pf", REC->on ? "enabled" : "disabled", (void *)REC->ip
+"action=%s prev_value=0x%x curr_value=0x%x", __print_symbolic(REC->action, { PM_QOS_ADD_REQ, "ADD_REQ" }, { PM_QOS_UPDATE_REQ, "UPDATE_REQ" }, { PM_QOS_REMOVE_REQ, "REMOVE_REQ" }), REC->prev_value, REC->curr_value
+"action=%s prev_value=%d curr_value=%d", __print_symbolic(REC->action, { PM_QOS_ADD_REQ, "ADD_REQ" }, { PM_QOS_UPDATE_REQ, "UPDATE_REQ" }, { PM_QOS_REMOVE_REQ, "REMOVE_REQ" }), REC->prev_value, REC->curr_value
+"%s %s, parent: %s, %s[%s]", __get_str(driver), __get_str(device), __get_str(parent), __get_str(pm_ops), __print_symbolic(REC->event, { 0x0002, "suspend" }, { 0x0010, "resume" }, { 0x0001, "freeze" }, { 0x0008, "quiesce" }, { 0x0004, "hibernate" }, { 0x0020, "thaw" }, { 0x0040, "restore" }, { 0x0080, "recover" })
+"%pF %p: nid: %d objects to shrink %ld gfp_flags %s pgs_scanned %ld lru_pgs %ld cache items %ld delta %lld total_scan %ld", REC->shrink, REC->shr, REC->nid, REC->nr_objects_to_shrink, (REC->gfp_flags) ? __print_flags(REC->gfp_flags, "|", {(unsigned long)(((( gfp_t)0x10u) | (( gfp_t)0x40u) | (( gfp_t)0x80u) | (( gfp_t)0x20000u) | (( gfp_t)0x02u) | (( gfp_t)0x08u)) | (( gfp_t)0x4000u) | (( gfp_t)0x10000u) | (( gfp_t)0x1000u) | (( gfp_t)0x200u) | (( gfp_t)0x400000u)), "GFP_TRANSHUGE"}, {(unsigned long)((( gfp_t)0x10u) | (( gfp_t)0x40u) | (( gfp_t)0x80u) | (( gfp_t)0x20000u) | (( gfp_t)0x02u) | (( gfp_t)0x08u)), "GFP_HIGHUSER_MOVABLE"}, {(unsigned long)((( gfp_t)0x10u) | (( gfp_t)0x40u) | (( gfp_t)0x80u) | (( gfp_t)0x20000u) | (( gfp_t)0x02u)), "GFP_HIGHUSER"}, {(unsigned long)((( gfp_t)0x10u) | (( gfp_t)0x40u) | (( gfp_t)0x80u) | (( gfp_t)0x20000u)), "GFP_USER"}, {(unsigned long)((( gfp_t)0x10u) | (( gfp_t)0x40u) | (( gfp_t)0x80u) | (( gfp_t)0x80000u)), "GFP_TEMPORARY"}, {(unsigned long)((( gfp_t)0x10u) | (( gfp_t)0x40u) | (( gfp_t)0x80u)), "GFP_KERNEL"}, {(unsigned long)((( gfp_t)0x10u) | (( gfp_t)0x40u)), "GFP_NOFS"}, {(unsigned long)((( gfp_t)0x20u)), "GFP_ATOMIC"}, {(unsigned long)((( gfp_t)0x10u)), "GFP_NOIO"}, {(unsigned long)(( gfp_t)0x20u), "GFP_HIGH"}, {(unsigned long)(( gfp_t)0x10u), "GFP_WAIT"}, {(unsigned long)(( gfp_t)0x40u), "GFP_IO"}, {(unsigned long)(( gfp_t)0x100u), "GFP_COLD"}, {(unsigned long)(( gfp_t)0x200u), "GFP_NOWARN"}, {(unsigned long)(( gfp_t)0x400u), "GFP_REPEAT"}, {(unsigned long)(( gfp_t)0x800u), "GFP_NOFAIL"}, {(unsigned long)(( gfp_t)0x1000u), "GFP_NORETRY"}, {(unsigned long)(( gfp_t)0x4000u), "GFP_COMP"}, {(unsigned long)(( gfp_t)0x8000u), "GFP_ZERO"}, {(unsigned long)(( gfp_t)0x10000u), "GFP_NOMEMALLOC"}, {(unsigned long)(( gfp_t)0x2000u), "GFP_MEMALLOC"}, {(unsigned long)(( gfp_t)0x20000u), "GFP_HARDWALL"}, {(unsigned long)(( gfp_t)0x40000u), "GFP_THISNODE"}, {(unsigned long)(( gfp_t)0x80000u), "GFP_RECLAIMABLE"}, {(unsigned long)(( gfp_t)0x08u), "GFP_MOVABLE"}, {(unsigned long)(( gfp_t)0x200000u), "GFP_NOTRACK"}, {(unsigned long)(( gfp_t)0x400000u), "GFP_NO_KSWAPD"}, {(unsigned long)(( gfp_t)0x800000u), "GFP_OTHER_NODE"} ) : "GFP_NOWAIT", REC->pgs_scanned, REC->lru_pgs, REC->cache_items, REC->delta, REC->total_scan
+"order=%d may_writepage=%d gfp_flags=%s", REC->order, REC->may_writepage, (REC->gfp_flags) ? __print_flags(REC->gfp_flags, "|", {(unsigned long)(((( gfp_t)0x10u) | (( gfp_t)0x40u) | (( gfp_t)0x80u) | (( gfp_t)0x20000u) | (( gfp_t)0x02u) | (( gfp_t)0x08u)) | (( gfp_t)0x4000u) | (( gfp_t)0x10000u) | (( gfp_t)0x1000u) | (( gfp_t)0x200u) | (( gfp_t)0x400000u)), "GFP_TRANSHUGE"}, {(unsigned long)((( gfp_t)0x10u) | (( gfp_t)0x40u) | (( gfp_t)0x80u) | (( gfp_t)0x20000u) | (( gfp_t)0x02u) | (( gfp_t)0x08u)), "GFP_HIGHUSER_MOVABLE"}, {(unsigned long)((( gfp_t)0x10u) | (( gfp_t)0x40u) | (( gfp_t)0x80u) | (( gfp_t)0x20000u) | (( gfp_t)0x02u)), "GFP_HIGHUSER"}, {(unsigned long)((( gfp_t)0x10u) | (( gfp_t)0x40u) | (( gfp_t)0x80u) | (( gfp_t)0x20000u)), "GFP_USER"}, {(unsigned long)((( gfp_t)0x10u) | (( gfp_t)0x40u) | (( gfp_t)0x80u) | (( gfp_t)0x80000u)), "GFP_TEMPORARY"}, {(unsigned long)((( gfp_t)0x10u) | (( gfp_t)0x40u) | (( gfp_t)0x80u)), "GFP_KERNEL"}, {(unsigned long)((( gfp_t)0x10u) | (( gfp_t)0x40u)), "GFP_NOFS"}, {(unsigned long)((( gfp_t)0x20u)), "GFP_ATOMIC"}, {(unsigned long)((( gfp_t)0x10u)), "GFP_NOIO"}, {(unsigned long)(( gfp_t)0x20u), "GFP_HIGH"}, {(unsigned long)(( gfp_t)0x10u), "GFP_WAIT"}, {(unsigned long)(( gfp_t)0x40u), "GFP_IO"}, {(unsigned long)(( gfp_t)0x100u), "GFP_COLD"}, {(unsigned long)(( gfp_t)0x200u), "GFP_NOWARN"}, {(unsigned long)(( gfp_t)0x400u), "GFP_REPEAT"}, {(unsigned long)(( gfp_t)0x800u), "GFP_NOFAIL"}, {(unsigned long)(( gfp_t)0x1000u), "GFP_NORETRY"}, {(unsigned long)(( gfp_t)0x4000u), "GFP_COMP"}, {(unsigned long)(( gfp_t)0x8000u), "GFP_ZERO"}, {(unsigned long)(( gfp_t)0x10000u), "GFP_NOMEMALLOC"}, {(unsigned long)(( gfp_t)0x2000u), "GFP_MEMALLOC"}, {(unsigned long)(( gfp_t)0x20000u), "GFP_HARDWALL"}, {(unsigned long)(( gfp_t)0x40000u), "GFP_THISNODE"}, {(unsigned long)(( gfp_t)0x80000u), "GFP_RECLAIMABLE"}, {(unsigned long)(( gfp_t)0x08u), "GFP_MOVABLE"}, {(unsigned long)(( gfp_t)0x200000u), "GFP_NOTRACK"}, {(unsigned long)(( gfp_t)0x400000u), "GFP_NO_KSWAPD"}, {(unsigned long)(( gfp_t)0x800000u), "GFP_OTHER_NODE"} ) : "GFP_NOWAIT"
+"page=%p pfn=%lu order=%d migratetype=%d gfp_flags=%s", REC->page, REC->page ? ((unsigned long)((REC->page) - mem_map) + (__pv_phys_pfn_offset)) : 0, REC->order, REC->migratetype, (REC->gfp_flags) ? __print_flags(REC->gfp_flags, "|", {(unsigned long)(((( gfp_t)0x10u) | (( gfp_t)0x40u) | (( gfp_t)0x80u) | (( gfp_t)0x20000u) | (( gfp_t)0x02u) | (( gfp_t)0x08u)) | (( gfp_t)0x4000u) | (( gfp_t)0x10000u) | (( gfp_t)0x1000u) | (( gfp_t)0x200u) | (( gfp_t)0x400000u)), "GFP_TRANSHUGE"}, {(unsigned long)((( gfp_t)0x10u) | (( gfp_t)0x40u) | (( gfp_t)0x80u) | (( gfp_t)0x20000u) | (( gfp_t)0x02u) | (( gfp_t)0x08u)), "GFP_HIGHUSER_MOVABLE"}, {(unsigned long)((( gfp_t)0x10u) | (( gfp_t)0x40u) | (( gfp_t)0x80u) | (( gfp_t)0x20000u) | (( gfp_t)0x02u)), "GFP_HIGHUSER"}, {(unsigned long)((( gfp_t)0x10u) | (( gfp_t)0x40u) | (( gfp_t)0x80u) | (( gfp_t)0x20000u)), "GFP_USER"}, {(unsigned long)((( gfp_t)0x10u) | (( gfp_t)0x40u) | (( gfp_t)0x80u) | (( gfp_t)0x80000u)), "GFP_TEMPORARY"}, {(unsigned long)((( gfp_t)0x10u) | (( gfp_t)0x40u) | (( gfp_t)0x80u)), "GFP_KERNEL"}, {(unsigned long)((( gfp_t)0x10u) | (( gfp_t)0x40u)), "GFP_NOFS"}, {(unsigned long)((( gfp_t)0x20u)), "GFP_ATOMIC"}, {(unsigned long)((( gfp_t)0x10u)), "GFP_NOIO"}, {(unsigned long)(( gfp_t)0x20u), "GFP_HIGH"}, {(unsigned long)(( gfp_t)0x10u), "GFP_WAIT"}, {(unsigned long)(( gfp_t)0x40u), "GFP_IO"}, {(unsigned long)(( gfp_t)0x100u), "GFP_COLD"}, {(unsigned long)(( gfp_t)0x200u), "GFP_NOWARN"}, {(unsigned long)(( gfp_t)0x400u), "GFP_REPEAT"}, {(unsigned long)(( gfp_t)0x800u), "GFP_NOFAIL"}, {(unsigned long)(( gfp_t)0x1000u), "GFP_NORETRY"}, {(unsigned long)(( gfp_t)0x4000u), "GFP_COMP"}, {(unsigned long)(( gfp_t)0x8000u), "GFP_ZERO"}, {(unsigned long)(( gfp_t)0x10000u), "GFP_NOMEMALLOC"}, {(unsigned long)(( gfp_t)0x2000u), "GFP_MEMALLOC"}, {(unsigned long)(( gfp_t)0x20000u), "GFP_HARDWALL"}, {(unsigned long)(( gfp_t)0x40000u), "GFP_THISNODE"}, {(unsigned long)(( gfp_t)0x80000u), "GFP_RECLAIMABLE"}, {(unsigned long)(( gfp_t)0x08u), "GFP_MOVABLE"}, {(unsigned long)(( gfp_t)0x200000u), "GFP_NOTRACK"}, {(unsigned long)(( gfp_t)0x400000u), "GFP_NO_KSWAPD"}, {(unsigned long)(( gfp_t)0x800000u), "GFP_OTHER_NODE"} ) : "GFP_NOWAIT"
+"call_site=%lx ptr=%p bytes_req=%zu bytes_alloc=%zu gfp_flags=%s node=%d", REC->call_site, REC->ptr, REC->bytes_req, REC->bytes_alloc, (REC->gfp_flags) ? __print_flags(REC->gfp_flags, "|", {(unsigned long)(((( gfp_t)0x10u) | (( gfp_t)0x40u) | (( gfp_t)0x80u) | (( gfp_t)0x20000u) | (( gfp_t)0x02u) | (( gfp_t)0x08u)) | (( gfp_t)0x4000u) | (( gfp_t)0x10000u) | (( gfp_t)0x1000u) | (( gfp_t)0x200u) | (( gfp_t)0x400000u)), "GFP_TRANSHUGE"}, {(unsigned long)((( gfp_t)0x10u) | (( gfp_t)0x40u) | (( gfp_t)0x80u) | (( gfp_t)0x20000u) | (( gfp_t)0x02u) | (( gfp_t)0x08u)), "GFP_HIGHUSER_MOVABLE"}, {(unsigned long)((( gfp_t)0x10u) | (( gfp_t)0x40u) | (( gfp_t)0x80u) | (( gfp_t)0x20000u) | (( gfp_t)0x02u)), "GFP_HIGHUSER"}, {(unsigned long)((( gfp_t)0x10u) | (( gfp_t)0x40u) | (( gfp_t)0x80u) | (( gfp_t)0x20000u)), "GFP_USER"}, {(unsigned long)((( gfp_t)0x10u) | (( gfp_t)0x40u) | (( gfp_t)0x80u) | (( gfp_t)0x80000u)), "GFP_TEMPORARY"}, {(unsigned long)((( gfp_t)0x10u) | (( gfp_t)0x40u) | (( gfp_t)0x80u)), "GFP_KERNEL"}, {(unsigned long)((( gfp_t)0x10u) | (( gfp_t)0x40u)), "GFP_NOFS"}, {(unsigned long)((( gfp_t)0x20u)), "GFP_ATOMIC"}, {(unsigned long)((( gfp_t)0x10u)), "GFP_NOIO"}, {(unsigned long)(( gfp_t)0x20u), "GFP_HIGH"}, {(unsigned long)(( gfp_t)0x10u), "GFP_WAIT"}, {(unsigned long)(( gfp_t)0x40u), "GFP_IO"}, {(unsigned long)(( gfp_t)0x100u), "GFP_COLD"}, {(unsigned long)(( gfp_t)0x200u), "GFP_NOWARN"}, {(unsigned long)(( gfp_t)0x400u), "GFP_REPEAT"}, {(unsigned long)(( gfp_t)0x800u), "GFP_NOFAIL"}, {(unsigned long)(( gfp_t)0x1000u), "GFP_NORETRY"}, {(unsigned long)(( gfp_t)0x4000u), "GFP_COMP"}, {(unsigned long)(( gfp_t)0x8000u), "GFP_ZERO"}, {(unsigned long)(( gfp_t)0x10000u), "GFP_NOMEMALLOC"}, {(unsigned long)(( gfp_t)0x2000u), "GFP_MEMALLOC"}, {(unsigned long)(( gfp_t)0x20000u), "GFP_HARDWALL"}, {(unsigned long)(( gfp_t)0x40000u), "GFP_THISNODE"}, {(unsigned long)(( gfp_t)0x80000u), "GFP_RECLAIMABLE"}, {(unsigned long)(( gfp_t)0x08u), "GFP_MOVABLE"}, {(unsigned long)(( gfp_t)0x200000u), "GFP_NOTRACK"}, {(unsigned long)(( gfp_t)0x400000u), "GFP_NO_KSWAPD"}, {(unsigned long)(( gfp_t)0x800000u), "GFP_OTHER_NODE"} ) : "GFP_NOWAIT", REC->node
+"call_site=%lx ptr=%p bytes_req=%zu bytes_alloc=%zu gfp_flags=%s", REC->call_site, REC->ptr, REC->bytes_req, REC->bytes_alloc, (REC->gfp_flags) ? __print_flags(REC->gfp_flags, "|", {(unsigned long)(((( gfp_t)0x10u) | (( gfp_t)0x40u) | (( gfp_t)0x80u) | (( gfp_t)0x20000u) | (( gfp_t)0x02u) | (( gfp_t)0x08u)) | (( gfp_t)0x4000u) | (( gfp_t)0x10000u) | (( gfp_t)0x1000u) | (( gfp_t)0x200u) | (( gfp_t)0x400000u)), "GFP_TRANSHUGE"}, {(unsigned long)((( gfp_t)0x10u) | (( gfp_t)0x40u) | (( gfp_t)0x80u) | (( gfp_t)0x20000u) | (( gfp_t)0x02u) | (( gfp_t)0x08u)), "GFP_HIGHUSER_MOVABLE"}, {(unsigned long)((( gfp_t)0x10u) | (( gfp_t)0x40u) | (( gfp_t)0x80u) | (( gfp_t)0x20000u) | (( gfp_t)0x02u)), "GFP_HIGHUSER"}, {(unsigned long)((( gfp_t)0x10u) | (( gfp_t)0x40u) | (( gfp_t)0x80u) | (( gfp_t)0x20000u)), "GFP_USER"}, {(unsigned long)((( gfp_t)0x10u) | (( gfp_t)0x40u) | (( gfp_t)0x80u) | (( gfp_t)0x80000u)), "GFP_TEMPORARY"}, {(unsigned long)((( gfp_t)0x10u) | (( gfp_t)0x40u) | (( gfp_t)0x80u)), "GFP_KERNEL"}, {(unsigned long)((( gfp_t)0x10u) | (( gfp_t)0x40u)), "GFP_NOFS"}, {(unsigned long)((( gfp_t)0x20u)), "GFP_ATOMIC"}, {(unsigned long)((( gfp_t)0x10u)), "GFP_NOIO"}, {(unsigned long)(( gfp_t)0x20u), "GFP_HIGH"}, {(unsigned long)(( gfp_t)0x10u), "GFP_WAIT"}, {(unsigned long)(( gfp_t)0x40u), "GFP_IO"}, {(unsigned long)(( gfp_t)0x100u), "GFP_COLD"}, {(unsigned long)(( gfp_t)0x200u), "GFP_NOWARN"}, {(unsigned long)(( gfp_t)0x400u), "GFP_REPEAT"}, {(unsigned long)(( gfp_t)0x800u), "GFP_NOFAIL"}, {(unsigned long)(( gfp_t)0x1000u), "GFP_NORETRY"}, {(unsigned long)(( gfp_t)0x4000u), "GFP_COMP"}, {(unsigned long)(( gfp_t)0x8000u), "GFP_ZERO"}, {(unsigned long)(( gfp_t)0x10000u), "GFP_NOMEMALLOC"}, {(unsigned long)(( gfp_t)0x2000u), "GFP_MEMALLOC"}, {(unsigned long)(( gfp_t)0x20000u), "GFP_HARDWALL"}, {(unsigned long)(( gfp_t)0x40000u), "GFP_THISNODE"}, {(unsigned long)(( gfp_t)0x80000u), "GFP_RECLAIMABLE"}, {(unsigned long)(( gfp_t)0x08u), "GFP_MOVABLE"}, {(unsigned long)(( gfp_t)0x200000u), "GFP_NOTRACK"}, {(unsigned long)(( gfp_t)0x400000u), "GFP_NO_KSWAPD"}, {(unsigned long)(( gfp_t)0x800000u), "GFP_OTHER_NODE"} ) : "GFP_NOWAIT"
+"bdi %s: older=%lu age=%ld enqueue=%d reason=%s", REC->name, REC->older, REC->age, REC->moved, __print_symbolic(REC->reason, {WB_REASON_BACKGROUND, "background"}, {WB_REASON_TRY_TO_FREE_PAGES, "try_to_free_pages"}, {WB_REASON_SYNC, "sync"}, {WB_REASON_PERIODIC, "periodic"}, {WB_REASON_LAPTOP_TIMER, "laptop_timer"}, {WB_REASON_FREE_MORE_MEM, "free_more_memory"}, {WB_REASON_FS_FREE_SPACE, "fs_free_space"}, {WB_REASON_FORKER_THREAD, "forker_thread"})
+inotify_remove_from_idr
+remove_free_dqentry
+remove_tree
+remove_proc_entry
+count_overhead
+"dev %d,%d ino %lu flags %s len %u block %llu lblk %u goal %llu lleft %u lright %u pleft %llu pright %llu", ((unsigned int) ((REC->dev) >> 20)), ((unsigned int) ((REC->dev) & ((1U << 20) - 1))), (unsigned long) REC->ino, __print_flags(REC->flags, "|", { 0x0001, "HINT_MERGE" }, { 0x0002, "HINT_RESV" }, { 0x0004, "HINT_MDATA" }, { 0x0008, "HINT_FIRST" }, { 0x0010, "HINT_BEST" }, { 0x0020, "HINT_DATA" }, { 0x0040, "HINT_NOPREALLOC" }, { 0x0080, "HINT_GRP_ALLOC" }, { 0x0100, "HINT_GOAL_ONLY" }, { 0x0200, "HINT_TRY_GOAL" }, { 0x0400, "DELALLOC_RESV" }, { 0x0800, "STREAM_ALLOC" }, { 0x1000, "USE_ROOT_BLKS" }, { 0x2000, "USE_RESV" }), REC->len, REC->block, REC->logical, REC->goal, REC->lleft, REC->lright, REC->pleft, REC->pright
+"dev %d,%d ino %lu flags %s len %u lblk %u goal %llu lleft %u lright %u pleft %llu pright %llu ", ((unsigned int) ((REC->dev) >> 20)), ((unsigned int) ((REC->dev) & ((1U << 20) - 1))), (unsigned long) REC->ino, __print_flags(REC->flags, "|", { 0x0001, "HINT_MERGE" }, { 0x0002, "HINT_RESV" }, { 0x0004, "HINT_MDATA" }, { 0x0008, "HINT_FIRST" }, { 0x0010, "HINT_BEST" }, { 0x0020, "HINT_DATA" }, { 0x0040, "HINT_NOPREALLOC" }, { 0x0080, "HINT_GRP_ALLOC" }, { 0x0100, "HINT_GOAL_ONLY" }, { 0x0200, "HINT_TRY_GOAL" }, { 0x0400, "DELALLOC_RESV" }, { 0x0800, "STREAM_ALLOC" }, { 0x1000, "USE_ROOT_BLKS" }, { 0x2000, "USE_RESV" }), REC->len, REC->logical, REC->goal, REC->lleft, REC->lright, REC->pleft, REC->pright
+"dev %d,%d ino %lu page_index %lu offset %u length %u", ((unsigned int) ((REC->dev) >> 20)), ((unsigned int) ((REC->dev) & ((1U << 20) - 1))), (unsigned long) REC->ino, (unsigned long) REC->index, REC->offset, REC->length
+ext4_ext_remove_space
+ext4_remove_blocks
+ext4_ext_search_left
+ext4_ext_shift_extents
+ext4_ext_shift_path_extents
+move_extent_per_page
+__journal_remove_journal_head
+f#g4jfjIjgj2jhj>j]jmjvj[jQj(jZj;j?jAjjjdjPjOjTjojij`j<j^jVjUjMjNjFjUkTkVk
+ovolo
+rCsMsQsLsbtstqtutrtgtnt
+r<sBs;s:s@sJsIsDtJtKtRtQtWt@tOtPtNtBtFtMtTt
+fxf gfi_i8iNibiqi?iEiji9iBiWiYiziHiIi5ili3i=iei
+hxi4iii@ioiDiviXiAitiLi;iKi7i\iOiQi2iRi/i{i<iFkEkCkBkHkAk
+WSXhXdXOXMXIXoXUXNX]XYXeX[X=XcXqX
+w`xdxex\xmxqxjxnxpxixhx^xbxtysyrypy
+WHX%X
+v9w/w-w1w2w4w3w=w%w;w5wHxRxIxMxJxLx&xExPxdygyiyjycykyay
+hxh{h
+c9cKcJc<c)cAc4cXcTcYc-cGc3cZcQc8cWc@cHcJeFe
+OvOtO
+TkTzT~TeTlTtTfT
+TcTgTdT
+=TOTAT(T$TGT
+RYVkVyViVdVxVjVhVeVqVoVlVbVvV
+f=j8j:jYjkjXj9jDjbjajKjGj5j_jHjYkwk
+enfpftfvfof
+cwcgc
+T>T&TNT'TFTCT3THTBT
+e.g,g*g+g-gck
+fuse.max_user_congthresh
+"dev = (%d,%d), checkpoint for %s, state = %s", ((unsigned int) ((REC->dev) >> 20)), ((unsigned int) ((REC->dev) & ((1U << 20) - 1))), __print_symbolic(REC->reason, { 0x00000001, "Umount" }, { 0x00000002, "Fastboot" }, { 0x00000004, "Sync" }, { 0x00000008, "Recovery" }, { 0x00000010, "Discard" }, { 0x00000001 | 0x00000020, "Umount,Trimmed" }), REC->msg
+"dev = (%d,%d), type = %s, policy = (%s, %s, %s), victim = %u ofs_unit = %u, pre_victim_secno = %d, prefree = %u, free = %u", ((unsigned int) ((REC->dev) >> 20)), ((unsigned int) ((REC->dev) & ((1U << 20) - 1))), __print_symbolic(REC->type, { CURSEG_HOT_DATA, "Hot DATA" }, { CURSEG_WARM_DATA, "Warm DATA" }, { CURSEG_COLD_DATA, "Cold DATA" }, { CURSEG_HOT_NODE, "Hot NODE" }, { CURSEG_WARM_NODE, "Warm NODE" }, { CURSEG_COLD_NODE, "Cold NODE" }, { NO_CHECK_TYPE, "No TYPE" }), __print_symbolic(REC->gc_type, { FG_GC, "Foreground GC" }, { BG_GC, "Background GC" }), __print_symbolic(REC->alloc_mode, { LFS, "LFS-mode" }, { SSR, "SSR-mode" }), __print_symbolic(REC->gc_mode, { GC_GREEDY, "Greedy" }, { GC_CB, "Cost-Benefit" }), REC->victim, REC->ofs_unit, (int)REC->pre_victim, REC->prefree, REC->free
+"dev = (%d,%d), ino = %lu, pino = %lu, i_mode = 0x%hx, i_size = %lld, i_nlink = %u, i_blocks = %llu, i_advise = 0x%x", ((unsigned int) ((REC->dev) >> 20)), ((unsigned int) ((REC->dev) & ((1U << 20) - 1))), (unsigned long)REC->ino, (unsigned long)REC->pino, REC->mode, REC->size, (unsigned int)REC->nlink, (unsigned long long)REC->blocks, (unsigned char)REC->advise
+recover_orphan_inode
+recover_dentry
+ramoops.ftrace_size
+x`Hx.
+HhXpE
+D""fT**~;
+fbhxh`bf
+fbhxh```
+fbhxhbf
+"got_bits %d nonblocking_pool_entropy_left %d input_entropy_left %d", REC->got_bits, REC->pool_left, REC->input_left
+"got_bits %d still_needed_bits %d blocking_pool_entropy_left %d input_entropy_left %d", REC->got_bits, REC->got_bits, REC->pool_left, REC->input_left
+__dev_pm_qos_remove_request
+soidle_after_wfi
+spm_dpidle_after_wfi
+m4u_fill_sgtable_user
+m4u_create_sgtable
+m4u_map_sgtable
+alsps_remove
+acc_remove
+stk8baxx_i2c_remove
+show_selftest_value
+store_selftest_value
+mir3da_local_remove
+usb_phy_recover
+musb_remove
+musb_hdrc.musb_removed
+mediatek,gce
+mediatek,mt8173-gce
+mediatek,mt8163-gce
+testcase_run_set_gce_event_loop
+testcase_set_gce_event
+testcase_submit_after_error_happened
+_convert_disp_input_to_ovl
+primary_display_ipoh_recover
+primary_display_esd_recovery
+primary_display_recovery_thread
+primary_display_capture_framebuffer_ovl
+_ovl_fence_release_callback
+primary_display_lcm_ATA
+Panel_Master_dsi_config_entry
+disp_lcm_get_interface_id
+disp_lcm_esd_check
+disp_lcm_esd_recover
+disp_lcm_suspend
+disp_lcm_resume
+disp_lcm_set_backlight
+disp_lcm_init
+disp_lcm_ATA
+disp_lcm_update
+DISP: gOVLBackground=%d
+7[name:disp_debug&][DISP]DISP: gOVLBackground=%d
+gOVLBackground: %d
+esd_recovery
+lcm0_reset
+lcm0_reset0
+lcm0_reset1
+ovl2mem_input_config
+ovl2mem_output_config
+ovl2mem_trigger
+ovl2mem_wait_done
+ovl2mem_deinit
+primary_ovl_memout
+set dst module over up bound
+3[DISP]set dst module over up bound
+set dst module over low bound
+3[DISP]set dst module over low bound
+after insert module, module list is:
+7[name:ddp_path&][DISP]after insert module, module list is:
+ddp_remove_module, can not find module %s in scenario %s
+3[DISP]ddp_remove_module, can not find module %s in scenario %s
+after remove module, module list is:
+7[name:ddp_path&][DISP]after remove module, module list is:
+Buffer overflow, data length %d is lager than buffer size %d, offset is %lld
+7[name:mtkfb_debug&][DISP]Buffer overflow, data length %d is lager than buffer size %d, offset is %lld
+soft_job_start_wrapper
+soft_job_signal_wrapper
+mali_soft_job_is_activated
+mali_soft_job_system_destroy
+mali_soft_job_system_create
+mali_soft_job_destroy
+mali_soft_job_system_free_job
+mali_soft_job_system_lock
+mali_soft_job_system_unlock
+mali_soft_job_create
+mali_soft_job_start
+mali_soft_job_system_signal_job
+mali_soft_job_system_lookup_job
+mali_soft_job_system_assert_locked
+mali_soft_job_system_activate_job
+mali_soft_job_system_timeout_job
+mali_soft_job_system_abort
+_mali_osk_list_move_list
+mali_gp_job_list_remove
+mali_pp_job_list_remove
+mali_pp_job_fb_lookup_remove
+mali_gp_job_list_move
+mali_pp_job_list_move
+mali_group_recovery_reset
+mali_group_remove_group
+mali_dlbu_remove_group
+mali_bcast_remove_group
+mali_utilization_platform_realize
+mali_utilization_data_assert_locked
+_mali_osk_list_move_list
+mali_pmm_utilization_handler
+smi_common.force_camera_hpm
+mt_fh_hal_dram_overclock
+sec.recovery_done
+CamPipeMgr_RemovePipeInfo
+CamPipeMgr_GtePipeLockTable
+CamPipeMgr_RegCharDev
+SYSRAM_RegCharDrv
+CAMERA_HW_i2c_probe2
+subsys_camera_info_read
+CAMERA_HW_i2C_init
+adopt_CAMERA_HW_Open
+adopt_CAMERA_HW_GetResolution
+adopt_CAMERA_HW_FeatureControl
+CAMERA_HW_i2c_probe
+mediatek,camera_hw
+mediatek,camera_hw2
+mediatek,camera_sub
+mediatek,camera_main
+kd_camera_hw_bus2
+kd_camera_hw
+mediatek,CAMERA_MAIN_AF
+s4EEPROM_ReadReg_LC898212XDAF_OV23850
+s4EEPROM_ReadReg_LC898212XDAF_IMX258
+moveAF
+moveAF
+moveAF
+mediatek,CAMERA_MAIN_TWO_AF
+moveAF
+mediatek,CAMERA_SUB_AF
+mtk_btif_remove
+"host_no=%u channel=%u id=%u lun=%u data_sgl=%u prot_sgl=%u prot_op=%s cmnd=(%s %s raw=%s) result=(driver=%s host=%s message=%s status=%s)", REC->host_no, REC->channel, REC->id, REC->lun, REC->data_sglen, REC->prot_sglen, __print_symbolic(REC->prot_op, { SCSI_PROT_NORMAL, "SCSI_PROT_NORMAL" }, { SCSI_PROT_READ_INSERT, "SCSI_PROT_READ_INSERT" }, { SCSI_PROT_WRITE_STRIP, "SCSI_PROT_WRITE_STRIP" }, { SCSI_PROT_READ_STRIP, "SCSI_PROT_READ_STRIP" }, { SCSI_PROT_WRITE_INSERT, "SCSI_PROT_WRITE_INSERT" }, { SCSI_PROT_READ_PASS, "SCSI_PROT_READ_PASS" }, { SCSI_PROT_WRITE_PASS, "SCSI_PROT_WRITE_PASS" }), __print_symbolic(REC->opcode, { 0x00, "TEST_UNIT_READY" }, { 0x01, "REZERO_UNIT" }, { 0x03, "REQUEST_SENSE" }, { 0x04, "FORMAT_UNIT" }, { 0x05, "READ_BLOCK_LIMITS" }, { 0x07, "REASSIGN_BLOCKS" }, { 0x07, "INITIALIZE_ELEMENT_STATUS" }, { 0x08, "READ_6" }, { 0x0a, "WRITE_6" }, { 0x0b, "SEEK_6" }, { 0x0f, "READ_REVERSE" }, { 0x10, "WRITE_FILEMARKS" }, { 0x11, "SPACE" }, { 0x12, "INQUIRY" }, { 0x14, "RECOVER_BUFFERED_DATA" }, { 0x15, "MODE_SELECT" }, { 0x16, "RESERVE" }, { 0x17, "RELEASE" }, { 0x18, "COPY" }, { 0x19, "ERASE" }, { 0x1a, "MODE_SENSE" }, { 0x1b, "START_STOP" }, { 0x1c, "RECEIVE_DIAGNOSTIC" }, { 0x1d, "SEND_DIAGNOSTIC" }, { 0x1e, "ALLOW_MEDIUM_REMOVAL" }, { 0x24, "SET_WINDOW" }, { 0x25, "READ_CAPACITY" }, { 0x28, "READ_10" }, { 0x2a, "WRITE_10" }, { 0x2b, "SEEK_10" }, { 0x2b, "POSITION_TO_ELEMENT" }, { 0x2e, "WRITE_VERIFY" }, { 0x2f, "VERIFY" }, { 0x30, "SEARCH_HIGH" }, { 0x31, "SEARCH_EQUAL" }, { 0x32, "SEARCH_LOW" }, { 0x33, "SET_LIMITS" }, { 0x34, "PRE_FETCH" }, { 0x34, "READ_POSITION" }, { 0x35, "SYNCHRONIZE_CACHE" }, { 0x36, "LOCK_UNLOCK_CACHE" }, { 0x37, "READ_DEFECT_DATA" }, { 0x38, "MEDIUM_SCAN" }, { 0x39, "COMPARE" }, { 0x3a, "COPY_VERIFY" }, { 0x3b, "WRITE_BUFFER" }, { 0x3c, "READ_BUFFER" }, { 0x3d, "UPDATE_BLOCK" }, { 0x3e, "READ_LONG" }, { 0x3f, "WRITE_LONG" }, { 0x40, "CHANGE_DEFINITION" }, { 0x41, "WRITE_SAME" }, { 0x42, "UNMAP" }, { 0x43, "READ_TOC" }, { 0x4c, "LOG_SELECT" }, { 0x4d, "LOG_SENSE" }, { 0x53, "XDWRITEREAD_10" }, { 0x55, "MODE_SELECT_10" }, { 0x56, "RESERVE_10" }, { 0x57, "RELEASE_10" }, { 0x5a, "MODE_SENSE_10" }, { 0x5e, "PERSISTENT_RESERVE_IN" }, { 0x5f, "PERSISTENT_RESERVE_OUT" }, { 0x7f, "VARIABLE_LENGTH_CMD" }, { 0xa0, "REPORT_LUNS" }, { 0xa3, "MAINTENANCE_IN" }, { 0xa4, "MAINTENANCE_OUT" }, { 0xa5, "MOVE_MEDIUM" }, { 0xa6, "EXCHANGE_MEDIUM" }, { 0xa8, "READ_12" }, { 0xaa, "WRITE_12" }, { 0xae, "WRITE_VERIFY_12" }, { 0xb0, "SEARCH_HIGH_12" }, { 0xb1, "SEARCH_EQUAL_12" }, { 0xb2, "SEARCH_LOW_12" }, { 0xb8, "READ_ELEMENT_STATUS" }, { 0xb6, "SEND_VOLUME_TAG" }, { 0xea, "WRITE_LONG_2" }, { 0x88, "READ_16" }, { 0x8a, "WRITE_16" }, { 0x8f, "VERIFY_16" }, { 0x93, "WRITE_SAME_16" }, { 0x9e, "SERVICE_ACTION_IN" }, { 0x10, "SAI_READ_CAPACITY_16" }, { 0x12, "SAI_GET_LBA_STATUS" }, { 0x0a, "MI_REPORT_TARGET_PGS" }, { 0x0a, "MO_SET_TARGET_PGS" }, { 0x09, "READ_32" }, { 0x0b, "WRITE_32" }, { 0x0d, "WRITE_SAME_32" }, { 0x85, "ATA_16" }, { 0xa1, "ATA_12" }), scsi_trace_parse_cdb(p, __get_dynamic_array(cmnd), REC->cmd_len), __print_hex(__get_dynamic_array(cmnd), REC->cmd_len), __print_symbolic(((REC->result) >> 24) & 0xff, { 0x00, "DRIVER_OK" }, { 0x01, "DRIVER_BUSY" }, { 0x02, "DRIVER_SOFT" }, { 0x03, "DRIVER_MEDIA" }, { 0x04, "DRIVER_ERROR" }, { 0x05, "DRIVER_INVALID" }, { 0x06, "DRIVER_TIMEOUT" }, { 0x07, "DRIVER_HARD" }, { 0x08, "DRIVER_SENSE" }), __print_symbolic(((REC->result) >> 16) & 0xff, { 0x00, "DID_OK" }, { 0x01, "DID_NO_CONNECT" }, { 0x02, "DID_BUS_BUSY" }, { 0x03, "DID_TIME_OUT" }, { 0x04, "DID_BAD_TARGET" }, { 0x05, "DID_ABORT" }, { 0x06, "DID_PARITY" }, { 0x07, "DID_ERROR" }, { 0x08, "DID_RESET" }, { 0x09, "DID_BAD_INTR" }, { 0x0a, "DID_PASSTHROUGH" }, { 0x0b, "DID_SOFT_ERROR" }, { 0x0c, "DID_IMM_RETRY" }, { 0x0d, "DID_REQUEUE" }, { 0x0e, "DID_TRANSPORT_DISRUPTED" }, { 0x0f, "DID_TRANSPORT_FAILFAST" }), __print_symbolic(((REC->result) >> 8) & 0xff, { 0x00, "COMMAND_COMPLETE" }, { 0x01, "EXTENDED_MESSAGE" }, { 0x02, "SAVE_POINTERS" }, { 0x03, "RESTORE_POINTERS" }, { 0x04, "DISCONNECT" }, { 0x05, "INITIATOR_ERROR" }, { 0x06, "ABORT_TASK_SET" }, { 0x07, "MESSAGE_REJECT" }, { 0x08, "NOP" }, { 0x09, "MSG_PARITY_ERROR" }, { 0x0a, "LINKED_CMD_COMPLETE" }, { 0x0b, "LINKED_FLG_CMD_COMPLETE" }, { 0x0c, "TARGET_RESET" }, { 0x0d, "ABORT_TASK" }, { 0x0e, "CLEAR_TASK_SET" }, { 0x0f, "INITIATE_RECOVERY" }, { 0x10, "RELEASE_RECOVERY" }, { 0x16, "CLEAR_ACA" }, { 0x17, "LOGICAL_UNIT_RESET" }, { 0x20, "SIMPLE_QUEUE_TAG" }, { 0x21, "HEAD_OF_QUEUE_TAG" }, { 0x22, "ORDERED_QUEUE_TAG" }, { 0x23, "IGNORE_WIDE_RESIDUE" }, { 0x24, "ACA" }, { 0x55, "QAS_REQUEST" }, { 0x0c, "BUS_DEVICE_RESET" }, { 0x06, "ABORT" }), __print_symbolic(REC->result & 0xff, { 0x00, "SAM_STAT_GOOD" }, { 0x02, "SAM_STAT_CHECK_CONDITION" }, { 0x04, "SAM_STAT_CONDITION_MET" }, { 0x08, "SAM_STAT_BUSY" }, { 0x10, "SAM_STAT_INTERMEDIATE" }, { 0x14, "SAM_STAT_INTERMEDIATE_CONDITION_MET" }, { 0x18, "SAM_STAT_RESERVATION_CONFLICT" }, { 0x22, "SAM_STAT_COMMAND_TERMINATED" }, { 0x28, "SAM_STAT_TASK_SET_FULL" }, { 0x30, "SAM_STAT_ACA_ACTIVE" }, { 0x40, "SAM_STAT_TASK_ABORTED" })
+"host_no=%u channel=%u id=%u lun=%u data_sgl=%u prot_sgl=%u prot_op=%s cmnd=(%s %s raw=%s) rtn=%d", REC->host_no, REC->channel, REC->id, REC->lun, REC->data_sglen, REC->prot_sglen, __print_symbolic(REC->prot_op, { SCSI_PROT_NORMAL, "SCSI_PROT_NORMAL" }, { SCSI_PROT_READ_INSERT, "SCSI_PROT_READ_INSERT" }, { SCSI_PROT_WRITE_STRIP, "SCSI_PROT_WRITE_STRIP" }, { SCSI_PROT_READ_STRIP, "SCSI_PROT_READ_STRIP" }, { SCSI_PROT_WRITE_INSERT, "SCSI_PROT_WRITE_INSERT" }, { SCSI_PROT_READ_PASS, "SCSI_PROT_READ_PASS" }, { SCSI_PROT_WRITE_PASS, "SCSI_PROT_WRITE_PASS" }), __print_symbolic(REC->opcode, { 0x00, "TEST_UNIT_READY" }, { 0x01, "REZERO_UNIT" }, { 0x03, "REQUEST_SENSE" }, { 0x04, "FORMAT_UNIT" }, { 0x05, "READ_BLOCK_LIMITS" }, { 0x07, "REASSIGN_BLOCKS" }, { 0x07, "INITIALIZE_ELEMENT_STATUS" }, { 0x08, "READ_6" }, { 0x0a, "WRITE_6" }, { 0x0b, "SEEK_6" }, { 0x0f, "READ_REVERSE" }, { 0x10, "WRITE_FILEMARKS" }, { 0x11, "SPACE" }, { 0x12, "INQUIRY" }, { 0x14, "RECOVER_BUFFERED_DATA" }, { 0x15, "MODE_SELECT" }, { 0x16, "RESERVE" }, { 0x17, "RELEASE" }, { 0x18, "COPY" }, { 0x19, "ERASE" }, { 0x1a, "MODE_SENSE" }, { 0x1b, "START_STOP" }, { 0x1c, "RECEIVE_DIAGNOSTIC" }, { 0x1d, "SEND_DIAGNOSTIC" }, { 0x1e, "ALLOW_MEDIUM_REMOVAL" }, { 0x24, "SET_WINDOW" }, { 0x25, "READ_CAPACITY" }, { 0x28, "READ_10" }, { 0x2a, "WRITE_10" }, { 0x2b, "SEEK_10" }, { 0x2b, "POSITION_TO_ELEMENT" }, { 0x2e, "WRITE_VERIFY" }, { 0x2f, "VERIFY" }, { 0x30, "SEARCH_HIGH" }, { 0x31, "SEARCH_EQUAL" }, { 0x32, "SEARCH_LOW" }, { 0x33, "SET_LIMITS" }, { 0x34, "PRE_FETCH" }, { 0x34, "READ_POSITION" }, { 0x35, "SYNCHRONIZE_CACHE" }, { 0x36, "LOCK_UNLOCK_CACHE" }, { 0x37, "READ_DEFECT_DATA" }, { 0x38, "MEDIUM_SCAN" }, { 0x39, "COMPARE" }, { 0x3a, "COPY_VERIFY" }, { 0x3b, "WRITE_BUFFER" }, { 0x3c, "READ_BUFFER" }, { 0x3d, "UPDATE_BLOCK" }, { 0x3e, "READ_LONG" }, { 0x3f, "WRITE_LONG" }, { 0x40, "CHANGE_DEFINITION" }, { 0x41, "WRITE_SAME" }, { 0x42, "UNMAP" }, { 0x43, "READ_TOC" }, { 0x4c, "LOG_SELECT" }, { 0x4d, "LOG_SENSE" }, { 0x53, "XDWRITEREAD_10" }, { 0x55, "MODE_SELECT_10" }, { 0x56, "RESERVE_10" }, { 0x57, "RELEASE_10" }, { 0x5a, "MODE_SENSE_10" }, { 0x5e, "PERSISTENT_RESERVE_IN" }, { 0x5f, "PERSISTENT_RESERVE_OUT" }, { 0x7f, "VARIABLE_LENGTH_CMD" }, { 0xa0, "REPORT_LUNS" }, { 0xa3, "MAINTENANCE_IN" }, { 0xa4, "MAINTENANCE_OUT" }, { 0xa5, "MOVE_MEDIUM" }, { 0xa6, "EXCHANGE_MEDIUM" }, { 0xa8, "READ_12" }, { 0xaa, "WRITE_12" }, { 0xae, "WRITE_VERIFY_12" }, { 0xb0, "SEARCH_HIGH_12" }, { 0xb1, "SEARCH_EQUAL_12" }, { 0xb2, "SEARCH_LOW_12" }, { 0xb8, "READ_ELEMENT_STATUS" }, { 0xb6, "SEND_VOLUME_TAG" }, { 0xea, "WRITE_LONG_2" }, { 0x88, "READ_16" }, { 0x8a, "WRITE_16" }, { 0x8f, "VERIFY_16" }, { 0x93, "WRITE_SAME_16" }, { 0x9e, "SERVICE_ACTION_IN" }, { 0x10, "SAI_READ_CAPACITY_16" }, { 0x12, "SAI_GET_LBA_STATUS" }, { 0x0a, "MI_REPORT_TARGET_PGS" }, { 0x0a, "MO_SET_TARGET_PGS" }, { 0x09, "READ_32" }, { 0x0b, "WRITE_32" }, { 0x0d, "WRITE_SAME_32" }, { 0x85, "ATA_16" }, { 0xa1, "ATA_12" }), scsi_trace_parse_cdb(p, __get_dynamic_array(cmnd), REC->cmd_len), __print_hex(__get_dynamic_array(cmnd), REC->cmd_len), REC->rtn
+"host_no=%u channel=%u id=%u lun=%u data_sgl=%u prot_sgl=%u prot_op=%s cmnd=(%s %s raw=%s)", REC->host_no, REC->channel, REC->id, REC->lun, REC->data_sglen, REC->prot_sglen, __print_symbolic(REC->prot_op, { SCSI_PROT_NORMAL, "SCSI_PROT_NORMAL" }, { SCSI_PROT_READ_INSERT, "SCSI_PROT_READ_INSERT" }, { SCSI_PROT_WRITE_STRIP, "SCSI_PROT_WRITE_STRIP" }, { SCSI_PROT_READ_STRIP, "SCSI_PROT_READ_STRIP" }, { SCSI_PROT_WRITE_INSERT, "SCSI_PROT_WRITE_INSERT" }, { SCSI_PROT_READ_PASS, "SCSI_PROT_READ_PASS" }, { SCSI_PROT_WRITE_PASS, "SCSI_PROT_WRITE_PASS" }), __print_symbolic(REC->opcode, { 0x00, "TEST_UNIT_READY" }, { 0x01, "REZERO_UNIT" }, { 0x03, "REQUEST_SENSE" }, { 0x04, "FORMAT_UNIT" }, { 0x05, "READ_BLOCK_LIMITS" }, { 0x07, "REASSIGN_BLOCKS" }, { 0x07, "INITIALIZE_ELEMENT_STATUS" }, { 0x08, "READ_6" }, { 0x0a, "WRITE_6" }, { 0x0b, "SEEK_6" }, { 0x0f, "READ_REVERSE" }, { 0x10, "WRITE_FILEMARKS" }, { 0x11, "SPACE" }, { 0x12, "INQUIRY" }, { 0x14, "RECOVER_BUFFERED_DATA" }, { 0x15, "MODE_SELECT" }, { 0x16, "RESERVE" }, { 0x17, "RELEASE" }, { 0x18, "COPY" }, { 0x19, "ERASE" }, { 0x1a, "MODE_SENSE" }, { 0x1b, "START_STOP" }, { 0x1c, "RECEIVE_DIAGNOSTIC" }, { 0x1d, "SEND_DIAGNOSTIC" }, { 0x1e, "ALLOW_MEDIUM_REMOVAL" }, { 0x24, "SET_WINDOW" }, { 0x25, "READ_CAPACITY" }, { 0x28, "READ_10" }, { 0x2a, "WRITE_10" }, { 0x2b, "SEEK_10" }, { 0x2b, "POSITION_TO_ELEMENT" }, { 0x2e, "WRITE_VERIFY" }, { 0x2f, "VERIFY" }, { 0x30, "SEARCH_HIGH" }, { 0x31, "SEARCH_EQUAL" }, { 0x32, "SEARCH_LOW" }, { 0x33, "SET_LIMITS" }, { 0x34, "PRE_FETCH" }, { 0x34, "READ_POSITION" }, { 0x35, "SYNCHRONIZE_CACHE" }, { 0x36, "LOCK_UNLOCK_CACHE" }, { 0x37, "READ_DEFECT_DATA" }, { 0x38, "MEDIUM_SCAN" }, { 0x39, "COMPARE" }, { 0x3a, "COPY_VERIFY" }, { 0x3b, "WRITE_BUFFER" }, { 0x3c, "READ_BUFFER" }, { 0x3d, "UPDATE_BLOCK" }, { 0x3e, "READ_LONG" }, { 0x3f, "WRITE_LONG" }, { 0x40, "CHANGE_DEFINITION" }, { 0x41, "WRITE_SAME" }, { 0x42, "UNMAP" }, { 0x43, "READ_TOC" }, { 0x4c, "LOG_SELECT" }, { 0x4d, "LOG_SENSE" }, { 0x53, "XDWRITEREAD_10" }, { 0x55, "MODE_SELECT_10" }, { 0x56, "RESERVE_10" }, { 0x57, "RELEASE_10" }, { 0x5a, "MODE_SENSE_10" }, { 0x5e, "PERSISTENT_RESERVE_IN" }, { 0x5f, "PERSISTENT_RESERVE_OUT" }, { 0x7f, "VARIABLE_LENGTH_CMD" }, { 0xa0, "REPORT_LUNS" }, { 0xa3, "MAINTENANCE_IN" }, { 0xa4, "MAINTENANCE_OUT" }, { 0xa5, "MOVE_MEDIUM" }, { 0xa6, "EXCHANGE_MEDIUM" }, { 0xa8, "READ_12" }, { 0xaa, "WRITE_12" }, { 0xae, "WRITE_VERIFY_12" }, { 0xb0, "SEARCH_HIGH_12" }, { 0xb1, "SEARCH_EQUAL_12" }, { 0xb2, "SEARCH_LOW_12" }, { 0xb8, "READ_ELEMENT_STATUS" }, { 0xb6, "SEND_VOLUME_TAG" }, { 0xea, "WRITE_LONG_2" }, { 0x88, "READ_16" }, { 0x8a, "WRITE_16" }, { 0x8f, "VERIFY_16" }, { 0x93, "WRITE_SAME_16" }, { 0x9e, "SERVICE_ACTION_IN" }, { 0x10, "SAI_READ_CAPACITY_16" }, { 0x12, "SAI_GET_LBA_STATUS" }, { 0x0a, "MI_REPORT_TARGET_PGS" }, { 0x0a, "MO_SET_TARGET_PGS" }, { 0x09, "READ_32" }, { 0x0b, "WRITE_32" }, { 0x0d, "WRITE_SAME_32" }, { 0x85, "ATA_16" }, { 0xa1, "ATA_12" }), scsi_trace_parse_cdb(p, __get_dynamic_array(cmnd), REC->cmd_len), __print_hex(__get_dynamic_array(cmnd), REC->cmd_len)
+spi_test_remove
+remove_config
+g_android.removable
+__cpufreq_remove_dev_finish
+__cpufreq_remove_dev_prepare
+cpufreq_governor_interactive
+cpufreq_governor_dbs
+mmc_blk_cmd_recovery
+msdc_set_bad_card_and_remove
+msdc_drv_remove
+SetHDMIdatalength
+RemoveMemifSubStream
+irq_remove_user
+mtk_capture_remove
+mtk_voice_remove
+mtk_i2s0_remove
+mtk_I2S0dl1_remove
+mtk_deep_buffer_dl_remove
+mtk_mrgrx_remove
+mtk_fm_i2s_remove
+mtk_fm_i2s_awb_remove
+mtk_dai_stub_dev_remove
+mtk_routing_dev_remove
+dummy_codec_remove
+mtk_dummy_codec_dev_remove
+mt6350_codec_remove
+mtk_mt6350_codec_dev_remove
+OpenAnalogTrimHardware
+skb_over_panic
+nf_conntrack_ftp.loose
+nf_conntrack_ftp.ports
+nf_conntrack_tftp.ports
+nf_nat_ftp.ports
+inet_frag_find: Fragment hash bucket list length grew over limit 128. Dropping fragment.
+ndisc_router_discovery
+"%s, band: %d, control freq: %u, width: %d, cf1: %u, cf2: %u, iftype=%d", REC->wiphy_name, REC->band, REC->control_freq, REC->width, REC->center_freq1, REC->center_freq2, REC->iftype
+"netdev:%s(%d), ftype:0x%.2x", REC->name, REC->ifindex, __le16_to_cpup((__le16 *)__get_dynamic_array(frame))
+"netdev:%s(%d), ftype:0x%.2x", REC->name, REC->ifindex, __le16_to_cpup((__le16 *)__get_dynamic_array(frame))
+"%s, netdev:%s(%d), %pM, action_code: %u, dialog_token: %u, status_code: %u, peer_capability: %u initiator: %s buf: %#.2x ", REC->wiphy_name, REC->name, REC->ifindex, (REC->peer), REC->action_code, REC->dialog_token, REC->status_code, REC->peer_capability, (REC->initiator) ? "true" : "false", ((u8 *)__get_dynamic_array(buf))[0]
+"%s, returned %d. mpath info - generation: %d, filled: %u, frame qlen: %u, sn: %u, metric: %u, exptime: %u, discovery timeout: %u, discovery retries: %u, flags: %u", REC->wiphy_name, REC->ret, REC->generation, REC->filled, REC->frame_qlen, REC->sn, REC->metric, REC->exptime, REC->discovery_timeout, REC->discovery_retries, REC->flags
+"%s, wow%s - any: %d, disconnect: %d, magic pkt: %d, gtk rekey failure: %d, eap identify req: %d, four way handshake: %d, rfkill release: %d.", REC->wiphy_name, REC->valid_wow ? "" : "(Not configured!)", REC->any, REC->disconnect, REC->magic_pkt, REC->gtk_rekey_failure, REC->eap_identity_req, REC->four_way_handshake, REC->rfkill_release
+[`hift
+shift
+shift
+VA_GCE
+PA_GCE
+ovl%o
+ovl%o
+LcmDrv
+ovl_wd
+LCMId
+Tovl2
+Tovl2
+Tovl2
+Tovl2
+Tovl2
+Tovl2
+Tovl2
+Tovl<
+Tovl_
+Tovl_i
+Tovl_lay
+Tovl_lay
+Tovl_
+Tovl_
+Tovl_
+Tovl_
+ovl_lay
+ovl_lay
+eRegToHw
+TISP_RegC$b
+RegToPr
+RegToPr
+_GteP=eL
+tCAMERA_HW_Op
+tCAMERA_HW_Re
+tCAMERA_HW
+tCAMERA_HW
+tCAMERA_HW_Du
+tCAMERA_HW_i2c
+tCAMERA_HW_Op
+tCAMERA_HW
+tCAMERA_HW
+tCAMERA_HW
+tCAMERA_HW_Re
+tCAMERA_HW_Re
+tCAMERA_HW_Re
+tCAMERA_HW_i2c
+tCAMERA_HW_Du
+tCAMERA_HW_Du
+tCAMERA_HW
+tCAMERA_HW_i2c
+tCAMERA_HW
+tCAMERA_HW
+tCAMERA_HW_Re
+tCAMERA_HW_I
+tCAMERA_HW_i2c
+TGC2355SUB_MIPI_RAW_S
+TS5K3P3SX_MIPI_RAW_S
+LC898212XDAF_OV23850"
+LC898212XDAF_IMX258
+tIniPtMovMod.p
+TIniPtMovMod
+oveAF
+wr)gt
+wr)gt
+Tgov_
+ftu_e
+ftu_e
+ftu_e
+ogTrimH
+hift@
+ix_gc
+ix_gc
+b6_gc
+tCAMERA_HW_i2C<
+_gov)
+tftrace_raw_
+tftrace_
+2initrd overwritten (0x%08lx < 0x%08lx) - disabling it.
+5initcall %pF returned %d after %lld usecs
+3device-mapper: init: failed to parse length for target %d
+4device-mapper: init: can't change device type after initial table load.
+Coherent DMA mask %#llx (pfn %#lx-%#lx) covers a smaller range of system memory than the DMA zone pfn 0x0-%#lx
+3INITRD: 0x%08llx+0x%08lx overlaps in-use memory region - disabling initrd
+3Cannot invoke smp_inner_dcache_flush_all() in interrupt/softirq context
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/softirq.c
+5softirq: Attempt to kill tasklet from interrupt
+3softirq: huh, entered softirq %u %s %p with preempt_count %08x, exited with %08x?
+ksoftirqd/%u
+overflowuid
+overflowgid
+pipe-user-pages-soft
+overcommit_memory
+overcommit_ratio
+overcommit_kbytes
+min_free_order_shift
+ftrace_dump_on_oops
+6[name:capability&]capability: warning: `%s' uses 32-bit capabilities (legacy support in use)
+6[name:capability&]capability: warning: `%s' uses deprecated v2 capabilities in a way that may be insecure
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/capability.c
+2capability: capable() called with invalid cap=%u
+4workqueue %s: drain_workqueue() isn't complete after %u tries
+profiling
+FORCE_SD_OVERLAP
+nr_spread_over
+utilization_load_avg
+se->avg.utilization_avg_contrib
+se.avg.utilization_avg_contrib
+3pm_qos_remove_request() called for unknown object
+3Freezing of tasks aborted after %d.%03d seconds
+3Freezing of tasks failed after %d.%03d seconds (%d tasks refusing to freeze, wq_busy=%d):
+Console Lock dur over 15 seconds
+kernel log overflow
+rcu_init_one: rcu_num_lvls overflow
+6kernel sleep profiling enabled (shift: %ld)
+6kernel schedule profiling enabled (shift: %ld)
+6kernel KVM profiling enabled (shift: %ld)
+6kernel profiling enabled (shift: %ld)
+hrtimer=%p function=%pf expires=%llu softexpires=%llu
+softexpires
+4%s calls setitimer() with new_value NULL pointer. Misfeature support will be removed
+4Override clocksource %s is not HRT compatible. Cannot switch while in HRT/NOHZ mode
+Clocksource %s might overflow on 11%% adjustment
+ shift:          %u
+4NOHZ: local_softirq_pending %02x
+_ftrace_events
+4%s: parameters '%s' after `--' ignored
+4cgroup: you may retry by moving them to a different hierarchy and unbinding
+enabled (after initialization)
+remove_rule
+argc=%d
+error updating watch, removing
+field: int overwrite;
+ftrace is %s caller=%pf
+6ftrace bootup tracer '%s' not registered.
+#                || / _---=> hardirq/softirq
+7[name:trace&][ftrace]tracing_on is toggled to %lu
+commit overrun: %ld
+7[name:trace&][ftrace]cpu %d trace reset
+7[name:trace&][ftrace]all cpu trace reset
+7[name:trace&][ftrace]end reading trace file
+7[name:trace&][ftrace]start reading trace file
+#                                    | / _---=> hardirq/softirq
+#                            | / _---=> hardirq/softirq
+7[name:trace&][ftrace]set current_tracer to '%s'
+0Dumping ftrace buffer:
+0   (ftrace buffer empty)
+ftrace_preempt
+overwrite
+7[name:trace_events&][ftrace]event '%s' is %s
+7[name:trace_events&][ftrace]fail to %s event '%s'
+ftrace_event_field
+ftrace_event_file
+overrun
+"<-- %lx (%d) (start: %llx  end: %llx) over: %d", REC->func, REC->depth, REC->calltime, REC->rettime, REC->depth
+REMOVE_REQ
+recover
+softirq_entry
+softirq_exit
+softirq_raise
+6Capturing boot ftrace,Ignore tracing off.
+software
+Built %i zonelists in %s order, mobility grouping %s.  Total pages: %ld
+Movable
+GFP_HIGHUSER_MOVABLE
+GFP_MOVABLE
+pgalloc_movable
+pgrefill_movable
+pgsteal_kswapd_movable
+pgsteal_direct_movable
+pgscan_kswapd_movable
+pgscan_direct_movable
+Unmovable
+4%s exported in /proc is scheduled for removal
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/mm/pgtable-generic.c
+4Truncating oversized swap area, only using %luk out of %luk
+VFS: Busy inodes after unmount of %s. Self-destruct in 5 seconds.  Have a nice day...
+4VFS: moving negative dcache entry
+3[FDLEAK]OverAllocFDError(PID:%d fileName:%s Num:%d)
+3[FDLEAK]OverAllocFDError(PID:%d totalFDs:%d)
+3[FDLEAK][%d:%s]fd over RLIMIT_NOFILE:%ld
+moved
+leftover lock: dev=%u:%u ino=%lu type=%hhd flags=0x%x start=%lld end=%lld
+4Pid %d(%s) over core_pipe_limit
+Can't remove block (%u) from entry free list
+Can't move quota data block (%u) to free list
+4[name:proc&]Bits 55-60 of /proc/PID/pagemap entries are about to stop being page-shift some time soon. See the linux/Documentation/vm/pagemap.txt for details.
+%s: removing non-empty directory '%s/%s', leaking at least '%s'
+SigCgt:
+softirq %llu
+softirqs
+4kernfs: can not remove '%s', no directory
+lblock %lu mapped to illegal pblock (length %d)
+dev %d,%d ino %lu page_index %lu offset %u length %u
+dev %d,%d ino %lu flags %s len %u lblk %u goal %llu lleft %u lright %u pleft %llu pright %llu
+dev %d,%d ino %lu flags %s len %u block %llu lblk %u goal %llu lleft %u lright %u pleft %llu pright %llu
+length
+lleft
+pleft
+EXT4-fs (device %s): panic forced after error
+Ignoring removed %s option
+6[EXT4 FS bs=%lu, gc=%u, bpg=%lu, ipg=%lu, mo=%04x, mo2=%04x]
+ext4_check_descriptors: Block bitmap for group %u overlaps superblock
+ext4_check_descriptors: Inode bitmap for group %u overlaps superblock
+ext4_check_descriptors: Inode table for group %u overlaps superblock
+INFO: recovery required on readonly filesystem
+write access will be enabled during recovery
+required journal recovery suppressed and not mounted read-only
+recovery complete
+couldn't mount as ext2 due to feature incompatibilities
+couldn't mount as ext3 due to feature incompatibilities
+orlov
+norecovery
+blocks_count overflow
+Inode table (%llu-%llu) overlaps GDT table (%llu-%llu)
+resize would cause inodes_count overflow
+strange request: removal(2) %u-%u from %u:%u
+Allocating blocks %llu-%llu which overlap fs metadata
+MMP startup interrupted, failing mount
+4ES assertion failed when merging extents. The sum of lengths of es1 (%d) and es2 (%d) is bigger than allowed file size (%d)
+3JBD2: IO error %d recovering block %lu in log
+3JBD2: IO error %d recovering block %ld in log
+3JBD2: Invalid checksum recovering block %llu in log
+3JBD2: Out of memory during recovery.
+3JBD2: recovery pass %d ended at transaction %u, expected %u
+4JBD2: recovery failed
+4JBD2: %s recovery information on journal
+Couldn't remove the long name slots
+7ISO 9660 Extensions: Microsoft Joliet Level %d
+cruft
+overriderockperm
+5rock: directory entry would overflow storage
+6sdcardfs: removing %s
+remove_userid
+7[name:mt_fuse&][BLOCK_TAG] FUSEIO log buffer overflow
+removexattr
+skip recovering inline_dots inode (ino:%lu, pino:%u) in readonly mountpoint
+dev = (%d,%d), ino = %lu, pino = %lu, i_mode = 0x%hx, i_size = %lld, i_nlink = %u, i_blocks = %llu, i_advise = 0x%x
+,background_gc=%s
+gc_type
+gc_mode
+&sbi->gc_mutex
+Cannot recover all fsync data errno=%d
+Need to recover fsync data
+Try to recover %dth superblock, ret: %d
+Try to recover all the superblocks, ret: %d
+background gc thread has stopped
+Foreground GC
+Background GC
+&sbi->gc_thread->gc_wait_queue_head
+f2fs_gc-%u:%u
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/f2fs/gc.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/f2fs/recovery.c
+recover_data: ino = %lx (i_size: %s) recovered = %d, err = %d
+recover_inode: ino = %x, name = %s
+fs gc data:
+fs gc node:
+gc_urgent
+gc_idle
+gc_no_gc_sleep_time
+gc_max_sleep_time
+gc_min_sleep_time
+gc_urgent_sleep_time
+(OverProv:%d Resv:%d)]
+Utilization: %u%% (%u valid blocks, %u discard blocks)
+Utilization: %u%% (%u valid blocks)
+GC calls: %d (BG: %d)
+Try to move %d blocks (BG: %d)
+ftrace-%s
+%d Corrected bytes, %d unrecoverable blocks
+gc_delay
+security.capability
+6warning: `%s' has both setuid-root and effective capabilities. Therefore not raising all capabilities.
+sigchld
+dac_override
+remove_name
+capability2
+mac_override
+use_as_override
+3SELinux:  out of range capability %d
+policy_capabilities
+3SELinux: ebitmap: start bit %d comes after start bit %d
+6SELinux:  Context %s is not valid (left unmapped).
+7%s:  %d entries and %d/%d buckets used, longest chain length %d
+7SELinux: %s:  %d entries and %d/%d buckets used, longest chain length %d sum of chain length^2 %llu
+3SELinux: avtab: entry overflow
+6SELinux:  Android master kernel running Android M policy in compatibility mode.
+3SELinux: mls:  range overflow
+3SELinux:  policydb string length %d does not match expected length %Zu
+3SELinux:  unable to allocate memory for policydb string of length %d
+3SELinux: compatibility lookup failed for policy version %d
+6SELinux: the above unknown classes and permissions will be %s
+ capability=%d
+ ioctlcmd=%hx
+selftest     : %s
+biovec-1
+biovec-4
+biovec-16
+biovec-64
+biovec-128
+biovec-256
+3%s: over max size limit.
+3%s: over max segments limit.
+recoverable transport
+idr_remove called for id=%d which is not allocated.
+ida_remove called for id=%d which is not allocated.
+Please remove ignored %%n in '%s'
+percpu ref (%pf) <= 0 (%ld) after switching to atomic
+invalid literal/length code
+invalid stored block lengths
+too many length or distance symbols
+invalid code lengths set
+invalid bit length repeat
+invalid literal/lengths set
+Can not allocate SWIOTLB buffer earlier and can't now provide you with the DMA bounce buffer
+4software IO TLB: No low mem
+1software IO TLB [mem %#010llx-%#010llx] (%luMB) mapped at [%p-%p]
+4Warning: only able to allocate %ld MB for software IO TLB
+4[name:nlattr&]netlink: %d bytes leftover after parsing attributes in process `%s'.
+drive-strength
+output drive strength
+EINT5
+CONN_DSP_JDI
+CONN_DSP_JDO
+LCM_RST
+GPIO integer space overlap, cannot add chip
+REMOVING GPIOCHIP WITH GPIOS STILL REQUESTED
+      Display is GTF capable
+suspend_standby_microvolts
+suspend_disk_microvolts
+suspend_mem_microvolts
+max_microvolts
+min_microvolts
+regulator-min-microvolt
+regulator-max-microvolt
+regulator-microvolt-offset
+4%s: %d input overrun(s)
+%s is deprecated and scheduled for removal.
+dump-ftrace-buffer(z)
+Dump ftrace buffer
+Removing wrong port: %p != %p
+iomem_reg_shift
+got_bits %d still_needed_bits %d blocking_pool_entropy_left %d input_entropy_left %d
+got_bits %d nonblocking_pool_entropy_left %d input_entropy_left %d
+4random: negative entropy/overflow: pool %s count %d
+pool_left
+input_left
+Interrupts enabled after %pF
+driver_override
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/base/regmap/regcache.c
+3loop: Write error at byte offset %llu, length %i.
+3loop: Transfer error at byte offset %llu, length %i.
+remove_uid_range
+3emi_mpu_store command overflow.
+3Fail to create pgt scan sysfs file.
+3emi_wp_store command overflow.
+pgt_scan
+disp_ovl0
+PERI: GCE
+PERI: DEBUGTOP
+MT_CG_GCE_SW_CG
+MT_CG_DISP0_DISP_OVL0
+4[Power/gpufreq] [WARNING]bad argument!! please provide the maximum limited frequency
+4[Power/gpufreq] [WARNING]bad argument!! please provide the fixed frequency
+4[Power/gpufreq] [WARNING]bad argument!! please provide the maximum limited power
+4[Power/swap]DP:timer_left=%d, timer_left2=%d, delta=%d
+gce_req_mask
+gce_req_mask = %u
+1MT_SCHED: driver removed.
+3[UARTX]:E:%4d: Length mismatch! len=%d
+5  [UART%d]:%c: Overrun!!
+3  [UART%d]:%c:%4d: Overrun!!!
+ADC_GE_A_MASK:0x%x ADC_GE_A_SHIFT:0x%x
+ADC_OE_A_MASK:0x%x ADC_OE_A_SHIFT:0x%x
+ADC_CALI_EN_A_MASK:0x%x ADC_CALI_EN_A_SHIFT:0x%x
+ADC_RFTMP
+mediatek,lcm_voltage
+ADC_LCM_VOLTAGE
+4[AUXADC_AP] find node LCM_VOLTAGE:%d
+4[M4U] insert range overlap!: larb=%d,module=%s
+4[M4U] warning: insert tlb range is overlapped with previous ranges, current process=%s,!
+4[M4U] overlapped range id=%d, module=%s, mva_start=0x%x, mva_end=0x%x
+[M4U]m4u_reg overflow! %d>%d
+[M4U] errorm4u_reg overflow! %d>%d
+3[M4U] error:m4u_reg overflow! %d>%d
+3[M4U] iommu%d_%d F_INT_L2_PFH_DMA_FIFO_OVERFLOW(0x%x) int happens!!
+3[M4U] iommu%d_%d F_INT_L2_MISS_DMA_FIFO_OVERFLOW(0x%x) int happens!!
+&gM4uDomain.pgtable_mutex
+3[M4U] %s alloc_sgtable fail: va=0x%lx, size=0x%x, page_num=%d
+3[M4U] error to map sgtable
+m4u dump pgtable start ==============>
+m4u dump pgtable done ==============>
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/m4u/2.0/m4u_pgtable.c
+3[M4U] unaligned: iova 0x%x pa 0x%pa size 0x%x min_pagesz 0x%x
+4[M4U] mapping: iova 0x%x pa 0x%pa pgsize %lu
+pgtable
+3[%s]env data overflow, %s deleted
+<HWMSEN> %s %d :  length %d exceeds %d
+<HWMSEN> %s %d : exceed maximum length
+3[Gsensor] %s %d : i2c transfer error, tx_retry over 3
+3[Gsensor] %s %d : exceeds maximum filter length
+3[Gsensor] %s %d : %s:failed to issue software reset, error=%d
+3[Gsensor] %s %d : invalid content: '%s', length = %d
+3[Gsensor] %s %d :  length %d exceeds %d
+selftest
+[MIR3DA] Do softreset failed !
+3=== mt Scheduler Profiling ===
+ST/FT
+3[VCODEC][ERROR] mmap region error: Length(0x%lx), pfn(0x%lx)
+3[VCODEC][DeviceTree] KVA_VENC_BASE(0x%lx), KVA_VDEC_BASE(0x%lx), KVA_VDEC_GCON_BASE(0x%lx)
+3[ERROR] VCODEC_LOCKHW - ID %d  fail, someone locked HW over 30 times without timeout 0x%lx, %lx, 0x%lx, type:%d
+5mtk_rtc_common: rtc_mark_recovery
+3[PMIC] ******** MT pmic driver remove!! ********
+3[PMIC] [pmic_ftm_ioctl] Get_IS_EXT_BUCK_EXIST:%d
+3[PMIC] [pmic_ftm_ioctl] Get_IS_EXT_VBAT_BOOST_EXIST:%d
+3[PMIC] [pmic_ftm_ioctl] Get_IS_EXT_SWCHR_EXIST:%d
+3[PMIC] [pmic_ftm_ioctl] Get_IS_EXT_BUCK2_EXIST:%d
+3[PMIC] [pmic_ftm_ioctl] Error ID
+3[PMIC] [pmic_enable_interrupt] after [0x%x]=0x%x
+pmic_ftm
+3[PMIC] [pmic_ftm_init] Error: Can't Get Major number for pmic_ftm
+3[PMIC] [pmic_ftm_init] Error: cdev_add
+3[PMIC] [pmic_ftm_init] Done
+RG_INT_STATUS_OV
+[PWRAP] ERROR,line=%d @@@@Timer overflow! start%lld cur timer%lld
+[PWRAP] after MT6350 pwrap_write
+[PWRAP] ERROR,line=%d _pwrap_init_sistrobe Fail at PMIC %d, result = %x, leading_one:%d, tailing_one:%d
+5[MUSB]%s %d: usb recovery success
+, SoftConn
+5[MUSB]%s %d: %s: mem overrun, ep %d
+5[MUSB]%s %d: <== static silicon ep config
+5[MUSB]%s %d: add softconn
+5[MUSB]%s %d: musb_removed to 1
+5[MUSB]%s %d: musb_removed to 0
+5[MUSB]%s %d: queue to %s (%s), length=%d
+5[MUSB]%s %d: is_on=%d, softconnect=%d ++
+5[MUSB]%s %d: fifo size is %d after %d, fifo address is %d, epnum %d,hwepnum %d
+5[MUSB]%s %d: %s iso overrun on %p
+5[MUSB]%s %d: urb=%p,transfer_buf_length=0x%x
+5[MUSB]%s %d: %s - free qh after enqueue done!
+5[MUSB]%s %d: ** OVERFLOW %d into %d
+5[MUSB]%s %d: ep%d-%s pkt_sz %d, dma_addr 0x%x length %d, mode %d
+reserved_count(%d) over limit after parsing!
+zone-movable-cma-memory
+6freed_reserved_memory_count over limit %d
+6reserved_count: %d, over limit MAX_RESERVED_REGIONS : %d
+CMDQ_EVENT_DISP_OVL0_SOF
+CMDQ_EVENT_DISP_OVL1_SOF
+CMDQ_EVENT_DISP_2L_OVL1_SOF
+CMDQ_EVENT_DISP_2L_OVL0_SOF
+CMDQ_SYNC_DISP_2LOVL1_2NONSEC_END
+CMDQ_SYNC_DISP_2LOVL0_2NONSEC_END
+CMDQ_SYNC_DISP_OVL1_2NONSEC_END
+CMDQ_SYNC_DISP_OVL0_2NONSEC_END
+CMDQ_EVENT_DSI1_TO_GCE_MMCK4
+CMDQ_EVENT_DSI1_TO_GCE_MMCK3
+CMDQ_EVENT_DSI1_TO_GCE_MMCK2
+CMDQ_EVENT_DSI1_TO_GCE_MMCK1
+CMDQ_EVENT_DSI1_TO_GCE_MMCK0
+CMDQ_EVENT_DSI0_TO_GCE_MMCK4
+CMDQ_EVENT_DSI0_TO_GCE_MMCK3
+CMDQ_EVENT_DSI0_TO_GCE_MMCK2
+CMDQ_EVENT_DSI0_TO_GCE_MMCK1
+CMDQ_EVENT_DSI0_TO_GCE_MMCK0
+CMDQ_EVENT_DISP_2L_OVL1_EOF
+CMDQ_EVENT_DISP_2L_OVL0_EOF
+CMDQ_EVENT_DISP_OVL1_EOF
+CMDQ_EVENT_DISP_OVL0_EOF
+MOVE: 0x%08x to Reg%d
+3[CMDQ][AEE]Extend after EOC+END not support, task: 0x%p inst: 0x%08x:%08x size: %u
+error: Extend after EOC+END not support, task: 0x%p inst: 0x%08x:%08x size: %u
+3[CMDQ][ERR]PC stay at GCE end address, line: %u
+3[CMDQ][ERR]remove task from thread array, invalid param. THR[0x%p], task_slot[%d], newTaskState[%d]
+3[CMDQ][ERR]remove fail, task_slot[%d] on thread[%p] is NULL
+3[CMDQ][ERR]remove task, taskStatus err[%d]. THR[0x%p], task_slot[%d], targetTaskStaus[%d]
+&gCmdWaitQueue[index]
+&gCmdqThreadDispatchQueue
+3[CMDQ][ERR][SUSPEND] remove all active tasks
+5[CMDQ]IRQ: thread %d got interrupt, after reset, and IRQ flag is 0x%08x, cookie: %d
+3[CMDQ][ERR]remove task from thread array, invalid param. THR[0x%p], task_slot[%d]
+DISP_OVL
+MT_CG_INFRA_GCE: %d
+MT_CG_INFRA_GCE: %d
+DISP_OVL1
+VENC_GCON
+vdec_gcon_base
+venc_gcon_base
+gcpu_base
+gce_base
+disp_ovl0_sof
+disp_ovl1_sof
+disp_2l_ovl0_sof
+disp_2l_ovl1_sof
+disp_ovl0_frame_done
+disp_ovl1_frame_done
+disp_2l_ovl0_frame_done
+disp_2l_ovl1_frame_done
+dsi0_to_gce_mmck0
+dsi0_to_gce_mmck1
+dsi0_to_gce_mmck2
+dsi0_to_gce_mmck3
+dsi0_to_gce_mmck4
+dsi1_to_gce_mmck0
+dsi1_to_gce_mmck1
+dsi1_to_gce_mmck2
+dsi1_to_gce_mmck3
+dsi1_to_gce_mmck4
+soft reset wait
+DISP_OVL0_MOUT_EN
+DISP_OVL1_MOUT_EN
+5[CMDQ]monitor after delay: (%d)ms, start polling again
+5[CMDQ][TESTCASE]CONFIG: gCmdqTestSecure: %d, testType: %lld
+5[CMDQ]After lock and delay
+5[CMDQ]After delay
+5[CMDQ]After flush
+5[CMDQ]%s after sleep 5000 and send (%d)
+5[CMDQ]IRQ: After set user sw token
+5[CMDQ]after AUDIO_TOP_CONF0 = 0x%08x=====
+5[CMDQ][TESTCASE]CONFIG Not Found: gCmdqTestSecure: %d, testType: %lld
+INFRASYS_GCE
+mediatek,lcmbias
+3lcmbias_node get node failed
+3lcmbias_dev Not Support this Device!
+Cannot find  lcmbias pinctrl!
+lcm_rst_high
+lcm_rst_low
+[KERNEL]axs15209c_ctc----sgm3804----lcm_suspend----
+AXS15209C ctc lcm_init
+3[DISP]plcm is null
+3[DISP]lcm handle is null
+3[DISP]_convert_disp_input_to_ovl, src->src_phy_addr=0x%08lx
+[Primary Recovery] signal
+lcm index = %d
+3[DISP]lcm_params is null!
+[ESD]ESD recovery begin
+[ESD]esd recovery but primary display path is slept??
+[ESD]primary display path is busy after stop
+[POWER]lcm suspend[begin]
+[POWER]lcm suspend[end]
+[ESD]lcm force init[begin]
+[ESD]lcm force init[end]
+[ESD]ESD recovery end
+LCM Resolution will be changed, original: %dx%d, now: %dx%d
+dpmgr create ovl memout path SUCCESS(%p)
+lcm not connect, use fake vsync
+[primary_display_recovery_thread]
+[Primary Recovery] begin ret %d
+[Primary Recovery]stop ESD check firstly
+[Primary Recovery]stop cmdq trigger loop
+[Primary Recovery]stop path
+[Primary Recovery] path reset
+[Primary Recovery] path start
+[Primary Recovery]start cmdq trigger loop
+[Primary Recovery] can not recovery path in suspend
+[Primary Recovery]restart ESD check at end
+[Primary Recovery]  end
+&(pgc->capture_lock)
+&(pgc->lock)
+3[DISP]disp_lcm_probe returns null
+disp_lcm_probe SUCCESS
+3[DISP]get lcm params FAILED
+WARNING!!!!!! FORCE NO LCM MODE!!!
+force init lcm due to stage %s
+display_recovery
+&primary_recovery_task_wq
+|LCM Driver=[%s]
+lcm_fps=%d
+ovl2mem_path_handle=%p
+[POWER]lcm resume[begin]
+[POWER]lcm resume[end]
+3[DISP]fail to remove memout out
+[BL]primary display path is busy after stop
+3[DISP]lcm_param is null
+primary capture: Flush remove memout
+3[DISP]disp ovl status error!! stat=0x%x, rdma stat=0x%x
+[disp ovl status error]stop ESD check firstly
+3[DISP][Primary Recovery] RDMA has been underflow and OVL status error
+OVL0_MOUT:
+ATA_LCM, primary display path is already sleep, skip
+[ATA_LCM]primary display path stop[begin]
+[ATA_LCM]primary display path stop[end]
+3[DISP][Pmaster]Panel_Master: primary display path is slept??
+[ESD]esd check fail, will do esd recovery
+[ESD]esd recovery try:%d
+[ESD]esd recovery success
+[ESD]after esd recovery, esd check still fail
+3[DISP][ESD]after esd recovery %d times, esd check still fail, disable esd check
+DISP_GetLCMId:%s
+Lcm:%s
+3[DISP]WARNING, invalid lcm handle: %p
+3[DISP]WARNING, invalid lcm handle:%p
+[LCM], name: %s
+[LCM] resolution: %d x %d
+[LCM] physical size: %d x %d
+[LCM] interface: DSI0
+[LCM] interface: DSI1
+[LCM] interface: DPI0
+[LCM] interface: DPI1
+[LCM] interface: DBI0
+[LCM] interface: unknown
+[LCM] Type: DBI
+[LCM] Type: DSI
+[LCM] Type: DPI
+[LCM] TYPE: unknown
+[LCM] DSI Mode: CMD_MODE
+[LCM] DSI Mode: SYNC_PULSE_VDO_MODE
+[LCM] DSI Mode: SYNC_EVENT_VDO_MODE
+[LCM] DSI Mode: BURST_VDO_MODE
+[LCM] DSI Mode: Unknown
+[LCM] LANE_NUM: %d,data_format
+[LCM] vact: %u, vbp: %u, vfp: %u, vact_line: %u, hact: %u, hbp: %u, hfp: %u, hblank: %u
+[LCM] pll_select: %d, pll_div1: %d, pll_div2: %d, fbk_div: %d,fbk_sel: %d, rg_bir: %d
+[LCM] rg_bic: %d, rg_bp: %d, PLL_CLOCK: %d, dsi_clock: %d, ssc_range: %d,
+ssc_disable: %d, compatibility_for_nvk: %d, cont_clock: %d
+[LCM] lcm_ext_te_enable: %d, noncont_clock: %d, noncont_clock_period: %d
+plcm_name=%s
+3[DISP]no lcm driver defined in linux kernel driver
+LCM not init
+3[DISP]FATAL ERROR!!!LCM Driver defined in kernel(%s) is different with LK(%s)
+3[DISP]FATAL ERROR: can't found lcm driver:%s in linux kernel driver
+3[DISP]FATAL ERROR!!!No LCM Driver defined
+3[DISP]FATAL ERROR!!!kzalloc plcm and plcm->params failed
+3[DISP]the specific LCM Interface [%d] didn't define any lcm driver
+3[DISP]FATAL ERROR, lcm_drv->esd_check is null
+3[DISP]lcm_drv is null
+3[DISP]FATAL ERROR, lcm_drv->suspend is null
+3[DISP]FATAL ERROR, lcm_drv->resume is null
+3[DISP]FATAL ERROR, lcm_drv->set_backlight is null
+lcm init power()
+lcm init()
+3[DISP]FATAL ERROR, lcm_drv->init is null
+3[DISP]FATAL ERROR, lcm_drv->ata_check is null
+3[DISP] ERROR, Not enable switch in lcm_get_params function
+3[DISP]FATAL ERROR, lcm_drv->switch_mode is null
+3[DISP]FATAL ERROR, lcm is cmd mode lcm_drv->update is null
+3[DISP]input: plcm is null
+3[DISP]mmap size range over flow!!
+3[DISP]display drvier: get lcm index failed
+ovl2mem_callback(%x), current tick=%d, release tick: %d
+ovl2mem is already slept
+ovl2mem_input_config done
+3[DISP]ovl2mem_output_config dpmgr_handle is NULL
+ovl2mem_trigger do not trigger
+ovl2mem_trigger done %d
+ovl2mem_wait_done loop %d, trigger tick:%d, release tick:%d
+ovl2mem_deinit done
+After set (%s) is (%d)
+DISP_HELPER_OPTION_FAKE_LCM_X
+DISP_HELPER_OPTION_FAKE_LCM_Y
+DISP_HELPER_OPTION_FAKE_LCM_WIDTH
+DISP_HELPER_OPTION_FAKE_LCM_HEIGHT
+DISP_HELPER_OPTION_OVL_WARM_RESET
+DISP_HELPER_OPTION_NO_LCM_FOR_LOW_POWER_MEASUREMENT
+3[DISP]ovl_intput_fmt unknown fmt=%d, swap=%d
+=OVL%d_FLOW_CONTROL_DEBUG=:
+ovl_running:%d,ovl_start:%d,ovl_clr:%d,reg_update:%d,ovl_upd_reg:%d
+ovl%d_fms_state:
+ovl_fsm_unknown
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/video/mt6580/ddp_ovl.c
+3[DISP]ovl%d_reset timeout!
+ovl%d_resume
+restore %d cnt registers on ovl %d
+ovl%d_suspend
+3[DISP]unknown ovl input format = %d
+3[DISP]unknown ovl input format is %d
+ovl%d_clock_on
+ovl%d_clock_off
+error, ovl_io unknown module=%d
+3[DISP]ovl_roi,exceed OVL max size, w=%d, h=%d
+3[DISP]ovl_fmt_convert fmt=%d, ovl_fmt=%d
+3[DISP]unknown input ovl format is %d
+ovl%d, layer=%d, source=%s, off(x=%d, y=%d), dst(%d, %d, %d, %d), pitch=%d, fmt=%s, addr=%lx, keyEn=%d, key=%d, aen=%d, alpha=%d, sur_aen=%d,sur_alpha=0x%x, constant_color=0x%x, yuv_range=%d
+3[DISP]ovl layer %d parameter invalidate, addr=%lu, w=%d, h=%d
+3[DISP]ovl_input_fmt fmt=%d, swap=%d
+ovl_get_info:layer%d,en %d,w %d,h %d,bpp %d,addr %lu
+== DISP OVL%d REGS ==
+OVL:0x000=0x%08x,0x004=0x%08x,0x008=0x%08x,0x00c=0x%08x
+OVL:0x010=0x%08x,0x014=0x%08x,0x020=0x%08x,0x024=0x%08x
+OVL:0x028=0x%08x,0x02c=0x%08x
+OVL:0x030=0x%08x,0x034=0x%08x,0x038=0x%08x,0x03c=0x%08x
+OVL:0xf40=0x%08x,0x044=0x%08x,0x0c0=0x%08x,0x0c8=0x%08x,0x0d0=0x%08x
+OVL:0x1e0=0x%08x,0x24c=0x%08x
+OVL:0x050=0x%08x,0x054=0x%08x,0x058=0x%08x,0x05c=0x%08x
+OVL:0xf60=0x%08x,0x064=0x%08x,0x0e0=0x%08x,0x0e8=0x%08x,0x0f0=0x%08x
+OVL:0x1e4=0x%08x,0x250=0x%08x
+OVL:0x070=0x%08x,0x074=0x%08x,0x078=0x%08x,0x07c=0x%08x
+OVL:0xf80=0x%08x,0x084=0x%08x,0x100=0x%08x,0x110=0x%08x
+OVL:0x1e8=0x%08x,0x254=0x%08x
+OVL:0x090=0x%08x,0x094=0x%08x,0x098=0x%08x,0x09c=0x%08x
+OVL:0xfa0=0x%08x,0x0a4=0x%08x,0x120=0x%08x,0x130=0x%08x
+OVL:0x1ec=0x%08x,0x258=0x%08x
+OVL:0x1d4=0x%08x,0x200=0x%08x,0x240=0x%08x,0x244=0x%08x
+==DISP OVL%d ANALYSIS==
+ovl_en=%d,layer_enable(%d,%d,%d,%d),bg(w=%d, h=%d),cur_pos(x=%d,y=%d),layer_hit(%d,%d,%d,%d)
+ovl rdma%d status:(en %d)
+3[DISP]RDMA input overflow, w=%d, h=%d, max_w=%d, max_h=%d
+soft_reset_wait
+soft_reset_done
+[DDPDSI] rg_bic: %d, rg_bp: %d, PLL_CLOCK: %d, dsi_clock: %d, ssc_range: %d, ssc_disable: %d, compatibility_for_nvk: %d, cont_clock: %d
+[DDPDSI] lcm_ext_te_enable: %d, noncont_clock: %d, noncont_clock_period: %d
+ovl1_mout2_mm_ovl0
+ovl1_mout1_mm_wdma1
+ovl1_mout0_mm_rdma1
+ovl1_mm_ovl1_mout
+ovl0_mout1_mm_wdma0_sin0
+ovl0_mout0_mm_color_sin1
+ovl0_mm_ovl0_mout
+(0x30)OVL0_MOUT_EN     =0x%x
+(0x150)MM_LCM_RST_B    =0x%x
+ovl0,
+ovl1,
+scenario %s acquire mutex %d, left mutex 0x%x!
+remove module %s
+release mutex %d, left mutex 0x%x!
+3[DISP]dpmgr_path_remove_memout error, wdma is not in scenario=%s
+path config ovl %d, rdma %d, wdma %d, dst %d on handle %p scenario %s
+path set lcm drv handle %p
+3[DISP]wait %s interrupt by other timeleft %d on scenario %s
+received event %s timeleft %d on scenario %s
+ovl0
+IRQ: OVL%d frame done!
+3[DISP]IRQ: OVL%d frame underrun! cnt=%d
+IRQ: OVL%d sw reset done
+IRQ: OVL%d hw reset done
+3[DISP]IRQ: OVL%d-L0 not complete until EOF!
+3[DISP]IRQ: OVL%d-L1 not complete until EOF!
+3[DISP]IRQ: OVL%d-L2 not complete until EOF!
+3[DISP]IRQ: OVL%d-L3 not complete until EOF!
+ovl0
+3[DISP]ddp_mmp_ovl_layer(), unknown fmt=0x%x,dump raw
+3[DISP]ddp_mmp_ovl_layer(),fail to dump rgb(0x%x)
+3[DISP]ddp_mmp_ovl_layer(),fail to dump raw(0x%x)
+OVL%dL%d_InFps
+OVL%dL%d_Fmt_%s
+OVL%dL%d_Width
+OVL%dL%d_Height
+OVL%d_OutFps
+hw_lcm_info
+fb_pa=0x%08lx, var->yoffset=0x%08x,fbi->fix.line_length=0x%08x
+[DT][videolfb] lcmfound=%d, fps=%d, fb_base=%p, vram=%d, lcmname=%s
+atag,videolfb-islcmfound
+atag,videolfb-islcm_inited
+atag,videolfb-lcmname
+%s: error to get lcmname size=%ld
+[mtkfb] not found LCM driver, return NULL
+3[DISP]ATA LCM failed
+ATA LCM passed
+[FB] error, set overlay in early suspend ,skip!
+3[DISP]MTKFB_SET_OVERLAY_LAYER, layer_id invalid=%d
+factory mode: lcm auto test
+ESD Recovery
+OVL0-DSI
+OVL1-MHL
+OVL1-SMS
+lcm_type:
+3Rwang get lcm_bl_percent=%d
+GPU Utilization fp: %p
+gpu_utilization
+[GED_K] Timer removed
+Mali block allocator create for region starting at 0x%08X length 0x%08X
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/linux/mali_ukk_soft_job.c
+NULL pointer session->soft_job_system
+Invalid soft job type specified
+Mali Soft Job: failed to put job id
+Profiling not supported
+mali_remove() called for platform device %s
+utilization_gp_pp
+utilization_gp
+utilization_pp
+Mali GP: The hard reset loop didn't work, unable to recover
+Mali PP: The hard reset loop didn't work, unable to recover
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/common/mali_soft_job.c
+Mali Soft Job: destroying soft job %u (0x%08X)
+Mali Soft Job: soft system %p lock taken
+ASSERT failed: MALI_SOFT_JOB_INVALID_ID != job->id
+Mali Soft Job: releasing soft system %p lock
+ASSERT failed: (MALI_SOFT_JOB_TYPE_USER_SIGNALED == type) || (MALI_SOFT_JOB_TYPE_SELF_SIGNALED == type)
+Mali Soft Job: failed to allocate notification
+Mali Soft Job: system alloc job failed.
+ASSERT failed: MALI_SOFT_JOB_STATE_ALLOCATED == job->state
+Mali Soft Job: starting soft job %u (0x%08X)
+Mali Soft Job: invalid soft job id %u
+Mali Soft Job: soft job %u (0x%08X) was timed out
+ASSERT failed: MALI_SOFT_JOB_STATE_STARTED == job->state
+Mali Soft Job: signaling soft job %u (0x%08X)
+Mali Soft Job: Timeline activation for soft job %u (0x%08X).
+Mali Soft Job: Soft job %u (0x%08X) activated while session is aborting.
+Mali Soft Job: Timeline timeout for soft job %u (0x%08X).
+ASSERT failed: MALI_SOFT_JOB_STATE_STARTED == job->state || MALI_SOFT_JOB_STATE_SIGNALED == job->state
+ASSERT failed: MALI_SOFT_JOB_STATE_SIGNALED == job->state
+Mali Soft Job: Timeout on soft job %u (0x%08X) in signaled state.
+Mali Soft Job: Aborting soft job system for session 0x%08X.
+ASSERT failed: MALI_SOFT_JOB_STATE_STARTED == job->state || MALI_SOFT_JOB_STATE_TIMED_OUT == job->state
+Mali Soft Job: Aborting unsignaled soft job %u (0x%08X).
+Mali Soft Job: Aborting timed out soft job %u (0x%08X).
+ASSERT failed: MALI_SOFT_JOB_STATE_SIGNALED == job->state || MALI_SOFT_JOB_STATE_TIMED_OUT == job->state
+Executor: Aborting job %u, no new heap provided
+Removing group %s from virtual group %s
+Mali group: Executing recovery reset due to job failure
+Mali group: Executing recovery reset due to reset failure
+Mali DLBU: Removing core[%d] New mask= 0x%02x
+Mali GPU Utilization: Utilization handler installed
+Mali GPU Utilization: No platform utilization handler installed
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/common/mali_kernel_utilization.c
+NULL pointer mali_utilization_callback
+last_utilization_gpu = %d
+last_utilization_gp = %d
+last_utilization_pp = %d
+ASSERT failed: _mali_osk_lock_get_owner((_mali_osk_lock_debug_t *)utilization_data_lock) == _mali_osk_get_tid()
+ASSERT failed: MALI_TIMELINE_SOFT == timeline->id
+ASSERT failed: MALI_TIMELINE_TRACKER_SOFT == tracker->type
+Mali Timeline: Soft job timer callback without a waiting tracker.
+mali-%u-soft
+WaitSOFT
+ 15:56:16 CST BUILD=debug TARGET_PLATFORM= MALI_PLATFORM= KDIR= OS_MEMORY_KERNEL_BUFFER_SIZE_IN_MB=16 USING_UMP= USING_PROFILING= USING_INTERNAL_PROFILING= USING_GPU_UTILIZATION=1 USING_DVFS= USING_DMA_BUF_FENCE =  MALI_UPPER_HALF_SCHEDULING=1
+%s GPU utilization=%d
+The dma buf size isn't equal to the total scatterlists' dma length.
+NULL pointer secure_mem->sgt
+NULL pointer mem->sgt
+Utilization: (%3d, %3d, %3d), cores enabled: %d/%d
+disp_ovl1
+camera-isp
+3ISPmmap range error : length(0x%x),ISP_REG_RANGE(0x%x)!
+3ISPmmap range error : length(0x%x),SENINF_REG_RANGE(0x%x)!
+3ISPmmap range error : length(0x%x),PLL_RANGE(0x%x)!
+3ISPmmap range error : length(0x%x),MIPIRX_CONFIG_RANGE(0x%x)!
+3ISPmmap range error : length(0x%x),MIPIRX_ANALOG_RANGE(0x%x)!
+3ISPmmap range error : length(0x%x),GPIO_RANGE(0x%x)!
+3ISPmmap range error : length(0x%x),EFUSE_RANGE(0x%x)!
+dma sof after done %d_%d
+3ISPlog str over flow(%d)
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/cameraisp/src/mt6580/camera_isp.c
+SENIF FIFO overrun/underrun
+[rtbc] WCNT(%d)>start+2(%d),shiftT(%d)
+[rtbc] WCNT(%d)<start+2(%d),shiftT(%d)
+3ISPerr shiftT = (%d,%d ,%d)
+3ISP[rtbc]dma(%d),PA(0x%x),over enque
+3ISP[rtbc]error:dma(%d),PA(0x%x),over enque
+CAMERA_SENSOR
+camera-pipemgr
+3CamPipeMgr[%s]ERR(%5d):RegCharDev fail:Ret(%ld)
+4SYSRAM[%s]WRN(%5d):pVma->vm_pgoff(0x%lx),phy(0x%lx),pVmapVma->vm_start(0x%lx),pVma->vm_end(0x%lx),length(0x%lx)
+3SYSRAM[%s]ERR(%5d):mmap range error : vm_start(0x%lx),vm_end(0x%lx),length(0x%lx),pfn(0x%lx)!
+camera-sysram
+kd_camera_hw_bus2
+3[kd_sensorlist][%s] [CAMERA_HW] register char device failed!
+hw_info_debug_read: actived_camera_name[%d]=%s, sub_actived_camera_name[%d]=%s
+3[kd_sensorlist][%s] subsys_camera_info_read %s
+3[kd_sensorlist][%s] failed to register CAMERA_HW driver
+driver/camera_info
+driver/camera_infos
+hw_camera_info
+Cannot find camera pinctrl!
+kd_camera_hw
+3[kd_sensorlist][%s] [CAMERA SENSOR] I2C send failed, addr = 0x%x, data = 0x%x !!
+3[kd_sensorlist][%s] [CAMERA SENSOR] I2C read failed!!
+3[kd_sensorlist][%s] [CAMERA SENSOR] I2C send failed!!, Addr = 0x%x
+3[kd_sensorlist][%s] [CAMERA SENSOR] exceed 2 bytes
+3[kd_sensorlist][%s] [CAMERA SENSOR] I2C send failed addr = 0x%x, data = 0x%x !!
+3[kd_sensorlist][%s] [CAMERA_HW]ERROR: copy from user fail
+imgsensor:actived_camera_name=%s,sensorID:%d
+imgsensor:sub_actived_camera_name=sub :%s,sensorID:%d
+mediatek,camera_hw
+3[kd_sensorlist][%s] regulator get cust camera node failed!
+ov8865mipiraw
+ov8865 power on
+ov5695mipiraw
+ov5695 power on
+ov8835mipiraw
+ov8835 power on
+ov5648mipi
+ov5645_mipi_raw
+imx145_mipi_raw
+IMX145 power on
+imx314mipiraw
+IMX314 power on
+imx135mipiraw
+imx135 power on
+imx219mipiraw
+imx219 power on
+imx214mipiraw
+imx214 power on
+s5k3m2mipiraw
+S5K3M2 power on
+s5k3p3sxmipiraw
+S5K3P3SX power on
+s5k4h5yamipiraw
+S5K4H5YA power on
+s5k3h2yxmipiraw
+S5K3H2YX power on
+s5k3h7ymipiraw
+S5K3H7Y power on
+s5k5e2yamipiraw
+S5K5E2YA power on
+s5k5e9mipiraw
+S5K5E9 power on
+ov9760mipiraw
+ov9760 power on
+imx190mipiraw
+IMX190 power on
+gc5025mipiraw
+GC5025 power on
+gc2355mipiraw
+gc2365mipiraw
+GC2365 power on in.
+ov5670mipiraw
+ov5675mipiraw
+ov2680mipiraw
+ov9762mipiraw
+gc2235mipiraw
+GC2235 power on in.
+gc2385mipiraw
+gc2385 power on in.
+gc2375mipiraw
+gc2375amipiraw
+gc5005submipiraw
+gc5005SUB power on in.
+gc2355submipiraw
+gc2355SUB power on in.
+gc2385submipiraw
+gc2385SUB power on in.
+gc2235submipiraw
+GC2235SUB power on in.
+gc2365submipiraw
+GC2365SUB power on in.
+gc2375submipiraw
+GC2375SUB power on in.
+gc5025submipiraw
+GC5025SUB power on in.
+gc2755submipiraw
+GC2755SUB power on in.
+ov9762submipiraw
+ov9760submipiraw
+ov5670submipiraw
+gc0409mipi_raw
+gc0409 power on in.
+gc0310mipiyuv
+ov8865 power off
+ov5695 power off
+ov8835 power off
+IMX135 power off
+IMX219 power off
+IMX214 power off
+S5K3M2 power off
+S5K3P3SX power off
+S5K4H5YA power off
+S5K3H2YX power off
+S5K3H7Y power off
+S5K5E2YA power off
+S5K5E9 power off
+ov9760 power off
+IMX145 power off
+IMX314 power off
+IMX190 power off
+GC5025 power off
+GC2365 power off .
+GC2235 power off .
+gc5005sub power off .
+GC2235SUB power off .
+gc2355sub power off .
+gc2385sub power off .
+GC2365SUB power off .
+GC2375SUB power off .
+GC5025SUB power off .
+GC2755SUB power off .
+gc0409 sub power off .
+GC2355_camera_sensor[%s] E
+GC2355_camera_sensor[%s] scenario_id = %d
+GC2355_camera_sensor[%s] GC2355,MIPI 2LANE
+GC2355_camera_sensor[%s] i2c write id: 0x%x, sensor id: 0x%x
+GC2355_camera_sensor[%s] Read sensor id fail, write id: 0x%x, id: 0x%x
+GC2355_camera_sensor[%s] E
+GC2355_camera_sensor[%s] E!
+GC2355_camera_sensor[%s] Warning: current_fps %d fps is not support, so use cap's setting: %d fps!
+GC2355_camera_sensor[%s] E! currefps:%d
+GC2355_camera_sensor[%s] Error ScenarioId setting
+GC2355_camera_sensor[%s] feature_id = %d
+GC2355_camera_sensor[%s] Exit! shutter =%d, framelength =%d
+GC2355_camera_sensor[%s] framerate = %d
+GC2355_camera_sensor[%s] enable = %d, framerate = %d
+GC2355_camera_sensor[%s] scenario_id = %d, framerate = %d
+GC2355_camera_sensor[%s] error scenario_id = %d, we use preview scenario
+GC2355_camera_sensor[%s] enable: %d
+GC2355_camera_sensor[%s] current fps :%d
+GC2355_camera_sensor[%s] ihdr enable :%d
+GC2355_camera_sensor[%s] SENSOR_FEATURE_GET_CROP_INFO scenarioId:%d
+GC2355_camera_sensor[%s] SENSOR_SET_SENSOR_IHDR LE=%d, SE=%d, Gain=%d
+GC2355_camera_sensor[%s] le:0x%x, se:0x%x, gain:0x%x
+s5k3p3sx i2c write id: 0x%x, sensor id: 0x%x
+s5k3p3sx Read sensor id fail, write id: 0x%x, id: 0x%x
+mediatek,CAMERA_MAIN_AF
+6MAINAF [%s] Camera Power enable
+6LC898212XDAF_DRV [%s] set I2C failed when moving the motor
+6212XD_TVC700_DRV [%s] moveAF : %d - %04x
+6212XD_TVC700_DRV [%s] set I2C failed when moving the motor
+6BU63169AF_DRV [%s] Camera Power enable
+6BU63169AF_DRV [%s] Camera Power disable
+6BU63169AF_DRV [%s] set I2C failed when moving the motor
+6LC898212XDAF_F_DRV [%s] set I2C failed when moving the motor
+kd_camera_flashlight
+ulftg
+ft_inf_ver:1
+ft_info
+LD_ERR_PAD_OVER_TWO_REGION
+4[tty] (%d)writeable: read=%d,write=%d,length=%d,size=%d
+4[tty] (%d)write: length=%d,size=%d,write=%d,data_be_write=%d,count=%d
+4[fs ] (%d)ccci_fs_mmap: memory require over ccci_fs_smem size
+4[rpc] (%d)over flow, pdata = %p, idx = 0x%08X, max = %p
+4[/net] (%d)CCMNI%d num_complete_pkt=%d after pfp_unframe
+4[/net] (%d)CCMNI%d_receive[After]: consume=%d
+4[/net] (%d)CCMNI%d_receive[After]: consumed=%d
+4[rpc] (%d)RPC_GET_SECRO_OP: md request length is larger than rpc memory: (%d, %d)
+4[rpc] (%d)RPC_GET_SECRO_OP: AP mis-match MD request length: (%d, %d)
+4[com] (0)<rpc>RPC_GET_SECRO_OP: save MD SECRO length: (%d)
+4[com] (0)<rpc>RPC_GET_SECRO_OP: restore MD SECRO length: (%d)
+MTK-BTIF[I]%s:DO BTIF REMOVE
+MTK-BTIF[D]%s:length:%d
+MTK-BTIF[E]%s(%d):no empty space left for write, (%d)ava_len, (%d)to write
+MTK-BTIF[E]%s(%d):BTIF overrun, (%d)empty, (%d)needed
+MTK-BTIF-EXP[E]%s(%d):invalid buffer length(%d)
+MTK-BTIF-EXP[I]%s:mtk_wcn_btif_write left loop:%d, i_ret:%d
+MTK-BTIF-DMA[D]%s:superious IRQ occurs, vff_len(%d), valid_size(%d), left_len(%d)
+MTK-BTIF-DMA[E]%s(%d):length to send:(%d) < length available(%d), abnormal!!!---!!!
+MTK-BTIF-DMA[I]%s:LEFT_SIZE:0x%x
+MTK-BTIF[D]%s:BTIF tx size %d done, left:%d
+3read entry = %d, valid = 0x%x, tid = 0x%x, read id = 0x%x, address = 0x%x, data_size = 0x%x, burst_length = 0x%x
+3write entry = %d, valid = 0x%x, tid = 0x%x, write id = 0x%x, address = 0x%x, data_size = 0x%x, burst_length = 0x%x
+write entry = %d, valid = 0x%x, tid = 0x%x, read id = 0x%x, address = 0x%x, data_size = 0x%x, burst_length = 0x%x
+3Length:0x%x,
+ppm_min_pwr_bgt: %d
+3THERMAL/PLATFORMcpu %d over limit %d
+4[CPU_Thermal]blocked in cpu limit %u over 100ms
+OVER_CRITICAL_L
+RFTEMP_2G_MD1
+RFTEMP_3G_MD1
+RFTEMP_2G_MD2
+RFTEMP_3G_MD2
+driver/thermal/clabcct_lcmoff
+chrlmt_lcmoff_policy_enable %d
+abcct_lcmoff_cur_bat_chr_curr_limit %d
+abcct_lcmoff_target_temp %ld
+abcct_lcmoff_kp %ld
+abcct_lcmoff_ki %ld
+abcct_lcmoff_kd %ld
+abcct_lcmoff_max_bat_chr_curr_limit %d
+abcct_lcmoff_min_bat_chr_curr_limit %d
+4[thermal/cooler/bcct]%s clabcct_lcmoff creation failed
+g_degc_cali:%d
+cpu %d preempt=%lx, softirq=%lx, hardirq=%lx
+UserSP_start:%x,Length:%x,End:%x
+5%s: data oversize(%zx>%x@%x)
+5mrdump: MINI_NR_SECTION overflow!
+3%s(), error, trial left %d, read_count %zd
+4%s(), error, timeout, condition is false, trial left %d, read_count %zd
+3%s(), error, trial left %d, written_size %d
+4%s(), error, timeout, condition is false, trial left %d, written_size %d
+4USB_BOOST, <%s(), %d> ERROR, over range !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INITIATE_RECOVERY
+RELEASE_RECOVERY
+DID_SOFT_ERROR
+DRIVER_SOFT
+RECOVER_BUFFERED_DATA
+ALLOW_MEDIUM_REMOVAL
+VARIABLE_LENGTH_CMD
+MOVE_MEDIUM
+Warning! Received an indication that the LUN reached a thin provisioning soft threshold.
+Device offlined - not ready after error recovery
+SDEV_UA=THIN_PROVISIONING_SOFT_THRESHOLD_REACHED
+evt_soft_threshold_reached
+prot_capabilities
+cancel/recovery
+deleted/recovery
+PHILIPS
+AFT PRO
+IPUBJD
+scsi remove-single-device
+removable
+SCSI disk (sd) name length exceeded.
+provisioning_mode
+thin_provisioning
+write back, no read (daft)
+5Removing MTD device #%d (%s) with use count %d
+ecc_strength
+5Moving partition %d: 0x%012llx -> 0x%012llx
+queue remove failed
+Bufferless transfer has length %u
+xfer len is invalid over fifo size
+3[SPI-UT]: [%s]:[%d]spi_test_remove.
+3[SPI-UT]: [%s]:[%d]Message:0x%p,error %d,actual xfer length is:%d
+3PPP: removing module but units remain!
+4%s[%d]: unknown key length
+3%s: bogus descriptor, type %d length %d
+no mem to re-read configs after reset
+over-current condition
+%dmA is over %umA budget!
+%dmA over power budget!
+remove, state %x
+language id specifier not provided by device, defaulting to English
+remove_id
+invalid descriptor for config index %d: type = 0x%X, length = %d
+config %d has an invalid descriptor of length %d, skipping remainder of the config
+config %d has an invalid interface descriptor of length %d, skipping
+config %d has an invalid interface association descriptor of length %d, skipping
+config %d interface %d altsetting %d has an invalid endpoint descriptor of length %d, skipping
+bLength
+userurb %pK, ep%d %s-%s, length %u
+userurb %pK, ep%d %s-%s, actual_length %u status %d
+ep%d %s-%s, length %u, timeout %d
+ep%d %s-%s, actual_length %u, status %d
+control urb: bRequestType=%02x bRequest=%02x wValue=%04x wIndex=%04x wLength=%04x
+ NEED_OVERRIDE
+300_CAMERA
+LS-120 Camera
+DMC-LCx Camera
+D-LUX Camera
+400_CAMERA
+MicroVault Flash Drive
+Silicon Media R/W
+Digital Camera EX-20 DSC
+QV DigitalCamera
+EX-N1 DigitalCamera
+JD 5200 z3
+Keil Software, Inc.
+CameraMate (DPCM_USB)
+no device provided for PHY
+%s: Delayed status not supported for w_length != 0
+[COM]composite_setup: w_value=0x%x, w_length=0x%x
+userspace failed to provide iSerialNumber
+soft-connect without a gadget driver
+soft_connect
+3input: input_set_capability: unknown type %u (code %u)
+mediatek,kpd-hw-recovery-key
+6mtk-tpd: unable to register touch panel driver.
+6mtk-tpd: MediaTek touch panel driver exit
+6mtk-tpd: [mtk-tpd]Generic touch panel driver
+6mtk-tpd: Cap touch panel driver
+[tpd_em_log] overlay !!!!!
+alarm rollover not handled
+SCL is stuck low, exit recovery
+%s: Deleting device %s at 0x%02hx
+Invalid %d-bit I2C address 0x%02hx
+%s: Instantiated device %s at 0x%02hx
+Failed to create compatibility class link
+No recover_bus() found, not using recovery
+Invalid SCL gpio, not using recovery
+No {get|set}_gpio() found, not using recovery
+%s detection function provided no name for 0x%x
+Overheat
+Over voltage
+vbat_remove_detection
+3******** battery driver remove!! ********
+3[BATTERY] Battery Over Temperature !!
+3AvgVbat=(%d,%d),AvgI=(%d,%d),VChr=%d,AvgT=(%d,%d),SOC=(%d,%d),UI_SOC=%d,ZCV=%d,CHR_Type=%d bcct:%d:%d I:%d Ibat:%d
+3[BATTERY_TestMode] BATTERY_NOTIFY_CASE_0005_TOTAL_CHARGINGTIME
+3[do_chrdet_int_task] battery thread not ready, will do after bettery init.
+3[battery_meter_initilized] uisoc=soc=%d.
+3[BATTERY]Charger over voltage !!
+3[BATTERY] Charging Over Time.
+jeita_temp_above_pos_60_cv_voltage
+3[BATTERY] set_bat_charging_current_limit over usb spec(%d,%d)
+3[BATTERY] FTM charging : %d
+1MTK_WDT_LENGTH:0x%x
+kdmremove
+4device-mapper: core: %s: Forcibly removing mapped_device still in use! (%d users)
+3device-mapper: table: %s: zero-length target
+Target length not divisible by number of stripes
+Target length not divisible by chunk size
+4device-mapper: ioctl: remove_all left %d open device(s)
+4device-mapper: ioctl: device has been removed from the dev hash table.
+@cancel_deferred_remove
+3device-mapper: ioctl: Invalid arguments for @cancel_deferred_remove
+4device-mapper: ioctl: can't change device type after initial table load.
+3cpufreq: %s: Failed to move kobj: %d
+4cpufreq: %s governor failed, too long transition latency of HW, fallback to %s governor
+3cpufreq: %s: Failed to exit governor
+3cpufreq: %s: Failed to start governor
+3cpufreq: %s: Failed to stop governor
+scaling_governor
+scaling_available_governors
+&gov_lock
+above_hispeed_delay
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/cpufreq/cpufreq_governor.c
+3cpufreq_governor: %s: POLICY_INIT: kzalloc failed
+3cpufreq_governor: %s: POLICY_INIT: init() failed
+6cpuidle: using governor %s
+current_governor
+current_governor_ro
+4%s: error %d during resume (card was removed?)
+6%s: SPI card removed
+6%s: card %04x removed
+non-removable
+4%s: unexpected status %#x after switch
+3%s: could not allocate a buffer for switch capabilities.
+4%s: Problem setting drive strength!
+3%s: card never left busy state
+4WARNING: driver %s did not remove its interrupt handler!
+7[name:mt_mmc_block&][BLOCK_TAG] mmc printk buffer overflow
+3[sd]msdc%d -> remove the bad card, block_bad_card=%d,card_inserted=%d <- %s() : L<%d> PID<%s><0x%x>
+3[sd]msdc%d -> removed !!! <- %s() : L<%d> PID<%s><0x%x>
+3[sd]msdc%d -> abort timeout. Card stuck in %d state, bad card! remove it! <- %s() : L<%d> PID<%s><0x%x>
+3[sd]msdc%d -> [msdc%d] DAT CRC error (0x%x), Left DAT: %d bytes
+3[sd]msdc%d -> [msdc%d] DAT TMO error (0x%x), Left DAT: %d bytes
+3[sd]msdc%d -> read pio data->error<%d> left<%d> size<%d> <- %s() : L<%d> PID<%s><0x%x>
+3[sd]msdc%d -> write pio data->error<%d> left<%d> size<%d> <- %s() : L<%d> PID<%s><0x%x>
+3[sd]msdc%d -> RW cmd recover <- %s() : L<%d> PID<%s><0x%x>
+3[sd]msdc%d -> Read recover <- %s() : L<%d> PID<%s><0x%x>
+3[sd]msdc%d -> Write recover <- %s() : L<%d> PID<%s><0x%x>
+3[sd]msdc1 VMC CAL org = 0x%x, shift = 0x%x
+3  [%s]: card is removed!
+msdc_FT
+3[%s]: successfully create /proc/msdc_FT
+3[%s]: failed to create /proc/msdc_FT
+3 [%s]: card is removed!
+3[****SD_Debug****]reg filed beyoned (0~31) or length beyoned (1~32)
+3[MSDC%d] DAT CRC error (0x%x), Left DAT: %d bytes
+3[MSDC%d] DAT TMO error (0x%x), Left DAT: %d bytes
+3size= %d, left= %d, done=%d.
+3size= %d, left= %d.
+3write operation oversize!
+3msdc unexpected status 0x%x after switch
+3write 512 Bytes address over boundary at 0x%x
+LeftBrace
+LeftControl
+LeftShift
+RightShift
+LeftAlt
+LeftMeta
+KPLeftParenthesis
+LeftBtn
+BtnDPadLeft
+ControlPanel
+SystemMenuLeft
+D-PadLeft
+BatteryStrength
+DiscoverWirelessControl
+PID_Pool_Move_Report
+Move_Source
+Move_Destination
+Move_Length
+Actuator_Override_Switch
+ConfigCurrent
+Overload
+OverCharged
+OverTemperature
+BelowRemainingCapacityLimit
+RemainingCapacity
+collection stack overflow
+global environment stack overflow
+hid_kensington
+hid_microsoft
+fixing up Microsoft Wireless Receiver Model 1028 report descriptor
+7%s: submitting ctrl urb: %s wValue=0x%04x wIndex=0x%04x wLength=%u
+7%s: Found dynamic quirk 0x%x for USB HID vendor 0x%hx prod 0x%hx
+7%s: Found squirk 0x%x for USB HID vendor 0x%hx prod 0x%hx
+0x%hx:0x%hx:0x%x
+4End of tree marker overwritten: %08x
+nand-ecc-strength
+soft_bch
+camera total
+%s: Double unmap detected! bailing...
+ion_mm_heap_for_camera
+6binder: %d:%d ERROR: BC_REGISTER_LOOPER called after BC_ENTER_LOOPER
+6binder: %d:%d ERROR: BC_ENTER_LOOPER called after BC_REGISTER_LOOPER
+6binder_alloc: %d: binder_alloc_buf size %zd failed, no async space left
+   Free memory is %ldkB above reserved
+6fence timeout on [%pK] after %dms
+card file remove problem (%p)
+unable to register OSS compatibility device %i:%i
+  Overruns     : %lu
+4ALSA: seq_lock: waiting [%d left] in %s:%d
+  max queue length %d
+  capabilities : ioctl %s / load_patch %s
+  capability %s / opened %s
+  read queue [%s] length = %d : tick = %ld
+3ALSA: seq_midi: MIDI output buffer overrun
+invalid buffer length (v1)
+Microsoft
+Novation
+setting selector (id %d) unexpected length %d
+%u:%d : sample bitwidth %d in over sample bytes %d
+set quirk for FTU Effect Duration
+set quirks for FTU Effect Feedback/Volume
+AnalogueIn Soft Limit
+%d:%d : invalid sync pipe. bmAttributes %02x, bLength %d, bSynchAddress %02x
+ASoC: Property '%s' does not exist or its length is not even
+ASoC: Property '%s's length is zero
+ASoC: Property '%s' length is not even
+ASoC: failed to remove %s: %d
+ASoC: failed to add auxiliary devices %d
+left_j
+ASoC: Removal of routes with controls not supported
+4%s length = %d
+4%s MemBlock =%d Buffer_length = %d
+4%s, buffer overflow u4DMAReadIdx:%x, u4WriteIdx:%x, u4DataRemained:%x, u4BufferSize:%x
+4%s buffer overflow u4DMAReadIdx:%x, u4WriteIdx:%x, u4DataRemained:%x, u4BufferSize:%x
+3donn't support shift opeartion
+3%s 4, len=%d, length=%ld
+Ringtone_Mode
+4%s buffer area = %p arraybytes = %d bufferlength = %zu
+audio dump ftrace
+mt-soc-fmmrgtxdai-driver
+FM_MRGTX_Playback
+4%s, mHpRightDcCalibration [%d] mHpLeftDcCalibration [%d]
+mt-soc-fmmrgtx-pcm
+4dev_remove_pack: %p not found
+0%s: failed to move %s to init_net: %d
+4dev_remove_offload: %p not found
+3tried to remove device %s from %s
+set_features() failed (%d); wanted %pNF, left %pNF
+entries  allocs destroys hash_grows  lookups hits  res_failed  rcv_probes_mcast rcv_probes_ucast  periodic_gc_runs forced_gc_runs unresolved_discards
+gc_stale_time
+gc_interval
+gc_thresh1
+gc_thresh2
+gc_thresh3
+4A link change request failed with some changes committed already. Interface %s may have been left with an inconsistent configuration, please check.
+rx_over_errors
+rx_length_errors
+softnet_stat
+4tc ematch: local stack overflow, increase NET_EMATCH_STACK
+4__netlink_remove_tap: %p not found
+6Removing netfilter NETLINK layer.
+6nf_conntrack: automatic helper assignment is deprecated and it will be removed soon. Use the iptables CT target to attach helpers instead.
+SEQ is over the upper bound (over the window of the receiver)
+ACK is over the upper bound (ACKed data not seen yet)
+ACK is under the lower bound (possible overly delayed ACK)
+nf_ct_dccp: bad checksum coverage
+nf_ct_udplite: invalid checksum coverage
+ftp-%d
+3nf_ct_ftp: failed to register helper for pf: %d port: %d
+MOVE
+tftp-%u
+3nf_ct_tftp: failed to register helper for pf: %u port: %u
+6nf_nat_ftp: kernel >= 2.6.10 only uses 'ports' for conntrack modules
+6xt_hashlimit: overflow, rate too high: %u
+6xt_hashlimit: overflow, try lower: %u/%u
+6xt_limit: Overflow, try lower: %u/%u
+NETDEV_BONDING_FAILOVER
+7[name:xt_qtaguid&]qtaguid[%d]: left %d
+7[name:xt_qtaguid&]qtaguid: ctrl_delete(%s): argc=%d cmd=%c user_tag=0x%llx uid=%u
+7[name:xt_qtaguid&]qtaguid: ctrl_counterset(%s): argc=%d cmd=%c set=%d uid=%u
+7[name:xt_qtaguid&]qtaguid: ctrl_tag(%s): argc=%d cmd=%c sock_fd=%d acct_tag=0x%llx uid=%u
+7[name:xt_qtaguid&]qtaguid: ctrl_untag(%s): argc=%d cmd=%c sock_fd=%d
+entries  in_hit in_slow_tot in_slow_mc in_no_route in_brd in_martian_dst in_martian_src  out_hit out_slow_tot out_slow_mc  gc_total gc_ignored gc_goal_miss gc_dst_overflow in_hlist_search out_hlist_search
+gc_min_interval
+gc_min_interval_ms
+gc_timeout
+gc_elasticity
+6IPv4: Oversized IP packet from %pI4
+7Ack %u after %u:%u
+4UDPLite: partial coverage %d while full coverage %d requested
+4UDPLite: coverage %d too small, need min %d
+7UDPLite: bad csum coverage %d/%d
+3IPv4: Attempt to override permanent protocol %d
+6IPv4: %s(): shifting inet->saddr from %pI4 to %pI4
+tcp_abort_on_overflow
+tcp_slow_start_after_idle
+ListenOverflows
+TCPRenoRecovery
+TCPSackRecovery
+TCPLossProbeRecovery
+TCPRenoRecoveryFail
+TCPSackRecoveryFail
+TCPSackShifted
+TCPSackShiftFallback
+TCPTimeWaitOverflow
+TCPFastOpenListenOverflow
+6ipip: IPv4 over IPv4 tunneling driver
+6IPsec: %s: can't remove protocol
+6IPsec: %s: can't remove xfrm type
+6%s: can't remove protocol
+6%s: can't remove xfrm type
+6IPsec: %s: can't remove xfrm handler for AF_INET6
+6IPsec: %s: can't remove xfrm handler for AF_INET
+3tunnel64 close: can't remove protocol
+3tunnel4 close: can't remove protocol
+xfrm4_gc_thresh
+3%s: can't remove protocol
+SA-replay-overflow
+rfc4106(gcm(aes))
+rfc4543(gcm(aes))
+Dont know what to do with soft policy expire
+3IPv6: Attempt to override permanent protocol %d
+temp_valid_lft
+temp_prefered_lft
+4UDPLITE6: partial coverage %d while full coverage %d requested
+4UDPLITE6: coverage %d too small, need min %d
+7ipv6_hop_ra: wrong RA length %d
+7hao invalid option length = %d
+7ipv6_hop_jumbo: wrong jumbo opt length/alignment %d
+xfrm6_gc_thresh
+Ip6FragCreates
+4IPv6: destopt hao: invalid header length: %u
+4overrun %sopts
+6IPv6: %s: can't remove protocol
+6IPv6: %s: can't remove xfrm type
+3IPv6: %s: can't remove protocol
+4mip6: hao exists already, override
+6mip6: %s: can't remove rawv6 mh filter
+6mip6: %s: can't remove xfrm type(rthdr)
+6mip6: %s: can't remove xfrm type(destopt)
+6sit: IPv6 over IPv4 tunneling driver
+%hhx:%hhx:%hhx:%hhx:%hhx:%hhx
+gc_timer
+ REORDER_HDR: %i  dev->priv_flags: %hx
+failed to set mgtdef %d
+%s, wow%s - any: %d, disconnect: %d, magic pkt: %d, gtk rekey failure: %d, eap identify req: %d, four way handshake: %d, rfkill release: %d.
+%s, returned %d. mpath info - generation: %d, filled: %u, frame qlen: %u, sn: %u, metric: %u, exptime: %u, discovery timeout: %u, discovery retries: %u, flags: %u
+%s, netdev:%s(%d), %pM, action_code: %u, dialog_token: %u, status_code: %u, peer_capability: %u initiator: %s buf: %#.2x
+netdev:%s(%d), ftype:0x%.2x
+%s, band: %d, control freq: %u, width: %d, cf1: %u, cf2: %u, iftype=%d
+gtk_rekey_failure
+enum nl80211_iftype
+discovery_retries
+dot11MeshHoldingTimeout
+min_discovery_timeout
+peer_capability
+softirq_raise
+softirq_exit
+softirq_entry
+sched_move_numa
+rcu_utilization
+dev_pm_qos_remove_request
+pm_qos_remove_request
+mm_vmscan_memcg_softlimit_reclaim_end
+mm_vmscan_memcg_softlimit_reclaim_begin
+ext4_es_remove_extent
+ext4_ext_remove_space_done
+ext4_ext_remove_space
+ext4_remove_blocks
+f2fs_gc_end
+f2fs_gc_begin
+f2fs_background_gc
+regcache_drop_region
+regcache_sync
+skb_copy_datagram_iovec
+cfg80211_ft_event
+cfg80211_gtk_rekey_notify
+rdev_update_ft_ies
+gtDiY
+Ij|GC|
+__aeabi_ulcmp
+memmove
+fs_overflowgid
+fs_overflowuid
+overflowgid
+overflowuid
+set_security_override_from_ctx
+set_security_override
+override_creds
+__cond_resched_softirq
+autoremove_wake_function
+remove_wait_queue
+pm_qos_remove_notifier
+pm_qos_remove_request
+get_logtoomuch_enable
+set_logtoomuch_enable
+remove_irq
+irq_domain_remove
+pvclock_gtod_unregister_notifier
+pvclock_gtod_register_notifier
+ring_buffer_overruns
+ring_buffer_commit_overrun_cpu
+ring_buffer_overrun_cpu
+ring_buffer_change_overwrite
+ring_buffer_event_length
+ftrace_dump
+unregister_ftrace_event
+register_ftrace_event
+ftrace_output_call
+ftrace_raw_output_prep
+ftrace_print_hex_seq
+ftrace_print_bitmask_seq
+ftrace_print_symbols_seq_u64
+ftrace_print_symbols_seq
+ftrace_print_flags_seq
+__ftrace_vprintk
+__ftrace_vbprintk
+ftrace_event_reg
+ftrace_event_buffer_commit
+ftrace_event_buffer_reserve
+generic_error_remove_page
+iov_iter_npages
+iov_iter_get_pages_alloc
+iov_iter_get_pages
+iov_iter_alignment
+iov_iter_single_seg_count
+iov_iter_advance
+iov_iter_copy_from_user_atomic
+iov_iter_zero
+iov_iter_init
+iov_iter_fault_in_readable
+migrate_page_move_mapping
+iov_shorten
+remove_arg_zero
+d_move
+file_remove_suid
+should_remove_suid
+__remove_inode_hash
+generic_removexattr
+vfs_removexattr
+eventfd_ctx_remove_wait_queue
+locks_remove_posix
+proc_remove
+remove_proc_subtree
+remove_proc_entry
+sysfs_remove_bin_file
+sysfs_remove_file_from_group
+sysfs_remove_files
+sysfs_remove_file_ns
+sysfs_remove_link
+sysfs_remove_link_from_group
+sysfs_remove_groups
+sysfs_remove_group
+fat_remove_entries
+debugfs_remove_recursive
+debugfs_remove
+security_sock_graft
+crypto_remove_final
+crypto_remove_spawns
+crypto_ft_tab
+blk_queue_softirq_done
+blk_rq_map_user_iov
+ida_simple_remove
+ida_remove
+ida_get_new_above
+idr_remove
+__bitmap_shift_left
+__bitmap_shift_right
+memcpy_fromiovecend
+memcpy_toiovecend
+memcpy_toiovec
+memcpy_fromiovec
+rhashtable_remove
+rhashtable_remove_pprev
+rht_grow_above_75
+__crc32c_le_shift
+crc32_le_shift
+mt_eint_virq_soft_clr
+pinctrl_remove_gpio_range
+gpiochip_remove_pin_ranges
+gpiochip_remove
+remove_conflicting_framebuffers
+uart_remove_one_port
+device_move
+device_remove_bin_file
+device_remove_file_self
+device_remove_file
+bus_remove_file
+driver_remove_file
+class_remove_file_ns
+class_compat_remove_link
+devm_remove_action
+devres_remove_group
+devres_remove
+transport_remove_device
+dev_pm_qos_remove_global_notifier
+dev_pm_qos_remove_notifier
+dev_pm_qos_remove_request
+wakeup_source_remove
+dma_common_get_sgtable
+regcache_cache_bypass
+regcache_mark_dirty
+regcache_cache_only
+regcache_drop_region
+regcache_sync_region
+regcache_sync
+ged_dvfs_cal_gpu_utilization_fp
+mt_fh_dram_overclock
+ISP_UnregCallback
+ISP_RegCallback
+gConEmiSize
+gConEmiPhyBase
+fence_remove_callback
+scsi_remove_host
+scsi_set_medium_removal
+scsi_reset_provider
+scsi_remove_target
+scsi_remove_device
+scsi_dev_info_remove_list
+usb_remove_hcd
+usb_remove_phy
+usb_composite_overwrite_options
+usb_remove_function
+fsg_common_remove_luns
+fsg_common_remove_lun
+fsg_store_removable
+fsg_show_removable
+input_set_capability
+tpd_driver_remove
+i2c_recover_bus
+i2c_generic_gpio_recovery
+i2c_generic_scl_recovery
+dm_shift_arg
+cpufreq_unregister_governor
+cpufreq_register_governor
+cpufreq_sysfs_remove_file
+get_governor_parent_kobj
+have_governor_per_policy
+cpufreq_governor_dbs
+gov_queue_work
+mmc_detect_card_removed
+mmc_remove_host
+led_stop_software_blink
+led_trigger_remove
+of_get_nand_ecc_strength
+snd_card_file_remove
+snd_ctl_remove_id
+snd_ctl_remove
+snd_soc_remove_platform
+iov_pages
+csum_partial_copy_fromiovecend
+skb_copy_and_csum_datagram_iovec
+zerocopy_sg_from_iovec
+skb_copy_datagram_from_iovec
+skb_copy_datagram_const_iovec
+skb_copy_datagram_iovec
+dev_remove_offload
+dev_remove_pack
+__dev_remove_pack
+softnet_data
+netdev_class_remove_file_ns
+llc_remove_pack
+dev_graft_qdisc
+qdisc_class_hash_remove
+netlink_remove_tap
+nf_ct_remove_expectations
+__nf_ct_ext_add_length
+nf_nat_ftp_hook
+nf_nat_tftp_hook
+tcp_peer_is_proven
+inet_frag_maybe_warn_overflow
+xfrm_audit_state_replay_overflow
+cfg80211_ft_event
+cfg80211_gtk_rekey_notify
+klist_remove
+ftrace_dump_on_oops
+ftrace=
+length
+length
+soft_limit_in_bytes
+move_charge_at_immigrate
+Mount option "%s" will be removed by %s
+             enable/disable above all log
+        lcm:[on|off|init]
+             power on/off lcm
+        cabc:[ui|mov|still]
+             cabc mode, UI/Moving picture/Still picture
+       dump_ovl:[on|off[,down_sample_x[,down_sample_y]]]
+             Start to capture OVL only once
+             Start/end to capture current enabled OVL layer every frame
+non_lcm
+s5k3p3sxmipiraw
+gc2355submipiraw
+mtk_governor
+GCC: (Linaro GCC 6.3-2017.05) 6.3.1 20170404
+
+C:\Users\User\Downloads\MT6580S24\MT6580S24>python -c "from pathlib import Path; import re; d=Path('kernel_decompressed.bin').read_bytes(); keys=[b'compatible',b'mt6580',b'lcm',b'panel',b'camera',b'touch',b'tp',b'fingerprint']; s=re.findall(rb'[\x20-\x7e]{6,}',d); [print(x.decode('latin1')) for x in s if any(k in x.lower() for k in keys)][:1000]"
+"nr_succeeded=%lu nr_failed=%lu mode=%s reason=%s", REC->succeeded, REC->failed, __print_symbolic(REC->mode, {MIGRATE_ASYNC, "MIGRATE_ASYNC"}, {MIGRATE_SYNC_LIGHT, "MIGRATE_SYNC_LIGHT"}, {MIGRATE_SYNC, "MIGRATE_SYNC"}), __print_symbolic(REC->reason, {MR_COMPACTION, "compaction"}, {MR_MEMORY_FAILURE, "memory_failure"}, {MR_MEMORY_HOTPLUG, "memory_hotplug"}, {MR_SYSCALL, "syscall_or_cpuset"}, {MR_MEMPOLICY_MBIND, "mempolicy_mbind"}, {MR_NUMA_MISPLACED, "numa_misplaced"}, {MR_CMA, "cma"})
+"bdi %s: limit=%lu setpoint=%lu dirty=%lu bdi_setpoint=%lu bdi_dirty=%lu dirty_ratelimit=%lu task_ratelimit=%lu dirtied=%u dirtied_pause=%u paused=%lu pause=%ld period=%lu think=%ld", REC->bdi, REC->limit, REC->setpoint, REC->dirty, REC->bdi_setpoint, REC->bdi_dirty, REC->dirty_ratelimit, REC->task_ratelimit, REC->dirtied, REC->dirtied_pause, REC->paused, REC->pause, REC->period, REC->think
+r<sBs;s:s@sJsIsDtJtKtRtQtWt@tOtPtNtBtFtMtTt
+ltpzpcr
+rDsPsdtctjtptmt
+~NzP}P\PGPCPLPZPIPePvPNPUPuPtPwPOP
+r;rlTpTL)
+_gpiod_direction_output_raw
+gpiod_direction_output_raw
+gpiod_direction_output
+ptp_init01
+ptp_init_det
+mediatek,PTP_FSM
+bootprof.logo_t
+bootprof.lk_t
+bootprof.pl_t
+mediatek,mt6580-i2c
+primary_display_config_output
+primary_display_lcm_ATA
+Panel_Master_dsi_config_entry
+disp_lcm_get_interface_id
+disp_lcm_esd_check
+disp_lcm_esd_recover
+disp_lcm_suspend
+disp_lcm_resume
+disp_lcm_set_backlight
+disp_lcm_init
+disp_lcm_ATA
+disp_lcm_update
+shortpath
+lcm0_reset
+lcm0_reset0
+lcm0_reset1
+ovl2mem_output_config
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/video/mt6580/ddp_path.c
+smi_common.force_camera_hpm
+CAMERA_HW_i2c_probe2
+subsys_camera_info_read
+CAMERA_HW_i2C_init
+adopt_CAMERA_HW_Open
+adopt_CAMERA_HW_GetResolution
+adopt_CAMERA_HW_FeatureControl
+CAMERA_HW_i2c_probe
+mediatek,camera_hw
+mediatek,camera_hw2
+mediatek,camera_sub
+mediatek,camera_main
+kd_camera_hw_bus2
+kd_camera_hw
+mediatek,CAMERA_MAIN_AF
+mediatek,CAMERA_MAIN_TWO_AF
+mediatek,CAMERA_SUB_AF
+btif_log_output_enable
+btif_log_output_disable
+mediatek,lastpc-v1
+mediatek,mt6580-mcucfg
+lastpc_init
+mt_ptp_lock
+mt_ptp_unlock
+mt_ptp_lock
+mt_ptp_unlock
+mediatek,mt6580-spi
+mtp_ctrlrequest
+mtp_read
+mtp_usb
+g_android.mtp_skip_vfs_write
+g_android.mtp_skip_vfs_read
+mediatek,mt6580-keypad
+tpd_get_dts_info
+tpd_probe
+tpd_debug.tpd_debuglog
+tpd_debug.tpd_log_line_cnt
+tpd_debug.tpd_log_line_buffer
+tpd_debug.tpd_em_log_to_fs
+tpd_debug.tpd_em_log
+tpd_debug.tpd_debug_time
+tpd_debug.tpd_trial_count
+tpd_debug.tpd_fail_count
+tpd_debug.tpd_debug_nr
+"%s,%ld.%06ld,%s,%x", REC->_touch_type, REC->_tsec, REC->_tusec, REC->_mode, REC->_value
+tpd_misc.tpd_show_version
+tpd_misc.tpd_calibrate_en
+tpd_setting.tpd_em_asamp
+tpd_setting.tpd_load_status
+tpd_setting.tpd_em_sample_cnt
+tpd_setting.tpd_em_auto_time_interval
+tpd_setting.tpd_em_pressure_threshold
+tpd_setting.tpd_em_spl_num
+tpd_setting.tpd_em_debounce_time
+tpd_setting.tpd_em_debounce_time1
+tpd_setting.tpd_em_debounce_time0
+tpd_setting.tpd_mode_keypad_tolerance
+tpd_setting.tpd_mode_max
+tpd_setting.tpd_mode_min
+tpd_setting.tpd_mode_axis
+tpd_setting.tpd_mode
+tpd_setting.tpd_firmware_version
+tpd_setting.tpd_type_cap
+tpd_setting.tpd_v_magnify_y
+tpd_setting.tpd_v_magnify_x
+tpd_setting.tpd_def_calmat
+tpd_setting.tpd_calmat
+mediatek,cap_touch
+mediatek,mt6580-mmc
+"cmd=0x%x %s", REC->cmd, (((REC->cmd) >> 0) & ((1 << 8)-1)) < (sizeof(binder_return_strings) / sizeof((binder_return_strings)[0]) + (sizeof(struct { int:-!!(__builtin_types_compatible_p(typeof((binder_return_strings)), typeof(&(binder_return_strings)[0]))); }))) ? binder_return_strings[(((REC->cmd) >> 0) & ((1 << 8)-1))] : "unknown"
+"cmd=0x%x %s", REC->cmd, (((REC->cmd) >> 0) & ((1 << 8)-1)) < (sizeof(binder_command_strings) / sizeof((binder_command_strings)[0]) + (sizeof(struct { int:-!!(__builtin_types_compatible_p(typeof((binder_command_strings)), typeof(&(binder_command_strings)[0]))); }))) ? binder_command_strings[(((REC->cmd) >> 0) & ((1 << 8)-1))] : "unknown"
+snd_seq_midi.output_buffer_size
+Audio_i2s0_hdoutput_Set
+Audio_fmtx_hdoutput_Set
+tx-checksum-sctp
+nf_conntrack_ftp.loose
+nf_conntrack_ftp.ports
+nf_conntrack_tftp.ports
+nf_nat_ftp.ports
+TPDE_DATA
+TPMIC_EIN
+TPMIC_INI
+TPMIC_CUSTOM_SETTING_V1
+TPMIC_IMM_P
+TPMIC_IMM_G
+TPMIC_IMM_G
+LcmDrv
+tCAMERA_HW_Op
+tCAMERA_HW_Re
+tCAMERA_HW
+tCAMERA_HW
+tCAMERA_HW_Du
+tCAMERA_HW_i2c
+tCAMERA_HW_Op
+tCAMERA_HW
+tCAMERA_HW
+tCAMERA_HW
+tCAMERA_HW_Re
+tCAMERA_HW_Re
+tCAMERA_HW_Re
+tCAMERA_HW_i2c
+tCAMERA_HW_Du
+tCAMERA_HW_Du
+tCAMERA_HW
+tCAMERA_HW_i2c
+tCAMERA_HW
+tCAMERA_HW
+tCAMERA_HW_Re
+tCAMERA_HW_I
+tCAMERA_HW_i2c
+4LC898OTP_Re
+tPMIC_REG_CLEAR_S
+tPMIC_REG_CLEAR_G
+tCAMERA_HW_i2C<
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/init/main.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/arch/arm/kernel/suspend.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/arch/arm/kernel/devtree.c
+Error: unrecognized/unsupported device tree compatible list:
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/arch/arm/kernel/hw_breakpoint.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/arch/arm/kernel/perf_regs.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/arch/arm/kernel/perf_event.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/arch/arm/mm/dma-mapping.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/arch/arm/mm/ioremap.c
+mediatek,MT6580
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/fork.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/include/linux/iocontext.h
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/include/linux/kref.h
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/cpu.c
+4hotplug timestamp:
+4hotplug timestamp: %lld
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/exit.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/softirq.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/resource.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/capability.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/ptrace.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/signal.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/include/linux/sched.h
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/include/linux/thread_info.h
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/kmod.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/workqueue.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/pid.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/params.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/kthread.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/async.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/smpboot.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/sched/core.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/sched/fair.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/sched/rt.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/sched/deadline.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/sched/idle.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/sched/cpudeadline.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/locking/rtmutex.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/locking/rtmutex.h
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/power/qos.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/power/process.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/printk/printk.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/irq/handle.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/irq/manage.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/irq/spurious.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/irq/chip.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/irq/devres.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/irq/irqdomain.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/irq/pm.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/rcu/srcu.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/rcu/tree.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/rcu/tree_plugin.h
+End CPU hotplug
+Start CPU hotplug
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/stacktrace.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/time/timer.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/time/hrtimer.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/time/posix-timers.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/time/posix-cpu-timers.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/time/timekeeping.c
+4Override clocksource %s is not HRT compatible. Cannot switch while in HRT/NOHZ mode
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/time/clocksource.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/time/clockevents.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/time/tick-broadcast.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/time/sched_clock.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/time/tick-sched.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/futex.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/smp.c
+cpu_hotplug
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/cgroup.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/res_counter.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/stop_machine.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/auditfilter.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/auditsc.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/audit_watch.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/seccomp.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/tracepoint.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/include/linux/jump_label.h
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/trace/ring_buffer.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/trace/trace.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/trace/trace_output.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/trace/trace_seq.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/trace/trace_sched_switch.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/trace/trace_events.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/trace/trace.h
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/trace/trace_event_perf.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/trace/trace_events_filter.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/trace/trace_events_trigger.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/include/trace/events/power.h
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/irq_work.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/bpf/core.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/events/core.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/include/linux/jump_label_ratelimit.h
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/events/callchain.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/mm/filemap.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/mm/page_alloc.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/include/linux/gfp.h
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/mm/page-writeback.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/mm/swap.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/mm/truncate.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/mm/shmem.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/mm/backing-dev.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/mm/percpu.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/mm/percpu-vm.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/include/trace/events/kmem.h
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/mm/slab_common.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/mm/vmacache.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/mm/list_lru.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/mm/gup.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/include/linux/memcontrol.h
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/mm/mmap.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/mm/rmap.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/mm/vmalloc.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/mm/pgtable-generic.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/mm/nobootmem.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/mm/memblock.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/mm/swapfile.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/mm/dmapool.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/mm/slub.c
+memory_hotplug
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/mm/memcontrol.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/open.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/super.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/exec.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/namei.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/fcntl.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/dcache.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/inode.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/attr.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/namespace.c
+Mountpoint-cache
+bdi %s: limit=%lu setpoint=%lu dirty=%lu bdi_setpoint=%lu bdi_dirty=%lu dirty_ratelimit=%lu task_ratelimit=%lu dirtied=%u dirtied_pause=%u paused=%lu pause=%ld period=%lu think=%ld
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/fs-writeback.c
+bdi_setpoint
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/splice.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/sync.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/buffer.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/block_dev.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/notify/fsnotify.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/notify/notification.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/notify/inotify/inotify_fsnotify.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/notify/inotify/inotify_user.c
+eventpoll
+eventpoll_epi
+eventpoll_pwq
+[eventpoll]
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/aio.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/crypto/keyinfo.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/crypto/bio.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/locks.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/binfmt_elf.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/include/linux/quotaops.h
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/quota/dquot.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/include/net/genetlink.h
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/proc/inode.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/proc/generic.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/proc/proc_sysctl.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/kernfs/dir.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/kernfs/file.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/sysfs/file.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/sysfs/dir.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/sysfs/group.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/configfs/configfs_internal.h
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/ext4/ext4.h
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/ext4/inode.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/ext4/page-io.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/ext4/namei.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/ext4/super.c
+Mount option "%s" incompatible with ext2
+Mount option "%s" incompatible with ext3
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/ext4/extents.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/ext4/ext4_jbd2.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/ext4/mballoc.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/ext4/extents_status.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/jbd2/transaction.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/jbd2/checkpoint.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/jbd2/journal.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/fat/fatent.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/isofs/compress.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/sdcardfs/inode.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/sdcardfs/main.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/sdcardfs/derived_perm.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/fuse/dev.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/fuse/file.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/tracefs/inode.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/include/linux/fscrypt_supp.h
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/f2fs/f2fs.h
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/f2fs/file.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/f2fs/inode.c
+skip recovering inline_dots inode (ino:%lu, pino:%u) in readonly mountpoint
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/f2fs/inline.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/f2fs/segment.h
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/f2fs/checkpoint.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/f2fs/gc.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/f2fs/data.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/f2fs/node.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/f2fs/segment.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/f2fs/recovery.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/f2fs/extent_cache.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/f2fs/xattr.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/fs/pstore/ram.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/security/keys/request_key.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/security/commoncap.c
+getpgid
+setpgid
+setpcap
+4SELinux:  duplicate or incompatible mount options
+uses mountpoint labeling
+4SELinux: failure in sel_netport_sid_slow(), unable to determine network port label
+3SELinux: security policydb version %d (MLS) not backwards compatible
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/security/selinux/ss/services.c
+ ioctlcmd=%hx
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/crypto/algapi.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/crypto/ablkcipher.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/crypto/blkcipher.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/include/linux/bio.h
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/block/bio.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/block/elevator.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/block/blk-core.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/block/blk.h
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/block/blk-sysfs.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/block/blk-flush.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/block/blk-settings.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/block/blk-exec.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/block/blk-merge.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/block/blk-mq.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/block/blk-mq-tag.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/block/genhd.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/block/cfq-iosched.c
+Out of memory while allocating output buffer
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/lib/idr.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/lib/kobject.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/include/linux/kernfs.h
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/lib/kobject_uevent.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/lib/plist.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/lib/radix-tree.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/lib/timerqueue.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/lib/vsprintf.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/lib/scatterlist.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/lib/percpu-refcount.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/lib/devres.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/lib/swiotlb.c
+3can't find compatible node
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/irqchip/irq-mt-eic.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/pinctrl/core.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/pinctrl/pinctrl-utils.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/pinctrl/pinmux.c
+output-low
+output-high
+output drive push pull
+output drive open drain
+output drive open source
+output drive strength
+pin output
+4mt6580 pinctrl probe
+mediatek-mt6580-pinctrl
+mt6580
+CONN_DSP_JINTP
+LCM_RST
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/gpio/devres.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/gpio/gpiolib.c
+3gpio-%d (%s): %s: tried to set a GPIO tied to an IRQ as output
+4gpio-%d (%s): %s: missing set() or direction_output() operations
+3GPIO chip %s: %s: tried to flag a GPIO set as output for IRQ
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/gpio/gpiolib-of.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/video/fbdev/core/fb_draw.h
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/amba/bus.c
+3%s: invalid output voltage found
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/regulator/core.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/regulator/devres.c
+regulator-compatible
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/tty/tty_io.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/tty/n_tty.c
+&ldata->output_lock
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/tty/tty_ldisc.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/tty/tty_buffer.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/tty/tty_port.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/tty/tty_mutex.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/tty/pty.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/tty/tty_audit.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/tty/serial/serial_core.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/char/random.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/char/misc.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/base/component.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/base/core.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/base/bus.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/base/dd.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/base/syscore.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/base/driver.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/base/class.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/base/devres.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/base/power/qos.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/base/power/wakeup.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/base/dma-mapping.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/base/firmware_class.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/base/regmap/regmap.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/base/regmap/regcache.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/base/regmap/regmap-debugfs.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/emi_mpu/mt6580/emi_mpu.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/base/power/mt6580/mt_clkmgr.c
+MT_CG_AUX_SW_CG_TP
+4[Power/cpufreq] %s(): for ptpod init, idx = %d
+cpufreq_ptpod_freq_volt
+4[PTP] [%s] default func
+PTP_OD%d
+PTP_DCVALUES[%s]
+dcvalues=0x%08X, ptp_freqpct30=0x%08X, ptp_26c=0x%08X, ptp_vop30=0x%08X,ptp_ptpen= 0x%08X
+PTPOD[%s] read current voltage fail
+PTP_LOG: PTPOD [%s] (%d) - (%d, %d, %d, %d, %d, %d, %d, %d) - (%d, %d, %d, %d, %d, %d, %d, %d)
+PTPOD[%s] %s (ptp_level = 0x%08X)
+3[PTP] bad argument!! Should be "0" or "1"
+3[PTP] @%s(),vboot = %d
+3[PTP] @%s():%d, get_volt(%s) = 0x%08X, VBOOT = 0x%08X
+mt_ptp
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/base/power/mt6580/mt_ptp.c
+3[PTP] Create %s thread failed: %ld
+3[PTP] @%s(), det->VBOOT = %d
+3[PTP] [%s]: Unknown ctrl_id %d
+3[PTP] val[0]=0x%x
+3[PTP] val[1]=0x%x
+3[PTP] val[2]=0x%x
+3[PTP] val[3]=0x%x
+3[PTP] p->PTPINITEN=0x%x
+3[PTP] p->PTPMONEN=0x%x
+mediatek,PTP_FSM
+3[PTP] [%s]: mkdir /proc/ptp failed
+3[PTP] [%s]: create /proc/ptp/%s failed
+3[PTP] [%s]: mkdir /proc/ptp/%s failed
+3[PTP] [%s]: create /proc/ptp/%s/%s failed
+ptp_dump
+ptp_log_en
+ptp_debug
+ptp_status
+ptp_cur_volt
+ptp_offset
+mt-ptp
+PTP_DET_MCUSYS
+PTP_CTRL_MCUSYS
+mediatek,mt6580-smp
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/base/power/spm_v1/mt_spm.c
+mediatek,mt6580-mcucfg
+mediatek,mt6580-keypad
+mediatek,mt6580-consys
+hotplug_disable
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/sched/sched_avg.c
+mt6580-gpt
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/irq/mt6580/irq.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/cirq/mt_sys_cirq.c
+mediatek,lcm_voltage
+ADC_LCM_VOLTAGE
+4[AUXADC_AP] find node LCM_VOLTAGE:%d
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/m4u/mt6580/m4u_hw.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/m4u/2.0/m4u.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/m4u/2.0/m4u_pgtable.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/sensors-1.0/hwmon/sensor_attributes/sensor_attr.c
+3[Gsensor] %s %d : SetPowerMode client fail!!
+3[MIR3DA] mir3da_setPowerMode(), enable = %d
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/sensors-1.0/accelerometer/da218b/mir3da_cust.c
+3[MIR3DA] mir3da_SetPowerMode done
+3[MIR3DA] mir3da_SetPowerMode fail
+3[MIR3DA] mir3da_SetPowerMode fail!
+mtprof
+mtprof/sched
+mtprof/reboot_pid
+mtprof/signal_log
+mtprof/fork_exit_log
+3BOOTPROF:%10Ld.%06ld: %s
+bootprof
+3BOOTPROF:%10Ld.%06ld:%s
+3[BOOTPROF] not enuough bootprof buffer
+3no memory for bootprof
+0[mtprof] sched monitor on CPU#%d switch from %d to %d
+mtprintk
+3[Accdet]%s can't find compatible dts node
+3[Accdet]%s can't find compatible node
+3[PMIC] %s can't find compatible node
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/pmic_wrap/mt_pmic_wrap.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/pmic_wrap/mt6580/pwrap_hal.c
+5[MUSB]%s %d: dts node from of_find_compatible_node
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/usb20/musb_gadget_ep0.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/usb20/musb_host.c
+3[GPIO] %5d: Parameter output error: %d
+4echo -wdir num x > pin  #x: 1, output; 0, input
+4# data output
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/mem/mtk_memcfg.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/mem/mtk_memcfg_reserve_info.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/cmdq/v2/cmdq_core.c
+3[CMDQ][ERR]invalid output argument
+3[CMDQ][ERR]TDSHP INPUT_CNT: 0x%08x, OUTPUT_CNT: 0x%08x
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/cmdq/v2/cmdq_mdp_common.c
+3[CMDQ][ERR]RSZ_CONTROL: 0x%08x, RSZ_INPUT_IMAGE: 0x%08x RSZ_OUTPUT_IMAGE: 0x%08x
+3[CMDQ][ERR]RSZ input_width,input_height,output_width,output_height: %d,%d,%d,%d
+4[BOOT_COMMON] fail to create META COM TPYE sysfs file
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/chip/mt6580/mt_chip.c
+4[DEVAPC] can't find DAPC_AO compatible node
+4[DEVAPC] can't find DAPC_PD compatible node
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/devinfo/v1/devinfo.c
+mediatek,lcmbias
+3lcmbias_node get node failed
+3lcmbias_dev Not Support this Device!
+Cannot find  lcmbias pinctrl!
+lcd_bias_enp_gpio_output_high
+lcd_bias_enp_gpio_output_low
+lcd_bias_enn_gpio_output_high
+lcd_bias_enn_gpio_output_low
+lcd_incell_tp_rst_high
+lcd_incell_tp_rst_low
+lcm_rst_high
+lcm_rst_low
+[KERNEL]axs15209c_ctc----sgm3804----lcm_suspend----
+AXS15209C ctc lcm_init
+3[DISP]plcm is null
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/video/mt6580/primary_display.c
+3[DISP]lcm handle is null
+lcm index = %d
+3[DISP]should not config output if not mirror mode!!
+config output for decoule mirror, will impact freeze mode
+config output for direct mirror
+3[DISP]lcm_params is null!
+[POWER]lcm suspend[begin]
+[POWER]lcm suspend[end]
+[ESD]lcm force init[begin]
+[ESD]lcm force init[end]
+LCM Resolution will be changed, original: %dx%d, now: %dx%d
+lcm not connect, use fake vsync
+3[DISP]disp_lcm_probe returns null
+disp_lcm_probe SUCCESS
+3[DISP]get lcm params FAILED
+WARNING!!!!!! FORCE NO LCM MODE!!!
+force init lcm due to stage %s
+3[DISP][ESD][%s] can't find DSI_TE eint compatible node
+|LCM Driver=[%s]
+lcm_fps=%d
+[POWER]lcm resume[begin]
+[POWER]lcm resume[end]
+3[DISP]There is no output config when directlink mirror!!
+3[DISP]lcm_param is null
+ATA_LCM, primary display path is already sleep, skip
+[ATA_LCM]primary display path stop[begin]
+[ATA_LCM]primary display path stop[end]
+3[DISP][Pmaster]Panel_Master: primary display path is slept??
+DISP_GetLCMId:%s
+Lcm:%s
+3[DISP]WARNING, invalid lcm handle: %p
+3[DISP]WARNING, invalid lcm handle:%p
+[LCM], name: %s
+[LCM] resolution: %d x %d
+[LCM] physical size: %d x %d
+[LCM] interface: DSI0
+[LCM] interface: DSI1
+[LCM] interface: DPI0
+[LCM] interface: DPI1
+[LCM] interface: DBI0
+[LCM] interface: unknown
+[LCM] Type: DBI
+[LCM] Type: DSI
+[LCM] Type: DPI
+[LCM] TYPE: unknown
+[LCM] DSI Mode: CMD_MODE
+[LCM] DSI Mode: SYNC_PULSE_VDO_MODE
+[LCM] DSI Mode: SYNC_EVENT_VDO_MODE
+[LCM] DSI Mode: BURST_VDO_MODE
+[LCM] DSI Mode: Unknown
+[LCM] LANE_NUM: %d,data_format
+[LCM] vact: %u, vbp: %u, vfp: %u, vact_line: %u, hact: %u, hbp: %u, hfp: %u, hblank: %u
+[LCM] pll_select: %d, pll_div1: %d, pll_div2: %d, fbk_div: %d,fbk_sel: %d, rg_bir: %d
+[LCM] rg_bic: %d, rg_bp: %d, PLL_CLOCK: %d, dsi_clock: %d, ssc_range: %d,
+[LCM] lcm_ext_te_enable: %d, noncont_clock: %d, noncont_clock_period: %d
+plcm_name=%s
+3[DISP]no lcm driver defined in linux kernel driver
+LCM not init
+3[DISP]FATAL ERROR!!!LCM Driver defined in kernel(%s) is different with LK(%s)
+3[DISP]FATAL ERROR: can't found lcm driver:%s in linux kernel driver
+3[DISP]FATAL ERROR!!!No LCM Driver defined
+3[DISP]FATAL ERROR!!!kzalloc plcm and plcm->params failed
+3[DISP]the specific LCM Interface [%d] didn't define any lcm driver
+3[DISP]FATAL ERROR, lcm_drv->esd_check is null
+3[DISP]lcm_drv is null
+3[DISP]FATAL ERROR, lcm_drv->suspend is null
+3[DISP]FATAL ERROR, lcm_drv->resume is null
+3[DISP]FATAL ERROR, lcm_drv->set_backlight is null
+lcm init power()
+lcm init()
+3[DISP]FATAL ERROR, lcm_drv->init is null
+3[DISP]FATAL ERROR, lcm_drv->ata_check is null
+3[DISP] ERROR, Not enable switch in lcm_get_params function
+3[DISP]FATAL ERROR, lcm_drv->switch_mode is null
+3[DISP]FATAL ERROR, lcm is cmd mode lcm_drv->update is null
+3[DISP]input: plcm is null
+ _ioctl_set_output_buffer idx %x
+_ioctl_set_output_buffer done idx 0x%x, mva %lx, fmt %x, w %x, h %x (%x %x), p %x
+_ioctl_set_output_buffer done idx 0x%x, mva %lx, fmt %x, w %x, h %x, p %x
+3[DISP]display drvier: get lcm index failed
+3[DISP]ovl2mem_output_config dpmgr_handle is NULL
+DISP_HELPER_OPTION_FAKE_LCM_X
+DISP_HELPER_OPTION_FAKE_LCM_Y
+DISP_HELPER_OPTION_FAKE_LCM_WIDTH
+DISP_HELPER_OPTION_FAKE_LCM_HEIGHT
+DISP_HELPER_OPTION_NO_LCM_FOR_LOW_POWER_MEASUREMENT
+3[DISP]ovl_intput_fmt unknown fmt=%d, swap=%d
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/video/mt6580/ddp_ovl.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/video/mt6580/ddp_rdma_ex.c
+3[DISP]rdma_intput_format_name unknown fmt=%d, swap=%d
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/video/mt6580/ddp_dsi.c
+[DDPDSI] lcm_ext_te_enable: %d, noncont_clock: %d, noncont_clock_period: %d
+vertical_frontporch=%d.
+(0x150)MM_LCM_RST_B    =0x%x
+(28)OUTPUT_COUNT =0x%x
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/video/mt6580/ddp_manager.c
+path set lcm drv handle %p
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/video/mt6580/ddp_color_format.c
+%s%d_setoutput
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/video/common/mtkfb_fence.c
+Fence timeline idx: present = %d, output = %d
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/video/common/mtkfb.c
+hw_lcm_info
+[DT][videolfb] lcmfound=%d, fps=%d, fb_base=%p, vram=%d, lcmname=%s
+atag,videolfb-islcmfound
+atag,videolfb-islcm_inited
+atag,videolfb-lcmname
+%s: error to get lcmname size=%ld
+[mtkfb] not found LCM driver, return NULL
+3[DISP]ATA LCM failed
+ATA LCM passed
+3[DISP][FB]: vmalloc capture outputBuffer failed! line:%d
+factory mode: lcm auto test
+lcm_type:
+3Rwang get lcm_bl_percent=%d
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/video/common/rdma10/ddp_rdma.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/video/common/wdma10/ddp_wdma.c
+Touch: %d
+touch_down
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/ged/src/ged_ge.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/linux/mali_osk_atomics.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/linux/mali_osk_wq.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/linux/mali_osk_wait_queue.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/linux/mali_osk_low_level_mem.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/linux/mali_osk_mali.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/linux/mali_osk_notification.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/linux/mali_osk_timers.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/linux/mali_osk_bitmap.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/linux/mali_memory.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/common/mali_session.h
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/linux/mali_memory_os_alloc.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/linux/mali_memory_external.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/linux/mali_memory_block_alloc.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/linux/mali_memory_swap_alloc.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/common/mali_pp_job.h
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/linux/mali_memory_manager.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/linux/mali_memory_virtual.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/linux/mali_memory_util.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/linux/mali_memory_cow.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/linux/mali_memory_defer_bind.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/linux/mali_ukk_soft_job.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/linux/mali_ukk_timeline.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/common/mali_kernel_core.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/common/mali_group.h
+ASSERT failed: NULL != (void *)(uintptr_t)args->ctx
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/linux/mali_kernel_linux.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/common/mali_session.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/common/mali_l2_cache.h
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/linux/mali_kernel_sysfs.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/common/mali_mmu.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/common/mali_mmu_page_directory.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/common/mali_mem_validation.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/common/mali_hw_core.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/common/mali_gp.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/common/mali_gp_job.h
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/common/mali_pp.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/common/mali_pp_job.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/common/mali_gp_job.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/common/mali_soft_job.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/common/mali_scheduler.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/common/mali_osk_list.h
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/common/mali_timeline.h
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/common/mali_executor.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/common/mali_group.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/common/mali_pp.h
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/common/mali_dlbu.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/common/mali_broadcast.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/common/mali_pm.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/common/mali_pm_domain.h
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/common/mali_pmu.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/common/mali_user_settings_db.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/common/mali_kernel_utilization.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/common/mali_l2_cache.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/common/mali_timeline.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/common/mali_spinlock_reentrant.h
+WaitPP
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/common/mali_timeline_fence_wait.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/common/mali_timeline_sync_fence.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/common/mali_spinlock_reentrant.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/common/mali_pm_domain.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/linux/mali_osk_pm.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/platform/mt6580/platform.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/linux/mali_memory_dma_buf.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/linux/mali_memory_secure.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/linux/mali_sync.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/platform/mt6580/arm_core_scaling.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/smi/smi_common.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/freqhopping/mt_freqhopping_drv.c
+camera-isp
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/cameraisp/src/mt6580/camera_isp.c
+CAMERA_SENSOR
+camera-pipemgr
+PostProc
+camera-sysram
+kd_camera_hw_bus2
+3[kd_sensorlist][%s] [CAMERA_HW] register char device failed!
+hw_info_debug_read: actived_camera_name[%d]=%s, sub_actived_camera_name[%d]=%s
+3[kd_sensorlist][%s] subsys_camera_info_read %s
+3[kd_sensorlist][%s] failed to register CAMERA_HW driver
+driver/camera_info
+driver/camera_infos
+hw_camera_info
+Cannot find camera pinctrl!
+kd_camera_hw
+3[kd_sensorlist][%s] [CAMERA SENSOR] I2C send failed, addr = 0x%x, data = 0x%x !!
+3[kd_sensorlist][%s] [CAMERA SENSOR] I2C read failed!!
+3[kd_sensorlist][%s] [CAMERA SENSOR] I2C send failed!!, Addr = 0x%x
+3[kd_sensorlist][%s] [CAMERA SENSOR] exceed 2 bytes
+3[kd_sensorlist][%s] [CAMERA SENSOR] I2C send failed addr = 0x%x, data = 0x%x !!
+3[kd_sensorlist][%s] [CAMERA_HW]ERROR: copy from user fail
+imgsensor:actived_camera_name=%s,sensorID:%d
+imgsensor:sub_actived_camera_name=sub :%s,sensorID:%d
+mediatek,camera_hw
+3[kd_sensorlist][%s] regulator get cust camera node failed!
+GC2355_camera_sensor[%s] E
+GC2355_camera_sensor[%s] scenario_id = %d
+GC2355_camera_sensor[%s] GC2355,MIPI 2LANE
+GC2355_camera_sensor[%s] i2c write id: 0x%x, sensor id: 0x%x
+GC2355_camera_sensor[%s] Read sensor id fail, write id: 0x%x, id: 0x%x
+GC2355_camera_sensor[%s] E
+GC2355_camera_sensor[%s] E!
+GC2355_camera_sensor[%s] Warning: current_fps %d fps is not support, so use cap's setting: %d fps!
+GC2355_camera_sensor[%s] E! currefps:%d
+GC2355_camera_sensor[%s] Error ScenarioId setting
+GC2355_camera_sensor[%s] feature_id = %d
+GC2355_camera_sensor[%s] Exit! shutter =%d, framelength =%d
+GC2355_camera_sensor[%s] framerate = %d
+GC2355_camera_sensor[%s] enable = %d, framerate = %d
+GC2355_camera_sensor[%s] scenario_id = %d, framerate = %d
+GC2355_camera_sensor[%s] error scenario_id = %d, we use preview scenario
+GC2355_camera_sensor[%s] enable: %d
+GC2355_camera_sensor[%s] current fps :%d
+GC2355_camera_sensor[%s] ihdr enable :%d
+GC2355_camera_sensor[%s] SENSOR_FEATURE_GET_CROP_INFO scenarioId:%d
+GC2355_camera_sensor[%s] SENSOR_SET_SENSOR_IHDR LE=%d, SE=%d, Gain=%d
+GC2355_camera_sensor[%s] le:0x%x, se:0x%x, gain:0x%x
+mediatek,CAMERA_MAIN_AF
+6MAINAF [%s] Camera Power enable
+6MAINAF [%s] AFIOC_S_SETPOWERCTRL regulator_put %p
+6BU63169AF_DRV [%s] Camera Power enable
+6BU63169AF_DRV [%s] Camera Power disable
+kd_camera_flashlight
+sub_flashlight_gpio_output_low
+sub_flashlight_gpio_output_high
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/ccci_util/ccci_util_lib_fo.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/dual_ccci/ccci_hw.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/dual_ccci/ccci_logical.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/dual_ccci/ccci_md_main.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/dual_ccci/ccci_chrdev.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/include/linux/netdevice.h
+MT6580_S00
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/dual_ccci/mt6580/src/ccci_platform.c
+MT6580E1
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/dual_ccci/mt6580/src/ccci_settings.c
+6[W]%s:can't find connectivity compatible node
+MTK-BTIF[I]%s:%s log rt output enabled
+MTK-BTIF[I]%s:%s log rt output disabled
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/btif/common/btif_dma_plat.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/btif/common/btif_plat.c
+lastpc_reboot_test
+lastpc_dump
+lastpc
+3%s:%d: lastpc_register failed
+3[TRACKER] Watch address: 0x%x was touched
+  hotplug: %d
+CPU Hotplug: caller CPU%d, callee CPU%d
+ptp_bank_[%d]_vboot = 0x%llx
+ptp_cpu_big_volt[%d] = %llx
+ptp_cpu_big_volt_1[%d] = %llx
+ptp_cpu_big_volt_2[%d] = %llx
+ptp_cpu_big_volt_3[%d] = %llx
+ptp_cpu_2_little_volt[%d] = %llx
+ptp_cpu_2_little_volt_1[%d] = %llx
+ptp_cpu_2_little_volt_2[%d] = %llx
+ptp_cpu_2_little_volt_3[%d] = %llx
+ptp_cpu_little_volt[%d] = %llx
+ptp_cpu_little_volt_1[%d] = %llx
+ptp_cpu_little_volt_2[%d] = %llx
+ptp_cpu_little_volt_3[%d] = %llx
+ptp_cpu_cci_volt[%d] = %llx
+ptp_cpu_cci_volt_1[%d] = %llx
+ptp_cpu_cci_volt_2[%d] = %llx
+ptp_cpu_cci_volt_3[%d] = %llx
+ptp_gpu_volt[%d] = %llx
+ptp_temp: big = %llx
+ptp_temp: GPU = %llx
+ptp_temp: little = %llx
+ptp_status: 0x%x
+idvfs_OTP_Endis = %s
+ptp_gpu_volt_1[%d] = %llx
+ptp_gpu_volt_2[%d] = %llx
+ptp_gpu_volt_3[%d] = %llx
+touch:
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/performance/perf_ioctl/perf_ioctl.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/thermal/mtk_cooler_shutdown.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/thermal/mtk_cooler_cam.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/thermal/mtk_cooler_vrt.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/thermal/common/mtk_thermal_platform.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/thermal/common/thermal_zones/mtk_ts_battery.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/thermal/common/thermal_zones/mtk_ts_bts.c
+7[name:mtk_ts_cpu&][CPU_Thermal]tscpu_write_fastpoll input %d %d
+7[name:mtk_ts_cpu&][CPU_Thermal]tscpu_write_fastpoll applied %d %d
+7[name:mtk_ts_cpu&][CPU_Thermal]tscpu_write_fastpoll out of range
+7[name:mtk_ts_cpu&][CPU_Thermal]tscpu_write_fastpoll bad argument
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/thermal/common/thermal_zones/mtk_ts_cpu.c
+tzcpu_fastpoll
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/thermal/common/thermal_zones/mtk_ts_pa.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/thermal/common/thermal_zones/mtk_ts_pmic.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/thermal/common/thermal_zones/mtk_ts_wmt.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/thermal/common/thermal_zones/mtk_ts1.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/thermal/common/thermal_zones/mtk_ts2.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/thermal/common/thermal_zones/mtk_ts3.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/thermal/common/thermal_zones/mtk_ts4.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/thermal/common/coolers/mtk_cooler_3Gmutt.c
+driver/thermal/clabcct_lcmoff
+chrlmt_lcmoff_policy_enable %d
+abcct_lcmoff_cur_bat_chr_curr_limit %d
+abcct_lcmoff_target_temp %ld
+abcct_lcmoff_kp %ld
+abcct_lcmoff_ki %ld
+abcct_lcmoff_kd %ld
+abcct_lcmoff_max_bat_chr_curr_limit %d
+abcct_lcmoff_min_bat_chr_curr_limit %d
+4[thermal/cooler/bcct]%s clabcct_lcmoff creation failed
+Tpcb 1 %d
+Tpcb 2 %d
+tp_ratio_high_rise = %d
+tp_ratio_high_fall = %d
+tp_ratio_low_rise = %d
+tp_ratio_low_fall = %d
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/thermal/common/coolers/mtk_cooler_atm.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/aee/aed/aed-main.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/aee/aed/aed-debug.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/aee/aed/monitor_hang.c
+3[EMI/BWL] can't find compatible node
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/dma-buf/dma-buf.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/dma-buf/fence.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/scsi/scsi_error.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/scsi/scsi_lib.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/scsi/scsi_scan.c
+TP9100
+Incompatible device type on "%s"
+Incompatible device flags on "%s"
+Incompatible OOB or ECC data on "%s"
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/mtd/mtd_blkdevs.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/spi/spi.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/net/tun.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/usb/core/hcd.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/usb/core/urb.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/include/linux/usb.h
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/usb/core/port.c
+300_CAMERA
+LS-120 Camera
+DMC-LCx Camera
+D-LUX Camera
+400_CAMERA
+Digital Camera EX-20 DSC
+QV DigitalCamera
+EX-N1 DigitalCamera
+Mtp device
+ums_onetouch
+Maxtor Onetouch %04x:%04x
+ums-onetouch
+OneTouch External Harddrive
+CameraMate (DPCM_USB)
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/usb/phy/phy.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/usb/gadget/composite.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/usb/gadget/configfs.c
+sub_compatible_id
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/usb/gadget/function/u_serial.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/usb/gadget/function/f_mass_storage.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/usb/gadget/function/f_fs.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/usb/gadget/u_f.h
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/usb/gadget/function/f_accessory.c
+6mtp_release
+6mtp_open
+4MTP_QUEUE_DBG, <%s(), %d> save active <%d,%s>
+4MTP_QUEUE_DBG, <%s(), %d> more than one user <%d,%d>, <%s,%s>
+6mtp_bind_config
+&mtp_read_mutex
+3mtp gadget driver failed to initialize
+3Error setting MTP
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/usb/gadget/function/u_ether.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/usb/gadget/android.c
+3Error: Create MTP function before linking PTP function with a gadget configuration
+1: Delete existing PTP function if any
+2: Create MTP function
+3: Create and symlink PTP function with a gadget configuration
+3mtp_bind() could not allocate requests
+tpl-support
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/input/input.c
+touchscreen-size-x
+touchscreen-fuzz-x
+touchscreen-size-y
+touchscreen-fuzz-y
+touchscreen-max-pressure
+touchscreen-fuzz-pressure
+tpd-max-touch-num
+use-tpd-button
+tpd-resolution
+tpd-key-num
+tpd-key-local
+tpd-key-dim-local
+tpd-filter-enable
+tpd-filter-pixel-density
+tpd-filter-custom-prameters
+tpd-filter-custom-speed
+3[tpd]%s can't find touch compatible custom node
+6mtk-tpd: touch driver exist
+3tpd: access error: %08X, (%2d, %2d)
+3tpd: TPD_GET_FILTER_PARA IOCTL CMD: data is null
+3tpd: TPD_GET_FILTER_PARA IOCTL CMD: copy data error
+3tpd: unknown IOCTL: 0x%08x
+6mtk-tpd: unable to register touch panel driver.
+3tpd : touch device init failed res:%d
+hw_tp_info
+6mtk-tpd: MediaTek touch panel driver exit
+6mtk-tpd: fb_notify(blank=%d)
+6mtk-tpd: LCD ON Notify
+6mtk-tpd: start touch_resume_workqueue failed
+6mtk-tpd: LCD OFF Notify
+6mtk-tpd: cancel touch_resume_workqueue err = %d
+fwq Cannot find touch pinctrl1!
+fwq Cannot find touch pinctrl state_eint_as_int!
+state_eint_output0
+fwq Cannot find touch pinctrl state_eint_output0!
+state_eint_output1
+fwq Cannot find touch pinctrl state_eint_output1!
+state_rst_output0
+fwq Cannot find touch pinctrl state_rst_output0!
+state_rst_output1
+fwq Cannot find touch pinctrl state_rst_output1!
+6mtk-tpd: enter %s, %d
+3mtk_tpd: tpd_misc_device register failed
+6mtk-tpd: [mtk-tpd]tpd_probe, tpd_driver_name=%s
+6mtk-tpd: [mtk-tpd]Generic touch panel driver
+6mtk-tpd: [mtk-tpd]cap touch and Generic touch both are not loaded!!
+touch_resume
+6mtk-tpd: register fb_notifier fail!
+6mtk-tpd: Cap touch panel driver
+6mtk-tpd: input_register_device failed.(tpd)
+mtk-tpd-kpd
+6mtk-tpd: input_register_device failed.(kpd)
+virtualkeys.mtk-tpd
+BTN_TOUCH
+3[tpd_em_log] :tpd_buf.buffer is NULL
+[tpd_em_log] overlay !!!!!
+[%5lu.%06lu][tpd_em_log] int trigger down
+[%5lu.%06lu][tpd_em_log] int trigger up
+[%5lu.%06lu][tpd_em_log] timer trigger
+[%5lu.%06lu][tpd_em_log] rx=%d,ry=%d,rz1=%d,rz2=%d,p=%d,r
+[%5lu.%06lu][tpd_em_log] the first or last point is rejected
+[%5lu.%06lu][tpd_em_log] pressure(%d) > NICE_PRESSURE(%d), debounce debt0:%d, debt1:%d, spl_num:%d
+[%5lu.%06lu][tpd_em_log] The first touch latency is %d ms
+[%5lu.%06lu][tpd_em_log] rx=%d,ry=%d,cx=%d,cy=%d,p=%d,d(+%ld ms)
+[%5lu.%06lu][tpd_em_log] rx=%d,ry=%d,cx=%d,cy=%d,p=%d,u(+%ld ms)
+3[tpd_em_log] :register device failed
+4[tpd_em_log] :register device successfully
+3tpd_log: nomem for tpd_buf->buffer
+_touch_type
+tpd_em_log
+met_touch
+vtouch
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/rtc/hctosys.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/rtc/class.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/i2c/i2c-core.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/power/power_supply_core.c
+backward_compatible
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/thermal/of-thermal.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/watchdog/mediatek/wdk/wd_common_drv.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/md/dm.c
+3device-mapper: ioctl: ioctl %d tried to output some data but has IOCTL_FLAGS_NO_PARAMS set
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/md/dm-io.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/md/dm-stats.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/cpufreq/cpufreq.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/cpufreq/cpufreq_stats.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/cpufreq/cpufreq_interactive.c
+boostpulse
+boostpulse_duration
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/cpufreq/cpufreq_governor.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/cpuidle/cpuidle.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/cpuidle/driver.c
+mt6580_cpuidle
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/mmc/core/core.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/mmc/core/host.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/mmc/core/mmc.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/mmc/core/sd.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/mmc/core/sdio.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/mmc/core/sdio_ops.c
+CISTPL_FUNCE
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/mmc/core/sdio_irq.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/mmc/host/mediatek/mt6580/sd.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/mmc/host/mediatek/mt6580/mt_dump.c
+MTPositionX
+MTPositionY
+KPLeftParenthesis
+KPRightParenthesis
+ControlPanel
+KbdInputAssistPrev
+KbdInputAssistPrevGroup
+LightPen
+TouchScreen
+TouchPad
+UnTouch
+TabletPick
+BiometricHumanTouch
+Output
+OutputID
+ConfigApparentPower
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/hid/hid-core.c
+HID_OUTPUT_REPORT
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/hid/hid-input.c
+Output queue is full
+unable to register touch report
+unable to request touch data (%d)
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/hid/hid-samsung.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/hid/usbhid/hid-core.c
+output irq status %d received
+output queue full
+output queueing failed
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/hid/usbhid/hid-quirks.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/of/base.c
+OF_COMPATIBLE_%d=%s
+OF_COMPATIBLE_N=%d
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/of/platform.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/of/irq.c
+6Reserved memory: initialized node %s, compatible id %s
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/staging/android/ion/ion.c
+camera total
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/staging/android/ion/ion_page_pool.c
+ion_mm_heap_for_camera
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/staging/android/binder.c
+binder_uintptr_t
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/staging/android/binder_alloc.c
+timed_output
+1lowmemorykiller: Aggressive LMK during CPU hotplug!
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/staging/android/sync.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/sound/core/jack.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/sound/core/memalloc.c
+OSS compatible
+Output %d
+ALTPCM
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/sound/core/seq/seq_clientmgr.c
+  Output pool :
+&pool->output_sleep
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/sound/core/seq/seq_queue.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/sound/core/seq/seq_fifo.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/sound/core/seq/seq_ports.c
+3ALSA: seq: incompatible device '%s' for plug-in '%s' (%d %d)
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/sound/core/seq/oss/seq_oss_synth.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/sound/core/seq/oss/seq_oss_midi.c
+3ALSA: seq_midi: MIDI output buffer overrun
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/sound/usb/endpoint.c
+usbmixer: volume control quirk for Tenx TP6911 Audio Headset
+Output Playback Switch
+Output A Playback Volume
+Output B Playback Volume
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/sound/usb/pcm.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/sound/soc/soc-core.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/sound/soc/soc-dapm.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/sound/soc/soc-cache.c
+4+%s(), no corresponding output SGEN
+4Audio_i2s0_hdoutput_Get = %d
+4%s() samplerate = %d mi2s0_hdoutput_control = %d
+4Audio_I2S0dl1_hdoutput_Get = %d
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/sound/soc/mediatek/mt6580/mt_soc_pcm_dl2.c
+I2S0OUTPUT
+I2S0DL1OUTPUT
+DEEP_BUFFER_DL_OUTPUT
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/core/sock.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/core/request_sock.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/core/skbuff.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/include/linux/skbuff.h
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/core/datagram.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/core/stream.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/core/gen_estimator.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/core/dev.c
+4%s: promiscuity touches roof, set promiscuity failed. promiscuity feature of device might be broken.
+4%s: allmulti touches roof, set allmulti failed. allmulti feature of device might be broken.
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/core/ethtool.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/core/dev_addr_lists.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/core/dst.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/core/neighbour.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/core/rtnetlink.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/core/dev_ioctl.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/core/net-sysfs.c
+notpresent
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/core/fib_rules.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/llc/llc_core.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/sched/sch_generic.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/include/net/sch_generic.h
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/sched/sch_api.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/sched/act_api.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/sched/sch_htb.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/sched/cls_u32.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/sched/cls_flow.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/netlink/af_netlink.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/netlink/genetlink.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/netfilter/nf_queue.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/netfilter/nfnetlink_log.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/netfilter/nf_conntrack_seqadj.c
+3nf_conntrack_sctp4: pernet registration failed.
+3nf_conntrack_sctp6: pernet registration failed.
+ip_conntrack_sctp_timeout_closed
+ip_conntrack_sctp_timeout_cookie_wait
+ip_conntrack_sctp_timeout_cookie_echoed
+ip_conntrack_sctp_timeout_established
+ip_conntrack_sctp_timeout_shutdown_sent
+ip_conntrack_sctp_timeout_shutdown_recd
+ip_conntrack_sctp_timeout_shutdown_ack_sent
+nf_conntrack_sctp_timeout_closed
+nf_conntrack_sctp_timeout_cookie_wait
+nf_conntrack_sctp_timeout_cookie_echoed
+nf_conntrack_sctp_timeout_established
+nf_conntrack_sctp_timeout_shutdown_sent
+nf_conntrack_sctp_timeout_shutdown_recd
+nf_conntrack_sctp_timeout_shutdown_ack_sent
+ftp-%d
+3nf_ct_ftp: failed to register helper for pf: %d port: %d
+tftp-%u
+3nf_ct_tftp: failed to register helper for pf: %u port: %u
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/netfilter/nf_nat_core.c
+6nf_nat_ftp: kernel >= 2.6.10 only uses 'ports' for conntrack modules
+6xt_TPROXY: Can be used only in combination with either -p tcp or -p udp
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/netfilter/xt_TPROXY.c
+6xt_TCPMSS: path-MTU clamping only supported in FORWARD, OUTPUT and POSTROUTING hooks
+6xt_policy: output policy not valid in PREROUTING and INPUT
+6xt_policy: input policy not valid in POSTROUTING and OUTPUT
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/ipv4/route.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/ipv4/ip_fragment.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/ipv4/inet_hashtables.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/ipv4/inet_timewait_sock.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/ipv4/inet_connection_sock.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/include/net/request_sock.h
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/ipv4/tcp.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/ipv4/tcp_input.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/ipv4/tcp_output.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/ipv4/tcp_timer.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/ipv4/tcp_ipv4.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/ipv4/tcp_cong.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/ipv4/tcp_fastopen.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/include/net/sock.h
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/ipv4/devinet.c
+bootp_relay
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/ipv4/af_inet.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/ipv4/igmp.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/ipv4/fib_semantics.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/ipv4/fib_trie.c
+4fib_trie tp=%p pos=%d, bits=%d, key=%0x plen=%d
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/ipv4/inet_fragment.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/ipv4/ip_tunnel.c
+tcp_limit_output_bytes
+InBcastPkts
+OutBcastPkts
+3DHCP/BOOTP: Ignoring fragmented reply
+3DHCP/BOOTP: Reply not for us, op[%x] xid[%x]
+3DHCP/BOOTP: Ignoring delayed packet
+4DHCP/BOOTP: Ignoring device %s, MTU %d too small
+3DHCP/BOOTP: No suitable device found
+6     bootserver=%pI4, rootserver=%pI4, rootpath=%s
+5nf_nat_h323: out of RTP ports
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/ipv4/inet_diag.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/xfrm/xfrm_policy.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/xfrm/xfrm_state.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/xfrm/xfrm_user.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/xfrm/xfrm_ipcomp.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/unix/af_unix.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/ipv6/af_inet6.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/ipv6/anycast.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/ipv6/ip6_output.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/ipv6/addrconf.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/ipv6/addrlabel.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/ipv6/route.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/ipv6/ip6_fib.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/ipv6/mcast.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/ipv6/reassembly.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/ipv6/tcp_ipv6.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/ipv6/inet6_connection_sock.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/ipv6/xfrm6_policy.c
+Ip6InMcastPkts
+Ip6OutMcastPkts
+Ip6InNoECTPkts
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/ipv6/mip6.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/ipv6/netfilter/nf_conntrack_reasm.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/ipv6/sit.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/ipv6/addrconf_core.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/ipv6/ip6_offload.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/ipv6/inet6_hashtables.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/packet/af_packet.c
+TPACKET version not supported.
+3[name:af_packet&]tpacket_rcv: packet too big, clamped from %u to %u. macoff=%u
+TPACKET version not supported
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/key/af_key.c
+3bridge: can't register sap for STP
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/bridge/br_fdb.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/bridge/br_if.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/bridge/br_stp_if.c
+/sbin/bridge-stp
+6%s: userspace STP stopped, return code %d
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/bridge/br_netlink.c
+stp_state
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/bridge/br_multicast.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/8021q/vlan_core.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/8021q/vlan.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/wireless/core.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/wireless/core.h
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/wireless/util.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/wireless/reg.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/wireless/scan.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/wireless/nl80211.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/wireless/mlme.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/wireless/ibss.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/wireless/sme.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/wireless/chan.c
+dot11MeshGateAnnouncementProtocol
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/net/wireless/wext-core.c
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/lib/klist.c
+sched_pi_setprio
+sched_cpu_hotplug
+cpu_hotplug
+ext4_ext_convert_to_initialized_fastpath
+block_touch_buffer
+MET_touch
+snd_soc_dapm_output_path
+__aeabi_ulcmp
+cpu_hotplugging
+ftrace_output_call
+ftrace_raw_output_prep
+perf_tp_event
+vfs_setpos
+kern_path_mountpoint
+touch_atime
+mntput
+touch_buffer
+security_socket_getpeersec_dgram
+bitmap_scnlistprintf
+lz4_decompress_unknownoutputsize
+pinctrl_gpio_direction_output
+gpiod_direction_output
+gpiod_direction_output_raw
+cpu_is_hotpluggable
+mt_cpufreq_disable_by_ptpod
+mt_cpufreq_enable_by_ptpod
+get_ptpod_status
+mt_ptp_opp_status
+mt_ptp_opp_freq
+mt_ptp_opp_num
+mt_ptp_unlock
+mt_ptp_lock
+mtk_thermal_get_tpcb_target
+syscon_regmap_lookup_by_compatible
+ppp_output_wakeup
+function_alloc_mtp_ptp
+alloc_inst_mtp_ptp
+of_usb_host_tpl_support
+touchscreen_parse_of_params
+tpd_device_exit
+tpd_device_init
+tpd_driver_add
+tpd_probe
+tpd_driver_remove
+tpd_gpio_output
+tpd_gpio_as_int
+tpd_get_dts_info
+touch_of_match
+tpd_dts_data
+tpd_button_setting
+tpd_button
+tpd_em_log_release
+tpd_em_log_store
+tpd_em_log_output
+MET_touch
+tpd_em_log_to_fs
+tpd_enable_em_log
+tpd_em_log
+tpd_debug_set_time
+tpd_down_status
+tpd_debug_time
+tpd_switch_normal_mode
+tpd_switch_sleep_mode
+tpd_switch_multiple_mode
+tpd_switch_single_mode
+tpd_load_status
+tpd_type_cap
+tpd_def_calmat
+tpd_calmat
+hid_output_report
+of_find_compatible_node
+of_machine_is_compatible
+of_device_is_compatible
+timed_output_dev_unregister
+timed_output_dev_register
+snd_rawmidi_output_params
+snd_rawmidi_drain_output
+snd_rawmidi_drop_output
+kernel_getpeername
+sock_no_socketpair
+neigh_direct_output
+neigh_connected_output
+neigh_resolve_output
+neigh_compat_output
+stp_proto_unregister
+stp_proto_register
+nf_nat_ftp_hook
+nat_rtp_rtcp_hook
+nf_nat_pptp_hook_expectfn
+nf_nat_pptp_hook_exp_gre
+nf_nat_pptp_hook_inbound
+nf_nat_pptp_hook_outbound
+nf_nat_tftp_hook
+ip_route_output_flow
+__ip_route_output_key
+inetpeer_invalidate_tree
+inet_putpeer
+inet_getpeer
+xfrm4_prepare_output
+xfrm_inner_extract_output
+xfrm_output
+xfrm_output_resume
+ipcomp_output
+ip6_route_output
+xfrm6_prepare_output
+cfg80211_chandef_compatible
+ntp_tick_adj=
+TPROXY
+TPROXY
+TPROXY
+mediatek,mt6580-pinctrl
+mediatek,mt6580-accdet
+             enable touch latency log
+        lcm:[on|off|init]
+             power on/off lcm
+non_lcm
+mediatek,mt6580-flashlight
+mediatek,mt6570-touch
+mediatek,mt6735-touch
+mediatek,mt6580-touch
+mediatek,mt8173-touch
+mediatek,mt6755-touch
+mediatek,mt6757-touch
+mediatek,mt6797-touch
+mediatek,mt8163-touch
+mediatek,mt8127-touch
+mediatek,mt2701-touch
+mediatek,mt7623-touch
+non_tp
+backward_compatible
+
+C:\Users\User\Downloads\MT6580S24\MT6580S24>python -c "from pathlib import Path; import re; d=Path('kernel_decompressed.bin').read_bytes(); s=re.findall(rb'[\x20-\x7e]{5,}',d); keys=[b'ft5',b'ft6',b'ft8',b'gt9',b'gt1',b'goodix',b'focaltech',b'gtxx',b'ili',b'nt36',b'cst']; [print(x.decode('latin1')) for x in s if any(k in x.lower() for k in keys)]"
+Linux version 3.18.79 (jjx@jjx-2) (gcc version 6.3.1 20170404 (Linaro GCC 6.3-2017.05) ) #3 SMP PREEMPT Sat Sep 7 16:58:55 CST 2024
+fxf gfi_i8iNibiqi?iEiji9iBiWiYiziHiIi5ili3i=iei
+hxi4iii@ioiDiviXiAitiLi;iKi7i\iOiQi2iRi/i{i<iFkEkCkBkHkAk
+mali_utilization_platform_realize
+mali_utilization_data_assert_locked
+mali_pmm_utilization_handler
+"%s, netdev:%s(%d), %pM, action_code: %u, dialog_token: %u, status_code: %u, peer_capability: %u initiator: %s buf: %#.2x ", REC->wiphy_name, REC->name, REC->ifindex, (REC->peer), REC->action_code, REC->dialog_token, REC->status_code, REC->peer_capability, (REC->initiator) ? "true" : "false", ((u8 *)__get_dynamic_array(buf))[0]
+AdcSt
+6[name:capability&]capability: warning: `%s' uses 32-bit capabilities (legacy support in use)
+6[name:capability&]capability: warning: `%s' uses deprecated v2 capabilities in a way that may be insecure
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/kernel/capability.c
+2capability: capable() called with invalid cap=%u
+profiling
+utilization_load_avg
+se->avg.utilization_avg_contrib
+se.avg.utilization_avg_contrib
+6kernel sleep profiling enabled (shift: %ld)
+6kernel schedule profiling enabled (shift: %ld)
+6kernel KVM profiling enabled (shift: %ld)
+6kernel profiling enabled (shift: %ld)
+Built %i zonelists in %s order, mobility grouping %s.  Total pages: %ld
+allocstall
+%cstripe=%lu
+couldn't mount as ext2 due to feature incompatibilities
+couldn't mount as ext3 due to feature incompatibilities
+MMP startup interrupted, failing mount
+Utilization: %u%% (%u valid blocks, %u discard blocks)
+Utilization: %u%% (%u valid blocks)
+security.capability
+6warning: `%s' has both setuid-root and effective capabilities. Therefore not raising all capabilities.
+execstack
+capability2
+3SELinux:  out of range capability %d
+policy_capabilities
+6SELinux:  Android master kernel running Android M policy in compatibility mode.
+3SELinux: compatibility lookup failed for policy version %d
+ capability=%d
+ioctl=TIOCSTI
+uid_procstat
+3%s: failed to create uid_procstat proc entry
+3=== mt Scheduler Profiling ===
+[PWRAP] ERROR,line=%d _pwrap_init_sistrobe Fail at PMIC %d, result = %x, leading_one:%d, tailing_one:%d
+5[MUSB]%s %d: <== static silicon ep config
+ssc_disable: %d, compatibility_for_nvk: %d, cont_clock: %d
+[DDPDSI] rg_bic: %d, rg_bp: %d, PLL_CLOCK: %d, dsi_clock: %d, ssc_range: %d, ssc_disable: %d, compatibility_for_nvk: %d, cont_clock: %d
+GPU Utilization fp: %p
+gpu_utilization
+&gsVsyncStampLock
+Profiling not supported
+utilization_gp_pp
+utilization_gp
+utilization_pp
+Mali GPU Utilization: Utilization handler installed
+Mali GPU Utilization: No platform utilization handler installed
+/home/jjx/work/mt6580_2/mt6580_go_2/alps/kernel-3.18/drivers/misc/mediatek/gpu/gpu_mali/mali_utgard/mali/mali_r8p0-00dev0/common/mali_kernel_utilization.c
+NULL pointer mali_utilization_callback
+last_utilization_gpu = %d
+last_utilization_gp = %d
+last_utilization_pp = %d
+ASSERT failed: _mali_osk_lock_get_owner((_mali_osk_lock_debug_t *)utilization_data_lock) == _mali_osk_get_tid()
+ 15:56:16 CST BUILD=debug TARGET_PLATFORM= MALI_PLATFORM= KDIR= OS_MEMORY_KERNEL_BUFFER_SIZE_IN_MB=16 USING_UMP= USING_PROFILING= USING_INTERNAL_PROFILING= USING_GPU_UTILIZATION=1 USING_DVFS= USING_DMA_BUF_FENCE =  MALI_UPPER_HALF_SCHEDULING=1
+%s GPU utilization=%d
+Utilization: (%3d, %3d, %3d), cores enabled: %d/%d
+4[net] (%d)SIOCSTXQSTATE request=%d on CCMNI%d usge=%d
+prot_capabilities
+PHILIPS
+CentricStor
+Silicon Media R/W
+3input: input_set_capability: unknown type %u (code %u)
+Failed to create compatibility class link
+3[battery_meter_initilized] uisoc=soc=%d.
+3%s: could not allocate a buffer for switch capabilities.
+%s: Double unmap detected! bailing...
+unable to register OSS compatibility device %i:%i
+  capabilities : ioctl %s / load_patch %s
+  capability %s / opened %s
+ASoC: failed to add auxiliary devices %d
+4%s, ADCType=%d, enable=%x,AdcStatus=%x ,DLStatus=%x, fs=%d
+4%s ADCType = %d enable = %d, AdcStatus=%x
+%s, netdev:%s(%d), %pM, action_code: %u, dialog_token: %u, status_code: %u, peer_capability: %u initiator: %s buf: %#.2x
+peer_capability
+rcu_utilization
+ged_dvfs_cal_gpu_utilization_fp
+input_set_capability
+#3 SMP PREEMPT Sat Sep 7 16:58:55 CST 2024
+
+C:\Users\User\Downloads\MT6580S24\MT6580S24>

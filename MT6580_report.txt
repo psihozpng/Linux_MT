@@ -1,0 +1,1830 @@
+================================================================================
+MT6580 / ANDROID IMAGE FORENSIC ANALYZER
+================================================================================
+TIME: 2026-09-26 12:39:09.052904
+ROOT: C:\Users\User\Downloads\MT6580S24\MT6580S24
+
+=== FILE INVENTORY ===
+analyze_device.py                          10684 bytes
+boot.img                                16777216 bytes
+build.prop.txt                              5156 bytes
+cache.img                              117440512 bytes
+cls                                            0 bytes
+device_tree.dtb                            36761 bytes
+dtc                                            0 bytes
+frp.bin                                  1048576 bytes
+kernel_decompressed.bin                 15233024 bytes
+kernel_gzip.bin                          5500186 bytes
+keystore.bin                             8388608 bytes
+lk.bin                                    393216 bytes
+lk2.bin                                   393216 bytes
+logo.bin                                 8388608 bytes
+memoryS24.jpg                             104988 bytes
+MT6580_Android_scatter.txt                 11579 bytes
+nvdata.bin                              33554432 bytes
+nvram.bin                                5242880 bytes
+odmdtbo.img                             16777216 bytes
+original_init                            1050908 bytes
+para.bin                                  524288 bytes
+preloader_b80fa_f25b_s24ultra.bin         112472 bytes
+proinfo.bin                              3145728 bytes
+protect1.bin                            10485760 bytes
+protect2.bin                            10485760 bytes
+python                                         0 bytes
+ramdisk_blob.bin                          365526 bytes
+ramdisk_real.bin                         1137623 bytes
+ramdisk_unpacked.bin                     1434944 bytes
+recovery.bin                            16777216 bytes
+recovery.img                            11606016 bytes
+Screenshot_2025-01-24-18-27-10.png        148756 bytes
+Screenshot_2025-01-25-11-27-52.png         42378 bytes
+Screenshot_2025-01-25-11-29-07.png         83818 bytes
+Screenshot_20250124-030413.png             84345 bytes
+Screenshot_20250124-030517.png             56587 bytes
+Screenshot_20250126-023020.jpg             98188 bytes
+Screenshot_20250126-023121.jpg            141870 bytes
+Screenshot_20250126-023126.jpg            118136 bytes
+seccfg.bin                                262144 bytes
+secro.bin                                6291456 bytes
+system.img                            1610612736 bytes
+TWRP-3.7.0_9-MT6580v3.18.79.img         11606016 bytes
+vendor.img                             301989888 bytes
+
+=== IMAGE ANALYSIS ===
+
+--- boot.img ---
+SIZE: 16777216 (16.00 MiB)
+HEAD: 41 4e 44 52 4f 49 44 21 69 2f 54 00 00 80 00 80 d7 5b 11 00 00 00 00 84 00 00 00 00 00 00 f0 80
+SHA256: e53786ecf158e9c64dc2a7e20676a6e42c05ae5bc08582aa7ef26a70ff7a1ae1
+FORMAT: not Android sparse
+EXT4 MAGIC: 00 00
+EXT4: NO
+
+--- cache.img ---
+SIZE: 117440512 (112.00 MiB)
+HEAD: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+SHA256: 22bafa0e9c645b02b702cc91cf5cf5d0c14e0ad2d010ab4345bd9b37accafdf0
+FORMAT: not Android sparse
+EXT4: YES
+
+--- odmdtbo.img ---
+SIZE: 16777216 (16.00 MiB)
+HEAD: 88 16 88 58 08 b3 00 00 64 74 62 6f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+SHA256: cca774eec68e06c72d7debe0884ffa6d39d70827ef77b57c9fac299ff2446505
+FORMAT: not Android sparse
+EXT4 MAGIC: 00 00
+EXT4: NO
+
+--- recovery.img ---
+SIZE: 11606016 (11.07 MiB)
+HEAD: 41 4e 44 52 4f 49 44 21 69 2f 54 00 00 80 00 80 dc d9 5c 00 00 00 00 84 00 00 00 00 00 00 00 80
+SHA256: 8f6a6f130db1fcd6fe192cbd165b98cad851f44471228a236b32eb290231c936
+FORMAT: not Android sparse
+EXT4 MAGIC: 00 00
+EXT4: NO
+
+--- system.img ---
+SIZE: 1610612736 (1.50 GiB)
+HEAD: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+SHA256: 867adc391eb660b098815dd43e6a03921de04557357baf10697f66ff32c87c38
+FORMAT: not Android sparse
+EXT4: YES
+
+--- TWRP-3.7.0_9-MT6580v3.18.79.img ---
+SIZE: 11606016 (11.07 MiB)
+HEAD: 41 4e 44 52 4f 49 44 21 69 2f 54 00 00 80 00 80 dc d9 5c 00 00 00 00 84 00 00 00 00 00 00 00 80
+SHA256: 8f6a6f130db1fcd6fe192cbd165b98cad851f44471228a236b32eb290231c936
+FORMAT: not Android sparse
+EXT4 MAGIC: 00 00
+EXT4: NO
+
+--- vendor.img ---
+SIZE: 301989888 (288.00 MiB)
+HEAD: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+SHA256: 92fbce9e59f4fd988caf9df632b4ef407402f5724d3110f60b4f0c86ab69fad2
+FORMAT: not Android sparse
+EXT4: YES
+
+=== RAMDISK ANALYSIS ===
+RAMDISK SIZE: 1434944 (1.37 MiB)
+RAMDISK MAGIC: b'07070100'
+CPIO NEWC: True
+CPIO OBJECTS: 40
+DIR          0 .backup
+FILE       124 .backup/.magisk
+FILE        99 .backup/.rmlist
+FILE    546976 .backup/init.xz
+DIR          0 acct
+FILE        50 bugreports
+DIR          0 cache
+FILE        13 charger
+DIR          0 config
+FILE        17 d
+DIR          0 data
+FILE        23 default.prop
+DIR          0 dev
+FILE        11 etc
+FILE        61 fstab.enableswap
+FILE    139772 init
+FILE      1344 init.environ.rc
+FILE     29057 init.rc
+FILE      7874 init.usb.configfs.rc
+FILE      5721 init.usb.rc
+FILE       497 init.zygote32.rc
+DIR          0 mnt
+DIR          0 oem
+DIR          0 overlay.d
+DIR          0 overlay.d/sbin
+FILE      1536 overlay.d/sbin/init-ld.xz
+FILE    107668 overlay.d/sbin/magisk.xz
+FILE     25624 overlay.d/sbin/stub.xz
+DIR          0 proc
+DIR          0 sbin
+FILE    558288 sbin/charger
+FILE         7 sbin/ueventd
+FILE         7 sbin/watchdogd
+FILE        21 sdcard
+DIR          0 storage
+DIR          0 sys
+DIR          0 system
+FILE      5222 ueventd.rc
+DIR          0 vendor
+FILE         0 TRAILER!!!
+
+=== IMPORTANT RAMDISK FILES ===
+.backup/.magisk                               size=124
+.backup/.rmlist                               size=99
+.backup/init.xz                               size=546976
+default.prop                                  size=23
+fstab.enableswap                              size=61
+init                                          size=139772
+init.rc                                       size=29057
+init.environ.rc                               size=1344
+init.zygote32.rc                              size=497
+ueventd.rc                                    size=5222
+overlay.d/sbin/init-ld.xz                     size=1536
+overlay.d/sbin/magisk.xz                      size=107668
+overlay.d/sbin/stub.xz                        size=25624
+
+=== RAMDISK TEXT FILES ===
+
+----- default.prop -----
+system/etc/prop.default
+
+----- fstab.enableswap -----
+/dev/block/zram0 none swap defaults zramsize=75%,swapprio=10
+
+
+----- init.environ.rc -----
+# set up the global environment
+on init
+    export ANDROID_BOOTLOGO 1
+    export ANDROID_ROOT /system
+    export ANDROID_ASSETS /system/app
+    export ANDROID_DATA /data
+    export ANDROID_STORAGE /storage
+    export EXTERNAL_STORAGE /sdcard
+    export ASEC_MOUNTPOINT /mnt/asec
+    export BOOTCLASSPATH /system/framework/core-oj.jar:/system/framework/core-libart.jar:/system/framework/conscrypt.jar:/system/framework/okhttp.jar:/system/framework/bouncycastle.jar:/system/framework/apache-xml.jar:/system/framework/legacy-test.jar:/system/framework/ext.jar:/system/framework/framework.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/system/framework/org.apache.http.legacy.boot.jar:/system/framework/android.hidl.base-V1.0-java.jar:/system/framework/android.hidl.manager-V1.0-java.jar:/system/framework/mediatek-common.jar:/system/framework/mediatek-framework.jar:/system/framework/mediatek-telephony-common.jar:/system/framework/mediatek-telephony-base.jar:/system/framework/mediatek-ims-common.jar:/system/framework/mediatek-telecom-common.jar:/system/framework/mediatek-cta.jar
+    export SYSTEMSERVERCLASSPATH /system/framework/services.jar:/system/framework/ethernet-service.jar:/system/framework/wifi-service.jar:/system/framework/com.android.location.provider.jar
+    
+    
+
+
+----- init.rc -----
+# Copyright (C) 2012 The Android Open Source Project
+#
+# IMPORTANT: Do not create world writable files or directories.
+# This is a common source of Android security bugs.
+#
+
+import /init.environ.rc
+import /init.usb.rc
+import /init.${ro.hardware}.rc
+import /vendor/etc/init/hw/init.${ro.hardware}.rc
+import /init.usb.configfs.rc
+import /init.${ro.zygote}.rc
+
+# add for cdfinger start
+
+import /init.cdfinger.rc
+
+# add for cdfinger end
+
+
+
+on early-init
+    # Set init and its forked children's oom_adj.
+    write /proc/1/oom_score_adj -1000
+
+    # Disable sysrq from keyboard
+    write /proc/sys/kernel/sysrq 0
+
+    # Set the security context of /adb_keys if present.
+    restorecon /adb_keys
+
+    # Shouldn't be necessary, but sdcard won't start without it. http://b/22568628.
+    mkdir /mnt 0775 root system
+
+    # Set the security context of /postinstall if present.
+    restorecon /postinstall
+
+    # Mount cgroup mount point for cpu accounting
+    mount cgroup none /acct cpuacct
+    mkdir /acct/uid
+
+    # root memory control cgroup, used by lmkd
+    mkdir /dev/memcg 0700 root system
+    mount cgroup none /dev/memcg memory
+    # app mem cgroups, used by activity manager, lmkd and zygote
+    mkdir /dev/memcg/apps/ 0755 system system
+    # cgroup for system_server and surfaceflinger
+    mkdir /dev/memcg/system 0550 system system
+
+    start ueventd
+
+on init
+    sysclktz 0
+
+    # Mix device-specific information into the entropy pool
+    copy /proc/cmdline /dev/urandom
+    copy /default.prop /dev/urandom
+
+    # Backward compatibility.
+    symlink /system/etc /etc
+    symlink /sys/kernel/debug /d
+
+    # Link /vendor to /system/vendor for devices without a vendor partition.
+    symlink /system/vendor /vendor
+
+    # Create energy-aware scheduler tuning nodes
+    mkdir /dev/stune
+    mount cgroup none /dev/stune schedtune
+    mkdir /dev/stune/foreground
+    mkdir /dev/stune/background
+    mkdir /dev/stune/top-app
+    mkdir /dev/stune/rt
+    chown system system /dev/stune
+    chown system system /dev/stune/foreground
+    chown system system /dev/stune/background
+    chown system system /dev/stune/top-app
+    chown system system /dev/stune/rt
+    chown system system /dev/stune/tasks
+    chown system system /dev/stune/foreground/tasks
+    chown system system /dev/stune/background/tasks
+    chown system system /dev/stune/top-app/tasks
+    chown system system /dev/stune/rt/tasks
+    chmod 0664 /dev/stune/tasks
+    chmod 0664 /dev/stune/foreground/tasks
+    chmod 0664 /dev/stune/background/tasks
+    chmod 0664 /dev/stune/top-app/tasks
+    chmod 0664 /dev/stune/rt/tasks
+
+    # Mount staging areas for devices managed by vold
+    # See storage config details at http://source.android.com/tech/storage/
+    mount tmpfs tmpfs /mnt mode=0755,uid=0,gid=1000
+    restorecon_recursive /mnt
+
+    mount configfs none /config
+    chmod 0775 /config/sdcardfs
+    chown system package_info /config/sdcardfs
+
+    mkdir /mnt/secure 0700 root root
+    mkdir /mnt/secure/asec 0700 root root
+    mkdir /mnt/asec 0755 root system
+    mkdir /mnt/obb 0755 root system
+    mkdir /mnt/media_rw 0750 root media_rw
+    mkdir /mnt/user 0755 root root
+    mkdir /mnt/user/0 0755 root root
+    mkdir /mnt/expand 0771 system system
+    mkdir /mnt/appfuse 0711 root root
+
+    # Storage views to support runtime permissions
+    mkdir /mnt/runtime 0700 root root
+    mkdir /mnt/runtime/default 0755 root root
+    mkdir /mnt/runtime/default/self 0755 root root
+    mkdir /mnt/runtime/read 0755 root root
+    mkdir /mnt/runtime/read/self 0755 root root
+    mkdir /mnt/runtime/write 0755 root root
+    mkdir /mnt/runtime/write/self 0755 root root
+
+    # Symlink to keep legacy apps working in multi-user world
+    symlink /storage/self/primary /sdcard
+    symlink /storage/self/primary /mnt/sdcard
+    symlink /mnt/user/0/primary /mnt/runtime/default/self/primary
+
+    write /proc/sys/kernel/panic_on_oops 1
+    write /proc/sys/kernel/hung_task_timeout_secs 0
+    write /proc/cpu/alignment 4
+
+    # scheduler tunables
+    # Disable auto-scaling of scheduler tunables with hotplug. The tunables
+    # will vary across devices in unpredictable ways if allowed to scale with
+    # cpu cores.
+    write /proc/sys/kernel/sched_tunable_scaling 0
+    write /proc/sys/kernel/sched_latency_ns 10000000
+    write /proc/sys/kernel/sched_wakeup_granularity_ns 2000000
+    write /proc/sys/kernel/sched_child_runs_first 0
+
+    write /proc/sys/kernel/randomize_va_space 2
+    write /proc/sys/vm/mmap_min_addr 32768
+    write /proc/sys/net/ipv4/ping_group_range "0 2147483647"
+    write /proc/sys/net/unix/max_dgram_qlen 600
+    write /proc/sys/kernel/sched_rt_runtime_us 950000
+    write /proc/sys/kernel/sched_rt_period_us 1000000
+
+    # Assign reasonable ceiling values for socket rcv/snd buffers.
+    # These should almost always be overridden by the target per the
+    # the corresponding technology maximums.
+    write /proc/sys/net/core/rmem_max  262144
+    write /proc/sys/net/core/wmem_max  262144
+
+    # reflect fwmark from incoming packets onto generated replies
+    write /proc/sys/net/ipv4/fwmark_reflect 1
+    write /proc/sys/net/ipv6/fwmark_reflect 1
+
+    # set fwmark on accepted sockets
+    write /proc/sys/net/ipv4/tcp_fwmark_accept 1
+
+    # disable icmp redirects
+    write /proc/sys/net/ipv4/conf/all/accept_redirects 0
+    write /proc/sys/net/ipv6/conf/all/accept_redirects 0
+
+    # /proc/net/fib_trie leaks interface IP addresses
+    chmod 0400 /proc/net/fib_trie
+
+    # Create cgroup mount points for process groups
+    mkdir /dev/cpuctl
+    mount cgroup none /dev/cpuctl cpu
+    chown system system /dev/cpuctl
+    chown system system /dev/cpuctl/tasks
+    chmod 0666 /dev/cpuctl/tasks
+    write /dev/cpuctl/cpu.rt_period_us 1000000
+    write /dev/cpuctl/cpu.rt_runtime_us 950000
+
+    # sets up initial cpusets for ActivityManager
+    mkdir /dev/cpuset
+    mount cpuset none /dev/cpuset
+
+    # this ensures that the cpusets are present and usable, but the device's
+    # init.rc must actually set the correct cpus
+    mkdir /dev/cpuset/foreground
+    copy /dev/cpuset/cpus /dev/cpuset/foreground/cpus
+    copy /dev/cpuset/mems /dev/cpuset/foreground/mems
+    mkdir /dev/cpuset/foreground/boost
+    copy /dev/cpuset/cpus /dev/cpuset/foreground/boost/cpus
+    copy /dev/cpuset/mems /dev/cpuset/foreground/boost/mems
+    mkdir /dev/cpuset/background
+    copy /dev/cpuset/cpus /dev/cpuset/background/cpus
+    copy /dev/cpuset/mems /dev/cpuset/background/mems
+
+    # system-background is for system tasks that should only run on
+    # little cores, not on bigs
+    # to be used only by init, so don't change system-bg permissions
+    mkdir /dev/cpuset/system-background
+    copy /dev/cpuset/cpus /dev/cpuset/system-background/cpus
+    copy /dev/cpuset/mems /dev/cpuset/system-background/mems
+
+    mkdir /dev/cpuset/top-app
+    copy /dev/cpuset/cpus /dev/cpuset/top-app/cpus
+    copy /dev/cpuset/mems /dev/cpuset/top-app/mems
+
+    # change permissions for all cpusets we'll touch at runtime
+    chown system system /dev/cpuset
+    chown system system /dev/cpuset/foreground
+    chown system system /dev/cpuset/foreground/boost
+    chown system system /dev/cpuset/background
+    chown system system /dev/cpuset/system-background
+    chown system system /dev/cpuset/top-app
+    chown system system /dev/cpuset/tasks
+    chown system system /dev/cpuset/foreground/tasks
+    chown system system /dev/cpuset/foreground/boost/tasks
+    chown system system /dev/cpuset/background/tasks
+    chown system system /dev/cpuset/system-background/tasks
+    chown system system /dev/cpuset/top-app/tasks
+
+    # set system-background to 0775 so SurfaceFlinger can touch it
+    chmod 0775 /dev/cpuset/system-background
+
+    chmod 0664 /dev/cpuset/foreground/tasks
+    chmod 0664 /dev/cpuset/foreground/boost/tasks
+    chmod 0664 /dev/cpuset/background/tasks
+    chmod 0664 /dev/cpuset/system-background/tasks
+    chmod 0664 /dev/cpuset/top-app/tasks
+    chmod 0664 /dev/cpuset/tasks
+
+
+    # qtaguid will limit access to specific data based on group memberships.
+    #   net_bw_acct grants impersonation of socket owners.
+    #   net_bw_stats grants access to other apps' detailed tagged-socket stats.
+    chown root net_bw_acct /proc/net/xt_qtaguid/ctrl
+    chown root net_bw_stats /proc/net/xt_qtaguid/stats
+
+    # Allow everybody to read the xt_qtaguid resource tracking misc dev.
+    # This is needed by any process that uses socket tagging.
+    chmod 0644 /dev/xt_qtaguid
+
+    # Create location for fs_mgr to store abbreviated output from filesystem
+    # checker programs.
+    mkdir /dev/fscklogs 0770 root system
+
+    # pstore/ramoops previous console log
+    mount pstore pstore /sys/fs/pstore
+    chown system log /sys/fs/pstore/console-ramoops
+    chmod 0440 /sys/fs/pstore/console-ramoops
+    chown system log /sys/fs/pstore/console-ramoops-0
+    chmod 0440 /sys/fs/pstore/console-ramoops-0
+    chown system log /sys/fs/pstore/pmsg-ramoops-0
+    chmod 0440 /sys/fs/pstore/pmsg-ramoops-0
+
+    # enable armv8_deprecated instruction hooks
+    write /proc/sys/abi/swp 1
+
+    # Linux's execveat() syscall may construct paths containing /dev/fd
+    # expecting it to point to /proc/self/fd
+    symlink /proc/self/fd /dev/fd
+
+    export DOWNLOAD_CACHE /data/cache
+
+    # set RLIMIT_NICE to allow priorities from 19 to -20
+    setrlimit 13 40 40
+
+    # This allows the ledtrig-transient properties to be created here so
+    # that they can be chown'd to system:system later on boot
+    write /sys/class/leds/vibrator/trigger "transient"
+
+# Healthd can trigger a full boot from charger mode by signaling this
+# property when the power button is held.
+on property:sys.boot_from_charger_mode=1
+    class_stop charger
+    trigger late-init
+
+on load_persist_props_action
+    load_persist_props
+    start logd
+    start logd-reinit
+
+# Indicate to fw loaders that the relevant mounts are up.
+on firmware_mounts_complete
+    rm /dev/.booting
+
+# Mount filesystems and start core system services.
+on late-init
+    trigger early-fs
+
+    # Mount fstab in init.{$device}.rc by mount_all command. Optional parameter
+    # '--early' can be specified to skip entries with 'latemount'.
+    # /system and /vendor must be mounted by the end of the fs stage,
+    # while /data is optional.
+    trigger fs
+    trigger post-fs
+
+    # Mount fstab in init.{$device}.rc by mount_all with '--late' parameter
+    # to only mount entries with 'latemount'. This is needed if '--early' is
+    # specified in the previous mount_all command on the fs stage.
+    # With /system mounted and properties form /system + /factory available,
+    # some services can be started.
+    trigger late-fs
+
+    # Now we can mount /data. File encryption requires keymaster to decrypt
+    # /data, which in turn can only be loaded when system properties are present.
+    trigger post-fs-data
+
+    # Now we can start zygote for devices with file based encryption
+    trigger zygote-start
+
+    # Load persist properties and override properties (if enabled) from /data.
+    trigger load_persist_props_action
+
+    # Remove a file to wake up anything waiting for firmware.
+    trigger firmware_mounts_complete
+
+    trigger early-boot
+    trigger boot
+
+on post-fs
+    # Load properties from
+    #     /system/build.prop,
+    #     /odm/build.prop,
+    #     /vendor/build.prop and
+    #     /factory/factory.prop
+    load_system_props
+    # start essential services
+    start logd
+    start servicemanager
+    start hwservicemanager
+    start vndservicemanager
+
+    # once everything is setup, no need to modify /
+    mount rootfs rootfs / ro remount
+    # Mount shared so changes propagate into child namespaces
+    mount rootfs rootfs / shared rec
+    # Mount default storage into root namespace
+    mount none /mnt/runtime/default /storage bind rec
+    mount none none /storage slave rec
+
+    # Make sure /sys/kernel/debug (if present) is labeled properly
+    # Note that tracefs may be mounted under debug, so we need to cross filesystems
+    restorecon --recursive --cross-filesystems /sys/kernel/debug
+
+    # We chown/chmod /cache again so because mount is run as root + defaults
+    chown system cache /cache
+    chmod 0770 /cache
+    # We restorecon /cache in case the cache partition has been reset.
+    restorecon_recursive /cache
+
+    # Create /cache/recovery in case it's not there. It'll also fix the odd
+    # permissions if created by the recovery system.
+    mkdir /cache/recovery 0770 system cache
+
+    # Backup/restore mechanism uses the cache partition
+    mkdir /cache/backup_stage 0700 system system
+    mkdir /cache/backup 0700 system system
+
+    #change permissions on vmallocinfo so we can grab it from bugreports
+    chown root log /proc/vmallocinfo
+    chmod 0440 /proc/vmallocinfo
+
+    chown root log /proc/slabinfo
+    chmod 0440 /proc/slabinfo
+
+    #change permissions on kmsg & sysrq-trigger so bugreports can grab kthread stacks
+    chown root system /proc/kmsg
+    chmod 0440 /proc/kmsg
+    chown root system /proc/sysrq-trigger
+    chmod 0220 /proc/sysrq-trigger
+    chown system log /proc/last_kmsg
+    chmod 0440 /proc/last_kmsg
+
+    # make the selinux kernel policy world-readable
+    chmod 0444 /sys/fs/selinux/policy
+
+    # create the lost+found directories, so as to enforce our permissions
+    mkdir /cache/lost+found 0770 root root
+
+on late-fs
+    # Ensure that tracefs has the correct permissions.
+    # This does not work correctly if it is called in post-fs.
+    chmod 0755 /sys/kernel/debug/tracing
+
+    # HALs required before storage encryption can get unlocked (FBE/FDE)
+    class_start early_hal
+
+on post-fs-data
+    # We chown/chmod /data again so because mount is run as root + defaults
+    chown system system /data
+    chmod 0771 /data
+    # We restorecon /data in case the userdata partition has been reset.
+    restorecon /data
+
+    # Make sure we have the device encryption key.
+    start vold
+    installkey /data
+
+    # Start bootcharting as soon as possible after the data partition is
+    # mounted to collect more data.
+    mkdir /data/bootchart 0755 shell shell
+    bootchart start
+
+    # Avoid predictable entropy pool. Carry over entropy from previous boot.
+    copy /data/system/entropy.dat /dev/urandom
+
+    # create basic filesystem structure
+    mkdir /data/misc 01771 system misc
+    mkdir /data/misc/recovery 0770 system log
+    copy /data/misc/recovery/ro.build.fingerprint /data/misc/recovery/ro.build.fingerprint.1
+    chmod 0440 /data/misc/recovery/ro.build.fingerprint.1
+    chown system log /data/misc/recovery/ro.build.fingerprint.1
+    write /data/misc/recovery/ro.build.fingerprint ${ro.build.fingerprint}
+    chmod 0440 /data/misc/recovery/ro.build.fingerprint
+    chown system log /data/misc/recovery/ro.build.fingerprint
+    mkdir /data/misc/recovery/proc 0770 system log
+    copy /data/misc/recovery/proc/version /data/misc/recovery/proc/version.1
+    chmod 0440 /data/misc/recovery/proc/version.1
+    chown system log /data/misc/recovery/proc/version.1
+    copy /proc/version /data/misc/recovery/proc/version
+    chmod 0440 /data/misc/recovery/proc/version
+    chown system log /data/misc/recovery/proc/version
+    mkdir /data/misc/bluedroid 02770 bluetooth bluetooth
+    # Fix the access permissions and group ownership for 'bt_config.conf'
+    chmod 0660 /data/misc/bluedroid/bt_config.conf
+    chown bluetooth bluetooth /data/misc/bluedroid/bt_config.conf
+    mkdir /data/misc/bluetooth 0770 bluetooth bluetooth
+    mkdir /data/misc/bluetooth/logs 0770 bluetooth bluetooth
+    mkdir /data/misc/keystore 0700 keystore keystore
+    mkdir /data/misc/gatekeeper 0700 system system
+    mkdir /data/misc/keychain 0771 system system
+    mkdir /data/misc/net 0750 root shell
+    mkdir /data/misc/radio 0770 system radio
+    mkdir /data/misc/sms 0770 system radio
+    mkdir /data/misc/zoneinfo 0775 system system
+    mkdir /data/misc/textclassifier 0771 system system
+    mkdir /data/misc/vpn 0770 system vpn
+    mkdir /data/misc/shared_relro 0771 shared_relro shared_relro
+    mkdir /data/misc/systemkeys 0700 system system
+    mkdir /data/misc/wifi 0770 wifi wifi
+    mkdir /data/misc/wifi/sockets 0770 wifi wifi
+    mkdir /data/misc/wifi/wpa_supplicant 0770 wifi wifi
+    mkdir /data/misc/ethernet 0770 system system
+    mkdir /data/misc/dhcp 0770 dhcp dhcp
+    mkdir /data/misc/user 0771 root root
+    mkdir /data/misc/perfprofd 0775 root root
+    # give system access to wpa_supplicant.conf for backup and restore
+    chmod 0660 /data/misc/wifi/wpa_supplicant.conf
+    mkdir /data/local 0751 root root
+    mkdir /data/misc/media 0700 media media
+    mkdir /data/misc/audioserver 0700 audioserver audioserver
+    mkdir /data/misc/cameraserver 0700 cameraserver cameraserver
+    mkdir /data/misc/vold 0700 root root
+    mkdir /data/misc/boottrace 0771 system shell
+    mkdir /data/misc/update_engine 0700 root root
+    mkdir /data/misc/trace 0700 root root
+    mkdir /data/misc/reboot 0700 system system
+    # profile file layout
+    mkdir /data/misc/profiles 0771 system system
+    mkdir /data/misc/profiles/cur 0771 system system
+    mkdir /data/misc/profiles/ref 0771 system system
+    mkdir /data/misc/profman 0770 system shell
+    mkdir /data/misc/gcov 0770 root root
+
+    mkdir /data/vendor 0771 root root
+    mkdir /data/vendor/hardware 0771 root root
+
+    # For security reasons, /data/local/tmp should always be empty.
+    # Do not place files or directories in /data/local/tmp
+    mkdir /data/local/tmp 0771 shell shell
+    mkdir /data/data 0771 system system
+    mkdir /data/app-private 0771 system system
+    mkdir /data/app-ephemeral 0771 system system
+    mkdir /data/app-asec 0700 root root
+    mkdir /data/app-lib 0771 system system
+    mkdir /data/app 0771 system system
+    mkdir /data/property 0700 root root
+    mkdir /data/tombstones 0771 system system
+
+    # create dalvik-cache, so as to enforce our permissions
+    mkdir /data/dalvik-cache 0771 root root
+    # create the A/B OTA directory, so as to enforce our permissions
+    mkdir /data/ota 0771 root root
+
+    # create the OTA package directory. It will be accessed by GmsCore (cache
+    # group), update_engine and update_verifier.
+    mkdir /data/ota_package 0770 system cache
+
+    # create resource-cache and double-check the perms
+    mkdir /data/resource-cache 0771 system system
+    chown system system /data/resource-cache
+    chmod 0771 /data/resource-cache
+
+    # create the lost+found directories, so as to enforce our permissions
+    mkdir /data/lost+found 0770 root root
+
+    # create directory for DRM plug-ins - give drm the read/write access to
+    # the following directory.
+    mkdir /data/drm 0770 drm drm
+
+    # create directory for MediaDrm plug-ins - give drm the read/write access to
+    # the following directory.
+    mkdir /data/mediadrm 0770 mediadrm mediadrm
+
+    mkdir /data/anr 0775 system system
+
+    # Create all remaining /data root dirs so that they are made through init
+    # and get proper encryption policy installed
+    mkdir /data/backup 0700 system system
+    mkdir /data/ss 0700 system system
+
+    mkdir /data/system 0775 system system
+    mkdir /data/system/heapdump 0700 system system
+    mkdir /data/system/users 0775 system system
+
+    mkdir /data/system_de 0770 system system
+    mkdir /data/system_ce 0770 system system
+
+    mkdir /data/misc_de 01771 system misc
+    mkdir /data/misc_ce 01771 system misc
+
+    mkdir /data/user 0711 system system
+    mkdir /data/user_de 0711 system system
+    symlink /data/data /data/user/0
+
+    mkdir /data/media 0770 media_rw media_rw
+    mkdir /data/media/obb 0770 media_rw media_rw
+
+    mkdir /data/cache 0770 system cache
+    mkdir /data/cache/recovery 0770 system cache
+    mkdir /data/cache/backup_stage 0700 system system
+    mkdir /data/cache/backup 0700 system system
+
+    init_user0
+
+    # Set SELinux security contexts on upgrade or policy update.
+    restorecon --recursive --skip-ce /data
+
+    # Check any timezone data in /data is newer than the copy in /system, delete if not.
+    exec - system system -- /system/bin/tzdatacheck /system/usr/share/zoneinfo /data/misc/zoneinfo
+
+    # If there is no post-fs-data action in the init.<device>.rc file, you
+    # must uncomment this line, otherwise encrypted filesystems
+    # won't work.
+    # Set indication (checked by vold) that we have finished this action
+    #setprop vold.post_fs_data_done 1
+
+# It is recommended to put unnecessary data/ initialization from post-fs-data
+# to start-zygote in device's init.rc to unblock zygote start.
+on zygote-start && property:ro.crypto.state=unencrypted
+    # A/B update verifier that marks a successful boot.
+    exec_start update_verifier_nonencrypted
+    start netd
+    start zygote
+    start zygote_secondary
+
+on zygote-start && property:ro.crypto.state=unsupported
+    # A/B update verifier that marks a successful boot.
+    exec_start update_verifier_nonencrypted
+    start netd
+    start zygote
+    start zygote_secondary
+
+on zygote-start && property:ro.crypto.state=encrypted && property:ro.crypto.type=file
+    # A/B update verifier that marks a successful boot.
+    exec_start update_verifier_nonencrypted
+    start netd
+    start zygote
+    start zygote_secondary
+
+on boot
+    # basic network init
+    ifup lo
+    hostname localhost
+    domainname localdomain
+
+    # Memory management.  Basic kernel parameters, and allow the high
+    # level system server to be able to adjust the kernel OOM driver
+    # parameters to match how it is managing things.
+    write /proc/sys/vm/overcommit_memory 1
+    write /proc/sys/vm/min_free_order_shift 4
+    chown root system /sys/module/lowmemorykiller/parameters/adj
+    chmod 0664 /sys/module/lowmemorykiller/parameters/adj
+    chown root system /sys/module/lowmemorykiller/parameters/minfree
+    chmod 0664 /sys/module/lowmemorykiller/parameters/minfree
+
+    # Tweak background writeout
+    write /proc/sys/vm/dirty_expire_centisecs 200
+    write /proc/sys/vm/dirty_background_ratio  5
+
+    # Permissions for System Server and daemons.
+    chown radio system /sys/android_power/state
+    chown radio system /sys/android_power/request_state
+    chown radio system /sys/android_power/acquire_full_wake_lock
+    chown radio system /sys/android_power/acquire_partial_wake_lock
+    chown radio system /sys/android_power/release_wake_lock
+    chown system system /sys/power/autosleep
+    chown system system /sys/power/state
+    chown system system /sys/power/wakeup_count
+    chown radio wakelock /sys/power/wake_lock
+    chown radio wakelock /sys/power/wake_unlock
+    chmod 0660 /sys/power/state
+    chmod 0660 /sys/power/wake_lock
+    chmod 0660 /sys/power/wake_unlock
+
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/timer_rate
+    chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/timer_rate
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/timer_slack
+    chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/timer_slack
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/min_sample_time
+    chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/min_sample_time
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/hispeed_freq
+    chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/hispeed_freq
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/target_loads
+    chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/target_loads
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load
+    chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/above_hispeed_delay
+    chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/above_hispeed_delay
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/boost
+    chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/boost
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/boostpulse
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/input_boost
+    chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/input_boost
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/boostpulse_duration
+    chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/boostpulse_duration
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/io_is_busy
+    chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/io_is_busy
+
+    # Assume SMP uses shared cpufreq policy for all CPUs
+    chown system system /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
+    chmod 0660 /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
+
+    chown system system /sys/class/leds/vibrator/trigger
+    chown system system /sys/class/leds/vibrator/activate
+    chown system system /sys/class/leds/vibrator/brightness
+    chown system system /sys/class/leds/vibrator/duration
+    chown system system /sys/class/leds/vibrator/state
+    chown system system /sys/class/timed_output/vibrator/enable
+    chown system system /sys/class/leds/keyboard-backlight/brightness
+    chown system system /sys/class/leds/lcd-backlight/brightness
+    chown system system /sys/class/leds/button-backlight/brightness
+    chown system system /sys/class/leds/jogball-backlight/brightness
+    chown system system /sys/class/leds/red/brightness
+    chown system system /sys/class/leds/green/brightness
+    chown system system /sys/class/leds/blue/brightness
+    chown system system /sys/class/leds/red/device/grpfreq
+    chown system system /sys/class/leds/red/device/grppwm
+    chown system system /sys/class/leds/red/device/blink
+    chown system system /sys/module/sco/parameters/disable_esco
+    chown system system /sys/kernel/ipv4/tcp_wmem_min
+    chown system system /sys/kernel/ipv4/tcp_wmem_def
+    chown system system /sys/kernel/ipv4/tcp_wmem_max
+    chown system system /sys/kernel/ipv4/tcp_rmem_min
+    chown system system /sys/kernel/ipv4/tcp_rmem_def
+    chown system system /sys/kernel/ipv4/tcp_rmem_max
+    chown root radio /proc/cmdline
+
+    # Define default initial receive window size in segments.
+    setprop net.tcp.default_init_rwnd 60
+
+    # Start standard binderized HAL daemons
+    class_start hal
+
+    class_start core
+
+on nonencrypted
+    class_start main
+    class_start late_start
+
+on property:sys.init_log_level=*
+    loglevel ${sys.init_log_level}
+
+on charger
+    class_start charger
+
+on property:vold.decrypt=trigger_reset_main
+    class_reset main
+
+on property:vold.decrypt=trigger_load_persist_props
+    load_persist_props
+    start logd
+    start logd-reinit
+
+on property:vold.decrypt=trigger_post_fs_data
+    trigger post-fs-data
+
+on property:vold.decrypt=trigger_restart_min_framework
+    # A/B update verifier that marks a successful boot.
+    exec_start update_verifier
+    class_start main
+
+on property:vold.decrypt=trigger_restart_framework
+    # A/B update verifier that marks a successful boot.
+    exec_start update_verifier
+    class_start main
+    class_start late_start
+
+on property:vold.decrypt=trigger_shutdown_framework
+    class_reset late_start
+    class_reset main
+
+on property:sys.boot_completed=1
+    bootchart stop
+
+# system server cannot write to /proc/sys files,
+# and chown/chmod does not work for /proc/sys/ entries.
+# So proxy writes through init.
+on property:sys.sysctl.extra_free_kbytes=*
+    write /proc/sys/vm/extra_free_kbytes ${sys.sysctl.extra_free_kbytes}
+
+# "tcp_default_init_rwnd" Is too long!
+on property:sys.sysctl.tcp_def_init_rwnd=*
+    write /proc/sys/net/ipv4/tcp_default_init_rwnd ${sys.sysctl.tcp_def_init_rwnd}
+
+on property:security.perf_harden=0
+    write /proc/sys/kernel/perf_event_paranoid 1
+
+on property:security.perf_harden=1
+    write /proc/sys/kernel/perf_event_paranoid 3
+
+# on shutdown
+# In device's init.rc, this trigger can be used to do device-specific actions
+# before shutdown. e.g disable watchdog and mask error handling
+
+## Daemon processes to be run by init.
+##
+service ueventd /sbin/ueventd
+    class core
+    critical
+    seclabel u:r:ueventd:s0
+    shutdown critical
+
+service healthd /system/bin/healthd
+    class core
+    critical
+    group root system wakelock
+
+service console /system/bin/sh
+    class core
+    console
+    disabled
+    user shell
+    group shell log readproc
+    seclabel u:r:shell:s0
+
+on property:ro.debuggable=1
+    # Give writes to anyone for the trace folder on debug builds.
+    # The folder is used to store method traces.
+    chmod 0773 /data/misc/trace
+    start console
+
+service flash_recovery /system/bin/install-recovery.sh
+    class main
+    oneshot
+
+service bootanim /system/bin/mtkbootanimation
+    class core animation
+    user graphics
+    group graphics audio
+    disabled
+    oneshot
+    writepid /dev/stune/top-app/tasks
+
+# MTK add
+service banim_shutmp3 /system/bin/mtkbootanimation shut mp3
+    class core animation
+    user graphics
+    group graphics audio
+    disabled
+    oneshot
+    writepid /dev/stune/top-app/tasks
+
+service banim_shutnomp3 /system/bin/mtkbootanimation shut nomp3
+    class core animation
+    user graphics
+    group graphics audio
+    disabled
+    oneshot
+    writepid /dev/stune/top-app/tasks
+
+
+----- init.usb.rc -----
+# Copyright (C) 2012 The Android Open Source Project
+#
+# USB configuration common for all android devices
+#
+
+on post-fs-data
+    chown system system /sys/class/android_usb/android0/f_mass_storage/lun/file
+    chmod 0660 /sys/class/android_usb/android0/f_mass_storage/lun/file
+    chown system system /sys/class/android_usb/android0/f_rndis/ethaddr
+    chmod 0660 /sys/class/android_usb/android0/f_rndis/ethaddr
+    mkdir /data/misc/adb 02750 system shell
+    mkdir /data/adb 0700 root root
+
+# adbd is controlled via property triggers in init.<platform>.usb.rc
+service adbd /system/bin/adbd --root_seclabel=u:r:su:s0
+    class core
+    socket adbd stream 660 system system
+    disabled
+    seclabel u:r:adbd:s0
+
+# adbd on at boot in emulator
+on property:ro.kernel.qemu=1
+    start adbd
+
+on boot
+    setprop sys.usb.configfs 0
+
+# Used to disable USB when switching states
+on property:sys.usb.config=none && property:sys.usb.configfs=0
+    stop adbd
+    write /sys/class/android_usb/android0/enable 0
+    write /sys/class/android_usb/android0/bDeviceClass 0
+    setprop sys.usb.state ${sys.usb.config}
+
+# adb only USB configuration
+# This is the fallback configuration if the
+# USB manager fails to set a standard configuration
+on property:sys.usb.config=adb && property:sys.usb.configfs=0
+    write /sys/class/android_usb/android0/enable 0
+    write /sys/class/android_usb/android0/idVendor 18d1
+    write /sys/class/android_usb/android0/idProduct 4EE7
+    write /sys/class/android_usb/android0/functions ${sys.usb.config}
+    write /sys/class/android_usb/android0/enable 1
+    start adbd
+    setprop sys.usb.state ${sys.usb.config}
+
+# USB accessory configuration
+on property:sys.usb.config=accessory && property:sys.usb.configfs=0
+    write /sys/class/android_usb/android0/enable 0
+    write /sys/class/android_usb/android0/idVendor 18d1
+    write /sys/class/android_usb/android0/idProduct 2d00
+    write /sys/class/android_usb/android0/functions ${sys.usb.config}
+    write /sys/class/android_usb/android0/enable 1
+    setprop sys.usb.state ${sys.usb.config}
+
+# USB accessory configuration, with adb
+on property:sys.usb.config=accessory,adb && property:sys.usb.configfs=0
+    write /sys/class/android_usb/android0/enable 0
+    write /sys/class/android_usb/android0/idVendor 18d1
+    write /sys/class/android_usb/android0/idProduct 2d01
+    write /sys/class/android_usb/android0/functions ${sys.usb.config}
+    write /sys/class/android_usb/android0/enable 1
+    start adbd
+    setprop sys.usb.state ${sys.usb.config}
+
+# audio accessory configuration
+on property:sys.usb.config=audio_source && property:sys.usb.configfs=0
+    write /sys/class/android_usb/android0/enable 0
+    write /sys/class/android_usb/android0/idVendor 18d1
+    write /sys/class/android_usb/android0/idProduct 2d02
+    write /sys/class/android_usb/android0/functions ${sys.usb.config}
+    write /sys/class/android_usb/android0/enable 1
+    setprop sys.usb.state ${sys.usb.config}
+
+# audio accessory configuration, with adb
+on property:sys.usb.config=audio_source,adb && property:sys.usb.configfs=0
+    write /sys/class/android_usb/android0/enable 0
+    write /sys/class/android_usb/android0/idVendor 18d1
+    write /sys/class/android_usb/android0/idProduct 2d03
+    write /sys/class/android_usb/android0/functions ${sys.usb.config}
+    write /sys/class/android_usb/android0/enable 1
+    start adbd
+    setprop sys.usb.state ${sys.usb.config}
+
+# USB and audio accessory configuration
+on property:sys.usb.config=accessory,audio_source && property:sys.usb.configfs=0
+    write /sys/class/android_usb/android0/enable 0
+    write /sys/class/android_usb/android0/idVendor 18d1
+    write /sys/class/android_usb/android0/idProduct 2d04
+    write /sys/class/android_usb/android0/functions ${sys.usb.config}
+    write /sys/class/android_usb/android0/enable 1
+    setprop sys.usb.state ${sys.usb.config}
+
+# USB and audio accessory configuration, with adb
+on property:sys.usb.config=accessory,audio_source,adb && property:sys.usb.configfs=0
+    write /sys/class/android_usb/android0/enable 0
+    write /sys/class/android_usb/android0/idVendor 18d1
+    write /sys/class/android_usb/android0/idProduct 2d05
+    write /sys/class/android_usb/android0/functions ${sys.usb.config}
+    write /sys/class/android_usb/android0/enable 1
+    start adbd
+    setprop sys.usb.state ${sys.usb.config}
+
+# Used to set USB configuration at boot and to switch the configuration
+# when changing the default configuration
+on boot && property:persist.sys.usb.config=*
+    setprop sys.usb.config ${persist.sys.usb.config}
+
+#
+# USB type C
+#
+
+# USB mode changes
+on property:sys.usb.typec.mode=dfp
+    write /sys/class/dual_role_usb/otg_default/mode ${sys.usb.typec.mode}
+    setprop sys.usb.typec.state ${sys.usb.typec.mode}
+
+on property:sys.usb.typec.mode=ufp
+    write /sys/class/dual_role_usb/otg_default/mode ${sys.usb.typec.mode}
+    setprop sys.usb.typec.state ${sys.usb.typec.mode}
+
+# USB data role changes
+on property:sys.usb.typec.data_role=device
+    write /sys/class/dual_role_usb/otg_default/data_role ${sys.usb.typec.data_role}
+    setprop sys.usb.typec.state ${sys.usb.typec.data_role}
+
+on property:sys.usb.typec.data_role=host
+    write /sys/class/dual_role_usb/otg_default/data_role ${sys.usb.typec.data_role}
+    setprop sys.usb.typec.state ${sys.usb.typec.data_role}
+
+# USB power role changes
+on property:sys.usb.typec.power_role=source
+    write /sys/class/dual_role_usb/otg_default/power_role ${sys.usb.typec.power_role}
+    setprop sys.usb.typec.state ${sys.usb.typec.power_role}
+
+on property:sys.usb.typec.power_role=sink
+    write /sys/class/dual_role_usb/otg_default/power_role ${sys.usb.typec.power_role}
+    setprop sys.usb.typec.state ${sys.usb.typec.power_role}
+
+
+----- init.usb.configfs.rc -----
+on property:sys.usb.config=none && property:sys.usb.configfs=1
+    write /config/usb_gadget/g1/UDC "none"
+    stop adbd
+    setprop sys.usb.ffs.ready 0
+    setprop sys.usb.ffs.mtp.ready 0
+    write /config/usb_gadget/g1/bDeviceClass 0
+    write /config/usb_gadget/g1/bDeviceSubClass 0
+    write /config/usb_gadget/g1/bDeviceProtocol 0
+    rm /config/usb_gadget/g1/configs/b.1/f1
+    rm /config/usb_gadget/g1/configs/b.1/f2
+    rm /config/usb_gadget/g1/configs/b.1/f3
+    rmdir /config/usb_gadget/g1/functions/rndis.gs4
+    setprop sys.usb.state ${sys.usb.config}
+
+on property:init.svc.adbd=stopped
+    setprop sys.usb.ffs.ready 0
+
+on property:sys.usb.config=adb && property:sys.usb.configfs=1
+    start adbd
+
+on property:sys.usb.ffs.ready=1 && property:sys.usb.config=adb && property:sys.usb.configfs=1
+    write /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration "adb"
+    symlink /config/usb_gadget/g1/functions/ffs.adb /config/usb_gadget/g1/configs/b.1/f1
+    write /config/usb_gadget/g1/UDC ${sys.usb.controller}
+    setprop sys.usb.state ${sys.usb.config}
+
+on property:sys.usb.ffs.mtp.ready=1 && property:sys.usb.config=mtp && property:sys.usb.configfs=1
+    write /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration "mtp"
+    symlink /config/usb_gadget/g1/functions/mtp.gs0 /config/usb_gadget/g1/configs/b.1/f1
+    write /config/usb_gadget/g1/UDC ${sys.usb.controller}
+    setprop sys.usb.state ${sys.usb.config}
+
+on property:sys.usb.config=mtp,adb && property:sys.usb.configfs=1
+    start adbd
+
+on property:sys.usb.ffs.ready=1 && property:sys.usb.ffs.mtp.ready=1 && \
+property:sys.usb.config=mtp,adb && property:sys.usb.configfs=1
+    write /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration "mtp_adb"
+    symlink /config/usb_gadget/g1/functions/mtp.gs0 /config/usb_gadget/g1/configs/b.1/f1
+    symlink /config/usb_gadget/g1/functions/ffs.adb /config/usb_gadget/g1/configs/b.1/f2
+    write /config/usb_gadget/g1/UDC ${sys.usb.controller}
+    setprop sys.usb.state ${sys.usb.config}
+
+on property:sys.usb.ffs.mtp.ready=1 && property:sys.usb.config=ptp && property:sys.usb.configfs=1
+    write /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration "ptp"
+    symlink /config/usb_gadget/g1/functions/ptp.gs1 /config/usb_gadget/g1/configs/b.1/f1
+    write /config/usb_gadget/g1/UDC ${sys.usb.controller}
+    setprop sys.usb.state ${sys.usb.config}
+
+on property:sys.usb.config=ptp,adb && property:sys.usb.configfs=1
+    start adbd
+
+on property:sys.usb.ffs.ready=1 && property:sys.usb.ffs.mtp.ready=1 && \
+property:sys.usb.config=ptp,adb && property:sys.usb.configfs=1
+    write /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration "ptp_adb"
+    symlink /config/usb_gadget/g1/functions/ptp.gs1 /config/usb_gadget/g1/configs/b.1/f1
+    symlink /config/usb_gadget/g1/functions/ffs.adb /config/usb_gadget/g1/configs/b.1/f2
+    write /config/usb_gadget/g1/UDC ${sys.usb.controller}
+    setprop sys.usb.state ${sys.usb.config}
+
+on property:sys.usb.config=accessory && property:sys.usb.configfs=1
+    write /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration "accessory"
+    symlink /config/usb_gadget/g1/functions/accessory.gs2 /config/usb_gadget/g1/configs/b.1/f1
+    write /config/usb_gadget/g1/UDC ${sys.usb.controller}
+    setprop sys.usb.state ${sys.usb.config}
+
+on property:sys.usb.config=accessory,adb && property:sys.usb.configfs=1
+    start adbd
+
+on property:sys.usb.ffs.ready=1 && property:sys.usb.config=accessory,adb && property:sys.usb.configfs=1
+    write /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration "accessory_adb"
+    symlink /config/usb_gadget/g1/functions/accessory.gs2 /config/usb_gadget/g1/configs/b.1/f1
+    symlink /config/usb_gadget/g1/functions/ffs.adb /config/usb_gadget/g1/configs/b.1/f2
+    write /config/usb_gadget/g1/UDC ${sys.usb.controller}
+    setprop sys.usb.state ${sys.usb.config}
+
+on property:sys.usb.config=audio_source && property:sys.usb.configfs=1
+    write /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration "audiosource"
+    symlink /config/usb_gadget/g1/functions/audio_source.gs3 /config/usb_gadget/g1/configs/b.1/f1
+    write /config/usb_gadget/g1/UDC ${sys.usb.controller}
+    setprop sys.usb.state ${sys.usb.config}
+
+on property:sys.usb.config=audio_source,adb && property:sys.usb.configfs=1
+    start adbd
+
+on property:sys.usb.ffs.ready=1 && property:sys.usb.config=audio_source,adb && property:sys.usb.configfs=1
+    write /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration "audiosource_adb"
+    symlink /config/usb_gadget/g1/functions/audio_source.gs3 /config/usb_gadget/g1/configs/b.1/f1
+    symlink /config/usb_gadget/g1/functions/ffs.adb /config/usb_gadget/g1/configs/b.1/f2
+    write /config/usb_gadget/g1/UDC ${sys.usb.controller}
+    setprop sys.usb.state ${sys.usb.config}
+
+on property:sys.usb.config=accessory,audio_source && property:sys.usb.configfs=1
+    write /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration "accessory_audiosource"
+    symlink /config/usb_gadget/g1/functions/accessory.gs2 /config/usb_gadget/g1/configs/b.1/f1
+    symlink /config/usb_gadget/g1/functions/audio_source.gs3 /config/usb_gadget/g1/configs/b.1/f2
+    write /config/usb_gadget/g1/UDC ${sys.usb.controller}
+    setprop sys.usb.state ${sys.usb.config}
+
+on property:sys.usb.config=accessory,audio_source,adb && property:sys.usb.configfs=1
+    start adbd
+
+on property:sys.usb.ffs.ready=1 && property:sys.usb.config=accessory,audio_source,adb && property:sys.usb.configfs=1
+    write /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration "accessory_audiosource_adb"
+    symlink /config/usb_gadget/g1/functions/accessory.gs2 /config/usb_gadget/g1/configs/b.1/f1
+    symlink /config/usb_gadget/g1/functions/audio_source.gs3 /config/usb_gadget/g1/configs/b.1/f2
+    symlink /config/usb_gadget/g1/functions/ffs.adb /config/usb_gadget/g1/configs/b.1/f3
+    write /config/usb_gadget/g1/UDC ${sys.usb.controller}
+    setprop sys.usb.state ${sys.usb.config}
+
+on property:sys.usb.config=midi && property:sys.usb.configfs=1
+    write /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration "midi"
+    symlink /config/usb_gadget/g1/functions/midi.gs5 /config/usb_gadget/g1/configs/b.1/f1
+    write /config/usb_gadget/g1/UDC ${sys.usb.controller}
+    setprop sys.usb.state ${sys.usb.config}
+
+on property:sys.usb.config=midi,adb && property:sys.usb.configfs=1
+    start adbd
+
+on property:sys.usb.ffs.ready=1 && property:sys.usb.config=midi,adb && property:sys.usb.configfs=1
+    write /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration "midi_adb"
+    symlink /config/usb_gadget/g1/functions/midi.gs5 /config/usb_gadget/g1/configs/b.1/f1
+    symlink /config/usb_gadget/g1/functions/ffs.adb /config/usb_gadget/g1/configs/b.1/f2
+    write /config/usb_gadget/g1/UDC ${sys.usb.controller}
+    setprop sys.usb.state ${sys.usb.config}
+
+on property:sys.usb.config=rndis && property:sys.usb.configfs=1
+    mkdir /config/usb_gadget/g1/functions/rndis.gs4
+    write /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration "rndis"
+    symlink /config/usb_gadget/g1/functions/rndis.gs4 /config/usb_gadget/g1/configs/b.1/f1
+    write /config/usb_gadget/g1/UDC ${sys.usb.controller}
+    setprop sys.usb.state ${sys.usb.config}
+
+on property:sys.usb.config=rndis,adb && property:sys.usb.configfs=1
+    start adbd
+
+on property:sys.usb.ffs.ready=1 && property:sys.usb.config=rndis,adb && property:sys.usb.configfs=1
+    mkdir /config/usb_gadget/g1/functions/rndis.gs4
+    write /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration "rndis_adb"
+    symlink /config/usb_gadget/g1/functions/rndis.gs4 /config/usb_gadget/g1/configs/b.1/f1
+    symlink /config/usb_gadget/g1/functions/ffs.adb /config/usb_gadget/g1/configs/b.1/f2
+    write /config/usb_gadget/g1/UDC ${sys.usb.controller}
+    setprop sys.usb.state ${sys.usb.config}
+
+
+----- init.zygote32.rc -----
+service zygote /system/bin/app_process -Xzygote /system/bin --zygote --start-system-server
+    class main
+    priority -20
+    user root
+    group root readproc
+    socket zygote stream 660 root system
+    onrestart write /sys/android_power/request_state wake
+    onrestart write /sys/power/state on
+    onrestart restart audioserver
+    onrestart restart cameraserver
+    onrestart restart media
+    onrestart restart netd
+    onrestart restart wificond
+    writepid /dev/cpuset/foreground/tasks
+
+
+----- ueventd.rc -----
+subsystem adf
+    devname uevent_devname
+
+subsystem graphics
+    devname uevent_devpath
+    dirname /dev/graphics
+
+subsystem drm
+    devname uevent_devpath
+    dirname /dev/dri
+
+subsystem oncrpc
+    devname uevent_devpath
+    dirname /dev/oncrpc
+
+subsystem adsp
+    devname uevent_devpath
+    dirname /dev/adsp
+
+subsystem msm_camera
+    devname uevent_devpath
+    dirname /dev/msm_camera
+
+subsystem input
+    devname uevent_devpath
+    dirname /dev/input
+
+subsystem mtd
+    devname uevent_devpath
+    dirname /dev/mtd
+
+subsystem sound
+    devname uevent_devpath
+    dirname /dev/snd
+
+# ueventd can only set permissions on device nodes and their associated
+# sysfs attributes, not on arbitrary paths.
+#
+# format for /dev rules: devname mode uid gid
+# format for /sys rules: nodename attr mode uid gid
+# shortcut: "mtd@NN" expands to "/dev/mtd/mtdNN"
+
+/dev/null                 0666   root       root
+/dev/zero                 0666   root       root
+/dev/full                 0666   root       root
+/dev/ptmx                 0666   root       root
+/dev/tty                  0666   root       root
+/dev/random               0666   root       root
+/dev/urandom              0666   root       root
+# Make HW RNG readable by group system to let EntropyMixer read it.
+/dev/hw_random            0440   root       system
+/dev/ashmem               0666   root       root
+/dev/binder               0666   root       root
+/dev/hwbinder             0666   root       root
+/dev/vndbinder            0666   root       root
+
+/dev/pmsg0                0222   root       log
+
+# the msm hw3d client device node is world writable/readable.
+/dev/msm_hw3dc            0666   root       root
+
+# gpu driver for adreno200 is globally accessible
+/dev/kgsl                 0666   root       root
+
+# kms driver for drm based gpu
+/dev/dri/*                0666   root       graphics
+
+# these should not be world writable
+/dev/diag                 0660   radio      radio
+/dev/diag_arm9            0660   radio      radio
+/dev/ttyMSM0              0600   bluetooth  bluetooth
+/dev/uhid                 0660   uhid       uhid
+/dev/uinput               0660   system     bluetooth
+/dev/alarm                0664   system     radio
+/dev/rtc0                 0640   system     system
+/dev/tty0                 0660   root       system
+/dev/graphics/*           0660   root       graphics
+/dev/msm_hw3dm            0660   system     graphics
+/dev/input/*              0660   root       input
+/dev/eac                  0660   root       audio
+/dev/cam                  0660   root       camera
+/dev/pmem                 0660   system     graphics
+/dev/pmem_adsp*           0660   system     audio
+/dev/pmem_camera*         0660   system     camera
+/dev/oncrpc/*             0660   root       system
+/dev/adsp/*               0660   system     audio
+/dev/snd/*                0660   system     audio
+/dev/mt9t013              0660   system     system
+/dev/msm_camera/*         0660   system     system
+/dev/akm8976_daemon       0640   compass    system
+/dev/akm8976_aot          0640   compass    system
+/dev/akm8973_daemon       0640   compass    system
+/dev/akm8973_aot          0640   compass    system
+/dev/bma150               0640   compass    system
+/dev/cm3602               0640   compass    system
+/dev/akm8976_pffd         0640   compass    system
+/dev/lightsensor          0640   system     system
+/dev/msm_pcm_out*         0660   system     audio
+/dev/msm_pcm_in*          0660   system     audio
+/dev/msm_pcm_ctl*         0660   system     audio
+/dev/msm_snd*             0660   system     audio
+/dev/msm_mp3*             0660   system     audio
+/dev/audience_a1026*      0660   system     audio
+/dev/tpa2018d1*           0660   system     audio
+/dev/msm_audpre           0660   system     audio
+/dev/msm_audio_ctl        0660   system     audio
+/dev/htc-acoustic         0660   system     audio
+/dev/vdec                 0660   system     audio
+/dev/q6venc               0660   system     audio
+/dev/snd/dsp              0660   system     audio
+/dev/snd/dsp1             0660   system     audio
+/dev/snd/mixer            0660   system     audio
+/dev/smd0                 0640   radio      radio
+/dev/qmi                  0640   radio      radio
+/dev/qmi0                 0640   radio      radio
+/dev/qmi1                 0640   radio      radio
+/dev/qmi2                 0640   radio      radio
+/dev/bus/usb/*            0660   root       usb
+/dev/mtp_usb              0660   root       mtp
+/dev/usb_accessory        0660   root       usb
+/dev/tun                  0660   system     vpn
+
+# CDMA radio interface MUX
+/dev/ts0710mux*           0640   radio      radio
+/dev/ppp                  0660   radio      vpn
+
+# sysfs properties
+/sys/devices/platform/trusty.*      trusty_version        0440  root   log
+/sys/devices/virtual/input/input*   enable      0660  root   input
+/sys/devices/virtual/input/input*   poll_delay  0660  root   input
+/sys/devices/virtual/usb_composite/*   enable      0664  root   system
+/sys/devices/system/cpu/cpu*   cpufreq/scaling_max_freq   0664  system system
+/sys/devices/system/cpu/cpu*   cpufreq/scaling_min_freq   0664  system system
+
+# DVB API device nodes
+/dev/dvb*                 0660   root       system
+
+
+=== INIT ANALYSIS ===
+
+[ORIGINAL INIT]
+FILE: original_init
+SIZE: 1050908 (1.00 MiB)
+SHA256: f6294cf56d05b85f82b4f2272aaa164dbb186f4885d6474ea77739dd0fa77c8a
+ELF: YES
+ARCH: 32-bit, little-endian, ARM, type=0x2
+ENTRY: 0x00008b9c
+PROGRAM HEADERS: 6
+SECTION HEADERS: 19
+PRINTABLE STRINGS: 5323
+INTERESTING STRINGS:
+  /data/bootchart/proc_stat.log
+  /data/bootchart/proc_ps.log
+  /data/bootchart/proc_diskstats.log
+  no such service '
+  ueventd
+  Loading SELinux policy
+  /system/etc/selinux/plat_and_mapping_sepolicy.cil.sha256
+  Failed to load SELinux policy from 
+  Failed to read fstab from device tree
+  selinux.restorecon_recursive
+  /system/etc/prop.default
+  /vendor/default.prop
+  /recovery not specified in fstab
+  unable to read default fstab
+  /system/build.prop
+  /vendor/build.prop
+  start_property_service socket creation failed
+  /system
+  /vendor
+  /system/bin/e2fsck
+  /system/bin/fsck.f2fs
+  /data/
+  subprocess killed by signal 
+  subprocess exited with status 
+  /ueventd.
+  ueventd started!
+  /subsystem
+  selinux_android_restorecon(
+  ' not created; cannot find SELinux label
+  ' SELinux label on '
+  /sys/fs/selinux/null
+  Couldn't open /sys/fs/selinux/null
+  selinux
+  capability '%s' not supported by the kernel
+   does not have a SELinux domain defined
+  exec called with too many supplementary group ids
+  SUBSYSTEM=
+  subsystems must have exactly one name
+  ignoring duplicate subsystem entry
+  failed to read default fstab
+  fs_mgr_read_fstab
+  (): failed to load fstab from : '
+  /fstab/compatible
+  android,fstab
+  /fstab
+  dt_fstab: Skip disabled entry for partition 
+  fs_mgr_read_fstab_default
+  /etc/recovery.fstab
+  (): failed to allocate fstab recs
+  /system/bin/tune2fs
+   because /system/bin/tune2fs is missing
+  ,nomblk_io_submit
+  ) succeeded
+  ' superblock
+  superblock s_max_mnt_count:
+  ' is not supported
+  f->size > 1024 + sizeof(ext4_super_block)
+  <3>fec: <%d> error: %s: failed to parse superblock: %s
+  rc <= (use_erasures ? e->roots : e->roots / 2)
+  <3>fec: <%d> error: %s: unsupported verity version %u
+  /data/media/obb
+  unsupported '
+  security.selinux
+  selinuxfs
+  /sys/fs/selinux
+  /selinux
+  selinuxfs 
+  SELinux: Loaded file_contexts
+  SELinux: Count not re-alloc for %s:  %s
+  selinux_android_file_context
+  SELinux: Loaded property_contexts from %s & %s.
+  selinux_android_prop_context_handle
+  selinux_android_restorecon_common
+  /data/system_ce/
+  /data/misc_ce/
+  /data/data
+  SELinux: Loaded policy from %s
+  SELinux:  Could not load policy:  %s
+  SELinux: Attempted reload of SELinux policy!/n
+  SELinux:  Relabeling %s from %s to %s.
+  SELinux: Could not set context for %s:  %s
+  Unicode not supported
+  /data/system/packages.list
+  /system/bin/dmesg
+  Sunday
+  Insufficient buffer space.
+  Unknown AvbVBMetaVerifyResult value.
+  No support for footer version.
+  _Unwind_Resume() can't return
+  _Unwind_Resume
+  /system/bin/sh
+  /sys/devices/system/cpu
+  /sys/devices/system/cpu/online
+  /system/etc/selinux/plat_property_contexts
+  /vendor/etc/selinux/nonplat_property_contexts
+  /data/misc/zoneinfo/current/tzdata
+  /system/usr/share/zoneinfo/tzdata
+  /vendor/
+  /vendor/bin/sh
+  )+-/13579;=?ACEGIKMOQSUW
+  oqsuwy{
+  /data/bootchart/enabled
+  /system/bin/vdc
+  /system/etc/init
+  /vendor/etc/init
+  unsupported
+  ro.boottime.init.selinux
+  /sys/fs/selinux/checkreqprot
+  ro.oem_unlock_supported
+  fstab/compatible
+  ro.property_service.version
+  /data/misc/reboot/last_reboot_reason
+  surfaceflinger
+  subsystem
+  /ueventd.rc
+  /vendor/ueventd.rc
+  /odm/ueventd.rc
+  BLOCK_SUSPEND
+  slot_suffix
+  /data/bootchart/header
+  fs_mgr_mount_all suggested recovery, so wiping data via recovery.
+  nosuid
+  /sbin:/system/sbin:/system/bin:/system/xbin:/vendor/bin:/vendor/xbin
+  INIT_SELINUX_TOOK
+  Compiling SELinux policy
+  Failed to determine highest policy version supported by kernel
+  /system/etc/selinux/mapping/
+  /system/bin/secilc
+  /vendor/etc/selinux/nonplat_sepolicy.cil
+  Loading compiled SELinux policy
+  Failed to read /system/etc/selinux/plat_and_mapping_sepolicy.cil.sha256
+  /vendor/etc/selinux/precompiled_sepolicy.plat_and_mapping.sha256
+  Failed to read /vendor/etc/selinux/precompiled_sepolicy.plat_and_mapping.sha256
+  /vendor/etc/selinux/plat_sepolicy_vers.txt
+  Failed to read /vendor/etc/selinux/plat_sepolicy_vers.txt
+  Loading SELinux policy from monolithic file
+  Failed to load monolithic SELinux policy
+  First stage mount skipped (missing/incompatible fstab in device tree)
+  system/core/init/property_service.cpp
+  property_service
+  /data/property
+  CAP_SYS_BOOT is not supported
+  system/core/init/ueventd.cpp
+  Cannot get SELinux label on '
+  /vendor/firmware/
+  capabilities requested but the kernel does not support ambient capabilities
+  system/core/fs_mgr/fs_mgr_fstab.cpp
+  fs_mgr_read_fstab_dt
+  (): failed to read fstab from dt
+  (): failed to create a file stream for fstab dt
+  (): failed to load fstab from kernel:
+  /odm/etc/fstab.
+  /vendor/etc/fstab.
+  /fstab.
+  No entries found in fstab
+  dt_fstab: Failed to find device for partition 
+  dt_fstab: Failed to find type for partition 
+  Only one encryptable/encrypted partition supported
+  Suggest recovery...
+   is encryptable. Suggest recovery...
+  /system/bin/mkswap
+  Failed to read default fstab
+  (): skipping fstab dup mountpoint=
+  Failed to run /system/bin/tune2fs to 
+  /system/bin/resize2fs
+  /system/bin/resize.f2fs
+  Failed to run /system/bin/tune2fs to set the number of reserved blocks on 
+  Failed to run /system/bin/tune2fs to enable 
+  /system/bin/make_f2fs
+  /system/bin/mke2fs
+  /system/bin/e2fsdroid
+  Unsupported verity state version (
+  Unsupported verity mode (
+  Error building verity table; insufficient buffer size?
+  avb_slot_verify failed, result: 
+  <3>fec: <%d> error: %s: failed to open '%s': (unsupported mode %d)
+  <3>fec: <%d> error: %s: unsupported type %d
+  <3>fec: <%d> error: %s: unsupported ecc version: %u
+  <3>fec: <%d> error: %s: failed to read superblock: %s
+  !use_erasures || f->verity.hash
+  <3>fec: <%d> error: %s: RS block %llu: decoding failed (%d erasures)
+  <3>fec: <%d> error: %s: unsupported verity table version: %s
+  <3>fec: <%d> error: %s: unsupported verity block size: %s
+  <3>fec: <%d> error: %s: unsupported verity hash algorithm: %s
+  selinux_android_seapp_context_reload
+  SELinux:  Could not open %s:  %s
+  SELinux:  Could not stat %s:  %s
+  SELinux:  Could not map %s:  %s
+  /system/etc/selinux/plat_file_contexts
+  /vendor/etc/selinux/nonplat_file_contexts
+  /system/etc/selinux/plat_seapp_contexts
+  /vendor/etc/selinux/nonplat_seapp_contexts
+  SELinux: Could NOT parse package list
+  /data/data/
+  /data/user/
+  /data/user_de/
+  SELinux: Skipping restorecon_recursive(%s)
+  SELinux:  Directory cycle on %s.
+  SELinux:  Could not read %s: %s.
+  SELinux:  Could not stat %s: %s.
+  SELinux:  Error on %s: %s.
+  SELinux: Could not get canonical path for %s restorecon: %s.
+  SELinux:  Could not look up information for package %s, cannot restorecon %s.
+  /system/etc/event-log-tags
+  locale not supported
+  allocator<T>::allocate(size_t n) 'n' exceeds maximum supported size
+  string_view::substr
+  Successfully killed process cgroup uid 
+  assert fail: ret == AVB_SLOT_VERIFY_RESULT_OK
+  ERROR_UNSUPPORTED_VERSION
+  Partition name and suffix does not fit.
+  : No such partition. Trying 'boot' instead.
+  : Error verifying vbmeta image: unsupported AVB version
+  : Unsupported hash algorithm.
+  UNSUPPORTED_VERSION
+  unsupported register class
+  unsupported arm register
+  Success
+  No such file or directory
+  No such process
+  No such device or address
+  No such device
+  Math result not representable
+  Protocol not supported
+  Socket type not supported
+  Operation not supported on transport endpoint
+  Protocol family not supported
+  Address family not supported by protocol
+  bionic/libc/bionic/system_properties.cpp
+  conversion specifier unsupported
+  sign/precision unsupported
+  /system/etc/selinux/plat_sepolicy.cil
+  /vendor/etc/selinux/precompiled_sepolicy
+  POSIX named classes are supported only within a class
+  POSIX collating elements are not supported
+  reference to non-existent subpattern
+  this version of PCRE2 does not have Unicode support
+  PCRE does not support \L, \l, \N{name}, \U, or \u
+  syntax error in subpattern name (missing terminator)
+  two named subpatterns have the same name (PCRE2_DUPNAMES not set)
+  this version of PCRE2 does not have support for \P, \p, or \X
+  subpattern name is too long (maximum 32 characters)
+  too many named subpatterns (maximum 10000)
+  internal error: previously-checked referenced subpattern not found
+  subpattern name expected
+  different names for subpatterns of the same number are not allowed
+  \N is not supported in a class
+  UTF-16 error: missing low surrogate at end
+  UTF-16 error: invalid low surrogate
+  UTF-16 error: isolated low surrogate
+  backreference condition or recursion test is not supported for DFA matching
+  function is not supported for DFA matching
+  pattern contains an item that is not supported for DFA matching
+  unknown substring
+  non-unique substring name
+  nested recursion at the same subject position
+  bad substitution in replacement string
+  match with end before start is not supported
+  PM: suspend entry 
+  PM: suspend exit 
+  Suspended for 
+
+[CURRENT INIT]
+FILE: ramdisk\init
+SIZE: 139772 (136.50 KiB)
+SHA256: a04c6f7662c05c159067c00afb6e903f15d2d4bea77bb91740501dae04509247
+ELF: YES
+ARCH: 32-bit, little-endian, ARM, type=0x2
+ENTRY: 0x000163fd
+PROGRAM HEADERS: 9
+SECTION HEADERS: 15
+PRINTABLE STRINGS: 828
+INTERESTING STRINGS:
+  /system_root
+  .backup/.magisk
+  service flash_recovery /system/bin/true
+  .magisk/rootdir/.mount_list
+  .magisk/isolated
+  Success
+  androidboot.fstab_suffix
+  Address family not supported by protocol
+  ocontext_read_selinux
+  ./magisk
+  /data/.backup/.magisk
+  .magisk/rootdir/init
+  /data/init
+  policy version %u does not support ioctl extendedpermissions rules and one was specified
+  /system/bin/fissiond
+  /data/magiskinit
+  No such device
+  Math result not representable
+  Protocol family not supported
+  .magisk/selinux/compatible
+  android,fstab
+  /sys/devices/system/cpu/isolated
+  No such process
+  ocontext_write_selinux
+  /vendor
+  .magisk/rootdir/sepolicy.unlocked
+  /overlay.d
+  .magisk/worker
+  init-ld.xz
+  /system/system/bin/init
+  /system/etc/init/hw
+  stub.apk
+  %s/fstab_suffix
+  .magisk/pts/ptmx
+  /data/debug_ramdisk
+  /magisk/tmp
+  %s/fstab/compatible
+  policy version %u does not support extended permissions rules and one was specified
+  /data/overlay.d
+  No such file or directory
+  .magisk/mirror/sbin
+  policy version %u does not support ioctl extended permissions rules
+  /data/.magisk/preinit/sepolicy.rule
+  No such device or address
+  Unknown SELinux ocontext
+  magisk.xz
+  magisk
+  Warning! Module policy version %d cannot support permissive types, but one was defined
+  /system/bin/recovery
+  .magisk
+  /.backup/.magisk
+  selinux_setup
+  .magisk/selinux/load
+  policy version %d cannot support MLS
+  .magisk/config
+  ./magiskpolicy
+  /sys/fs/selinux/load
+  /unencrypted/magisk
+  .magisk/rootdir%s
+  /sbin/init-ld.xz
+  Socket type not supported
+  module policy version %u does not support ioctl extended permissions rules and one was specified
+  .magisk/rootdir/system/bin
+  .magisk/selinux
+  Target platform %s does not support ioctl extended permissions rules and one was specified
+  supolicy
+  /system/etc/selinux/plat_sepolicy.cil
+  Module contains a self rule not supported by the target module policy version
+  /data/.backup
+  /sbin/stub.xz
+  /sys/fs/selinux/enforce
+  .magisk/device
+  /sbin/magisk.xz
+  .magisk/selinux/enforce
+  Protocol not supported
+      onrestart exec u:r:magisk:s0 0 0 -- %s/magisk --zygote-restart
+  stub.xz
+  /system/bin/init
+  .magisk/pts
+  /system/etc/init/hw/init.rc
+  .magisk/rootdir/sepolicy
+  androidboot.slot_suffix
+  Operation not supported on transport endpoint
+  .magisk/preinit
+  Warning! Policy version %d cannot support permissive types, but some were defined
+  Skip invalid androidboot.slot_suffix=[normal]
+  init-ld
+  resetprop
+  overlay.d
+  .magisk/rootdir
+  .magisk/rootdir/sbin
+  ${MAGISKTMP}
+  .magisk/device/preinit
+  .magisk/mirror
+  /sbin/magisk
+  .magisk/rootdir/system/bin/fissiond
+  /magisk
+  magiskinit: priv_appgenfsconopendir umount2 chr_file
+      exec u:r:magisk:s0 0 0 -- /magisk --post-fs-data
+      exec u:r:magisk:s0 0 0 -- /magisk --service
+      exec u:r:magisk:s0 0 0 -- /magisk --boot-complete
+      exec u:r:magisk:s0 0 0 -- /magisk --zygote-restart
+  kernelload_policymagiskdomainmlstrustedsubjectnetdomainappdomainmagisk_filefile_typemagisk_log_filedirfifo_filesock_filezygotewritefs_typeservice_manager_typehwservice_manager_typevndservice_manager_typeport_typenode_typeproperty_typetcp_socketudp_socketrawip_socketservicemanagervndservicemanagersearchmapprocessgetattrbindersigchldfduseshellplatform_appsystem_appuntrusted_appuntrusted_app_allunix_stream_socketconnecttogetopttmpfsrootfslabeledfsfilesystemassociatepipefsdevptssetcurrentdyntransitionexecmemunmountsystem_serverptraceadb_data_filevendor_initallowauditallowdontauditallowxpermauditallowxpermdontauditxpermpermissiveenforcetypeattributeattributetype_transitiontype_changetype_memberioctl*0xSyntax error in: ""
+  support the match-all operator (*).
+  The only supported operation for extended permissions right now is 'ioctl'.
+  ** Supported policy statements:
+  permission deniedconnection refusednetwork unreachableconnection abortednot connectedaddress in useaddress not availablenetwork downbroken pipeentity already existsoperation would blocknot a directoryis a directorydirectory not emptyread-only filesystem or storage mediumfilesystem loop or indirection limit (e.g. symlink loop)stale network file handleinvalid input parameterinvalid datatimed outwrite zeroseek on unseekable filefilesystem quota exceededfile too largeresource busyexecutable file busycross-device link or renametoo many linksargument list too longoperation interruptedunsupportedunexpected end of fileout of memoryother erroruncategorized error (os error )
+
+=== INIT COMPARISON ===
+ORIGINAL SIZE: 1050908
+CURRENT SIZE:  139772
+SIZE DIFFERENCE: 911136
+DIFFERENT BYTES: 1047928
+ORIGINAL SHA256: f6294cf56d05b85f82b4f2272aaa164dbb186f4885d6474ea77739dd0fa77c8a
+CURRENT SHA256:  a04c6f7662c05c159067c00afb6e903f15d2d4bea77bb91740501dae04509247
+
+=== MAGISK FILES ===
+ramdisk\.backup\.magisk                                           124 bytes
+KEEPVERITY=true
+KEEPFORCEENCRYPT=false
+RECOVERYMODE=false
+PREINITDEVICE=cache
+SHA1=4a1d839951abcbcf263c5de0729845ed27147798
+
+ramdisk\.backup\.rmlist                                           99 bytes
+overlay.d overlay.d/sbin overlay.d/sbin/init-ld.xz overlay.d/sbin/magisk.xz overlay.d/sbin/stub.xz 
+ramdisk\.backup\init.xz                                           546976 bytes
+ramdisk\overlay.d\sbin\init-ld.xz                                 1536 bytes
+ramdisk\overlay.d\sbin\magisk.xz                                  107668 bytes
+ramdisk\overlay.d\sbin\stub.xz                                    25624 bytes
+
+=== FINISHED ===
+REPORT: MT6580_report.txt
+STRINGS: MT6580_strings.txt

@@ -1,0 +1,127 @@
+
+======================================================================
+MT6580 TWRP ANALYSIS SUMMARY
+======================================================================
+
+ROOT: C:\Users\User\Downloads\MT6580S24\MT6580S24
+OUTPUT: C:\Users\User\Downloads\MT6580S24\MT6580S24\twrp_ramdisk_analysis
+
+IMAGES:
+
+[boot]
+  size       : 16,777,216
+  kernel     : 5,517,161
+  ramdisk    : 1,137,623
+  page       : 2048
+  kernel sha : bd2a5c49c61922e04405bddaa4c388e5d100c2138faee8af0f3e393088505cc8
+  ramdisk sha: 02bae5d04d50991f78e29a5140a5e1dd07626f9551b651689ea135a708d4f347
+
+[recovery]
+  size       : 11,606,016
+  kernel     : 5,517,161
+  ramdisk    : 6,085,084
+  page       : 2048
+  kernel sha : bd2a5c49c61922e04405bddaa4c388e5d100c2138faee8af0f3e393088505cc8
+  ramdisk sha: 2c5efa6ba9a9904a51232939c10de9617ecb1317f255116123db704863b4aa41
+
+[twrp]
+  size       : 11,649,024
+  kernel     : 5,560,304
+  ramdisk    : 6,085,084
+  page       : 2048
+  kernel sha : 39bb53cf398c86bb70949c13e3884e2f8543b204505c61714f27bce316d0b951
+  ramdisk sha: 2c349e42f3c919f084240e03bb290505cb4a65ddb26a99b3b0fed9e93a8ac9a8
+
+[TWRP_3.7]
+  size       : 11,606,016
+  kernel     : 5,517,161
+  ramdisk    : 6,085,084
+  page       : 2048
+  kernel sha : bd2a5c49c61922e04405bddaa4c388e5d100c2138faee8af0f3e393088505cc8
+  ramdisk sha: 2c5efa6ba9a9904a51232939c10de9617ecb1317f255116123db704863b4aa41
+
+RAMDISKS:
+
+[boot]
+  compression : gzip
+  compressed  : 1,137,623
+  raw         : 1,434,944
+  raw sha     : 3f2de45bd24a6d75554427875db966f5d1de5c4d1014b6794d10ba28906920a7
+  files       : 39
+
+[recovery]
+  compression : gzip
+  compressed  : 6,085,084
+  raw         : 14,540,800
+  raw sha     : ac51ab73583c743e8d30842bf0f9b2355f45f71f96954d38c8e2543afb96a3c5
+  files       : 3104
+
+[twrp]
+  compression : gzip
+  compressed  : 6,085,084
+  raw         : 14,540,800
+  raw sha     : d1e3efd082bbf6dce0e42a94a815c22d0125ab31abc97b77a852be722086fa8a
+  files       : 3104
+
+[TWRP_3.7]
+  compression : gzip
+  compressed  : 6,085,084
+  raw         : 14,540,800
+  raw sha     : ac51ab73583c743e8d30842bf0f9b2355f45f71f96954d38c8e2543afb96a3c5
+  files       : 3104
+
+KERNEL EQUALITY:
+  boot == recovery : YES
+  boot == twrp : NO
+  boot == TWRP_3.7 : YES
+  recovery == twrp : NO
+  recovery == TWRP_3.7 : YES
+  twrp == TWRP_3.7 : NO
+
+RAMDISK EQUALITY:
+  boot == recovery : NO
+  boot == twrp : NO
+  boot == TWRP_3.7 : NO
+  recovery == twrp : NO
+  recovery == TWRP_3.7 : YES
+  twrp == TWRP_3.7 : NO
+
+IMPORTANT INTERPRETATION:
+
+1. Если recovery.img и TWRP_3.7 имеют одинаковый
+   kernel SHA и ramdisk SHA, они идентичны.
+
+2. Если boot/recovery используют одинаковый kernel,
+   проблема black screen не объясняется отсутствием
+   другого display kernel.
+
+3. Особое внимание следует уделить:
+   - init
+   - init.rc
+   - init.recovery.*
+   - default.prop
+   - ueventd.*
+   - adbd
+   - recovery.fstab
+   - /dev/block/platform paths
+   - USB configuration
+   - framebuffer/display initialization
+
+4. Следующий этап после анализа — изменение ramdisk,
+   а не повторная прошивка идентичного recovery.
+
+REPORTS:
+  adb_analysis.txt
+  block_paths.txt
+  display_analysis.txt
+  dtb_analysis.txt
+  file_lists.txt
+  hashes.txt
+  image_info.txt
+  important_files.txt
+  important_strings.txt
+  init_diff.txt
+  kernel_comparison.txt
+  odmdtbo_analysis.txt
+  properties_diff.txt
+  ramdisk_diff.txt

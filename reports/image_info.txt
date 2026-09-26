@@ -1,0 +1,72 @@
+
+======================================================================
+IMAGE: boot
+======================================================================
+Path       : C:\Users\User\Downloads\MT6580S24\MT6580S24\boot.img
+Size       : 16,777,216
+Page size  : 2048
+Kernel     : 5,517,161
+Ramdisk    : 1,137,623
+Second     : 0
+Kernel addr: 0x80008000
+Ramdisk adr: 0x84000000
+Second addr: 0x80f00000
+Tags addr  : 0x8e000000
+Name       : ''
+Cmdline    : bootopt=64S3,32S1,32S1 buildvariant=user
+Kernel SHA : bd2a5c49c61922e04405bddaa4c388e5d100c2138faee8af0f3e393088505cc8
+Ramdisk SHA: 02bae5d04d50991f78e29a5140a5e1dd07626f9551b651689ea135a708d4f347
+
+======================================================================
+IMAGE: recovery
+======================================================================
+Path       : C:\Users\User\Downloads\MT6580S24\MT6580S24\recovery.img
+Size       : 11,606,016
+Page size  : 2048
+Kernel     : 5,517,161
+Ramdisk    : 6,085,084
+Second     : 0
+Kernel addr: 0x80008000
+Ramdisk adr: 0x84000000
+Second addr: 0x80000000
+Tags addr  : 0x8e000000
+Name       : 'R17'
+Cmdline    : bootopt=64S3,32S1,32S1
+Kernel SHA : bd2a5c49c61922e04405bddaa4c388e5d100c2138faee8af0f3e393088505cc8
+Ramdisk SHA: 2c5efa6ba9a9904a51232939c10de9617ecb1317f255116123db704863b4aa41
+
+======================================================================
+IMAGE: twrp
+======================================================================
+Path       : C:\Users\User\Downloads\MT6580S24\MT6580S24\twrp.img
+Size       : 11,649,024
+Page size  : 2048
+Kernel     : 5,560,304
+Ramdisk    : 6,085,084
+Second     : 0
+Kernel addr: 0x80008000
+Ramdisk adr: 0x84000000
+Second addr: 0x80000000
+Tags addr  : 0x8e000000
+Name       : 'R17'
+Cmdline    : bootopt=64S3,32S1,32S1
+Kernel SHA : 39bb53cf398c86bb70949c13e3884e2f8543b204505c61714f27bce316d0b951
+Ramdisk SHA: 2c349e42f3c919f084240e03bb290505cb4a65ddb26a99b3b0fed9e93a8ac9a8
+
+======================================================================
+IMAGE: TWRP_3.7
+======================================================================
+Path       : C:\Users\User\Downloads\MT6580S24\MT6580S24\TWRP-3.7.0_9-MT6580v3.18.79.img
+Size       : 11,606,016
+Page size  : 2048
+Kernel     : 5,517,161
+Ramdisk    : 6,085,084
+Second     : 0
+Kernel addr: 0x80008000
+Ramdisk adr: 0x84000000
+Second addr: 0x80000000
+Tags addr  : 0x8e000000
+Name       : 'R17'
+Cmdline    : bootopt=64S3,32S1,32S1
+Kernel SHA : bd2a5c49c61922e04405bddaa4c388e5d100c2138faee8af0f3e393088505cc8
+Ramdisk SHA: 2c5efa6ba9a9904a51232939c10de9617ecb1317f255116123db704863b4aa41

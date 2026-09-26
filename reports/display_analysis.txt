@@ -1,0 +1,541 @@
+
+======================================================================
+KERNEL DISPLAY STRING ANALYSIS
+======================================================================
+
+[boot]
+  Z;LCM
+  /lcD
+  1IVo3n
+  DsIhI
+  YSlcm
+  DISP_PWM@0x1100F000
+  mediatek,DISP_PWM
+  mediatek,mt6580-lcm
+  DISPSYS@0x14007000
+  mediatek,DISPSYS
+  DSI@0x14012000
+  mediatek,DSI
+  mtkfb@0
+  mediatek,mtkfb
+  dsi_te
+  mediatek, dsi_te-eint
+  lcmbias
+  mediatek,lcmbias
+  /bus/lcm
+  /bus/mtkfb@0
+  /bus/dsi_te
+  /lcmbias
+  disp_pwm0_sof
+  disp_dsi0_frame_done
+  dsi0_te_event
+  mtkfb
+
+[recovery]
+  Z;LCM
+  /lcD
+  1IVo3n
+  DsIhI
+  YSlcm
+  DISP_PWM@0x1100F000
+  mediatek,DISP_PWM
+  mediatek,mt6580-lcm
+  DISPSYS@0x14007000
+  mediatek,DISPSYS
+  DSI@0x14012000
+  mediatek,DSI
+  mtkfb@0
+  mediatek,mtkfb
+  dsi_te
+  mediatek, dsi_te-eint
+  lcmbias
+  mediatek,lcmbias
+  /bus/lcm
+  /bus/mtkfb@0
+  /bus/dsi_te
+  /lcmbias
+  disp_pwm0_sof
+  disp_dsi0_frame_done
+  dsi0_te_event
+  mtkfb
+
+[twrp]
+  <\DsIA
+  ivOb
+  mclcM
+  LcDE
+  sgm3804_i2c@3e
+  mediatek,sgm3804_i2c
+  DISP_PWM@0x1100F000
+  mediatek,DISP_PWM
+  mediatek,mt6580-lcm
+  lcm_rst@
+  mediatek,mt6580-lcm_rst
+  DISPSYS@0x14007000
+  mediatek,DISPSYS
+  DSI@0x14012000
+  mediatek,DSI
+  mtkfb@0
+  mediatek,mtkfb
+  dsi_te
+  mediatek, dsi_te-eint
+  lcm_sgm3804
+  mediatek,lcm_sgm3804
+  /bus/lcm
+  /bus/lcm_rst@
+  /bus/mtkfb@0
+  /bus/dsi_te
+  /bus/lcm_sgm3804
+  disp_pwm0_sof
+  disp_dsi0_frame_done
+  dsi0_te_event
+  lcm_rst
+  mtkfb
+
+[TWRP_3.7]
+  Z;LCM
+  /lcD
+  1IVo3n
+  DsIhI
+  YSlcm
+  DISP_PWM@0x1100F000
+  mediatek,DISP_PWM
+  mediatek,mt6580-lcm
+  DISPSYS@0x14007000
+  mediatek,DISPSYS
+  DSI@0x14012000
+  mediatek,DSI
+  mtkfb@0
+  mediatek,mtkfb
+  dsi_te
+  mediatek, dsi_te-eint
+  lcmbias
+  mediatek,lcmbias
+  /bus/lcm
+  /bus/mtkfb@0
+  /bus/dsi_te
+  /lcmbias
+  disp_pwm0_sof
+  disp_dsi0_frame_done
+  dsi0_te_event
+  mtkfb
+
+======================================================================
+RAMDISK DISPLAY STRING ANALYSIS
+======================================================================
+
+[boot]
+  init.rc: graphics, lcd, backlight
+  sbin/charger: fb0, framebuffer, graphics, display
+  ueventd.rc: graphics
+
+[recovery]
+  default.prop: display, lcd
+  etc/recovery.fstab: display
+  file_contexts: graphics
+  init: graphics
+  sbin/adbd: framebuffer, graphics, dsi
+  sbin/bash: display, dsi, ivo
+  sbin/busybox: fb0, graphics, display, lcd, ivo
+  sbin/etc/bash/bashrc: display
+  sbin/etc/nano/nanorc: display
+  sbin/etc/terminfo/M/MtxOrb: display, lcd
+  sbin/etc/terminfo/M/MtxOrb162: display, lcd
+  sbin/etc/terminfo/M/MtxOrb204: display, lcd
+  sbin/etc/terminfo/a/apollo_15P: display
+  sbin/etc/terminfo/a/apollo_19L: display
+  sbin/etc/terminfo/a/apollo_color: display
+  sbin/etc/terminfo/a/att4424-1: display
+  sbin/etc/terminfo/a/att700: display
+  sbin/etc/terminfo/d/dec-vt330: graphics
+  sbin/etc/terminfo/d/dec-vt340: graphics
+  sbin/etc/terminfo/e/env230: graphics
+  sbin/etc/terminfo/e/envision230: graphics
+  sbin/etc/terminfo/g/gigi: graphics
+  sbin/etc/terminfo/h/hft: display
+  sbin/etc/terminfo/h/hp2648: graphics
+  sbin/etc/terminfo/h/hp2648a: graphics
+  sbin/etc/terminfo/i/ibm3151: display
+  sbin/etc/terminfo/i/ibm3161: display
+  sbin/etc/terminfo/i/ibm3162: display
+  sbin/etc/terminfo/i/ibm3163: display
+  sbin/etc/terminfo/i/ibm5081: display
+  sbin/etc/terminfo/i/ibm5081-c: display
+  sbin/etc/terminfo/i/ibm5151: display
+  sbin/etc/terminfo/i/ibm5154: display
+  sbin/etc/terminfo/i/ibm5154-c: display
+  sbin/etc/terminfo/i/ibm6153: display
+  sbin/etc/terminfo/i/ibm6153-40: display
+  sbin/etc/terminfo/i/ibm6153-90: display
+  sbin/etc/terminfo/i/ibm6154: display
+  sbin/etc/terminfo/i/ibm6154-c: graphics, display
+  sbin/etc/terminfo/i/ibm6155: display
+  sbin/etc/terminfo/i/ibm8503: display
+  sbin/etc/terminfo/i/ibm8507: display
+  sbin/etc/terminfo/i/ibm8514: display
+  sbin/etc/terminfo/i/ibm8514-c: display
+  sbin/etc/terminfo/i/ibm8604: display
+  sbin/etc/terminfo/i/ibmaed: display
+  sbin/etc/terminfo/i/ibmapa16: graphics, display
+  sbin/etc/terminfo/i/ibmapa8: graphics, display
+  sbin/etc/terminfo/i/ibmapa8c: graphics, display
+  sbin/etc/terminfo/i/ibmapa8c-c: graphics, display
+  sbin/etc/terminfo/i/ibmega: display
+  sbin/etc/terminfo/i/ibmega-c: display
+  sbin/etc/terminfo/i/ibmmpel-c: display
+  sbin/etc/terminfo/i/ibmpcx: display
+  sbin/etc/terminfo/i/ibmvga: display
+  sbin/etc/terminfo/i/ibmvga-c: display
+  sbin/etc/terminfo/i/ibmx: display
+  sbin/etc/terminfo/i/icl6402: display
+  sbin/etc/terminfo/i/icl6404: display
+  sbin/etc/terminfo/i/icl6404-w: display
+  sbin/etc/terminfo/k/kds6402: display
+  sbin/etc/terminfo/k/kds7372: display
+  sbin/etc/terminfo/k/kds7372-w: display
+  sbin/etc/terminfo/k/klone+acs: display
+  sbin/etc/terminfo/k/klone+color: display
+  sbin/etc/terminfo/k/klone+koi8acs: display
+  sbin/etc/terminfo/k/klone+sgr: display
+  sbin/etc/terminfo/k/klone+sgr-dumb: display
+  sbin/etc/terminfo/k/klone+sgr8: display
+  sbin/etc/terminfo/l/linux-vt: graphics
+  sbin/etc/terminfo/l/lisa: display
+  sbin/etc/terminfo/l/liswb: display
+  sbin/etc/terminfo/r/rtpc: graphics, display
+  sbin/etc/terminfo/t/tek4113: graphics
+  sbin/etc/terminfo/t/tek4113-34: graphics
+  sbin/etc/terminfo/t/tek4113-nd: graphics
+  sbin/etc/terminfo/t/tek4205: fb0
+  sbin/etc/terminfo/t/tek4207: graphics
+  sbin/etc/terminfo/t/tty4424-1: display
+  sbin/etc/terminfo/v/vk100: graphics
+  sbin/etc/terminfo/v/vt125: graphics
+  sbin/etc/terminfo/v/vt330: graphics
+  sbin/etc/terminfo/v/vt340: graphics
+  sbin/etc/terminfo/w/wy60-316X: display
+  sbin/etc/terminfo/w/wy60-AT: display
+  sbin/etc/terminfo/w/wyse60-316X: display
+  sbin/etc/terminfo/w/wyse60-AT: display
+  sbin/etc/terminfo/x/xenix: display
+  sbin/etc/terminfo/x/xterm-xi: graphics
+  sbin/healthd: fb0, framebuffer, graphics
+  sbin/libaosprecovery.so: dsi
+  sbin/libblkid.so: display
+  sbin/libc++.so: lcm, dsi
+  sbin/libc.so: graphics, dsi
+  sbin/libcrypto.so: graphics, display, dsi
+  sbin/libft2.so: graphics, lcd
+  sbin/libminuitwrp.so: fb0, framebuffer, graphics, display, dsi
+  sbin/libncurses.so: display, panel
+  sbin/libpng.so: dsi
+  sbin/libselinux.so: graphics
+  sbin/libssh.so: display
+  sbin/libssl.so: dsi
+  sbin/libtwrpmtp-legacy.so: display, dsi
+  sbin/libutils.so: dsi
+  sbin/nano: lcm
+  sbin/pigz: display
+  sbin/recovery: display, lcd, dsi, backlight
+  sepolicy: graphics
+  service_contexts: display
+  system/usr/share/zoneinfo/tzdata: ivo
+  twres/fonts/RobotoCondensed-Regular.ttf: fb0
+  twres/languages/cz.xml: display, ivo
+  twres/languages/de.xml: display, ivo
+  twres/languages/el.xml: display
+  twres/languages/en.xml: display, ivo
+  twres/languages/es.xml: display, ivo
+  twres/languages/fr.xml: display, ivo
+  twres/languages/hu.xml: display, ivo
+  twres/languages/id.xml: display, ivo
+  twres/languages/it.xml: display, ivo
+  twres/languages/nl.xml: display, ivo
+  twres/languages/pl.xml: display
+  twres/languages/pt_BR.xml: display, ivo
+  twres/languages/pt_PT.xml: display, dsi, ivo
+  twres/languages/ru.xml: display
+  twres/languages/sk.xml: display, ivo
+  twres/languages/sl.xml: display, ivo
+  twres/languages/sv.xml: display, ivo
+  twres/languages/tr.xml: display, ivo
+  twres/languages/uk.xml: display
+  twres/portrait.xml: display, ivo, backlight
+  twres/ui.xml: display, backlight
+  ueventd.grouper.rc: display, dsi
+  ueventd.mt6580.rc: graphics
+  ueventd.rc: graphics
+
+[twrp]
+  default.prop: display, lcd
+  etc/recovery.fstab: display
+  file_contexts: graphics
+  init: graphics
+  sbin/adbd: framebuffer, graphics, dsi
+  sbin/bash: display, dsi, ivo
+  sbin/busybox: fb0, graphics, display, lcd, ivo
+  sbin/etc/bash/bashrc: display
+  sbin/etc/nano/nanorc: display
+  sbin/etc/terminfo/M/MtxOrb: display, lcd
+  sbin/etc/terminfo/M/MtxOrb162: display, lcd
+  sbin/etc/terminfo/M/MtxOrb204: display, lcd
+  sbin/etc/terminfo/a/apollo_15P: display
+  sbin/etc/terminfo/a/apollo_19L: display
+  sbin/etc/terminfo/a/apollo_color: display
+  sbin/etc/terminfo/a/att4424-1: display
+  sbin/etc/terminfo/a/att700: display
+  sbin/etc/terminfo/d/dec-vt330: graphics
+  sbin/etc/terminfo/d/dec-vt340: graphics
+  sbin/etc/terminfo/e/env230: graphics
+  sbin/etc/terminfo/e/envision230: graphics
+  sbin/etc/terminfo/g/gigi: graphics
+  sbin/etc/terminfo/h/hft: display
+  sbin/etc/terminfo/h/hp2648: graphics
+  sbin/etc/terminfo/h/hp2648a: graphics
+  sbin/etc/terminfo/i/ibm3151: display
+  sbin/etc/terminfo/i/ibm3161: display
+  sbin/etc/terminfo/i/ibm3162: display
+  sbin/etc/terminfo/i/ibm3163: display
+  sbin/etc/terminfo/i/ibm5081: display
+  sbin/etc/terminfo/i/ibm5081-c: display
+  sbin/etc/terminfo/i/ibm5151: display
+  sbin/etc/terminfo/i/ibm5154: display
+  sbin/etc/terminfo/i/ibm5154-c: display
+  sbin/etc/terminfo/i/ibm6153: display
+  sbin/etc/terminfo/i/ibm6153-40: display
+  sbin/etc/terminfo/i/ibm6153-90: display
+  sbin/etc/terminfo/i/ibm6154: display
+  sbin/etc/terminfo/i/ibm6154-c: graphics, display
+  sbin/etc/terminfo/i/ibm6155: display
+  sbin/etc/terminfo/i/ibm8503: display
+  sbin/etc/terminfo/i/ibm8507: display
+  sbin/etc/terminfo/i/ibm8514: display
+  sbin/etc/terminfo/i/ibm8514-c: display
+  sbin/etc/terminfo/i/ibm8604: display
+  sbin/etc/terminfo/i/ibmaed: display
+  sbin/etc/terminfo/i/ibmapa16: graphics, display
+  sbin/etc/terminfo/i/ibmapa8: graphics, display
+  sbin/etc/terminfo/i/ibmapa8c: graphics, display
+  sbin/etc/terminfo/i/ibmapa8c-c: graphics, display
+  sbin/etc/terminfo/i/ibmega: display
+  sbin/etc/terminfo/i/ibmega-c: display
+  sbin/etc/terminfo/i/ibmmpel-c: display
+  sbin/etc/terminfo/i/ibmpcx: display
+  sbin/etc/terminfo/i/ibmvga: display
+  sbin/etc/terminfo/i/ibmvga-c: display
+  sbin/etc/terminfo/i/ibmx: display
+  sbin/etc/terminfo/i/icl6402: display
+  sbin/etc/terminfo/i/icl6404: display
+  sbin/etc/terminfo/i/icl6404-w: display
+  sbin/etc/terminfo/k/kds6402: display
+  sbin/etc/terminfo/k/kds7372: display
+  sbin/etc/terminfo/k/kds7372-w: display
+  sbin/etc/terminfo/k/klone+acs: display
+  sbin/etc/terminfo/k/klone+color: display
+  sbin/etc/terminfo/k/klone+koi8acs: display
+  sbin/etc/terminfo/k/klone+sgr: display
+  sbin/etc/terminfo/k/klone+sgr-dumb: display
+  sbin/etc/terminfo/k/klone+sgr8: display
+  sbin/etc/terminfo/l/linux-vt: graphics
+  sbin/etc/terminfo/l/lisa: display
+  sbin/etc/terminfo/l/liswb: display
+  sbin/etc/terminfo/r/rtpc: graphics, display
+  sbin/etc/terminfo/t/tek4113: graphics
+  sbin/etc/terminfo/t/tek4113-34: graphics
+  sbin/etc/terminfo/t/tek4113-nd: graphics
+  sbin/etc/terminfo/t/tek4205: fb0
+  sbin/etc/terminfo/t/tek4207: graphics
+  sbin/etc/terminfo/t/tty4424-1: display
+  sbin/etc/terminfo/v/vk100: graphics
+  sbin/etc/terminfo/v/vt125: graphics
+  sbin/etc/terminfo/v/vt330: graphics
+  sbin/etc/terminfo/v/vt340: graphics
+  sbin/etc/terminfo/w/wy60-316X: display
+  sbin/etc/terminfo/w/wy60-AT: display
+  sbin/etc/terminfo/w/wyse60-316X: display
+  sbin/etc/terminfo/w/wyse60-AT: display
+  sbin/etc/terminfo/x/xenix: display
+  sbin/etc/terminfo/x/xterm-xi: graphics
+  sbin/healthd: fb0, framebuffer, graphics
+  sbin/libaosprecovery.so: dsi
+  sbin/libblkid.so: display
+  sbin/libc++.so: lcm, dsi
+  sbin/libc.so: graphics, dsi
+  sbin/libcrypto.so: graphics, display, dsi
+  sbin/libft2.so: graphics, lcd
+  sbin/libminuitwrp.so: fb0, framebuffer, graphics, display, dsi
+  sbin/libncurses.so: display, panel
+  sbin/libpng.so: dsi
+  sbin/libselinux.so: graphics
+  sbin/libssh.so: display
+  sbin/libssl.so: dsi
+  sbin/libtwrpmtp-legacy.so: display, dsi
+  sbin/libutils.so: dsi
+  sbin/nano: lcm
+  sbin/pigz: display
+  sbin/recovery: display, lcd, dsi, backlight
+  sepolicy: graphics
+  service_contexts: display
+  system/usr/share/zoneinfo/tzdata: ivo
+  twres/fonts/RobotoCondensed-Regular.ttf: fb0
+  twres/languages/cz.xml: display, ivo
+  twres/languages/de.xml: display, ivo
+  twres/languages/el.xml: display
+  twres/languages/en.xml: display, ivo
+  twres/languages/es.xml: display, ivo
+  twres/languages/fr.xml: display, ivo
+  twres/languages/hu.xml: display, ivo
+  twres/languages/id.xml: display, ivo
+  twres/languages/it.xml: display, ivo
+  twres/languages/nl.xml: display, ivo
+  twres/languages/pl.xml: display
+  twres/languages/pt_BR.xml: display, ivo
+  twres/languages/pt_PT.xml: display, dsi, ivo
+  twres/languages/ru.xml: display
+  twres/languages/sk.xml: display, ivo
+  twres/languages/sl.xml: display, ivo
+  twres/languages/sv.xml: display, ivo
+  twres/languages/tr.xml: display, ivo
+  twres/languages/uk.xml: display
+  twres/portrait.xml: display, ivo, backlight
+  twres/ui.xml: display, backlight
+  ueventd.grouper.rc: display, dsi
+  ueventd.mt6580.rc: graphics
+  ueventd.rc: graphics
+
+[TWRP_3.7]
+  default.prop: display, lcd
+  etc/recovery.fstab: display
+  file_contexts: graphics
+  init: graphics
+  sbin/adbd: framebuffer, graphics, dsi
+  sbin/bash: display, dsi, ivo
+  sbin/busybox: fb0, graphics, display, lcd, ivo
+  sbin/etc/bash/bashrc: display
+  sbin/etc/nano/nanorc: display
+  sbin/etc/terminfo/M/MtxOrb: display, lcd
+  sbin/etc/terminfo/M/MtxOrb162: display, lcd
+  sbin/etc/terminfo/M/MtxOrb204: display, lcd
+  sbin/etc/terminfo/a/apollo_15P: display
+  sbin/etc/terminfo/a/apollo_19L: display
+  sbin/etc/terminfo/a/apollo_color: display
+  sbin/etc/terminfo/a/att4424-1: display
+  sbin/etc/terminfo/a/att700: display
+  sbin/etc/terminfo/d/dec-vt330: graphics
+  sbin/etc/terminfo/d/dec-vt340: graphics
+  sbin/etc/terminfo/e/env230: graphics
+  sbin/etc/terminfo/e/envision230: graphics
+  sbin/etc/terminfo/g/gigi: graphics
+  sbin/etc/terminfo/h/hft: display
+  sbin/etc/terminfo/h/hp2648: graphics
+  sbin/etc/terminfo/h/hp2648a: graphics
+  sbin/etc/terminfo/i/ibm3151: display
+  sbin/etc/terminfo/i/ibm3161: display
+  sbin/etc/terminfo/i/ibm3162: display
+  sbin/etc/terminfo/i/ibm3163: display
+  sbin/etc/terminfo/i/ibm5081: display
+  sbin/etc/terminfo/i/ibm5081-c: display
+  sbin/etc/terminfo/i/ibm5151: display
+  sbin/etc/terminfo/i/ibm5154: display
+  sbin/etc/terminfo/i/ibm5154-c: display
+  sbin/etc/terminfo/i/ibm6153: display
+  sbin/etc/terminfo/i/ibm6153-40: display
+  sbin/etc/terminfo/i/ibm6153-90: display
+  sbin/etc/terminfo/i/ibm6154: display
+  sbin/etc/terminfo/i/ibm6154-c: graphics, display
+  sbin/etc/terminfo/i/ibm6155: display
+  sbin/etc/terminfo/i/ibm8503: display
+  sbin/etc/terminfo/i/ibm8507: display
+  sbin/etc/terminfo/i/ibm8514: display
+  sbin/etc/terminfo/i/ibm8514-c: display
+  sbin/etc/terminfo/i/ibm8604: display
+  sbin/etc/terminfo/i/ibmaed: display
+  sbin/etc/terminfo/i/ibmapa16: graphics, display
+  sbin/etc/terminfo/i/ibmapa8: graphics, display
+  sbin/etc/terminfo/i/ibmapa8c: graphics, display
+  sbin/etc/terminfo/i/ibmapa8c-c: graphics, display
+  sbin/etc/terminfo/i/ibmega: display
+  sbin/etc/terminfo/i/ibmega-c: display
+  sbin/etc/terminfo/i/ibmmpel-c: display
+  sbin/etc/terminfo/i/ibmpcx: display
+  sbin/etc/terminfo/i/ibmvga: display
+  sbin/etc/terminfo/i/ibmvga-c: display
+  sbin/etc/terminfo/i/ibmx: display
+  sbin/etc/terminfo/i/icl6402: display
+  sbin/etc/terminfo/i/icl6404: display
+  sbin/etc/terminfo/i/icl6404-w: display
+  sbin/etc/terminfo/k/kds6402: display
+  sbin/etc/terminfo/k/kds7372: display
+  sbin/etc/terminfo/k/kds7372-w: display
+  sbin/etc/terminfo/k/klone+acs: display
+  sbin/etc/terminfo/k/klone+color: display
+  sbin/etc/terminfo/k/klone+koi8acs: display
+  sbin/etc/terminfo/k/klone+sgr: display
+  sbin/etc/terminfo/k/klone+sgr-dumb: display
+  sbin/etc/terminfo/k/klone+sgr8: display
+  sbin/etc/terminfo/l/linux-vt: graphics
+  sbin/etc/terminfo/l/lisa: display
+  sbin/etc/terminfo/l/liswb: display
+  sbin/etc/terminfo/r/rtpc: graphics, display
+  sbin/etc/terminfo/t/tek4113: graphics
+  sbin/etc/terminfo/t/tek4113-34: graphics
+  sbin/etc/terminfo/t/tek4113-nd: graphics
+  sbin/etc/terminfo/t/tek4205: fb0
+  sbin/etc/terminfo/t/tek4207: graphics
+  sbin/etc/terminfo/t/tty4424-1: display
+  sbin/etc/terminfo/v/vk100: graphics
+  sbin/etc/terminfo/v/vt125: graphics
+  sbin/etc/terminfo/v/vt330: graphics
+  sbin/etc/terminfo/v/vt340: graphics
+  sbin/etc/terminfo/w/wy60-316X: display
+  sbin/etc/terminfo/w/wy60-AT: display
+  sbin/etc/terminfo/w/wyse60-316X: display
+  sbin/etc/terminfo/w/wyse60-AT: display
+  sbin/etc/terminfo/x/xenix: display
+  sbin/etc/terminfo/x/xterm-xi: graphics
+  sbin/healthd: fb0, framebuffer, graphics
+  sbin/libaosprecovery.so: dsi
+  sbin/libblkid.so: display
+  sbin/libc++.so: lcm, dsi
+  sbin/libc.so: graphics, dsi
+  sbin/libcrypto.so: graphics, display, dsi
+  sbin/libft2.so: graphics, lcd
+  sbin/libminuitwrp.so: fb0, framebuffer, graphics, display, dsi
+  sbin/libncurses.so: display, panel
+  sbin/libpng.so: dsi
+  sbin/libselinux.so: graphics
+  sbin/libssh.so: display
+  sbin/libssl.so: dsi
+  sbin/libtwrpmtp-legacy.so: display, dsi
+  sbin/libutils.so: dsi
+  sbin/nano: lcm
+  sbin/pigz: display
+  sbin/recovery: display, lcd, dsi, backlight
+  sepolicy: graphics
+  service_contexts: display
+  system/usr/share/zoneinfo/tzdata: ivo
+  twres/fonts/RobotoCondensed-Regular.ttf: fb0
+  twres/languages/cz.xml: display, ivo
+  twres/languages/de.xml: display, ivo
+  twres/languages/el.xml: display
+  twres/languages/en.xml: display, ivo
+  twres/languages/es.xml: display, ivo
+  twres/languages/fr.xml: display, ivo
+  twres/languages/hu.xml: display, ivo
+  twres/languages/id.xml: display, ivo
+  twres/languages/it.xml: display, ivo
+  twres/languages/nl.xml: display, ivo
+  twres/languages/pl.xml: display
+  twres/languages/pt_BR.xml: display, ivo
+  twres/languages/pt_PT.xml: display, dsi, ivo
+  twres/languages/ru.xml: display
+  twres/languages/sk.xml: display, ivo
+  twres/languages/sl.xml: display, ivo
+  twres/languages/sv.xml: display, ivo
+  twres/languages/tr.xml: display, ivo
+  twres/languages/uk.xml: display
+  twres/portrait.xml: display, ivo, backlight
+  twres/ui.xml: display, backlight
+  ueventd.grouper.rc: display, dsi
+  ueventd.mt6580.rc: graphics
+  ueventd.rc: graphics

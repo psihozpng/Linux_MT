@@ -1,0 +1,55 @@
+subsystem adf
+subsystem graphics
+    dirname /dev/graphics
+subsystem drm
+subsystem oncrpc
+subsystem adsp
+subsystem msm_camera
+subsystem input
+subsystem mtd
+subsystem sound
+# Make HW RNG readable by group system to let EntropyMixer read it.
+/dev/hw_random            0440   root       system
+/dev/dri/*                0666   root       graphics
+/dev/uinput               0660   system     bluetooth
+/dev/alarm                0664   system     radio
+/dev/rtc0                 0640   system     system
+/dev/tty0                 0660   root       system
+/dev/graphics/*           0660   root       graphics
+/dev/msm_hw3dm            0660   system     graphics
+/dev/pmem                 0660   system     graphics
+/dev/pmem_adsp*           0660   system     audio
+/dev/pmem_camera*         0660   system     camera
+/dev/oncrpc/*             0660   root       system
+/dev/adsp/*               0660   system     audio
+/dev/snd/*                0660   system     audio
+/dev/mt9t013              0660   system     system
+/dev/msm_camera/*         0660   system     system
+/dev/akm8976_daemon       0640   compass    system
+/dev/akm8976_aot          0640   compass    system
+/dev/akm8973_daemon       0640   compass    system
+/dev/akm8973_aot          0640   compass    system
+/dev/bma150               0640   compass    system
+/dev/cm3602               0640   compass    system
+/dev/akm8976_pffd         0640   compass    system
+/dev/lightsensor          0640   system     system
+/dev/msm_pcm_out*         0660   system     audio
+/dev/msm_pcm_in*          0660   system     audio
+/dev/msm_pcm_ctl*         0660   system     audio
+/dev/msm_snd*             0660   system     audio
+/dev/msm_mp3*             0660   system     audio
+/dev/audience_a1026*      0660   system     audio
+/dev/tpa2018d1*           0660   system     audio
+/dev/msm_audpre           0660   system     audio
+/dev/msm_audio_ctl        0660   system     audio
+/dev/htc-acoustic         0660   system     audio
+/dev/vdec                 0660   system     audio
+/dev/q6venc               0660   system     audio
+/dev/snd/dsp              0660   system     audio
+/dev/snd/dsp1             0660   system     audio
+/dev/snd/mixer            0660   system     audio
+/dev/tun                  0660   system     vpn
+/sys/devices/virtual/usb_composite/*   enable      0664  root   system
+/sys/devices/system/cpu/cpu*   cpufreq/scaling_max_freq   0664  system system
+/sys/devices/system/cpu/cpu*   cpufreq/scaling_min_freq   0664  system system
+/dev/dvb*                 0660   root       system

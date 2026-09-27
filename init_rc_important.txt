@@ -1,0 +1,25 @@
+import /init.recovery.${ro.hardware}.rc
+    export ANDROID_ROOT /system
+    symlink /system/etc /etc
+    mount cgroup none /acct cpuacct
+    mkdir /system
+    mkdir /cache
+    mount tmpfs tmpfs /tmp
+    mount functionfs adb /dev/usb-ffs/adb uid=2000,gid=2000
+    write /sys/class/android_usb/android0/idVendor 18D1
+on boot
+# Load properties from /system/ + /factory after fs mount.
+on load_system_props_action
+    load_system_props
+on firmware_mounts_complete
+   rm /dev/.booting
+# Mount filesystems and start core system services.
+    # Load properties from /system/ + /factory after fs mount. Place
+    trigger load_system_props_action
+    trigger firmware_mounts_complete
+    trigger early-boot
+    trigger boot
+service recovery /sbin/recovery
+    seclabel u:r:recovery:s0
+service adbd /sbin/adbd --root_seclabel=u:r:su:s0 --device_banner=recovery
+    socket adbd stream 660 system system

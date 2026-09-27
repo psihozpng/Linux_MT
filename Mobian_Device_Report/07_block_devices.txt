@@ -1,0 +1,43 @@
+total 0
+drwxr-xr-x  4 root root        840 2026-09-27 17:42 .
+drwxr-xr-x 17 root root       3140 2026-09-27 17:43 ..
+lrwxrwxrwx  1 root root         30 2026-09-27 17:42 bootdevice -> /dev/block/platform/bootdevice
+brw-------  1 root root     7,   0 2026-09-27 17:42 loop0
+brw-------  1 root root     7,   1 2026-09-27 17:42 loop1
+brw-------  1 root root     7,   2 2026-09-27 17:42 loop2
+brw-------  1 root root     7,   3 2026-09-27 17:42 loop3
+brw-------  1 root root     7,   4 2026-09-27 17:42 loop4
+brw-------  1 root root     7,   5 2026-09-27 17:42 loop5
+brw-------  1 root root     7,   6 2026-09-27 17:42 loop6
+brw-------  1 root root     7,   7 2026-09-27 17:42 loop7
+brw-rw----  1 root system 179,   0 2026-09-27 17:42 mmcblk0
+brw-rw----  1 root system 179,  32 2026-09-27 17:42 mmcblk0boot0
+brw-rw----  1 root system 179,  64 2026-09-27 17:42 mmcblk0boot1
+brw-rw----  1 root system 179,   1 2026-09-27 17:42 mmcblk0p1
+brw-rw----  1 root system 179,  10 2026-09-27 17:42 mmcblk0p10
+brw-r-----  1 root system 179,  11 2026-09-27 17:42 mmcblk0p11
+brw-------  1 root root   179,  12 2026-09-27 17:42 mmcblk0p12
+brw-------  1 root root   179,  13 2026-09-27 17:42 mmcblk0p13
+brw-------  1 root root   179,  14 2026-09-27 17:42 mmcblk0p14
+brw-rw----  1 root system 179,  15 2026-09-27 17:43 mmcblk0p15
+brw-------  1 root root   179,  16 2026-09-27 17:42 mmcblk0p16
+brw-------  1 root root   179,  17 2026-09-27 17:42 mmcblk0p17
+brw-------  1 root root   179,  18 2026-09-27 17:42 mmcblk0p18
+brw-r-----  1 root system 179,  19 2026-09-27 17:42 mmcblk0p19
+brw-rw----  1 root system 179,   2 2026-09-27 17:42 mmcblk0p2
+brw-------  1 root root   179,  20 2026-09-27 17:42 mmcblk0p20
+brw-------  1 root root   179,  21 2026-09-27 17:42 mmcblk0p21
+brw-------  1 root root   179,  22 2026-09-27 17:42 mmcblk0p22
+brw-------  1 root root   179,  23 2026-09-27 17:42 mmcblk0p23
+brw-------  1 root root   179,  24 2026-09-27 17:42 mmcblk0p24
+brw-------  1 root root   179,   3 2026-09-27 17:42 mmcblk0p3
+brw-------  1 root root   179,   4 2026-09-27 17:42 mmcblk0p4
+brw-rw----  1 root system 179,   5 2026-09-27 17:42 mmcblk0p5
+brw-------  1 root root   179,   6 2026-09-27 17:42 mmcblk0p6
+brw-------  1 root root   179,   7 2026-09-27 17:42 mmcblk0p7
+brw-r-----  1 root system 179,   8 2026-09-27 17:42 mmcblk0p8
+brw-r-----  1 root system 179,   9 2026-09-27 17:42 mmcblk0p9
+brw-rw----  1 root system 179,  96 2026-09-27 17:42 mmcblk0rpmb
+drwxr-xr-x  3 root root         60 2026-09-27 17:42 platform
+drwx------  2 root root         40 2026-09-27 17:42 vold
+brw-------  1 root root   254,   0 2026-09-27 17:42 zram0

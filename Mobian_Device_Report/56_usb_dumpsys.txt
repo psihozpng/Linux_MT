@@ -1,0 +1,32 @@
+USB Manager State:
+  USB Device State:
+    mCurrentFunctions: adb
+    mCurrentOemFunctions: null
+    mCurrentFunctionsApplied: true
+    mConnected: true
+    mConfigured: true
+    mUsbDataUnlocked: false
+    mCurrentAccessory: null
+    mHostConnected: false
+    mSourcePower: false
+    mSinkPower: false
+    mUsbCharging: true
+    mHideUsbNotification: false
+    mAudioAccessoryConnected: false
+    Kernel state: CONFIGURED
+    Kernel function list: ffs
+  USB Debugging State:
+    Connected to adbd: true
+    Last key received: null
+    User keys:
+  QAAAAD0+/zHrNuVjG/XPQXma1K0gNVRdGrYY0ljtp4NxrJn7ZAKzzQhKIyM6dcomT2cGYHXIy23kglT8jOdcj6FYMiSJvcBcAKl2PnWohNCIxZVr7mjJZ4AH25+XDQK83OzF2GwVTKSV41rAjuDQ6C9iuAelmk4nl3mfYaEGFSSUouaFb16lfm+hoz0+SKLWcdD3kDZ+QkHQhkLfnbvTDrUGk0qXKrkqWOvEXge1jGMvTrvOXMO9naG8o3fQMZHP8b7aWtFPJ6rd3wy6q3g7tt+AIy8M6C6c+On5Z39ck3NT2wdlXx2lY+TZDkscwRYODrg91f8OhtW3H2ffCc58HWxHTQq73RjMlWLnrzVpWfQoMEDWj4sHWlJGnPts296gaXq2Rfz8xd4TyzbfOvYa70M4ekM+Lf8bL0ir+n94XbDbzsLsRoCgd5j/+IWBjIbGssAp5I8fcICZ8g5ap5wtOz9nZuAU6MVVnC9MioFG5Dv5jJYpJe63cs4v4IkThOOlXy3Zc4w2Lky27QNfqyQWa134KiGGxiUonX/3OltPJ8SQhxA2kFdod3IBneQkgaxRSjyJTDd6KyFsDqBPniZsCYsoeaqKY75RlJCRgiW6SirjMawL6AvAULtr+lwTZ0pJp/oyhJFjcDQai2yoCPuDtYfPl2Bkw86wDyJvC2+850A4tGoRZnAdpQEAAQA= User@PCLITE
+  
+    System keys:
+  IOException: java.io.FileNotFoundException: /adb_keys (No such file or directory)
+  USB Port State:
+    <no ports>
+  USB Audio Devices:
+  USB MIDI Devices:
+  Settings for profile group 0:
+    Device preferences:
+    Accessory preferences:

@@ -1,0 +1,8 @@
+/system/bin/sh
+/sbin/su
+/system/bin/getprop
+/system/bin/dmesg
+/system/bin/blkid
+/system/bin/dd
+/system/bin/mount
+/system/bin/chroot

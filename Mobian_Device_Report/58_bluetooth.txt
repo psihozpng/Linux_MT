@@ -1,0 +1,11 @@
+Bluetooth Status
+  enabled: false
+  state: OFF
+  address: DA:54:46:00:00:AF
+  name: S24Ultra
+Bluetooth never enabled!
+Bluetooth crashed 0 times
+
+No BLE Apps registered.
+
+Bluetooth Service not connected

@@ -1,0 +1,16 @@
+/vendor/etc/fstab.mt6580
+/vendor/lib/libimageio.so
+/vendor/lib/libimageio_FrmB.so
+/vendor/lib/libimageio_plat_drv.so
+/vendor/lib/libimageio_plat_drv_FrmB.so
+/vendor/lib/libmhalImageCodec.so
+/vendor/lib/modules/bt_drv.ko
+/vendor/lib/modules/fmradio_drv.ko
+/vendor/lib/modules/gps_drv.ko
+/vendor/lib/modules/wlan_drv.ko
+/vendor/lib/modules/wmt_chrdev_wifi.ko
+/vendor/lib/modules/wmt_drv.ko
+/vendor/nvdata/fstab.mt6580
+/vendor/res/images/lcd_test_00.png
+/vendor/res/images/lcd_test_01.png
+/vendor/res/images/lcd_test_02.png

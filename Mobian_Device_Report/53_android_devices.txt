@@ -1,0 +1,477 @@
+Build configuration: [sf HAS_CONTEXT_PRIORITY=0 DISABLE_TRIPLE_BUFFERING PRESENT_TIME_OFFSET=0 FORCE_HWC_FOR_RBG_TO_YUV=0 MAX_VIRT_DISPLAY_DIM=0 RUNNING_WITHOUT_SYNC_FRAMEWORK=0 NUM_FRAMEBUFFER_SURFACE_BUFFERS=3] [libui] [libgui]
+
+Wide-Color information:
+hasWideColorDisplay: 0
+forceNativeColorMode: 0
+Display 0 color modes:
+    HAL_COLOR_MODE_NATIVE (0)
+    Current color mode: HAL_COLOR_MODE_NATIVE (0)
+
+Sync configuration: [using: EGL_ANDROID_native_fence_sync EGL_KHR_wait_sync]
+DispSync configuration: app phase 1000000 ns, sf phase 1000000 ns, present offset 0 ns (refresh 18577001 ns)
+
+Static screen stats:
+  < 1 frames: 27.812 s (6.4%)
+  < 2 frames: 28.595 s (6.6%)
+  < 3 frames: 1.628 s (0.4%)
+  < 4 frames: 1.151 s (0.3%)
+  < 5 frames: 0.652 s (0.2%)
+  < 6 frames: 1.712 s (0.4%)
+  < 7 frames: 3.697 s (0.9%)
+  7+ frames: 366.984 s (84.9%)
+
+Buffering stats:
+  [Layer name] <Active time> <Two buffer> <Double buffered> <Triple buffered>
+  [com.android.settings/com.android.settings.SubSettings#0] 18.69 0.706 0.985 0.015
+  [StatusBar#0] 11.97 0.295 0.755 0.245
+  [NavigationBar#0] 9.71 0.753 0.771 0.229
+  [com.android.settings/com.android.settings.Settings#0] 5.64 0.462 0.713 0.287
+  [com.android.systemui/com.android.systemui.recents.RecentsActivity#0] 2.31 0.377 1.000 0.000
+  [com.android.settings/com.android.settings.Settings$SystemDashboardActivity#0] 1.81 0.841 1.000 0.000
+  [com.android.launcher3/com.android.launcher3.Launcher#0] 1.55 0.833 0.833 0.167
+  [com.android.settings/com.android.settings.Settings$PowerUsageSummaryActivity#0] 1.10 0.252 1.000 0.000
+  [ColorFade#0] 0.35 1.000 1.000 0.000
+  [com.android.settings/com.android.settings.Settings$WifiSettingsActivity#0] 0.35 1.000 1.000 0.000
+
+Visible layers (count = 12)
++ Layer 0xb2ff0000 (com.android.systemui.ImageWallpaper#0)
+  Region transparentRegion (this=0xb2ff0280, count=1)
+    [  0,   0,   0,   0]
+  Region visibleRegion (this=0xb2ff0008, count=1)
+    [  0,   0,   0,   0]
+  Region surfaceDamageRegion (this=0xb2ff0044, count=1)
+    [  0,   0,   0,   0]
+      layerStack=   0, z=    11000, pos=(0,0), size=( 576,1280), crop=(   0,   0,  -1,  -1), finalCrop=(   0,   0,  -1,  -1), isOpaque=1, invalidate=1, dataspace=Default (0), pixelformat=RGBx_8888 alpha=1.000, flags=0x00000002, tr=[1.00, 0.00][0.00, 1.00]
+      client=0xb2fb7860
+      format= 2, activeBuffer=[ 576x1280: 576,  2], queued-frames=0, mRefreshPending=0
+      mSecure=0, mProtectedByApp=0, mFiltering=0, mNeedsFiltering=0 mDestroyCalled=0
+            mTexName=5 mCurrentTexture=-1
+            mCurrentCrop=[0,0,0,0] mCurrentTransform=0
+            mAbandoned=0
+            - BufferQueue mMaxAcquiredBufferCount=1 mMaxDequeuedBufferCount=3
+              mDequeueBufferCannotBlock=0 mAsyncMode=0
+              default-size=[576x1280] default-format=2 transform-hint=00 frame-counter=1
+            FIFO(0):
+             this=0xb2ff2000 (mConsumerName=com.android.systemui.ImageWallpaper#0, mConnectedApi=0, mConsumerUsageBits=2304, mId=4, mPid=331, producer=[-1:com.android.systemui], consumer=[331:/system/bin/surfaceflinger])
+            Slots:
+              [00:0x0] state=FREE    
+              [01:0x0] state=FREE    
+              [02:0x0] state=FREE    
+              [03:0x0] state=FREE    
+                *BufferQueueDump mIsBackupBufInited=0, mAcquiredBufs(size=0)
+                 [-1] mLastAcquiredBuf->mGraphicBuffer->handle=0xb2fed300
++ LayerDim 0xb0b8d000 (animation background stackId=1#0)
+  Region transparentRegion (this=0xb0b8d280, count=1)
+    [  0,   0,   0,   0]
+  Region visibleRegion (this=0xb0b8d008, count=1)
+    [  0,   0,   0,   0]
+  Region surfaceDamageRegion (this=0xb0b8d044, count=1)
+    [  0,   0,   0,   0]
+      layerStack=   0, z=    21014, pos=(-144,-320), size=( 864,1920), crop=(   0,   0,  -1,  -1), finalCrop=(   0,   0,  -1,  -1), isOpaque=0, invalidate=0, dataspace=Default (0), pixelformat=Unknown/None alpha=0.000, flags=0x00000001, tr=[1.00, 0.00][0.00, 1.00]
+      client=0xb2fb7810
+      format= 0, activeBuffer=[   0x   0:   0,  0], queued-frames=0, mRefreshPending=0
+      mSecure=0, mProtectedByApp=0, mFiltering=0, mNeedsFiltering=0 mDestroyCalled=0
+            mTexName=6 mCurrentTexture=-1
+            mCurrentCrop=[0,0,0,0] mCurrentTransform=0
+            mAbandoned=0
+            - BufferQueue mMaxAcquiredBufferCount=1 mMaxDequeuedBufferCount=2
+              mDequeueBufferCannotBlock=0 mAsyncMode=0
+              default-size=[864x1920] default-format=1 transform-hint=00 frame-counter=0
+            FIFO(0):
+             this=0xb2fff000 (mConsumerName=animation background stackId=1#0, mConnectedApi=0, mConsumerUsageBits=2304, mId=23, mPid=331, producer=[-1:], consumer=[331:/system/bin/surfaceflinger])
+            Slots:
+              [00:0x0] state=FREE    
+              [01:0x0] state=FREE    
+              [02:0x0] state=FREE    
+                *BufferQueueDump mIsBackupBufInited=0, mAcquiredBufs(size=0)
++ Layer 0xb2fdc000 (Toast#0)
+  Region transparentRegion (this=0xb2fdc280, count=1)
+    [  0,   0,   0,   0]
+  Region visibleRegion (this=0xb2fdc008, count=1)
+    [  0,   0,   0,   0]
+  Region surfaceDamageRegion (this=0xb2fdc044, count=1)
+    [  0,   0,   0,   0]
+      layerStack=   0, z=    81000, pos=(48,1073), size=( 480,  99), crop=(   0,   0, 480,  99), finalCrop=(   0,   0,  -1,  -1), isOpaque=0, invalidate=1, dataspace=Default (0), pixelformat=RGBA_8888 alpha=1.000, flags=0x00000001, tr=[1.00, 0.00][0.00, 1.00]
+      client=0xb2fb78b0
+      format= 1, activeBuffer=[ 480x  99: 480,  1], queued-frames=0, mRefreshPending=0
+      mSecure=0, mProtectedByApp=0, mFiltering=0, mNeedsFiltering=0 mDestroyCalled=0
+            mTexName=2 mCurrentTexture=2
+            mCurrentCrop=[0,0,0,0] mCurrentTransform=0
+            mAbandoned=0
+            - BufferQueue mMaxAcquiredBufferCount=1 mMaxDequeuedBufferCount=3
+              mDequeueBufferCannotBlock=0 mAsyncMode=0
+              default-size=[480x99] default-format=1 transform-hint=00 frame-counter=1
+            FIFO(0):
+             this=0xb2ffd000 (mConsumerName=Toast#0, mConnectedApi=1, mConsumerUsageBits=2304, mId=34, mPid=331, producer=[3090:com.topjohnwu.magisk], consumer=[331:/system/bin/surfaceflinger])
+            Slots:
+             >[02:0xb2fb2440] state=ACQUIRED 0xb4b45dc0 frame=1 [ 480x  99: 480,  1]
+              [01:0xb2fb24e0] state=FREE     0xb4b45d00 frame=0 [ 480x  99: 480,  1]
+              [00:0xb2fb2120] state=FREE     0xb4b45880 frame=0 [ 480x  99: 480,  1]
+              [03:0x0] state=FREE    
+                *BufferQueueDump mIsBackupBufInited=0, mAcquiredBufs(size=1)
+                 [00] handle=0xb4b45dc0, fence=0xb2fc02d8, time=0x51e3dbf5bc8, xform=0x00
++ Layer 0xb0b9e000 (Toast#1)
+  Region transparentRegion (this=0xb0b9e280, count=1)
+    [  0,   0,   0,   0]
+  Region visibleRegion (this=0xb0b9e008, count=1)
+    [  0,   0,   0,   0]
+  Region surfaceDamageRegion (this=0xb0b9e044, count=1)
+    [  0,   0,   0,   0]
+      layerStack=   0, z=    81005, pos=(48,1073), size=( 480,  99), crop=(   0,   0, 480,  99), finalCrop=(   0,   0,  -1,  -1), isOpaque=0, invalidate=1, dataspace=Default (0), pixelformat=RGBA_8888 alpha=1.000, flags=0x00000001, tr=[1.00, 0.00][0.00, 1.00]
+      client=0xb2fb78b0
+      format= 1, activeBuffer=[ 480x  99: 480,  1], queued-frames=0, mRefreshPending=0
+      mSecure=0, mProtectedByApp=0, mFiltering=0, mNeedsFiltering=0 mDestroyCalled=0
+            mTexName=8 mCurrentTexture=2
+            mCurrentCrop=[0,0,0,0] mCurrentTransform=0
+            mAbandoned=0
+            - BufferQueue mMaxAcquiredBufferCount=1 mMaxDequeuedBufferCount=3
+              mDequeueBufferCannotBlock=0 mAsyncMode=0
+              default-size=[480x99] default-format=1 transform-hint=00 frame-counter=1
+            FIFO(0):
+             this=0xb0bbb000 (mConsumerName=Toast#1, mConnectedApi=1, mConsumerUsageBits=2304, mId=35, mPid=331, producer=[3090:com.topjohnwu.magisk], consumer=[331:/system/bin/surfaceflinger])
+            Slots:
+             >[02:0xb2fb2c60] state=ACQUIRED 0xb2fed240 frame=1 [ 480x  99: 480,  1]
+              [01:0xb2fb2b20] state=FREE     0xb2fed0c0 frame=0 [ 480x  99: 480,  1]
+              [00:0xb2fb2940] state=FREE     0xb2fed000 frame=0 [ 480x  99: 480,  1]
+              [03:0x0] state=FREE    
+                *BufferQueueDump mIsBackupBufInited=0, mAcquiredBufs(size=1)
+                 [00] handle=0xb2fed240, fence=0xb2fc0428, time=0x51f1eccadf9, xform=0x00
++ Layer 0xb0bab000 (Toast#2)
+  Region transparentRegion (this=0xb0bab280, count=1)
+    [  0,   0,   0,   0]
+  Region visibleRegion (this=0xb0bab008, count=1)
+    [  0,   0,   0,   0]
+  Region surfaceDamageRegion (this=0xb0bab044, count=1)
+    [  0,   0,   0,   0]
+      layerStack=   0, z=    81010, pos=(48,1073), size=( 480,  99), crop=(   0,   0, 480,  99), finalCrop=(   0,   0,  -1,  -1), isOpaque=0, invalidate=1, dataspace=Default (0), pixelformat=RGBA_8888 alpha=1.000, flags=0x00000001, tr=[1.00, 0.00][0.00, 1.00]
+      client=0xb2fb78b0
+      format= 1, activeBuffer=[ 480x  99: 480,  1], queued-frames=0, mRefreshPending=0
+      mSecure=0, mProtectedByApp=0, mFiltering=0, mNeedsFiltering=0 mDestroyCalled=0
+            mTexName=9 mCurrentTexture=3
+            mCurrentCrop=[0,0,0,0] mCurrentTransform=0
+            mAbandoned=0
+            - BufferQueue mMaxAcquiredBufferCount=1 mMaxDequeuedBufferCount=3
+              mDequeueBufferCannotBlock=0 mAsyncMode=0
+              default-size=[480x99] default-format=1 transform-hint=00 frame-counter=1
+            FIFO(0):
+             this=0xb0bad000 (mConsumerName=Toast#2, mConnectedApi=1, mConsumerUsageBits=2304, mId=36, mPid=331, producer=[3090:com.topjohnwu.magisk], consumer=[331:/system/bin/surfaceflinger])
+            Slots:
+             >[03:0xb2fb3ac0] state=ACQUIRED 0xb2fed900 frame=1 [ 480x  99: 480,  1]
+              [02:0xb2fb3700] state=FREE     0xb2fed840 frame=0 [ 480x  99: 480,  1]
+              [01:0xb2fb3660] state=FREE     0xb2fed600 frame=0 [ 480x  99: 480,  1]
+              [00:0xb2fb2e40] state=FREE     0xb2fed480 frame=0 [ 480x  99: 480,  1]
+                *BufferQueueDump mIsBackupBufInited=0, mAcquiredBufs(size=1)
+                 [00] handle=0xb2fed900, fence=0xb2fc0460, time=0x52002b33de1, xform=0x00
++ Layer 0xb0bc2000 (Toast#3)
+  Region transparentRegion (this=0xb0bc2280, count=1)
+    [  0,   0,   0,   0]
+  Region visibleRegion (this=0xb0bc2008, count=1)
+    [  0,   0,   0,   0]
+  Region surfaceDamageRegion (this=0xb0bc2044, count=1)
+    [  0,   0,   0,   0]
+      layerStack=   0, z=    81015, pos=(48,1073), size=( 480,  99), crop=(   0,   0, 480,  99), finalCrop=(   0,   0,  -1,  -1), isOpaque=0, invalidate=1, dataspace=Default (0), pixelformat=RGBA_8888 alpha=1.000, flags=0x00000001, tr=[1.00, 0.00][0.00, 1.00]
+      client=0xb2fb78b0
+      format= 1, activeBuffer=[ 480x  99: 480,  1], queued-frames=0, mRefreshPending=0
+      mSecure=0, mProtectedByApp=0, mFiltering=0, mNeedsFiltering=0 mDestroyCalled=0
+            mTexName=10 mCurrentTexture=3
+            mCurrentCrop=[0,0,0,0] mCurrentTransform=0
+            mAbandoned=0
+            - BufferQueue mMaxAcquiredBufferCount=1 mMaxDequeuedBufferCount=3
+              mDequeueBufferCannotBlock=0 mAsyncMode=0
+              default-size=[480x99] default-format=1 transform-hint=00 frame-counter=1
+            FIFO(0):
+             this=0xb0bc4000 (mConsumerName=Toast#3, mConnectedApi=1, mConsumerUsageBits=2304, mId=37, mPid=331, producer=[3090:com.topjohnwu.magisk], consumer=[331:/system/bin/surfaceflinger])
+            Slots:
+             >[03:0xb2fb3160] state=ACQUIRED 0xb2fedc00 frame=1 [ 480x  99: 480,  1]
+              [02:0xb2fb3fc0] state=FREE     0xb2fedb40 frame=0 [ 480x  99: 480,  1]
+              [01:0xb2fb3de0] state=FREE     0xb2feda80 frame=0 [ 480x  99: 480,  1]
+              [00:0xb2fb3d40] state=FREE     0xb2fed9c0 frame=0 [ 480x  99: 480,  1]
+                *BufferQueueDump mIsBackupBufInited=0, mAcquiredBufs(size=1)
+                 [00] handle=0xb2fedc00, fence=0xb2fc0490, time=0x5210583bad5, xform=0x00
++ Layer 0xb0bc7000 (Toast#4)
+  Region transparentRegion (this=0xb0bc7280, count=1)
+    [  0,   0,   0,   0]
+  Region visibleRegion (this=0xb0bc7008, count=1)
+    [  0,   0,   0,   0]
+  Region surfaceDamageRegion (this=0xb0bc7044, count=1)
+    [  0,   0,   0,   0]
+      layerStack=   0, z=    81020, pos=(48,1073), size=( 480,  99), crop=(   0,   0, 480,  99), finalCrop=(   0,   0,  -1,  -1), isOpaque=0, invalidate=1, dataspace=Default (0), pixelformat=RGBA_8888 alpha=1.000, flags=0x00000001, tr=[1.00, 0.00][0.00, 1.00]
+      client=0xb2fb78b0
+      format= 1, activeBuffer=[ 480x  99: 480,  1], queued-frames=0, mRefreshPending=0
+      mSecure=0, mProtectedByApp=0, mFiltering=0, mNeedsFiltering=0 mDestroyCalled=0
+            mTexName=11 mCurrentTexture=3
+            mCurrentCrop=[0,0,0,0] mCurrentTransform=0
+            mAbandoned=0
+            - BufferQueue mMaxAcquiredBufferCount=1 mMaxDequeuedBufferCount=3
+              mDequeueBufferCannotBlock=0 mAsyncMode=0
+              default-size=[480x99] default-format=1 transform-hint=00 frame-counter=1
+            FIFO(0):
+             this=0xb0bc9000 (mConsumerName=Toast#4, mConnectedApi=1, mConsumerUsageBits=2304, mId=38, mPid=331, producer=[3090:com.topjohnwu.magisk], consumer=[331:/system/bin/surfaceflinger])
+            Slots:
+             >[03:0xb0bb4640] state=ACQUIRED 0xb2fedfc0 frame=1 [ 480x  99: 480,  1]
+              [02:0xb0bb45a0] state=FREE     0xb2fedf00 frame=0 [ 480x  99: 480,  1]
+              [01:0xb0bb4500] state=FREE     0xb2fedd80 frame=0 [ 480x  99: 480,  1]
+              [00:0xb0bb4460] state=FREE     0xb2fedcc0 frame=0 [ 480x  99: 480,  1]
+                *BufferQueueDump mIsBackupBufInited=0, mAcquiredBufs(size=1)
+                 [00] handle=0xb2fedfc0, fence=0xb2fc04c0, time=0x521e5969e70, xform=0x00
++ Layer 0xb0bd2000 (Toast#5)
+  Region transparentRegion (this=0xb0bd2280, count=1)
+    [  0,   0,   0,   0]
+  Region visibleRegion (this=0xb0bd2008, count=1)
+    [  0,   0,   0,   0]
+  Region surfaceDamageRegion (this=0xb0bd2044, count=1)
+    [  0,   0,   0,   0]
+      layerStack=   0, z=    81025, pos=(48,1073), size=( 480,  99), crop=(   0,   0, 480,  99), finalCrop=(   0,   0,  -1,  -1), isOpaque=0, invalidate=1, dataspace=Default (0), pixelformat=RGBA_8888 alpha=1.000, flags=0x00000001, tr=[1.00, 0.00][0.00, 1.00]
+      client=0xb2fb78b0
+      format= 1, activeBuffer=[ 480x  99: 480,  1], queued-frames=0, mRefreshPending=0
+      mSecure=0, mProtectedByApp=0, mFiltering=0, mNeedsFiltering=0 mDestroyCalled=0
+            mTexName=12 mCurrentTexture=3
+            mCurrentCrop=[0,0,0,0] mCurrentTransform=0
+            mAbandoned=0
+            - BufferQueue mMaxAcquiredBufferCount=1 mMaxDequeuedBufferCount=3
+              mDequeueBufferCannotBlock=0 mAsyncMode=0
+              default-size=[480x99] default-format=1 transform-hint=00 frame-counter=1
+            FIFO(0):
+             this=0xb0bd4000 (mConsumerName=Toast#5, mConnectedApi=1, mConsumerUsageBits=2304, mId=39, mPid=331, producer=[3090:com.topjohnwu.magisk], consumer=[331:/system/bin/surfaceflinger])
+            Slots:
+             >[03:0xb0bb4aa0] state=ACQUIRED 0xb2fee2c0 frame=1 [ 480x  99: 480,  1]
+              [02:0xb0bb4a00] state=FREE     0xb2fee200 frame=0 [ 480x  99: 480,  1]
+              [01:0xb0bb4960] state=FREE     0xb2fee140 frame=0 [ 480x  99: 480,  1]
+              [00:0xb0bb4780] state=FREE     0xb2fee080 frame=0 [ 480x  99: 480,  1]
+                *BufferQueueDump mIsBackupBufInited=0, mAcquiredBufs(size=1)
+                 [00] handle=0xb2fee2c0, fence=0xb2fc04f8, time=0x522e6dc54e1, xform=0x00
++ Layer 0xb0bdb000 (Toast#6)
+  Region transparentRegion (this=0xb0bdb280, count=1)
+    [  0,   0,   0,   0]
+  Region visibleRegion (this=0xb0bdb008, count=1)
+    [  0,   0,   0,   0]
+  Region surfaceDamageRegion (this=0xb0bdb044, count=1)
+    [  0,   0,   0,   0]
+      layerStack=   0, z=    81030, pos=(48,1073), size=( 480,  99), crop=(   0,   0, 480,  99), finalCrop=(   0,   0,  -1,  -1), isOpaque=0, invalidate=1, dataspace=Default (0), pixelformat=RGBA_8888 alpha=1.000, flags=0x00000001, tr=[1.00, 0.00][0.00, 1.00]
+      client=0xb2fb78b0
+      format= 1, activeBuffer=[ 480x  99: 480,  1], queued-frames=0, mRefreshPending=0
+      mSecure=0, mProtectedByApp=0, mFiltering=0, mNeedsFiltering=0 mDestroyCalled=0
+            mTexName=13 mCurrentTexture=3
+            mCurrentCrop=[0,0,0,0] mCurrentTransform=0
+            mAbandoned=0
+            - BufferQueue mMaxAcquiredBufferCount=1 mMaxDequeuedBufferCount=3
+              mDequeueBufferCannotBlock=0 mAsyncMode=0
+              default-size=[480x99] default-format=1 transform-hint=00 frame-counter=1
+            FIFO(0):
+             this=0xb0bdd000 (mConsumerName=Toast#6, mConnectedApi=1, mConsumerUsageBits=2304, mId=40, mPid=331, producer=[3090:com.topjohnwu.magisk], consumer=[331:/system/bin/surfaceflinger])
+            Slots:
+             >[03:0xb0bb4b40] state=ACQUIRED 0xb2fee5c0 frame=1 [ 480x  99: 480,  1]
+              [02:0xb0bb4c80] state=FREE     0xb2fee500 frame=0 [ 480x  99: 480,  1]
+              [01:0xb0bb4be0] state=FREE     0xb2fee440 frame=0 [ 480x  99: 480,  1]
+              [00:0xb2fb2300] state=FREE     0xb2fee380 frame=0 [ 480x  99: 480,  1]
+                *BufferQueueDump mIsBackupBufInited=0, mAcquiredBufs(size=1)
+                 [00] handle=0xb2fee5c0, fence=0xb2fc0518, time=0x523bb43dce3, xform=0x00
++ Layer 0xb2fe9000 (StatusBar#0)
+  Region transparentRegion (this=0xb2fe9280, count=1)
+    [  0,   0,   0,   0]
+  Region visibleRegion (this=0xb2fe9008, count=1)
+    [  0,   0,   0,   0]
+  Region surfaceDamageRegion (this=0xb2fe9044, count=1)
+    [  0,   0,   0,   0]
+      layerStack=   0, z=   181000, pos=(0,0), size=( 576,1280), crop=(   0,   0, 576,1280), finalCrop=(   0,   0,  -1,  -1), isOpaque=0, invalidate=1, dataspace=Default (0), pixelformat=RGBA_8888 alpha=1.000, flags=0x00000000, tr=[1.00, 0.00][0.00, 1.00]
+      client=0xb2fb7860
+      format= 1, activeBuffer=[ 576x1280: 576,  1], queued-frames=0, mRefreshPending=0
+      mSecure=0, mProtectedByApp=0, mFiltering=0, mNeedsFiltering=0 mDestroyCalled=0
+            mTexName=4 mCurrentTexture=0
+            mCurrentCrop=[0,0,0,0] mCurrentTransform=0
+            mAbandoned=0
+            - BufferQueue mMaxAcquiredBufferCount=1 mMaxDequeuedBufferCount=3
+              mDequeueBufferCannotBlock=0 mAsyncMode=0
+              default-size=[576x1280] default-format=1 transform-hint=00 frame-counter=659
+            FIFO(0):
+             this=0xb2feb000 (mConsumerName=StatusBar#0, mConnectedApi=1, mConsumerUsageBits=2304, mId=3, mPid=331, producer=[983:com.android.systemui], consumer=[331:/system/bin/surfaceflinger])
+            Slots:
+             >[00:0xb2fb2080] state=ACQUIRED 0xb4b45940 frame=659 [ 576x1280: 576,  1]
+              [01:0x0] state=FREE    
+              [02:0x0] state=FREE    
+              [03:0x0] state=FREE    
+                *BufferQueueDump mIsBackupBufInited=0, mAcquiredBufs(size=1)
+                 [00] handle=0xb4b45940, fence=0xb2fc02c8, time=0x6886bce5da, xform=0x00
++ Layer 0xb2fe6000 (NavigationBar#0)
+  Region transparentRegion (this=0xb2fe6280, count=1)
+    [  0,   0,   0,   0]
+  Region visibleRegion (this=0xb2fe6008, count=1)
+    [  0,   0,   0,   0]
+  Region surfaceDamageRegion (this=0xb2fe6044, count=1)
+    [  0,   0,   0,   0]
+      layerStack=   0, z=   231000, pos=(0,1208), size=( 576,  72), crop=(   0,   0, 576,  72), finalCrop=(   0,   0,  -1,  -1), isOpaque=0, invalidate=1, dataspace=Default (0), pixelformat=RGBA_8888 alpha=1.000, flags=0x00000001, tr=[1.00, 0.00][0.00, 1.00]
+      client=0xb2fb7860
+      format= 1, activeBuffer=[ 576x  72: 576,  1], queued-frames=0, mRefreshPending=0
+      mSecure=0, mProtectedByApp=0, mFiltering=0, mNeedsFiltering=0 mDestroyCalled=0
+            mTexName=3 mCurrentTexture=-1
+            mCurrentCrop=[0,0,0,0] mCurrentTransform=0
+            mAbandoned=0
+            - BufferQueue mMaxAcquiredBufferCount=1 mMaxDequeuedBufferCount=3
+              mDequeueBufferCannotBlock=0 mAsyncMode=0
+              default-size=[576x72] default-format=1 transform-hint=00 frame-counter=545
+            FIFO(0):
+             this=0xb2fe8000 (mConsumerName=NavigationBar#0, mConnectedApi=0, mConsumerUsageBits=2304, mId=2, mPid=331, producer=[-1:com.android.systemui], consumer=[331:/system/bin/surfaceflinger])
+            Slots:
+              [00:0x0] state=FREE    
+              [01:0x0] state=FREE    
+              [02:0x0] state=FREE    
+              [03:0x0] state=FREE    
+                *BufferQueueDump mIsBackupBufInited=0, mAcquiredBufs(size=0)
+                 [-1] mLastAcquiredBuf->mGraphicBuffer->handle=0xb2fed540
++ Layer 0xb0b98000 (ColorFade#0)
+  Region transparentRegion (this=0xb0b98280, count=1)
+    [  0,   0,   0,   0]
+  Region visibleRegion (this=0xb0b98008, count=1)
+    [  0,   0, 576, 1280]
+  Region surfaceDamageRegion (this=0xb0b98044, count=1)
+    [  0,   0,   0,   0]
+      layerStack=   0, z=1073741825, pos=(0,0), size=( 576,1280), crop=(   0,   0,  -1,  -1), finalCrop=(   0,   0,  -1,  -1), isOpaque=1, invalidate=1, dataspace=Default (0), pixelformat=RGBA_8888 alpha=1.000, flags=0x00000002, tr=[1.00, 0.00][0.00, 1.00]
+      client=0xb2fb7a40
+      format= 2, activeBuffer=[ 576x1280: 576,  1], queued-frames=0, mRefreshPending=0
+      mSecure=0, mProtectedByApp=0, mFiltering=0, mNeedsFiltering=0 mDestroyCalled=0
+            mTexName=7 mCurrentTexture=0
+            mCurrentCrop=[0,0,0,0] mCurrentTransform=0
+            mAbandoned=0
+            - BufferQueue mMaxAcquiredBufferCount=1 mMaxDequeuedBufferCount=3
+              mDequeueBufferCannotBlock=0 mAsyncMode=0
+              default-size=[576x1280] default-format=2 transform-hint=00 frame-counter=10
+            FIFO(0):
+             this=0xb0ba1000 (mConsumerName=ColorFade#0, mConnectedApi=0, mConsumerUsageBits=2304, mId=33, mPid=331, producer=[-1:system_server], consumer=[331:/system/bin/surfaceflinger])
+            Slots:
+              [00:0x0] state=FREE    
+              [01:0x0] state=FREE    
+              [02:0x0] state=FREE    
+              [03:0x0] state=FREE    
+                *BufferQueueDump mIsBackupBufInited=0, mAcquiredBufs(size=1)
+                 [00] handle=0xb4b45e80, fence=0xb2fc04a8, time=0x6753c2a784, xform=0x00
+Displays (1 entries)
++ DisplayDevice: Built-in Screen
+   type=0, hwcId=0, layerStack=4294967295, ( 576x1280), ANativeWindow=0xb4b6c808 (8:8:8:8), orient= 0 (type=00000000), flips=3252, isSecure=1, powerMode=0, activeConfig=0, numLayers=0
+   v:[0,0,576,1280], f:[0,0,576,1280], s:[0,0,576,1280],transform:[[1.000,0.000,-0.000][0.000,1.000,-0.000][0.000,0.000,1.000]]
+mAbandoned=0
+- BufferQueue mMaxAcquiredBufferCount=2 mMaxDequeuedBufferCount=1
+  mDequeueBufferCannotBlock=0 mAsyncMode=0
+  default-size=[576x1280] default-format=1 transform-hint=00 frame-counter=286
+FIFO(0):
+ this=0xb4b7e000 (mConsumerName=FrameBufferSurface_0, mConnectedApi=1, mConsumerUsageBits=6656, mId=0, mPid=331, producer=[331:/system/bin/surfaceflinger], consumer=[331:/system/bin/surfaceflinger])
+Slots:
+  [01:0xb4b3f040] state=DEQUEUED 0xb4b43600 frame=284 [ 576x1280: 576,  1]
+ >[02:0xb4b3f0e0] state=ACQUIRED 0xb4b436c0 frame=286 [ 576x1280: 576,  1]
+  [00:0xb4b3efa0] state=FREE     0xb4b43540 frame=285 [ 576x1280: 576,  1]
+    *BufferQueueDump mIsBackupBufInited=0, mAcquiredBufs(size=1)
+     [00] handle=0xb4b436c0, fence=0xb2fc03b0, time=0x5709345ad5, xform=0x00
+SurfaceFlinger global state:
+EGL implementation : 1.4 Linux-r8p0-00dev0
+EGL_KHR_image EGL_KHR_image_base EGL_KHR_image_pixmap EGL_KHR_gl_texture_2D_image EGL_KHR_gl_texture_cubemap_image EGL_KHR_gl_renderbuffer_image EGL_KHR_fence_sync EGL_KHR_wait_sync EGL_KHR_swap_buffers_with_damage EGL_EXT_swap_buffers_with_damage EGL_ANDROID_image_native_buffer EGL_ANDROID_recordable EGL_EXT_yuv_surface EGL_ANDROID_native_fence_sync EGL_ANDROID_framebuffer_target EGL_ANDROID_image_crop EGL_EXT_create_context_robustness EGL_ANDROID_blob_cache EGL_KHR_create_context EGL_KHR_create_context_no_error 
+GLES: ARM, Mali-400 MP, OpenGL ES 2.0 58bf738
+GL_EXT_debug_marker GL_OES_texture_npot GL_OES_vertex_array_object GL_OES_compressed_ETC1_RGB8_texture GL_EXT_compressed_ETC1_RGB8_sub_texture GL_OES_standard_derivatives GL_OES_EGL_image GL_OES_depth24 GL_ARM_rgba8 GL_ARM_mali_shader_binary GL_OES_depth_texture GL_OES_packed_depth_stencil GL_EXT_texture_format_BGRA8888 GL_OES_vertex_half_float GL_EXT_blend_minmax GL_OES_EGL_image_external GL_OES_EGL_sync GL_OES_rgb8_rgba8 GL_EXT_multisampled_render_to_texture GL_EXT_discard_framebuffer GL_OES_get_program_binary GL_ARM_mali_program_binary GL_EXT_shader_texture_lod GL_EXT_robustness GL_OES_depth_texture_cube_map GL_KHR_debug GL_ARM_shader_framebuffer_fetch GL_ARM_shader_framebuffer_fetch_depth_stencil GL_OES_mapbuffer GL_KHR_no_error
+Wide-color: Off
+  Region undefinedRegion (this=0xb4b6e1ac, count=1)
+    [  0,   0, 576, 1280]
+  orientation=0, isDisplayOn=0
+  last eglSwapBuffers() time: 1.616000 us
+  last transaction time     : 36.923000 us
+  transaction-flags         : 00000000
+  refresh-rate              : 53.830002 fps
+  x-dpi                     : 240.000000
+  y-dpi                     : 240.000000
+  gpu_to_cpu_unsupported    : 0
+  eglSwapBuffers time: 0.000000 us
+  transaction time: 0.000000 us
+VSYNC state: enabled
+  soft-vsync: enabled
+  numListeners=21,
+  events-delivered: 3203
+    0xb4b19180: count=-1  pid=757
+    0xb4b191b8: count=-1  pid=757
+    0xb4b19228: count=-1  pid=1338
+    0xb4b19260: count=-1  pid=757
+    0xb4b192d0: count=-1  pid=757
+    0xb4b19308: count=-1  pid=757
+    0xb4b19340: count=-1  pid=757
+    0xb4b19378: count=-1  pid=983
+    0xb4b193b0: count=-1  pid=983
+    0xb4b193e8: count=-1  pid=983
+    0xb4b19420: count=-1  pid=2967
+    0xb4b19490: count=-1  pid=2967
+    0xb4b19500: count=-1  pid=3090
+    0xb4b19570: count=-1  pid=1338
+    0xb4b195a8: count=-1  pid=1338
+    0xb4b195e0: count=-1  pid=757
+    0xb4b19618: count=-1  pid=757
+    0xb4b19650: count=-1  pid=2967
+    0xb4b196c0: count=-1  pid=757
+    0xb4b197d8: count=-1  pid=3090
+    0xb4b19810: count=-1  pid=3090
+
+Display 0 HWC layers:
+-------------------------------------------------------------------------------
+ Layer name
+           Z |  Comp Type |   Disp Frame (LTRB) |          Source Crop (LTRB)
+-------------------------------------------------------------------------------
+ ColorFade#0
+  1073741825 |     Device |    0    0  576 1280 |    0.0    0.0  576.0 1280.0
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+h/w composer state:
+  h/w composer enabled
+Display(0)
+ visible_layer:1 commit_layer:2
++----------+--------------+---------+-------+---------------------+---+
+| layer id |       handle |     fmt | blend |           comp      | tr|
++----------+--------------+---------+-------+---------------------+---+
+|       38 |          0x0 |       2 |   NON | DEV(  UI,DEV,  351) |  0|
++----------+--------------+---------+-------+---------------------+---+
+
+[HWC Compose State (0)]
+  Total size: 0 bytes
+
+[HWC DBG Dump] log threshold:I
+  DBGLBM: 65/99 used
+
+[HWC Statistics]
+  0 - displayFrame over range
+
+[Driver Support]
+  0,0,0,0,0
+
+[HWC Property]
+  0,0,0,0,0,3 1,1,I,1,0, 0,0.000000,1,0,0, 1,1,1,A-0,A-0,0, 0,0,0,0,0,0
+
+Allocated buffers:
+0xb2fed000:  185.62 KiB |  480 ( 480) x   99 |    1 |        1 | 0x900 | 
+0xb2fed0c0:  185.62 KiB |  480 ( 480) x   99 |    1 |        1 | 0x900 | 
+0xb2fed240:  185.62 KiB |  480 ( 480) x   99 |    1 |        1 | 0xf02 | Toast#1
+0xb2fed300: 2880.00 KiB |  576 ( 576) x 1280 |    1 |        2 | 0xf02 | com.android.systemui.ImageWallpaper#0
+0xb2fed480:  185.62 KiB |  480 ( 480) x   99 |    1 |        1 | 0xf02 | Toast#2
+0xb2fed540:  162.00 KiB |  576 ( 576) x   72 |    1 |        1 | 0xf02 | NavigationBar#0
+0xb2fed600:  185.62 KiB |  480 ( 480) x   99 |    1 |        1 | 0xf02 | Toast#2
+0xb2fed6c0: 2880.00 KiB |  576 ( 576) x 1280 |    1 |        1 | 0xf02 | ColorFade#0
+0xb2fed780: 2880.00 KiB |  576 ( 576) x 1280 |    1 |        1 | 0xf02 | ColorFade#0
+0xb2fed840:  185.62 KiB |  480 ( 480) x   99 |    1 |        1 | 0xf02 | Toast#2
+0xb2fed900:  185.62 KiB |  480 ( 480) x   99 |    1 |        1 | 0xf02 | Toast#2
+0xb2fed9c0:  185.62 KiB |  480 ( 480) x   99 |    1 |        1 | 0x900 | Toast#3
+0xb2feda80:  185.62 KiB |  480 ( 480) x   99 |    1 |        1 | 0x900 | Toast#3
+0xb2fedb40:  185.62 KiB |  480 ( 480) x   99 |    1 |        1 | 0x900 | Toast#3
+0xb2fedc00:  185.62 KiB |  480 ( 480) x   99 |    1 |        1 | 0xf02 | Toast#3
+0xb2fedcc0:  185.62 KiB |  480 ( 480) x   99 |    1 |        1 | 0xf02 | Toast#4
+0xb2fedd80:  185.62 KiB |  480 ( 480) x   99 |    1 |        1 | 0xf02 | Toast#4
+0xb2fedf00:  185.62 KiB |  480 ( 480) x   99 |    1 |        1 | 0xf02 | Toast#4
+0xb2fedfc0:  185.62 KiB |  480 ( 480) x   99 |    1 |        1 | 0xf02 | Toast#4
+0xb2fee080:  185.62 KiB |  480 ( 480) x   99 |    1 |        1 | 0xf02 | Toast#5
+0xb2fee140:  185.62 KiB |  480 ( 480) x   99 |    1 |        1 | 0xf02 | Toast#5
+0xb2fee200:  185.62 KiB |  480 ( 480) x   99 |    1 |        1 | 0xf02 | Toast#5
+0xb2fee2c0:  185.62 KiB |  480 ( 480) x   99 |    1 |        1 | 0xf02 | Toast#5
+0xb2fee380:  185.62 KiB |  480 ( 480) x   99 |    1 |        1 | 0x900 | 
+0xb2fee440:  185.62 KiB |  480 ( 480) x   99 |    1 |        1 | 0x900 | Toast#6
+0xb2fee500:  185.62 KiB |  480 ( 480) x   99 |    1 |        1 | 0x900 | Toast#6
+0xb2fee5c0:  185.62 KiB |  480 ( 480) x   99 |    1 |        1 | 0xf02 | Toast#6
+0xb4b43540: 2880.00 KiB |  576 ( 576) x 1280 |    1 |        1 | 0x1e02 | FrameBufferSurface_0
+0xb4b43600: 2880.00 KiB |  576 ( 576) x 1280 |    1 |        1 | 0x1e02 | FrameBufferSurface_0
+0xb4b436c0: 2880.00 KiB |  576 ( 576) x 1280 |    1 |        1 | 0x1e02 | FrameBufferSurface_0
+0xb4b45880:  185.62 KiB |  480 ( 480) x   99 |    1 |        1 | 0x900 | Toast#0
+0xb4b45940: 2880.00 KiB |  576 ( 576) x 1280 |    1 |        1 | 0xf02 | StatusBar#0
+0xb4b45d00:  185.62 KiB |  480 ( 480) x   99 |    1 |        1 | 0x900 | Toast#0
+0xb4b45dc0:  185.62 KiB |  480 ( 480) x   99 |    1 |        1 | 0xf02 | Toast#0
+0xb4b45e80: 2880.00 KiB |  576 ( 576) x 1280 |    1 |        1 | 0xf02 | ColorFade#0
+Total allocated (estimate): 28028.25 KB

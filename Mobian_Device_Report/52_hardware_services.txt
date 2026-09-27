@@ -1,0 +1,166 @@
+All binderized services (registered services through hwservicemanager)
+Interface                                                                       	Thread Use	Server	Clients
+android.frameworks.displayservice@1.0::IDisplayService/default                  	N/A     	N/A  	
+android.frameworks.schedulerservice@1.0::ISchedulingPolicyService/default       	N/A     	N/A  	
+android.frameworks.sensorservice@1.0::ISensorManager/default                    	N/A     	N/A  	
+android.hardware.audio.effect@2.0::IEffectsFactory/default                      	N/A     	N/A  	
+android.hardware.audio@2.0::IDevicesFactory/default                             	N/A     	N/A  	
+android.hardware.biometrics.fingerprint@2.1::IBiometricsFingerprint/default     	N/A     	N/A  	
+android.hardware.bluetooth@1.0::IBluetoothHci/default                           	N/A     	N/A  	
+android.hardware.broadcastradio@1.0::IBroadcastRadioFactory/default             	N/A     	N/A  	
+android.hardware.broadcastradio@1.1::IBroadcastRadioFactory/default             	N/A     	N/A  	
+android.hardware.camera.provider@2.4::ICameraProvider/internal/0                	N/A     	N/A  	
+android.hardware.cas@1.0::IMediaCasService/default                              	N/A     	N/A  	
+android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default                	N/A     	N/A  	
+android.hardware.drm@1.0::ICryptoFactory/default                                	N/A     	N/A  	
+android.hardware.drm@1.0::ICryptoFactory/widevine                               	N/A     	N/A  	
+android.hardware.drm@1.0::IDrmFactory/default                                   	N/A     	N/A  	
+android.hardware.drm@1.0::IDrmFactory/widevine                                  	N/A     	N/A  	
+android.hardware.gatekeeper@1.0::IGatekeeper/default                            	N/A     	N/A  	
+android.hardware.gnss@1.0::IGnss/default                                        	N/A     	N/A  	
+android.hardware.graphics.allocator@2.0::IAllocator/default                     	N/A     	N/A  	
+android.hardware.graphics.composer@2.1::IComposer/default                       	N/A     	N/A  	
+android.hardware.keymaster@3.0::IKeymasterDevice/default                        	N/A     	N/A  	
+android.hardware.light@2.0::ILight/default                                      	N/A     	N/A  	
+android.hardware.media.omx@1.0::IOmx/default                                    	N/A     	N/A  	
+android.hardware.media.omx@1.0::IOmxStore/default                               	N/A     	N/A  	
+android.hardware.memtrack@1.0::IMemtrack/default                                	N/A     	N/A  	
+android.hardware.power@1.0::IPower/default                                      	N/A     	N/A  	
+android.hardware.radio.deprecated@1.0::IOemHook/slot1                           	N/A     	N/A  	
+android.hardware.radio.deprecated@1.0::IOemHook/slot2                           	N/A     	N/A  	
+android.hardware.radio@1.0::IRadio/imsrild1                                     	N/A     	N/A  	
+android.hardware.radio@1.0::IRadio/imsrild2                                     	N/A     	N/A  	
+android.hardware.radio@1.0::IRadio/slot1                                        	N/A     	N/A  	
+android.hardware.radio@1.0::IRadio/slot2                                        	N/A     	N/A  	
+android.hardware.radio@1.0::ISap/slot1                                          	N/A     	N/A  	
+android.hardware.radio@1.0::ISap/slot2                                          	N/A     	N/A  	
+android.hardware.radio@1.1::IRadio/imsrild1                                     	N/A     	N/A  	
+android.hardware.radio@1.1::IRadio/imsrild2                                     	N/A     	N/A  	
+android.hardware.radio@1.1::IRadio/slot1                                        	N/A     	N/A  	
+android.hardware.radio@1.1::IRadio/slot2                                        	N/A     	N/A  	
+android.hardware.radio@1.1::ISap/slot1                                          	N/A     	N/A  	
+android.hardware.radio@1.1::ISap/slot2                                          	N/A     	N/A  	
+android.hardware.sensors@1.0::ISensors/default                                  	N/A     	N/A  	
+android.hardware.thermal@1.0::IThermal/default                                  	N/A     	N/A  	
+android.hardware.vibrator@1.0::IVibrator/default                                	N/A     	N/A  	
+android.hardware.wifi@1.0::IWifi/default                                        	N/A     	N/A  	
+android.hardware.wifi@1.1::IWifi/default                                        	N/A     	N/A  	
+android.hidl.allocator@1.0::IAllocator/ashmem                                   	N/A     	N/A  	
+android.hidl.base@1.0::IBase/AgpsDebugInterface                                 	N/A     	N/A  	
+android.hidl.base@1.0::IBase/AgpsInterface                                      	N/A     	N/A  	
+android.hidl.base@1.0::IBase/ashmem                                             	N/A     	N/A  	
+android.hidl.base@1.0::IBase/default                                            	N/A     	N/A  	
+android.hidl.base@1.0::IBase/imsrild1                                           	N/A     	N/A  	
+android.hidl.base@1.0::IBase/imsrild2                                           	N/A     	N/A  	
+android.hidl.base@1.0::IBase/internal/0                                         	N/A     	N/A  	
+android.hidl.base@1.0::IBase/mtk_agps2framework                                 	N/A     	N/A  	
+android.hidl.base@1.0::IBase/mtk_framework2agps                                 	N/A     	N/A  	
+android.hidl.base@1.0::IBase/mtk_lppe_socket_agps                               	N/A     	N/A  	
+android.hidl.base@1.0::IBase/mtk_lppe_socket_bt                                 	N/A     	N/A  	
+android.hidl.base@1.0::IBase/mtk_lppe_socket_ipaddr                             	N/A     	N/A  	
+android.hidl.base@1.0::IBase/mtk_lppe_socket_lbs                                	N/A     	N/A  	
+android.hidl.base@1.0::IBase/mtk_lppe_socket_network                            	N/A     	N/A  	
+android.hidl.base@1.0::IBase/mtk_lppe_socket_sensor                             	N/A     	N/A  	
+android.hidl.base@1.0::IBase/mtk_lppe_socket_wlan                               	N/A     	N/A  	
+android.hidl.base@1.0::IBase/mtk_mnld2nlputils                                  	N/A     	N/A  	
+android.hidl.base@1.0::IBase/slot1                                              	N/A     	N/A  	
+android.hidl.base@1.0::IBase/slot2                                              	N/A     	N/A  	
+android.hidl.base@1.0::IBase/widevine                                           	N/A     	N/A  	
+android.hidl.manager@1.0::IServiceManager/default                               	N/A     	N/A  	
+android.hidl.manager@1.1::IServiceManager/default                               	N/A     	N/A  	
+android.hidl.token@1.0::ITokenManager/default                                   	N/A     	N/A  	
+android.system.net.netd@1.0::INetd/default                                      	N/A     	N/A  	
+android.system.wifi.keystore@1.0::IKeystore/default                             	N/A     	N/A  	
+vendor.mediatek.hardware.camera.ccap@1.0::ICCAPControl/internal/0               	N/A     	N/A  	
+vendor.mediatek.hardware.gnss@1.1::IMtkGnss/default                             	N/A     	N/A  	
+vendor.mediatek.hardware.lbs@1.0::ILbs/AgpsDebugInterface                       	N/A     	N/A  	
+vendor.mediatek.hardware.lbs@1.0::ILbs/AgpsInterface                            	N/A     	N/A  	
+vendor.mediatek.hardware.lbs@1.0::ILbs/mtk_agps2framework                       	N/A     	N/A  	
+vendor.mediatek.hardware.lbs@1.0::ILbs/mtk_framework2agps                       	N/A     	N/A  	
+vendor.mediatek.hardware.lbs@1.0::ILbs/mtk_lppe_socket_agps                     	N/A     	N/A  	
+vendor.mediatek.hardware.lbs@1.0::ILbs/mtk_lppe_socket_bt                       	N/A     	N/A  	
+vendor.mediatek.hardware.lbs@1.0::ILbs/mtk_lppe_socket_ipaddr                   	N/A     	N/A  	
+vendor.mediatek.hardware.lbs@1.0::ILbs/mtk_lppe_socket_lbs                      	N/A     	N/A  	
+vendor.mediatek.hardware.lbs@1.0::ILbs/mtk_lppe_socket_network                  	N/A     	N/A  	
+vendor.mediatek.hardware.lbs@1.0::ILbs/mtk_lppe_socket_sensor                   	N/A     	N/A  	
+vendor.mediatek.hardware.lbs@1.0::ILbs/mtk_lppe_socket_wlan                     	N/A     	N/A  	
+vendor.mediatek.hardware.lbs@1.0::ILbs/mtk_mnld2nlputils                        	N/A     	N/A  	
+vendor.mediatek.hardware.mms@1.0::IMms/default                                  	N/A     	N/A  	
+vendor.mediatek.hardware.mms@1.1::IMms/default                                  	N/A     	N/A  	
+vendor.mediatek.hardware.mms@1.2::IMms/default                                  	N/A     	N/A  	
+vendor.mediatek.hardware.mms@1.3::IMms/default                                  	N/A     	N/A  	
+vendor.mediatek.hardware.mms@1.4::IMms/default                                  	N/A     	N/A  	
+vendor.mediatek.hardware.mms@1.5::IMms/default                                  	N/A     	N/A  	
+vendor.mediatek.hardware.mtkcodecservice@1.1::IMtkCodecService/default          	N/A     	N/A  	
+vendor.mediatek.hardware.netdagent@1.0::INetdagent/default                      	N/A     	N/A  	
+vendor.mediatek.hardware.nvram@1.0::INvram/default                              	N/A     	N/A  	
+vendor.mediatek.hardware.power@1.1::IPower/default                              	N/A     	N/A  	
+vendor.mediatek.hardware.pq@2.0::IPictureQuality/default                        	N/A     	N/A  	
+vendor.mediatek.hardware.radio.deprecated@1.1::IOemHook/slot1                   	N/A     	N/A  	
+vendor.mediatek.hardware.radio.deprecated@1.1::IOemHook/slot2                   	N/A     	N/A  	
+vendor.mediatek.hardware.radio@2.0::IRadio/imsrild1                             	N/A     	N/A  	
+vendor.mediatek.hardware.radio@2.0::IRadio/imsrild2                             	N/A     	N/A  	
+vendor.mediatek.hardware.radio@2.0::IRadio/slot1                                	N/A     	N/A  	
+vendor.mediatek.hardware.radio@2.0::IRadio/slot2                                	N/A     	N/A  	
+vendor.mediatek.hardware.radio@2.0::ISap/slot1                                  	N/A     	N/A  	
+vendor.mediatek.hardware.radio@2.0::ISap/slot2                                  	N/A     	N/A  	
+
+All interfaces that getService() has ever return as a passthrough interface;
+PIDs / processes shown below might be inaccurate because the process
+might have relinquished the interface or might have died.
+The Server / Server CMD column can be ignored.
+The Clients / Clients CMD column shows all process that have ever dlopen'ed 
+the library and successfully fetched the passthrough implementation.
+Interface                                                                       	Thread Use	Server	Clients
+android.hardware.audio.effect@2.0::IEffectsFactory/default                      	N/A     	318  	318
+android.hardware.audio@2.0::IDevicesFactory/default                             	N/A     	318  	318
+android.hardware.bluetooth@1.0::IBluetoothHci/default                           	N/A     	319  	319
+android.hardware.camera.provider@2.4::ICameraProvider/internal/0                	N/A     	381  	381
+android.hardware.drm@1.0::ICryptoFactory/default                                	N/A     	327  	327
+android.hardware.drm@1.0::IDrmFactory/default                                   	N/A     	327  	327
+android.hardware.gatekeeper@1.0::IGatekeeper/default                            	N/A     	324  	324
+android.hardware.graphics.allocator@2.0::IAllocator/default                     	N/A     	327  	327
+android.hardware.graphics.composer@2.1::IComposer/default                       	N/A     	325  	325
+android.hardware.graphics.mapper@2.0::IMapper/default                           	N/A     	N/A  	325 331 757 983 1338 2967 3090
+android.hardware.keymaster@3.0::IKeymasterDevice/default                        	N/A     	238  	238
+android.hardware.light@2.0::ILight/default                                      	N/A     	327  	327
+android.hardware.memtrack@1.0::IMemtrack/default                                	N/A     	327  	327
+android.hardware.sensors@1.0::ISensors/default                                  	N/A     	380  	380
+android.hardware.thermal@1.0::IThermal/default                                  	N/A     	327  	327
+android.hardware.vibrator@1.0::IVibrator/default                                	N/A     	327  	327
+android.hidl.memory@1.0::IMapper/ashmem                                         	N/A     	N/A  	376 379 389 757 983
+vendor.mediatek.hardware.camera.ccap@1.0::ICCAPControl/internal/0               	N/A     	381  	381
+vendor.mediatek.hardware.gnss@1.1::IMtkGnss/default                             	N/A     	327  	327
+vendor.mediatek.hardware.mms@1.5::IMms/default                                  	N/A     	388  	388
+vendor.mediatek.hardware.mtkcodecservice@1.1::IMtkCodecService/default          	N/A     	327  	327
+vendor.mediatek.hardware.nvram@1.0::INvram/default                              	N/A     	327  	327
+vendor.mediatek.hardware.power@1.1::IPower/default                              	N/A     	327  	327
+vendor.mediatek.hardware.pq@2.0::IPictureQuality/default                        	N/A     	389  	389
+
+All available passthrough implementations (all -impl.so files)
+Interface                                                                       	Thread Use	Server	Clients
+android.hardware.audio.effect@2.0::I*/* (/vendor/lib/hw/)                       	N/A     	N/A  	318
+android.hardware.audio@2.0::I*/* (/vendor/lib/hw/) (-mediatek)                  	N/A     	N/A  	318
+android.hardware.bluetooth@1.0::I*/* (/vendor/lib/hw/) (-mediatek)              	N/A     	N/A  	319
+android.hardware.camera.provider@2.4::I*/* (/vendor/lib/hw/) (-mediatek)        	N/A     	N/A  	381
+android.hardware.drm@1.0::I*/* (/vendor/lib/hw/)                                	N/A     	N/A  	327
+android.hardware.gatekeeper@1.0::I*/* (/vendor/lib/hw/)                         	N/A     	N/A  	324
+android.hardware.graphics.allocator@2.0::I*/* (/vendor/lib/hw/)                 	N/A     	N/A  	327
+android.hardware.graphics.composer@2.1::I*/* (/vendor/lib/hw/)                  	N/A     	N/A  	325
+android.hardware.graphics.mapper@2.0::I*/* (/vendor/lib/hw/)                    	N/A     	N/A  	313 325 331 757 978 983 1092 1272 1285 1304 1319 1338 1378 1594 2967 3090
+android.hardware.keymaster@3.0::I*/* (/vendor/lib/hw/)                          	N/A     	N/A  	238
+android.hardware.light@2.0::I*/* (/vendor/lib/hw/) (-mediatek)                  	N/A     	N/A  	327
+android.hardware.memtrack@1.0::I*/* (/vendor/lib/hw/)                           	N/A     	N/A  	327
+android.hardware.renderscript@1.0::I*/* (/vendor/lib/hw/)                       	N/A     	N/A  	
+android.hardware.sensors@1.0::I*/* (/vendor/lib/hw/) (-mediatek)                	N/A     	N/A  	380
+android.hardware.thermal@1.0::I*/* (/vendor/lib/hw/)                            	N/A     	N/A  	327
+android.hardware.vibrator@1.0::I*/* (/vendor/lib/hw/)                           	N/A     	N/A  	327
+android.hidl.memory@1.0::I*/* (/system/lib/hw/)                                 	N/A     	N/A  	376 379 389 757 983
+vendor.mediatek.hardware.camera.ccap@1.0::I*/* (/vendor/lib/hw/)                	N/A     	N/A  	381
+vendor.mediatek.hardware.gnss@1.1::I*/* (/vendor/lib/hw/)                       	N/A     	N/A  	327
+vendor.mediatek.hardware.mms@1.5::I*/* (/vendor/lib/hw/)                        	N/A     	N/A  	388
+vendor.mediatek.hardware.mtkcodecservice@1.1::I*/* (/vendor/lib/hw/)            	N/A     	N/A  	327
+vendor.mediatek.hardware.nvram@1.0::I*/* (/vendor/lib/hw/)                      	N/A     	N/A  	327
+vendor.mediatek.hardware.power@1.1::I*/* (/vendor/lib/hw/)                      	N/A     	N/A  	327
+vendor.mediatek.hardware.pq@2.0::I*/* (/vendor/lib/hw/)                         	N/A     	N/A  	389
+

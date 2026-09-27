@@ -1,0 +1,5 @@
+[init.svc.storaged]: [running]
+[persist.log.tag.MSmsStorageMtr]: [I]
+[ro.boottime.storaged]: [5872713774]
+[ro.mtk_emmc_support]: [1]
+[ro.sys.usb.storage.type]: [mtp]

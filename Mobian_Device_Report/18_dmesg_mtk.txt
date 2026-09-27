@@ -1,0 +1,902 @@
+[ 5077.162675] (1)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5077.162774] (1)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5077.791912] (1)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5078.792027] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5079.792157] (1)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5080.792314] (1)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5081.792442] (1)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5082.792563] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5083.792677] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5084.792801] (1)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5085.792960] (1)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5086.675093] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5086.793094] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5087.157753] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5087.157767] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5087.157848] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5087.157946] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5087.793232] (2)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5087.918401] (2)[237:logd.auditd]type=1400 audit(1790536061.784:61): avc: denied { getattr } for pid=1272 comm="sAsyncHandlerTh" path="/data/cache/recovery" dev="mmcblk0p23" ino=80 scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:object_r:cache_recovery_file:s0 tclass=dir permissive=1
+[ 5087.919108] (2)[237:logd.auditd]type=1400 audit(1790536061.784:61): avc: denied { getattr } for pid=1272 comm="sAsyncHandlerTh" path="/data/cache/recovery" dev="mmcblk0p23" ino=80 scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:object_r:cache_recovery_file:s0 tclass=dir permissive=1
+[ 5087.919154] (2)[237:logd.auditd]type=1400 audit(1790536061.784:62): avc: denied { getattr } for pid=1272 comm="sAsyncHandlerTh" path="/data/cache/backup" dev="mmcblk0p23" ino=82 scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:object_r:cache_private_backup_file:s0 tclass=dir permissive=1
+[ 5087.919349] (2)[237:logd.auditd]type=1400 audit(1790536061.784:62): avc: denied { getattr } for pid=1272 comm="sAsyncHandlerTh" path="/data/cache/backup" dev="mmcblk0p23" ino=82 scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:object_r:cache_private_backup_file:s0 tclass=dir permissive=1
+[ 5087.919387] (2)[237:logd.auditd]type=1400 audit(1790536061.784:63): avc: denied { read } for pid=1272 comm="sAsyncHandlerTh" name="recovery" dev="mmcblk0p23" ino=80 scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:object_r:cache_recovery_file:s0 tclass=dir permissive=1
+[ 5087.919569] (2)[237:logd.auditd]type=1400 audit(1790536061.784:63): avc: denied { read } for pid=1272 comm="sAsyncHandlerTh" name="recovery" dev="mmcblk0p23" ino=80 scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:object_r:cache_recovery_file:s0 tclass=dir permissive=1
+[ 5087.919604] (2)[237:logd.auditd]type=1400 audit(1790536061.784:64): avc: denied { open } for pid=1272 comm="sAsyncHandlerTh" path="/data/cache/recovery" dev="mmcblk0p23" ino=80 scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:object_r:cache_recovery_file:s0 tclass=dir permissive=1
+[ 5088.793348] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5089.793452] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5090.018868] (0)[1036:watchdog]AEEIOCTL_RT_MON_Kick ( 300)
+[ 5090.019234] (0)[1036:watchdog][Hang_Detect] hang_detect enabled 10
+[ 5090.793557] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5091.793657] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5092.793757] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5093.793855] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5094.793963] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5095.794070] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5096.675449] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5096.794169] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5097.146374] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5097.146388] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5097.146488] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5097.146587] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5097.149500] (0)[328:healthd]healthd: battery l=100 v=4286 t=25.0 h=2 st=5 c=203 chg=u
+[ 5097.794279] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5098.794385] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5099.794482] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5100.794596] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5101.794702] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5102.794801] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5103.794897] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5104.795002] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5105.535804] (0)[328:healthd]healthd: battery l=100 v=4286 t=25.0 h=2 st=5 c=203 chg=u
+[ 5105.795114] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5106.675817] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5106.795214] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5107.137144] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5107.137159] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5107.137239] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5107.137340] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5107.795308] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5108.795400] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5109.795497] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5110.795590] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5111.795684] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5112.795781] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5113.795882] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5114.795988] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5115.796106] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5116.676144] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5116.796216] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5117.144671] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5117.144684] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5117.144763] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5117.144848] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5117.796310] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5118.796404] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5119.796501] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5120.019755] (0)[1036:watchdog]AEEIOCTL_RT_MON_Kick ( 300)
+[ 5120.020183] (0)[1036:watchdog][Hang_Detect] hang_detect enabled 10
+[ 5120.796612] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5121.796719] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5122.796819] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5123.796914] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5124.797021] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5125.797133] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5126.676520] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5126.797245] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5127.144912] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5127.144926] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5127.145005] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5127.145092] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5127.797340] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5128.797438] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5129.797534] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5130.797629] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5131.797734] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5132.797833] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5133.797929] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5134.798035] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5135.798141] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5136.676862] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5136.798245] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5137.151924] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5137.151938] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5137.152018] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5137.152114] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5137.155034] (0)[328:healthd]healthd: battery l=100 v=4287 t=25.0 h=2 st=5 c=195 chg=u
+[ 5137.798355] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5138.798462] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5139.798560] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5140.798656] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5141.798768] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5142.798872] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5143.798970] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5144.799078] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5145.799181] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5146.677210] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5146.799284] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5147.143274] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5147.143288] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5147.143368] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5147.143451] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5147.799381] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5148.799476] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5149.799571] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5150.020711] (0)[1036:watchdog]AEEIOCTL_RT_MON_Kick ( 300)
+[ 5150.021075] (0)[1036:watchdog][Hang_Detect] hang_detect enabled 10
+[ 5150.799677] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5151.799789] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5152.799919] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5153.800018] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5154.800125] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5155.800233] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5156.677554] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5156.800331] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5157.148722] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5157.148736] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5157.148815] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5157.148885] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5157.800426] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5158.800521] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5159.800616] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5160.800704] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5161.800815] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5162.800924] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5163.801020] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5164.801127] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5165.535781] (0)[328:healthd]healthd: battery l=100 v=4287 t=25.0 h=2 st=5 c=195 chg=u
+[ 5165.801240] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5166.677883] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5166.801357] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5167.147183] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5167.147197] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5167.147277] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5167.147363] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5167.801465] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5168.801561] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5169.801655] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5170.801748] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5171.801843] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5172.801949] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5173.802056] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5174.802164] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5175.802267] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5176.678208] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5176.802365] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5177.153268] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5177.153282] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5177.153361] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5177.153442] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5177.156288] (0)[328:healthd]healthd: battery l=100 v=4288 t=25.0 h=2 st=5 c=195 chg=u
+[ 5177.802477] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5178.802582] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5179.802678] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5180.021627] (0)[1036:watchdog]AEEIOCTL_RT_MON_Kick ( 300)
+[ 5180.021992] (0)[1036:watchdog][Hang_Detect] hang_detect enabled 10
+[ 5180.802781] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5181.802880] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5182.802988] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5183.803098] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5184.803223] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5185.803334] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5186.678534] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5186.803437] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5187.138809] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5187.138823] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5187.138902] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5187.138982] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5187.803549] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5188.803663] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5189.803768] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5190.803865] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5191.803960] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5192.804071] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5193.804178] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5194.804287] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5195.804393] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5196.678860] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5196.804490] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5197.149676] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5197.149690] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5197.149769] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5197.149884] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5197.804601] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5198.804709] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5199.804808] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5200.804903] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5201.805001] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5202.805113] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5203.805219] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5204.805328] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5205.805435] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5206.679199] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5206.805533] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5207.152779] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5207.152792] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5207.152873] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5207.152972] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5207.805645] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5208.805757] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5209.805859] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5210.022540] (0)[1036:watchdog]AEEIOCTL_RT_MON_Kick ( 300)
+[ 5210.022904] (0)[1036:watchdog][Hang_Detect] hang_detect enabled 10
+[ 5210.805961] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5211.806061] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5212.807312] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5213.807429] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5214.807545] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5215.807649] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5216.679533] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5216.807748] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5217.157681] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5217.157695] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5217.157775] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5217.157860] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5217.160708] (0)[328:healthd]healthd: battery l=100 v=4289 t=25.0 h=2 st=5 c=195 chg=u
+[ 5217.807861] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5218.807978] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5219.808086] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5220.808183] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5221.808278] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5222.808372] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5223.808483] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5224.808596] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5225.535790] (0)[328:healthd]healthd: battery l=100 v=4289 t=25.0 h=2 st=5 c=195 chg=u
+[ 5225.808711] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5226.679882] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5226.808811] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5227.147519] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5227.147533] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5227.147612] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5227.147706] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5227.808906] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5228.809019] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5229.809128] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5230.809226] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5231.809325] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5232.809425] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5233.809527] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5234.809638] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5235.809741] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5236.680203] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5236.809861] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5237.148033] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5237.148047] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5237.148126] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5237.148199] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5237.809956] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5238.810066] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5239.810175] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5240.023437] (0)[1036:watchdog]AEEIOCTL_RT_MON_Kick ( 300)
+[ 5240.023802] (0)[1036:watchdog][Hang_Detect] hang_detect enabled 10
+[ 5240.810279] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5241.810378] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5242.810475] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5243.810586] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5244.810739] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5245.810854] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5246.680534] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5246.810958] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5247.151257] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5247.151271] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5247.151352] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5247.151440] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5247.811042] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5248.811153] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5249.811260] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5250.811359] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5251.811462] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5252.811564] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5253.811680] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5254.811795] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5255.811900] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5256.680877] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5256.811998] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5257.151603] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5257.151617] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5257.151696] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5257.151780] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5257.154629] (0)[328:healthd]healthd: battery l=100 v=4290 t=25.0 h=2 st=5 c=72 chg=u
+[ 5257.812092] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5258.812199] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5259.812301] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5260.812401] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5261.812498] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5262.812595] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5263.812688] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5264.812795] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5265.812901] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5266.681222] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5266.812999] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5267.150288] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5267.150302] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5267.150382] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5267.150473] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5267.813080] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5268.813194] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5269.813305] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5270.024320] (0)[1036:watchdog]AEEIOCTL_RT_MON_Kick ( 300)
+[ 5270.024686] (0)[1036:watchdog][Hang_Detect] hang_detect enabled 10
+[ 5270.813415] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5271.813518] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5272.813616] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5273.813715] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5274.813823] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5275.813931] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5276.681553] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5276.814029] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5277.141752] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5277.141766] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5277.141846] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5277.141935] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5277.814114] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5278.814210] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5279.814320] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5280.814426] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5281.814527] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5282.814624] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5283.814719] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5284.814826] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5285.535786] (0)[328:healthd]healthd: battery l=100 v=4291 t=25.0 h=2 st=5 c=72 chg=u
+[ 5285.814948] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5286.681901] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5286.815055] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5287.155391] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5287.155406] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5287.155484] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5287.155585] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5287.815143] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5288.815240] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5289.815340] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5290.815438] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5291.815537] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5292.815636] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5293.815737] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5294.815851] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5295.815960] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5296.682257] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5296.816060] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5297.149617] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5297.149631] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5297.149710] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5297.149810] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5297.152595] (0)[328:healthd]healthd: battery l=100 v=4291 t=25.0 h=2 st=5 c=72 chg=u
+[ 5297.816156] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5298.816259] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5299.816356] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5300.025225] (0)[1036:watchdog]AEEIOCTL_RT_MON_Kick ( 300)
+[ 5300.025592] (0)[1036:watchdog][Hang_Detect] hang_detect enabled 10
+[ 5300.816465] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5301.816566] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5302.816667] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5303.816764] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5304.816871] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5305.816988] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5306.682589] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5306.817096] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5307.146328] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5307.146343] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5307.146423] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5307.146531] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5307.817180] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5308.817273] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5309.817370] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5310.817477] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5311.817585] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5312.817682] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5313.817772] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5314.817870] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5315.817976] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5316.682928] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5316.818085] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5317.155657] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5317.155671] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5317.155749] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5317.155848] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5317.818178] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5318.818276] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5319.818374] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5320.818483] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5321.818591] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5322.818689] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5323.818783] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5324.818888] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5325.818993] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5326.683266] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5326.819091] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5327.145458] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5327.145471] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5327.145551] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5327.145633] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5327.819178] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5328.819272] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5329.819368] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5330.026136] (0)[1036:watchdog]AEEIOCTL_RT_MON_Kick ( 300)
+[ 5330.026551] (0)[1036:watchdog][Hang_Detect] hang_detect enabled 10
+[ 5330.819480] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5331.819588] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5332.819691] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5333.819792] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5334.819899] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5335.820024] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5336.683606] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5336.820130] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5337.144420] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5337.144434] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5337.144513] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5337.144604] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5337.147471] (0)[328:healthd]healthd: battery l=100 v=4293 t=25.0 h=2 st=5 c=88 chg=u
+[ 5337.820234] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5338.820342] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5339.820442] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5340.820535] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5341.820645] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5342.820742] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5343.820838] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5344.820947] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5345.535776] (0)[328:healthd]healthd: battery l=100 v=4293 t=25.0 h=2 st=5 c=88 chg=u
+[ 5345.821052] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5346.683948] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5346.821157] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5347.160508] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5347.160522] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5347.160601] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5347.160695] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5347.821247] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5348.821343] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5349.821429] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5350.821523] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5351.821635] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5352.821746] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5353.821847] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5354.821957] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5355.822062] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5356.684290] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5356.822166] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5357.148570] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5357.148584] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5357.148664] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5357.148739] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5357.822253] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5358.822347] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5359.822443] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5360.027083] (0)[1036:watchdog]AEEIOCTL_RT_MON_Kick ( 300)
+[ 5360.027447] (0)[1036:watchdog][Hang_Detect] hang_detect enabled 10
+[ 5360.822544] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5361.822655] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5362.822762] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5363.822860] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5364.822968] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5365.823077] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5366.684623] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5366.823204] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5367.150645] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5367.150659] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5367.150739] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5367.150824] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5367.823291] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5368.823387] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5369.823484] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5370.823578] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5371.823687] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5372.823797] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5373.823894] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5374.824001] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5375.824106] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5376.684968] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5376.824208] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5377.154769] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5377.154783] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5377.154862] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5377.154954] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5377.157845] (0)[328:healthd]healthd: battery l=100 v=4295 t=25.0 h=2 st=5 c=72 chg=u
+[ 5377.824309] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5378.824419] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5379.824516] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5380.824614] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5381.824727] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5382.824833] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5383.824930] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5384.825040] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5385.825145] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5386.685310] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5386.825243] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5387.152140] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5387.152154] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5387.152234] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5387.152309] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5387.825334] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5388.825430] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5389.825527] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5390.027970] (0)[1036:watchdog]AEEIOCTL_RT_MON_Kick ( 300)
+[ 5390.028334] (0)[1036:watchdog][Hang_Detect] hang_detect enabled 10
+[ 5390.825627] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5391.825728] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5392.825840] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5393.825947] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5394.826058] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5395.826166] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5396.685639] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5396.826265] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5397.160511] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5397.160525] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5397.160605] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5397.160678] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5397.826354] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5398.826452] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5399.826549] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5400.826663] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5401.826772] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5402.826887] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5403.826994] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5404.827106] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5405.535859] (0)[328:healthd]healthd: battery l=100 v=4296 t=25.0 h=2 st=5 c=72 chg=u
+[ 5405.827226] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5406.685980] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5406.827334] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5407.154213] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5407.154227] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5407.154306] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5407.154400] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5407.827424] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5408.827519] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5409.827614] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5410.827713] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5411.827807] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5412.827913] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5413.828019] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5414.828127] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5415.828230] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5416.686312] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5416.828336] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5417.158028] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5417.158042] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5417.158123] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5417.158194] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5417.161097] (0)[328:healthd]healthd: battery l=100 v=4296 t=25.0 h=2 st=5 c=72 chg=u
+[ 5417.828443] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5418.828551] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5419.828654] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5420.028907] (0)[1036:watchdog]AEEIOCTL_RT_MON_Kick ( 300)
+[ 5420.029272] (0)[1036:watchdog][Hang_Detect] hang_detect enabled 10
+[ 5420.828760] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5421.828860] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5422.828975] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5423.829090] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5424.829199] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5425.829318] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5426.686689] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5426.829425] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5427.154841] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5427.154855] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5427.154934] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5427.155029] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5427.829513] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5428.829607] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5429.829708] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5430.829820] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5431.829908] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5432.830014] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5433.830125] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5434.830242] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5435.830347] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5436.687026] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5436.830446] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5437.160710] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5437.160723] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5437.160804] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5437.160900] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5437.830546] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5438.830656] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5439.830763] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5440.830862] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5441.830959] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5442.831053] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5443.831157] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5444.831264] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5445.831369] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5446.687361] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5446.831470] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5447.152160] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5447.152174] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5447.152253] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5447.152331] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5447.831564] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5448.831658] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5449.831754] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5450.029863] (0)[1036:watchdog]AEEIOCTL_RT_MON_Kick ( 300)
+[ 5450.030228] (0)[1036:watchdog][Hang_Detect] hang_detect enabled 10
+[ 5450.831858] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5451.831958] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5452.832056] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5453.832168] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5454.832264] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5455.832369] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5456.687696] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5456.832470] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5457.160979] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5457.160994] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5457.161072] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5457.161159] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5457.164010] (0)[328:healthd]healthd: battery l=100 v=4296 t=25.0 h=2 st=5 c=72 chg=u
+[ 5457.832576] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5458.832693] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5459.832793] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5460.832890] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5461.832992] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5462.833089] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5463.833189] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5464.833661] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5465.535757] (0)[328:healthd]healthd: battery l=100 v=4296 t=25.0 h=2 st=5 c=72 chg=u
+[ 5465.833774] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5466.688029] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5466.833876] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5467.153138] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5467.153151] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5467.153230] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5467.153326] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5467.833971] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5468.834074] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5469.834223] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5470.834322] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5471.834420] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5472.834518] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5473.834619] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5474.834928] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5475.835036] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5476.688356] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5476.835139] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5477.144850] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5477.144864] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5477.144943] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5477.145034] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5477.835234] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5478.835329] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5479.835438] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5480.030747] (0)[1036:watchdog]AEEIOCTL_RT_MON_Kick ( 300)
+[ 5480.031112] (0)[1036:watchdog][Hang_Detect] hang_detect enabled 10
+[ 5480.835549] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5481.835647] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5482.835743] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5483.835840] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5484.835952] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5485.836078] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5486.688695] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5486.836182] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5487.140996] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5487.141010] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5487.141091] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5487.141168] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5487.836274] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5488.836370] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5489.836499] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5490.836607] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5491.836705] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5492.836800] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5493.836896] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5494.837009] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5495.837125] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5496.689021] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5496.837228] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5497.150338] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5497.150352] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5497.150431] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5497.150517] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5497.159796] (0)[328:healthd]healthd: battery l=100 v=4296 t=25.0 h=2 st=5 c=80 chg=u
+[ 5497.837335] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5498.837430] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5499.837542] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5500.837651] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5501.837735] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5502.837832] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5503.837919] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5504.838034] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5505.838150] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5506.689347] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5506.838257] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5507.147073] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5507.147086] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5507.147166] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5507.147260] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5507.838352] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5508.838445] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5509.838560] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5510.031626] (0)[1036:watchdog]AEEIOCTL_RT_MON_Kick ( 300)
+[ 5510.031993] (0)[1036:watchdog][Hang_Detect] hang_detect enabled 10
+[ 5510.838672] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5511.838772] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5512.838872] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5513.838972] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5514.839068] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5515.839174] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5516.689682] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5516.839279] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5517.141006] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5517.141020] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5517.141099] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5517.141194] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5517.839373] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5518.839467] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5519.839564] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5520.839678] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5521.839806] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5522.839904] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5523.839998] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5524.840094] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5525.535797] (0)[328:healthd]healthd: battery l=100 v=4296 t=25.0 h=2 st=5 c=80 chg=u
+[ 5525.840203] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5526.690056] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5526.840306] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5527.151228] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5527.151242] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5527.151321] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5527.151395] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5527.840400] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5528.840497] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5529.840592] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5530.840690] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5531.840792] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5532.840894] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5533.840993] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5534.841088] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5535.841198] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5536.690395] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5536.841309] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5537.158856] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5537.158870] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5537.158950] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5537.159033] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5537.161904] (0)[328:healthd]healthd: battery l=100 v=4296 t=25.0 h=2 st=5 c=80 chg=u
+[ 5537.841415] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5538.841520] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5539.841618] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5540.032528] (0)[1036:watchdog]AEEIOCTL_RT_MON_Kick ( 300)
+[ 5540.032893] (0)[1036:watchdog][Hang_Detect] hang_detect enabled 10
+[ 5540.841731] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5541.841839] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5542.841940] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5543.842037] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5544.842135] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5545.842246] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5546.690748] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5546.842351] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5547.146790] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5547.146804] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5547.146885] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5547.146960] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5547.842449] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5548.842543] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5549.842640] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5550.842746] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5551.842838] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5552.842935] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5553.843031] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5554.843151] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5555.844174] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5556.691099] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5556.844283] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5557.153521] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5557.153535] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5557.153615] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5557.153714] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5557.844385] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5558.844484] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5559.844580] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5560.844674] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5561.844778] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5562.844877] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5563.844971] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5564.845066] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5565.845171] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5566.691448] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5566.845276] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5567.153530] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5567.153543] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5567.153624] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5567.153722] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5567.845368] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5568.845462] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5569.845560] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5570.033431] (0)[1036:watchdog]AEEIOCTL_RT_MON_Kick ( 300)
+[ 5570.033795] (0)[1036:watchdog][Hang_Detect] hang_detect enabled 10
+[ 5570.845660] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5571.845774] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5572.845885] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5573.845986] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5574.846083] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5575.846188] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5576.691787] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5576.846296] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5577.145344] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5577.145358] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5577.145438] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5577.145523] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5577.148435] (0)[328:healthd]healthd: battery l=100 v=4296 t=25.0 h=2 st=5 c=80 chg=u
+[ 5577.846405] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5578.846509] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5579.846607] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5580.846702] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5581.846814] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5582.846920] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5583.847016] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5584.847114] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5585.535751] (0)[328:healthd]healthd: battery l=100 v=4296 t=25.0 h=2 st=5 c=80 chg=u
+[ 5585.847220] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5586.692128] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5586.847327] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5587.147423] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5587.147437] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5587.147516] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5587.147604] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5587.847427] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5588.847525] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5589.847619] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5590.847714] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5591.847829] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5592.847940] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5593.848043] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5594.848139] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5595.848243] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5596.692469] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5596.848364] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5597.140967] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5597.140981] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5597.141061] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5597.141146] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5597.848471] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5598.848567] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5599.848665] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5600.034316] (0)[1036:watchdog]AEEIOCTL_RT_MON_Kick ( 300)
+[ 5600.034681] (0)[1036:watchdog][Hang_Detect] hang_detect enabled 10
+[ 5600.848768] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5601.848866] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5602.848971] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5603.849071] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5604.849167] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5605.849274] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5606.692809] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5606.849380] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5607.147643] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5607.147657] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5607.147736] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5607.147838] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5607.849478] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5608.849577] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5609.849677] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5610.849789] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5611.849883] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5612.849984] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5613.850084] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5614.850188] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5615.850305] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5616.693167] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5616.850410] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5617.151773] (0)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5617.151787] (0)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5617.151866] (0)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5617.151967] (0)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5617.154838] (0)[328:healthd]healthd: battery l=100 v=4295 t=25.0 h=2 st=5 c=88 chg=u
+[ 5617.850524] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5618.850633] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5619.850730] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5620.850829] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5621.850918] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5622.851021] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5623.851121] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5624.851247] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5625.851392] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5626.693610] (0)[367:batterywarning][Battery] show_BatteryNotify : 0
+[ 5626.851555] (0)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5627.162345] (1)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+[ 5627.162360] (1)[178:bat_thread_kthr][BATTERY] Battery full !!\x0a\x0d
+[ 5627.162442] (1)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+[ 5627.162536] (1)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+[ 5627.282098] (0)[237:logd.auditd]type=1400 audit(1790536061.784:64): avc: denied { open } for pid=1272 comm="sAsyncHandlerTh" path="/data/cache/recovery" dev="mmcblk0p23" ino=80 scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:object_r:cache_recovery_file:s0 tclass=dir permissive=1
+[ 5627.851706] (1)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5628.851869] (1)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5629.852023] (1)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5630.035273] (0)[1036:watchdog]AEEIOCTL_RT_MON_Kick ( 300)
+[ 5630.035653] (0)[1036:watchdog][Hang_Detect] hang_detect enabled 10
+[ 5630.852179] (1)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5631.852354] (3)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+[ 5632.852529] (3)[179:mtk charger_hv_][BATTERY] Disable check battery exist.

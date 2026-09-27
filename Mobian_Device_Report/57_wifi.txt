@@ -1,0 +1,696 @@
+Wi-Fi is disabled
+Stay-awake conditions: 0
+mInIdleMode false
+mScanPending false
+WifiController:
+ total records=125
+ rec[0]: time=09-27 17:52:01.219 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[1]: time=09-27 17:52:41.216 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[2]: time=09-27 17:52:59.415 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[3]: time=09-27 17:53:21.200 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[4]: time=09-27 17:53:59.415 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[5]: time=09-27 17:54:01.206 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[6]: time=09-27 17:54:41.216 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[7]: time=09-27 17:54:59.415 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[8]: time=09-27 17:55:01.217 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[9]: time=09-27 17:55:41.209 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[10]: time=09-27 17:55:59.415 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[11]: time=09-27 17:56:21.209 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[12]: time=09-27 17:56:59.415 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[13]: time=09-27 17:57:01.195 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[14]: time=09-27 17:57:41.216 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[15]: time=09-27 17:57:59.415 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[16]: time=09-27 17:58:59.415 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[17]: time=09-27 17:59:51.213 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[18]: time=09-27 18:00:31.205 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[19]: time=09-27 18:00:59.415 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[20]: time=09-27 18:01:11.198 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[21]: time=09-27 18:01:51.218 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[22]: time=09-27 18:02:31.218 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[23]: time=09-27 18:02:59.415 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[24]: time=09-27 18:03:11.222 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[25]: time=09-27 18:03:51.216 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[26]: time=09-27 18:04:31.205 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[27]: time=09-27 18:06:31.222 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[28]: time=09-27 18:06:59.415 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[29]: time=09-27 18:07:51.215 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[30]: time=09-27 18:08:31.209 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[31]: time=09-27 18:08:51.213 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[32]: time=09-27 18:09:31.202 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[33]: time=09-27 18:09:59.415 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[34]: time=09-27 18:10:11.212 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[35]: time=09-27 18:10:51.222 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[36]: time=09-27 18:11:31.218 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[37]: time=09-27 18:12:51.208 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[38]: time=09-27 18:13:31.212 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[39]: time=09-27 18:17:31.211 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[40]: time=09-27 18:18:59.415 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[41]: time=09-27 18:19:11.025 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[42]: time=09-27 18:19:51.029 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[43]: time=09-27 18:20:31.022 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[44]: time=09-27 18:20:59.415 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[45]: time=09-27 18:21:11.022 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[46]: time=09-27 18:21:51.019 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[47]: time=09-27 18:22:31.018 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[48]: time=09-27 18:22:59.415 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[49]: time=09-27 18:23:11.013 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[50]: time=09-27 18:23:51.005 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[51]: time=09-27 18:24:31.032 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[52]: time=09-27 18:25:11.008 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[53]: time=09-27 18:26:31.008 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[54]: time=09-27 18:27:11.034 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[55]: time=09-27 18:28:31.022 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[56]: time=09-27 18:29:11.015 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[57]: time=09-27 18:30:31.020 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[58]: time=09-27 18:31:51.028 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[59]: time=09-27 18:32:59.415 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[60]: time=09-27 18:34:31.020 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[61]: time=09-27 18:35:51.028 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[62]: time=09-27 18:36:59.414 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[63]: time=09-27 18:38:31.012 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[64]: time=09-27 18:39:51.035 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[65]: time=09-27 18:41:11.018 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[66]: time=09-27 18:42:31.027 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[67]: time=09-27 18:44:31.034 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[68]: time=09-27 18:45:51.036 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[69]: time=09-27 18:47:11.035 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[70]: time=09-27 18:48:31.018 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[71]: time=09-27 18:50:31.035 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[72]: time=09-27 18:52:31.034 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[73]: time=09-27 18:53:51.032 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[74]: time=09-27 18:55:51.041 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[75]: time=09-27 18:57:51.034 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[76]: time=09-27 18:59:51.039 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[77]: time=09-27 19:01:51.029 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[78]: time=09-27 19:02:31.016 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[79]: time=09-27 19:02:59.416 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[80]: time=09-27 19:03:11.035 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[81]: time=09-27 19:03:51.006 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[82]: time=09-27 19:04:31.027 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[83]: time=09-27 19:04:59.409 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[84]: time=09-27 19:05:11.025 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[85]: time=09-27 19:05:51.026 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[86]: time=09-27 19:06:31.028 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[87]: time=09-27 19:06:59.414 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[88]: time=09-27 19:07:11.023 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[89]: time=09-27 19:07:51.035 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[90]: time=09-27 19:08:31.039 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[91]: time=09-27 19:09:11.038 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[92]: time=09-27 19:09:51.047 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[93]: time=09-27 19:10:31.038 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[94]: time=09-27 19:10:59.415 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[95]: time=09-27 19:11:51.033 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[96]: time=09-27 19:12:31.041 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[97]: time=09-27 19:12:59.420 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[98]: time=09-27 19:16:31.038 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+ rec[99]: time=09-27 19:16:59.418 processed=DefaultState org=ApStaDisabledState dest=<null> what=155652(0x26004)
+curState=ApStaDisabledState
+mScreenOff true
+mDeviceIdle false
+mPluggedType 2
+mIdleMillis 900000
+mSleepPolicy 2
+mPersistWifiState 0
+mAirplaneModeOn false
+mEnableTrafficStatsPoll false
+mTrafficStatsPollToken 0
+mTxPkts 0
+mRxPkts 0
+mDataActivity 0
+
+Locks held:
+Locks acquired: 0 full, 0 full high perf, 0 scan
+Locks released: 0 full, 0 full high perf, 0 scan
+
+Locks held:
+
+mMulticastEnabled 0
+mMulticastDisabled 0
+Multicast Locks held:
+
+WifiStateMachine:
+ total records=33
+ rec[0]: time=09-27 17:43:12.818 processed=DefaultState org=InitialState dest=<null> what=131207(0x20087) !CMD_INITIALIZE uid=1000 rt=18947/18947 0 0
+ rec[1]: time=09-27 17:43:12.825 processed=DefaultState org=InitialState dest=<null> what=131084(0x2000c) !(-5)CMD_STOP_SUPPLICANT rt=18954/18954 0 0
+ rec[2]: time=09-27 17:43:13.350 processed=DefaultState org=InitialState dest=<null> what=131133(0x2003d) !CMD_GET_SUPPORTED_FEATURES uid=1000 rt=19479/19479 0 0
+ rec[3]: time=09-27 17:43:17.322 processed=DefaultState org=InitialState dest=<null> what=131173(0x20065) !(-4)CMD_RESET_SIM_NETWORKS rt=23451/23451 0 0
+ rec[4]: time=09-27 17:43:17.333 processed=DefaultState org=InitialState dest=<null> what=131173(0x20065) !(-4)CMD_RESET_SIM_NETWORKS rt=23462/23462 0 1
+ rec[5]: time=09-27 17:43:19.022 processed=DefaultState org=InitialState dest=<null> what=131206(0x20086) !CMD_BOOT_COMPLETED rt=25151/25151 0 0
+ rec[6]: time=09-27 17:43:19.022 processed=DefaultState org=InitialState dest=<null> what=69632(0x11000) !CMD_CHANNEL_HALF_CONNECTED rt=25151/25151 0 0
+ rec[7]: time=09-27 17:43:19.067 processed=DefaultState org=InitialState dest=<null> what=131278(0x200ce) !CMD_USER_UNLOCK rt=25196/25196 0 0
+ rec[8]: time=09-27 17:43:19.067 processed=DefaultState org=InitialState dest=<null> what=131203(0x20083) !(-5)CMD_ENABLE_P2P rt=25196/25196 0 0
+ rec[9]: time=09-27 17:43:19.182 processed=DefaultState org=InitialState dest=<null> what=131131(0x2003b) !CMD_GET_CONFIGURED_NETWORKS uid=1000 rt=25311/25311 1000 0 num=2
+ rec[10]: time=09-27 17:43:19.661 processed=DefaultState org=InitialState dest=<null> what=131173(0x20065) !(-4)CMD_RESET_SIM_NETWORKS rt=25790/25790 0 0
+ rec[11]: time=09-27 17:43:19.680 processed=DefaultState org=InitialState dest=<null> what=131173(0x20065) !(-4)CMD_RESET_SIM_NETWORKS rt=25809/25809 0 1
+ rec[12]: time=09-27 17:47:27.826 processed=DefaultState org=InitialState dest=<null> what=131133(0x2003d) !CMD_GET_SUPPORTED_FEATURES uid=1000 rt=273955/273955 0 0
+ rec[13]: time=09-27 17:47:27.888 processed=DefaultState org=InitialState dest=<null> what=131133(0x2003d) !CMD_GET_SUPPORTED_FEATURES uid=1000 rt=274017/274017 0 0
+ rec[14]: time=09-27 17:48:46.128 processed=DefaultState org=InitialState dest=<null> what=131167(0x2005f) !CMD_SCREEN_STATE_CHANGED rt=352258/352258 1 0
+ rec[15]: time=09-27 17:48:46.129 processed=DefaultState org=InitialState dest=<null> what=131154(0x20052) !CMD_ENABLE_RSSI_POLL rt=352258/352258 1 0
+ rec[16]: time=09-27 17:48:46.129 processed=DefaultState org=InitialState dest=<null> what=131158(0x20056) !CMD_SET_SUSPEND_OPT_ENABLED rt=352258/352258 0 0
+ rec[17]: time=09-27 17:48:46.179 processed=DefaultState org=InitialState dest=<null> what=131167(0x2005f) CMD_SCREEN_STATE_CHANGED rt=352308/352308 0 0
+ rec[18]: time=09-27 17:48:46.179 processed=DefaultState org=InitialState dest=<null> what=131154(0x20052) CMD_ENABLE_RSSI_POLL rt=352308/352308 0 0
+ rec[19]: time=09-27 17:48:46.179 processed=DefaultState org=InitialState dest=<null> what=131158(0x20056) CMD_SET_SUSPEND_OPT_ENABLED rt=352308/352308 1 0
+ rec[20]: time=09-27 17:48:48.357 processed=DefaultState org=InitialState dest=<null> what=131167(0x2005f) !CMD_SCREEN_STATE_CHANGED rt=354487/354487 1 0
+ rec[21]: time=09-27 17:48:48.358 processed=DefaultState org=InitialState dest=<null> what=131154(0x20052) !CMD_ENABLE_RSSI_POLL rt=354487/354487 1 0
+ rec[22]: time=09-27 17:48:48.358 processed=DefaultState org=InitialState dest=<null> what=131158(0x20056) !CMD_SET_SUSPEND_OPT_ENABLED rt=354487/354487 0 0
+ rec[23]: time=09-27 17:49:06.850 processed=DefaultState org=InitialState dest=<null> what=131131(0x2003b) !CMD_GET_CONFIGURED_NETWORKS uid=1000 rt=372979/372979 1000 0 num=2
+ rec[24]: time=09-27 17:50:17.919 processed=DefaultState org=InitialState dest=<null> what=131167(0x2005f) CMD_SCREEN_STATE_CHANGED rt=444048/444048 0 0
+ rec[25]: time=09-27 17:50:17.919 processed=DefaultState org=InitialState dest=<null> what=131154(0x20052) CMD_ENABLE_RSSI_POLL rt=444048/444048 0 0
+ rec[26]: time=09-27 17:50:17.919 processed=DefaultState org=InitialState dest=<null> what=131158(0x20056) CMD_SET_SUSPEND_OPT_ENABLED rt=444048/444048 1 0
+ rec[27]: time=09-27 17:55:01.217 processed=DefaultState org=InitialState dest=<null> what=131133(0x2003d) CMD_GET_SUPPORTED_FEATURES uid=1000 rt=727346/727346 0 0
+ rec[28]: time=09-27 17:59:51.214 processed=DefaultState org=InitialState dest=<null> what=131133(0x2003d) CMD_GET_SUPPORTED_FEATURES uid=1000 rt=1017343/1017343 0 0
+ rec[29]: time=09-27 18:08:51.202 processed=DefaultState org=InitialState dest=<null> what=131133(0x2003d) CMD_GET_SUPPORTED_FEATURES uid=1000 rt=1557332/1557332 0 0
+ rec[30]: time=09-27 18:12:53.900 processed=DefaultState org=InitialState dest=<null> what=131133(0x2003d) CMD_GET_SUPPORTED_FEATURES uid=1000 rt=1800029/1800029 0 0
+ rec[31]: time=09-27 18:42:53.919 processed=DefaultState org=InitialState dest=<null> what=131133(0x2003d) CMD_GET_SUPPORTED_FEATURES uid=1000 rt=3600048/3600048 0 0
+ rec[32]: time=09-27 19:12:53.943 processed=DefaultState org=InitialState dest=<null> what=131133(0x2003d) CMD_GET_SUPPORTED_FEATURES uid=1000 rt=5400073/5400073 0 0
+curState=InitialState
+SupplicantStateTracker:
+ total records=0
+curState=UninitializedState
+mAuthFailureInSupplicantBroadcast false
+mAuthFailureReason 0
+mNetworksDisabledDuringConnect false
+
+mLinkProperties {LinkAddresses: []  Routes: [] DnsAddresses: [] Domains: null MTU: 0}
+mWifiInfo SSID: <unknown ssid>, BSSID: <none>, MAC: 02:00:00:00:00:00, Supplicant state: UNINITIALIZED, RSSI: -127, Link speed: -1Mbps, Frequency: -1MHz, Net ID: -1, Metered hint: false, score: 0
+mDhcpResults null
+mNetworkInfo [type: WIFI[], state: UNKNOWN/IDLE, reason: (unspecified), extra: (none), failover: false, available: false, roaming: false]
+mLastSignalLevel -1
+mLastBssid null
+mLastNetworkId -1
+mOperationalMode 1
+mUserWantsSuspendOpt true
+mSuspendOptNeedsDisabled 0
+CountryCode was not initialized
+mConnectionReqCount 3
+mUntrustedReqCount 0
+Wlan Wake Reasons:null
+
+Dump of WifiConfigManager
+WifiConfigManager - Log Begin ----
+2026-09-27T17:43:18.988 - clearInternalData: Clearing all internal data
+WifiConfigManager - Log End ----
+WifiConfigManager - Configured networks Begin ----
+ID: 0 SSID: "Infinix SMART 10" PROVIDER-NAME: null BSSID: null FQDN: null PRIO: 0 HIDDEN: false
+ NetworkSelectionStatus NETWORK_SELECTION_ENABLED
+ hasEverConnected: true
+ numAssociation 4
+ creation time=09-26 13:59:34.619
+ validatedInternetAccess
+ KeyMgmt: NONE Protocols: WPA RSN
+ AuthAlgorithms: OPEN
+ PairwiseCiphers: TKIP CCMP
+ GroupCiphers: WEP40 WEP104 TKIP CCMP
+ PSK: 
+Enterprise config:
+IP config:
+IP assignment: DHCP
+Proxy settings: NONE
+ cuid=1000 cname=android.uid.system:1000 luid=1000 lname=android.uid.system:1000 lcuid=1000 userApproved=USER_UNSPECIFIED noInternetAccessExpected=false roamingFailureBlackListTimeMilli: 1000
+recentFailure: Association Rejection code: 0
+ simSlot: null
+ID: 1 SSID: "DIRECT-80-Infinix X672-PdaNet" PROVIDER-NAME: null BSSID: null FQDN: null PRIO: 0 HIDDEN: false
+ NetworkSelectionStatus NETWORK_SELECTION_ENABLED
+ hasEverConnected: true
+ numAssociation 43
+ creation time=09-27 10:31:52.801
+ validatedInternetAccess
+ KeyMgmt: WPA_PSK Protocols: WPA RSN
+ AuthAlgorithms: OPEN
+ PairwiseCiphers: TKIP CCMP
+ GroupCiphers: WEP40 WEP104 TKIP CCMP
+ PSK: *
+Enterprise config:
+IP config:
+IP assignment: DHCP
+Proxy settings: STATIC
+HTTP proxy: [192.168.49.1] 8000 xl=
+ cuid=1000 cname=android.uid.system:1000 luid=1000 lname=android.uid.system:1000 lcuid=1000 userApproved=USER_UNSPECIFIED noInternetAccessExpected=false roamingFailureBlackListTimeMilli: 1000
+recentFailure: Association Rejection code: 0
+ simSlot: null
+WifiConfigManager - Configured networks End ----
+WifiConfigManager - Next network ID to be allocated 2
+WifiConfigManager - Last selected network ID -1
+
+Dump of PasspointManager
+PasspointManager - Providers Begin ---
+PasspointManager - Providers End ---
+PasspointManager - Next provider ID to be assigned 0
+Last sweep 1:33:54.980 ago.
+
+Chipset information :-----------------------------------------------
+FW Version is: null
+Driver Version is: null
+Supported Feature set: -1
+--------------------------------------------------------------------
+Bug dump 0
+system time = 09-27 19:17:06.997
+kernel time = 5653.127
+reason = 7
+kernel log: 
+<3>[ 5639.212915]  (0)[4973:cat]Dump cpuinfo
+<14>[ 5639.547464]  (3)[1:init]init: Untracked pid 4864 exited with status 0
+<3>[ 5639.647337]  (1)[4981:find]Dump cpuinfo
+<3>[ 5639.853612]  (1)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+<3>[ 5639.984252]  (2)[4915:app_process]Dump cpuinfo
+<3>[ 5640.139435]  (1)[5000:find]Dump cpuinfo
+<3>[ 5640.275955]  (1)[4930:app_process]Dump cpuinfo
+<14>[ 5640.308348]  (3)[1:init]init: Untracked pid 4872 exited with status 0
+<14>[ 5640.494528]  (0)[1:init]init: Untracked pid 4878 exited with status 0
+<14>[ 5640.574580]  (1)[1:init]init: Untracked pid 4884 exited with status 0
+<3>[ 5640.598478]  (0)[5026:getprop]Dump cpuinfo
+<14>[ 5640.788134]  (1)[1:init]init: Untracked pid 4902 exited with status 0
+<3>[ 5640.853754]  (1)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+<6>[ 5641.006478]  (0)[137:hang_detect][Hang_Detect] hang_detect thread counts down 10:10, status 1.
+<3>[ 5641.097186]  (0)[4958:app_process]Dump cpuinfo
+<3>[ 5641.263953]  (2)[5048:getprop]Dump cpuinfo
+<14>[ 5641.484395]  (3)[1:init]init: Untracked pid 4913 exited with status 0
+<14>[ 5641.595629]  (3)[1:init]init: Untracked pid 4928 exited with status 0
+<3>[ 5641.775308]  (1)[4971:app_process]Dump cpuinfo
+<3>[ 5641.833340]  (3)[5062:getprop]Dump cpuinfo
+<3>[ 5641.853901]  (2)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+<3>[ 5641.982564]  (0)[4982:app_process]Dump cpuinfo
+<4>[ 5642.136462]  (2)[183:wdtk-2][WDK]: kick Ex WDT,RT[5642136441211]
+<3>[ 5642.315609]  (2)[5075:getprop]Dump cpuinfo
+<3>[ 5642.363923]  (1)[5002:app_process]Dump cpuinfo
+<3>[ 5642.552949]  (3)[5027:app_process]Dump cpuinfo
+<14>[ 5642.606194]  (1)[1:init]init: Untracked pid 4956 exited with status 0
+<3>[ 5642.778107]  (3)[5085:getprop]Dump cpuinfo
+<3>[ 5642.854065]  (2)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+<14>[ 5643.308978]  (2)[1:init]init: Untracked pid 4969 exited with status 0
+<3>[ 5643.331948]  (1)[5107:getprop]Dump cpuinfo
+<14>[ 5643.447836]  (1)[1:init]init: Untracked pid 4980 exited with status 0
+<3>[ 5643.457546]  (2)[5049:app_process]Dump cpuinfo
+<3>[ 5643.854211]  (2)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+<3>[ 5643.879551]  (2)[5131:getprop]Dump cpuinfo
+<14>[ 5643.955578]  (2)[1:init]init: Untracked pid 4999 exited with status 0
+<14>[ 5643.987368]  (2)[1:init]init: Untracked pid 5025 exited with status 0
+<3>[ 5644.056631]  (0)[5061:app_process]Dump cpuinfo
+<3>[ 5644.303664]  (2)[5141:getprop]Dump cpuinfo
+<3>[ 5644.507075]  (0)[5076:app_process]Dump cpuinfo
+<14>[ 5644.652718]  (2)[1:init]init: Untracked pid 5047 exited with status 0
+<3>[ 5644.751410]  (2)[5157:getprop]Dump cpuinfo
+<3>[ 5644.854380]  (2)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+<3>[ 5645.011093]  (3)[5086:app_process]Dump cpuinfo
+<3>[ 5645.271130]  (3)[5108:app_process]Dump cpuinfo
+<3>[ 5645.274914]  (2)[5169:which]Dump cpuinfo
+<14>[ 5645.394409]  (3)[1:init]init: Untracked pid 5060 exited with status 0
+<3>[ 5645.468603]  (0)[5182:head]Dump cpuinfo
+<5>[ 5645.533319] -(0)[328:healthd]alarmtimer_enqueue, 5705532966586
+<12>[ 5645.536542]  (0)[328:healthd]healthd: battery l=100 v=4294 t=25.0 h=2 st=5 c=288 chg=u
+<3>[ 5645.854548]  (2)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+<14>[ 5645.870362]  (3)[1:init]init: Untracked pid 5074 exited with status 0
+<3>[ 5645.949068]  (0)[5194:getprop]Dump cpuinfo
+<3>[ 5645.951787]  (1)[5132:app_process]Dump cpuinfo
+<3>[ 5646.050553]  (0)[5198:getprop]Dump cpuinfo
+<3>[ 5646.162972]  (1)[5203:getprop]Dump cpuinfo
+<3>[ 5646.402467]  (2)[5142:app_process]Dump cpuinfo
+<14>[ 5646.411818]  (1)[1:init]init: Untracked pid 5084 exited with status 0
+<3>[ 5646.529091]  (1)[5217:getprop]Dump cpuinfo
+<3>[ 5646.628047]  (1)[5221:getprop]Dump cpuinfo
+<3>[ 5646.694505]  (1)[367:batterywarning][Battery] show_BatteryNotify : 0
+<3>[ 5646.753163]  (3)[5222:getprop]Dump cpuinfo
+<14>[ 5646.765530]  (1)[1:init]init: Untracked pid 5106 exited with status 0
+<3>[ 5646.854710]  (3)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+<3>[ 5647.058280]  (0)[5158:app_process]Dump cpuinfo
+<3>[ 5647.073504]  (3)[5228:getprop]Dump cpuinfo
+<3>[ 5647.120594]  (0)[5170:app_process]Dump cpuinfo
+<3>[ 5647.158101]  (3)[178:bat_thread_kthr]AvgVbat=(4293,4270),AvgI=(0,0),VChr=5118,AvgT=(25,25),SOC=(98,98),UI_SOC=100,ZCV=4258,CHR_Type=1 bcct:0:0 I:20000 Ibat:-288
+<3>[ 5647.158128]  (3)[178:bat_thread_kthr][BATTERY] Disable check battery exist.
+<3>[ 5647.158142]  (3)[178:bat_thread_kthr][BATTERY] Battery full !!
+<3>[ 5647.158142] 
+<3>[ 5647.158192]  (3)[178:bat_thread_kthr][100percent], UI_SOC(100), reset(0) bat_full(1) ever100(1)
+<3>[ 5647.158209]  (3)[178:bat_thread_kthr][recharging] UI_SOC=100, SOC=98
+<3>[ 5647.158223]  (3)[178:bat_thread_kthr]UI_SOC=(100), resetBatteryMeter=(0)
+<5>[ 5647.158321]  (3)[178:bat_thread_kthr]mtk_rtc_common: set_rtc_spare_fg_value, 100
+<3>[ 5647.193571]  (2)[5236:getprop]Dump cpuinfo
+<3>[ 5647.569232]  (2)[5244:ls]Dump cpuinfo
+<14>[ 5647.610288]  (2)[1:init]init: Untracked pid 5130 exited with status 0
+<3>[ 5647.854858]  (3)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+<14>[ 5647.963835]  (2)[1:init]init: Untracked pid 5140 exited with status 0
+<3>[ 5648.018012]  (3)[5257:cat]Dump cpuinfo
+<3>[ 5648.077729]  (3)[5186:app_process]Dump cpuinfo
+<3>[ 5648.216326]  (3)[5195:app_process]Dump cpuinfo
+<14>[ 5648.531316]  (3)[1:init]init: Untracked pid 5168 exited with status 0
+<14>[ 5648.594983]  (0)[1:init]init: Untracked pid 5156 exited with status 0
+<3>[ 5648.670683]  (2)[5218:app_process]Dump cpuinfo
+<3>[ 5648.854976]  (3)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+<3>[ 5649.410802]  (0)[5292:lshal]Dump cpuinfo
+<3>[ 5649.488953]  (2)[5229:app_process]Dump cpuinfo
+<14>[ 5649.525945]  (0)[1:init]init: Untracked pid 5184 exited with status 0
+<14>[ 5649.736994]  (2)[1:init]init: Untracked pid 5193 exited with status 0
+<3>[ 5649.769125]  (0)[5246:app_process]Dump cpuinfo
+<3>[ 5649.855136]  (2)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+<14>[ 5649.964374]  (0)[1:init]init: Untracked pid 5216 exited with status 0
+<3>[ 5650.163753]  (1)[5258:app_process]Dump cpuinfo
+<3>[ 5650.347052]  (1)[5276:app_process]Dump cpuinfo
+<14>[ 5650.404240]  (1)[1:init]init: Untracked pid 5227 exited with status 0
+<14>[ 5650.560380]  (3)[1:init]init: Untracked pid 5243 exited with status 0
+<3>[ 5650.633186]  (0)[5293:app_process]Dump cpuinfo
+<4>[ 5650.669525] -(0)[0:swapper/0][Power/swap]DP: No enter --- SODI: No enter --- 
+<4>[ 5650.669575] -(0)[0:swapper/0][Power/swap]CNT(dpidle,rgidle): [0] = (0,257864), [1] = (0,115525), [2] = (0,84694), [3] = (0,61381), 
+<4>[ 5650.669599] -(0)[0:swapper/0][Power/swap]dpidle_block_cnt: [by_cpu] = 114, [by_clk] = 203, [by_tmr] = 0, [by_oth] = 0, [by_vtg] = 0, [by_frm] = 0, 
+<4>[ 5650.669624] -(0)[0:swapper/0][Power/swap]dpidle_block_mask: 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00002000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 
+<3>[ 5650.855271]  (2)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+<14>[ 5650.920595]  (3)[1:init]init: Untracked pid 5256 exited with status 0
+<14>[ 5651.049424]  (2)[1:init]init: Untracked pid 5274 exited with status 0
+<14>[ 5651.248089]  (1)[1:init]init: Untracked pid 5291 exited with status 0
+<5>[ 5651.670646]  (1)[94:hps_main]CPU3: shutdown
+<4>[ 5651.671977]  (1)[94:hps_main][HPS] (0200)(4)action end(100)(100)(0)(1) (4)(4)(4)(4)(1) (0)(0)(0) (1520)(264)(0) (0)(100)(264)(0)(100)
+<3>[ 5651.855374]  (2)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+<2>[ 5652.269993]  (1)[94:hps_main]Boot slave CPU
+<4>[ 5652.270191] -(3)[0:swapper/3]CPU3: Booted secondary processor
+<6>[ 5652.270284] -(3)[0:swapper/3]CPU3: thread -1, cpu 3, socket 0, mpidr 80000003
+<4>[ 5652.270834]  (0)[94:hps_main][HPS] (0080)(3)action end(269)(308)(0)(3) (4)(4)(4)(4)(1) (532)(6)(0) (777)(5)(5) (0)(308)(6)(0)(308)
+<4>[ 5652.635110] -(3)[2989:Binder:757_F][USB]state_show, state:CONFIGURED
+<5>[ 5652.635742]  (2)[179:mtk charger_hv_][USB]functions_show: 
+<3>[ 5652.855528]  (2)[179:mtk charger_hv_][BATTERY] Disable check battery exist.
+<3>[ 5653.081949]  (0)[5573:app_process]Dump cpuinfo
+<31>[ 5653.214758]  (3)[233:logd.reader]logd: logdr: UID=1000 GID=1000 PID=5604 n tail=127 logMask=19 pid=0 start=0ns timeout=0ns
+<14>[ 5653.220590]  (1)[1:init]init: PropSet [log.tag]=[M] Done
+<31>[ 5653.224730]  (1)[5606:logd.reader.per]logd: logd first log reader, set log level to M!
+<31>[ 5653.224772]  (1)[5606:logd.reader.per]logd: logd.reader.per thread start.
+<14>[ 5653.240026]  (3)[1:init]init: PropSet [log.tag]=[I] Done
+<31>[ 5653.240211]  (1)[5606:logd.reader.per]logd: logd no log reader, set log level to I!
+<31>[ 5653.240246]  (1)[5606:logd.reader.per]logd: logd.reader.per thread stop.
+<38>[ 5653.260114]  (2)[237:logd.auditd]type=1400 audit(1790536603.600:70): avc: denied { getattr } for pid=327 comm="merged_hal_serv" path="/sys/kernel/debug/ion/clients/983-1" dev="debugfs" ino=29207 scontext=u:r:merged_hal_service:s0 tcontext=u:object_r:debugfs:s0 tclass=file permissive=1
+<38>[ 5653.260166]  (2)[237:logd.auditd]type=1400 audit(1790536627.127:71): avc: denied { syslog_read } for pid=757 comm="Binder:757_F" scontext=u:r:system_server:s0 tcontext=u:r:kernel:s0 tclass=system permissive=1
+
+system log: 
+--------- beginning of main
+09-27 19:16:54.318  4930  4930 W /system/bin/app_process: Could not reserve sentinel fault page
+--------- beginning of system
+09-27 19:16:54.508   757  1337 W WindowManager: Adding more than one toast window for UID at a time.
+09-27 19:16:54.874  4930  4930 I /system/bin/app_process: The ClassLoaderContext is a special shared library.
+09-27 19:16:54.909  4915  4915 I /system/bin/app_process: The ClassLoaderContext is a special shared library.
+09-27 19:16:55.106  4958  4958 W /system/bin/app_process: Could not reserve sentinel fault page
+09-27 19:16:55.165   757  1337 W WindowManager: Adding more than one toast window for UID at a time.
+09-27 19:16:55.241   757  2989 W WindowManager: Adding more than one toast window for UID at a time.
+09-27 19:16:55.457   757   766 I zygote  : Background concurrent copying GC freed 62431(3MB) AllocSpace objects, 11(360KB) LOS objects, 36% free, 10MB/16MB, paused 237us total 1.370s
+09-27 19:16:55.774  4971  4971 W /system/bin/app_process: Could not reserve sentinel fault page
+09-27 19:16:55.904  4958  4958 I /system/bin/app_process: The ClassLoaderContext is a special shared library.
+09-27 19:16:55.969  4982  4982 W /system/bin/app_process: Could not reserve sentinel fault page
+09-27 19:16:56.269   757  1337 W WindowManager: Adding more than one toast window for UID at a time.
+09-27 19:16:56.377  5002  5002 W /system/bin/app_process: Could not reserve sentinel fault page
+09-27 19:16:56.560  5027  5027 W /system/bin/app_process: Could not reserve sentinel fault page
+09-27 19:16:56.631  4971  4971 I /system/bin/app_process: The ClassLoaderContext is a special shared library.
+09-27 19:16:56.692  4982  4982 I /system/bin/app_process: The ClassLoaderContext is a special shared library.
+09-27 19:16:56.961   331   331 I BufferQueue: [unnamed-331-38](this:0xb0bc9000,id:38,api:0,p:-1,c:-1) BufferQueue core=(331:/system/bin/surfaceflinger)
+09-27 19:16:56.961   331   331 E DumpTunnel: finding regDump() failed
+09-27 19:16:56.961   331   331 I BufferQueueConsumer: [unnamed-331-38](this:0xb0bc9000,id:38,api:0,p:-1,c:331) connect(C): consumer=(331:/system/bin/surfaceflinger) controlledByApp=false
+09-27 19:16:56.961   331   331 I BufferQueueConsumer: [unnamed-331-38](this:0xb0bc9000,id:38,api:0,p:-1,c:331) setConsumerName: unnamed-331-38
+09-27 19:16:56.962   331   331 I BufferQueueConsumer: [Toast#4](this:0xb0bc9000,id:38,api:0,p:-1,c:331) setConsumerName: Toast#4
+09-27 19:16:56.962   331   331 I BufferQueueProducer: [](this:0xb0bc9000,id:38,api:0,p:-1,c:331) setMaxDequeuedBufferCount: maxDequeuedBuffers = 2
+09-27 19:16:56.962   331   331 I BufferQueueConsumer: [Toast#4](this:0xb0bc9000,id:38,api:0,p:-1,c:331) setDefaultBufferSize: width=480 height=99
+09-27 19:16:56.982   331   496 I BufferQueueProducer: [Toast#4](this:0xb0bc9000,id:38,api:1,p:3090,c:331) connect(P): api=1 producer=(3090:com.topjohnwu.magisk) producerControlledByApp=true
+09-27 19:16:56.984   331  1225 W GrallocMapperPassthrough: buffer descriptor with invalid usage bits 0x400
+09-27 19:16:56.985   327   504 I [Gralloc]: usage1: 0xf02, format: 1 stride: 480 vertical_stride: 99 size: 190080
+09-27 19:16:56.986   331   495 I BufferQueueProducer: [Toast#4](this:0xb0bc9000,id:38,api:1,p:3090,c:331) setMaxDequeuedBufferCount: maxDequeuedBuffers = 3
+09-27 19:16:56.986   331  1225 W GrallocMapperPassthrough: buffer descriptor with invalid usage bits 0x400
+09-27 19:16:56.987   327   504 I [Gralloc]: usage1: 0xf02, format: 1 stride: 480 vertical_stride: 99 size: 190080
+09-27 19:16:56.988   331  1225 W GrallocMapperPassthrough: buffer descriptor with invalid usage bits 0x400
+09-27 19:16:56.988   327   504 I [Gralloc]: usage1: 0xf02, format: 1 stride: 480 vertical_stride: 99 size: 190080
+09-27 19:16:56.989   331  1225 W GrallocMapperPassthrough: buffer descriptor with invalid usage bits 0x400
+09-27 19:16:56.990   327   504 I [Gralloc]: usage1: 0xf02, format: 1 stride: 480 vertical_stride: 99 size: 190080
+09-27 19:16:57.078   757  2989 W WindowManager: Adding more than one toast window for UID at a time.
+09-27 19:16:57.271  5002  5002 I /system/bin/app_process: The ClassLoaderContext is a special shared library.
+09-27 19:16:57.364  5027  5027 I /system/bin/app_process: The ClassLoaderContext is a special shared library.
+09-27 19:16:57.440  5049  5049 W /system/bin/app_process: Could not reserve sentinel fault page
+09-27 19:16:57.593   757  1337 W WindowManager: Adding more than one toast window for UID at a time.
+09-27 19:16:57.689   757  2989 W WindowManager: Adding more than one toast window for UID at a time.
+09-27 19:16:58.037  5061  5061 W /system/bin/app_process: Could not reserve sentinel fault page
+09-27 19:16:58.058  5049  5049 I /system/bin/app_process: The ClassLoaderContext is a special shared library.
+09-27 19:16:58.339   757  2989 W WindowManager: Adding more than one toast window for UID at a time.
+09-27 19:16:58.510  5076  5076 W /system/bin/app_process: Could not reserve sentinel fault page
+09-27 19:16:58.742  5061  5061 I /system/bin/app_process: The ClassLoaderContext is a special shared library.
+09-27 19:16:58.960   383   383 I thermal_repeater: [recvMdThermalInfo] ret=15, strLen=127,  2, 32767, -127
+09-27 19:16:59.002  5086  5086 W /system/bin/app_process: Could not reserve sentinel fault page
+09-27 19:16:59.069   757  1337 W WindowManager: Adding more than one toast window for UID at a time.
+09-27 19:16:59.125  5076  5076 I /system/bin/app_process: The ClassLoaderContext is a special shared library.
+09-27 19:16:59.256  5108  5108 W /system/bin/app_process: Could not reserve sentinel fault page
+09-27 19:16:59.535   757  2989 W WindowManager: Adding more than one toast window for UID at a time.
+09-27 19:16:59.818  5086  5086 I /system/bin/app_process: The ClassLoaderContext is a special shared library.
+09-27 19:16:59.927  5132  5132 W /system/bin/app_process: Could not reserve sentinel fault page
+09-27 19:17:00.011  5108  5108 I /system/bin/app_process: The ClassLoaderContext is a special shared library.
+09-27 19:17:00.111   757  1337 W WindowManager: Adding more than one toast window for UID at a time.
+09-27 19:17:00.405   757  2989 W WindowManager: Adding more than one toast window for UID at a time.
+09-27 19:17:00.411  5142  5142 W /system/bin/app_process: Could not reserve sentinel fault page
+09-27 19:17:00.875  5132  5132 I /system/bin/app_process: The ClassLoaderContext is a special shared library.
+09-27 19:17:01.037  5158  5158 W /system/bin/app_process: Could not reserve sentinel fault page
+09-27 19:17:01.100  5170  5170 W /system/bin/app_process: Could not reserve sentinel fault page
+09-27 19:17:01.253  5142  5142 I /system/bin/app_process: The ClassLoaderContext is a special shared library.
+09-27 19:17:01.278   331   331 I BufferQueue: [unnamed-331-39](this:0xb0bd4000,id:39,api:0,p:-1,c:-1) BufferQueue core=(331:/system/bin/surfaceflinger)
+09-27 19:17:01.278   331   331 E DumpTunnel: finding regDump() failed
+09-27 19:17:01.279   331   331 I BufferQueueConsumer: [unnamed-331-39](this:0xb0bd4000,id:39,api:0,p:-1,c:331) connect(C): consumer=(331:/system/bin/surfaceflinger) controlledByApp=false
+09-27 19:17:01.279   331   331 I BufferQueueConsumer: [unnamed-331-39](this:0xb0bd4000,id:39,api:0,p:-1,c:331) setConsumerName: unnamed-331-39
+09-27 19:17:01.279   331   331 I BufferQueueConsumer: [Toast#5](this:0xb0bd4000,id:39,api:0,p:-1,c:331) setConsumerName: Toast#5
+09-27 19:17:01.279   331   331 I BufferQueueProducer: [](this:0xb0bd4000,id:39,api:0,p:-1,c:331) setMaxDequeuedBufferCount: maxDequeuedBuffers = 2
+09-27 19:17:01.279   331   331 I BufferQueueConsumer: [Toast#5](this:0xb0bd4000,id:39,api:0,p:-1,c:331) setDefaultBufferSize: width=480 height=99
+09-27 19:17:01.298   331  1225 I BufferQueueProducer: [Toast#5](this:0xb0bd4000,id:39,api:1,p:3090,c:331) connect(P): api=1 producer=(3090:com.topjohnwu.magisk) producerControlledByApp=true
+09-27 19:17:01.300   331   495 I BufferQueueProducer: [Toast#5](this:0xb0bd4000,id:39,api:1,p:3090,c:331) setMaxDequeuedBufferCount: maxDequeuedBuffers = 3
+09-27 19:17:01.301   331   495 W GrallocMapperPassthrough: buffer descriptor with invalid usage bits 0x400
+09-27 19:17:01.301   327   504 I [Gralloc]: usage1: 0xf02, format: 1 stride: 480 vertical_stride: 99 size: 190080
+09-27 19:17:01.302   331   495 W GrallocMapperPassthrough: buffer descriptor with invalid usage bits 0x400
+09-27 19:17:01.303   327   504 I [Gralloc]: usage1: 0xf02, format: 1 stride: 480 vertical_stride: 99 size: 190080
+09-27 19:17:01.304   331   495 W GrallocMapperPassthrough: buffer descriptor with invalid usage bits 0x400
+09-27 19:17:01.305   327   504 I [Gralloc]: usage1: 0xf02, format: 1 stride: 480 vertical_stride: 99 size: 190080
+09-27 19:17:01.306   331   495 W GrallocMapperPassthrough: buffer descriptor with invalid usage bits 0x400
+09-27 19:17:01.306   327   504 I [Gralloc]: usage1: 0xf02, format: 1 stride: 480 vertical_stride: 99 size: 190080
+09-27 19:17:01.864  5158  5158 I /system/bin/app_process: The ClassLoaderContext is a special shared library.
+09-27 19:17:01.911  5170  5170 I /system/bin/app_process: The ClassLoaderContext is a special shared library.
+09-27 19:17:02.057  5186  5186 W /system/bin/app_process: Could not reserve sentinel fault page
+09-27 19:17:02.222   757  2989 I chatty  : uid=1000(system) Binder:757_F identical 3 lines
+09-27 19:17:02.248  5195  5195 W /system/bin/app_process: Could not reserve sentinel fault page
+09-27 19:17:02.509  5275  5275 E Parcel  : Reading a NULL string not supported here.
+09-27 19:17:02.568  5275  5275 I chatty  : uid=0(root) identical 4 lines
+09-27 19:17:02.646  5275  5275 E Parcel  : Reading a NULL string not supported here.
+09-27 19:17:02.660  5218  5218 W /system/bin/app_process: Could not reserve sentinel fault page
+09-27 19:17:02.668  5275  5275 E Parcel  : Reading a NULL string not supported here.
+09-27 19:17:02.722  5275  5275 I chatty  : uid=0(root) identical 5 lines
+09-27 19:17:02.792  5275  5275 E Parcel  : Reading a NULL string not supported here.
+09-27 19:17:02.796   369   413 I DmAgent : OnTransact   (1598968902,16)
+09-27 19:17:02.858  5186  5186 I /system/bin/app_process: The ClassLoaderContext is a special shared library.
+09-27 19:17:03.105  5195  5195 I /system/bin/app_process: The ClassLoaderContext is a special shared library.
+09-27 19:17:03.200   757  2989 W WindowManager: Adding more than one toast window for UID at a time.
+09-27 19:17:03.452   757  1337 W WindowManager: Adding more than one toast window for UID at a time.
+09-27 19:17:03.467  5218  5218 I /system/bin/app_process: The ClassLoaderContext is a special shared library.
+09-27 19:17:03.489  5229  5229 W /system/bin/app_process: Could not reserve sentinel fault page
+09-27 19:17:03.739  5246  5246 W /system/bin/app_process: Could not reserve sentinel fault page
+09-27 19:17:03.953  5229  5229 I /system/bin/app_process: The ClassLoaderContext is a special shared library.
+09-27 19:17:04.102  5246  5246 I /system/bin/app_process: The ClassLoaderContext is a special shared library.
+09-27 19:17:04.112   757  1337 I chatty  : uid=1000(system) Binder:757_C identical 2 lines
+09-27 19:17:04.133  5258  5258 W /system/bin/app_process: Could not reserve sentinel fault page
+09-27 19:17:04.281  5276  5276 W /system/bin/app_process: Could not reserve sentinel fault page
+09-27 19:17:04.347   757  1337 W WindowManager: Adding more than one toast window for UID at a time.
+09-27 19:17:04.535  5258  5258 I /system/bin/app_process: The ClassLoaderContext is a special shared library.
+09-27 19:17:04.562  5293  5293 W /system/bin/app_process: Could not reserve sentinel fault page
+09-27 19:17:04.652  5276  5276 I /system/bin/app_process: The ClassLoaderContext is a special shared library.
+09-27 19:17:04.705   757  2989 W WindowManager: Adding more than one toast window for UID at a time.
+09-27 19:17:04.842   331   331 I BufferQueue: [unnamed-331-40](this:0xb0bdd000,id:40,api:0,p:-1,c:-1) BufferQueue core=(331:/system/bin/surfaceflinger)
+09-27 19:17:04.843   331   331 E DumpTunnel: finding regDump() failed
+09-27 19:17:04.843   331   331 I BufferQueueConsumer: [unnamed-331-40](this:0xb0bdd000,id:40,api:0,p:-1,c:331) connect(C): consumer=(331:/system/bin/surfaceflinger) controlledByApp=false
+09-27 19:17:04.843   331   331 I BufferQueueConsumer: [unnamed-331-40](this:0xb0bdd000,id:40,api:0,p:-1,c:331) setConsumerName: unnamed-331-40
+09-27 19:17:04.843   331   331 I BufferQueueConsumer: [Toast#6](this:0xb0bdd000,id:40,api:0,p:-1,c:331) setConsumerName: Toast#6
+09-27 19:17:04.843   331   331 I BufferQueueProducer: [](this:0xb0bdd000,id:40,api:0,p:-1,c:331) setMaxDequeuedBufferCount: maxDequeuedBuffers = 2
+09-27 19:17:04.843   331   331 I BufferQueueConsumer: [Toast#6](this:0xb0bdd000,id:40,api:0,p:-1,c:331) setDefaultBufferSize: width=480 height=99
+09-27 19:17:04.856   327   504 I [Gralloc]: usage1: 0x900, format: 1 stride: 480 vertical_stride: 99 size: 190080
+09-27 19:17:04.857   331  1086 I BufferQueueProducer: [Toast#6](this:0xb0bdd000,id:40,api:1,p:3090,c:331) connect(P): api=1 producer=(3090:com.topjohnwu.magisk) producerControlledByApp=true
+09-27 19:17:04.863   327   504 I [Gralloc]: usage1: 0x900, format: 1 stride: 480 vertical_stride: 99 size: 190080
+09-27 19:17:04.864   327   504 I [Gralloc]: usage1: 0x900, format: 1 stride: 480 vertical_stride: 99 size: 190080
+09-27 19:17:04.867   331   495 I BufferQueueProducer: [Toast#6](this:0xb0bdd000,id:40,api:1,p:3090,c:331) setMaxDequeuedBufferCount: maxDequeuedBuffers = 3
+09-27 19:17:04.868   327   504 I [Gralloc]: usage1: 0x900, format: 1 stride: 480 vertical_stride: 99 size: 190080
+09-27 19:17:04.890   331  1225 W GrallocMapperPassthrough: buffer descriptor with invalid usage bits 0x400
+09-27 19:17:04.890   327   504 I [Gralloc]: usage1: 0xf02, format: 1 stride: 480 vertical_stride: 99 size: 190080
+09-27 19:17:04.912  5293  5293 I /system/bin/app_process: The ClassLoaderContext is a special shared library.
+09-27 19:17:07.058   331   331 I BufferQueueConsumer: [Toast#5](this:0xb0bd4000,id:39,api:1,p:3090,c:-1) disconnect(C)
+09-27 19:17:07.059   331   331 I BufferQueueConsumer: [Toast#6](this:0xb0bdd000,id:40,api:1,p:3090,c:-1) disconnect(C)
+09-27 19:17:07.071  5573  5573 W /system/bin/app_process: Could not reserve sentinel fault page
+09-27 19:17:07.077   331   331 I BufferQueueConsumer: [Toast#4](this:0xb0bc9000,id:38,api:1,p:3090,c:-1) disconnect(C)
+
+--------------------------------------------------------------------
+No fates fetched for "Last failed connection fates"
+HAL provided zero fates for "Latest fates"
+No last mile log for "Last failed last-mile log"
+-------------------------- Latest last-mile log ---------------------------
+# tracer: nop
+#
+# entries-in-buffer/entries-written: 0/0   #P:4
+# instance: wifi, enabled events: net:netif_rx net:netif_receive_skb net:net_dev_queue net:net_dev_xmit cfg80211:cfg80211_gtk_rekey_notify cfg80211:rdev_connect cfg80211:rdev_assoc cfg80211:rdev_auth cfg80211:rdev_set_rekey_data cfg80211:rdev_set_default_mgmt_key cfg80211:rdev_set_default_key cfg80211:rdev_add_key
+# kernel time now:  5653.340120
+# UTC time:	2026-09-27 19:17:07.210651
+# android time:	2026-09-27 19:17:07.210651
+#
+#                              _-----=> irqs-off
+#                             / _----=> need-resched
+#                            | / _---=> hardirq/softirq
+#                            || / _--=> preempt-depth
+#                            ||| /     delay
+#           TASK-PID   CPU#  ||||    TIMESTAMP  FUNCTION
+#              | |       |   ||||       |         |
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+IpManager.wlan0 APF dump:
+  No active ApfFilter; IpManager not yet started.
+
+IpManager.wlan0 current ProvisioningConfiguration:
+  N/A
+
+IpManager.wlan0 StateMachine dump:
+  2026-09-27T17:43:12.110 - ERROR Failed to disable IPv6: java.lang.IllegalStateException: command '1 interface ipv6 wlan0 disable' failed with '400 1 Failed to change IPv6 state (No such file or directory)'
+  2026-09-27T17:43:12.117 - CMD_SET_MULTICAST_FILTER wlan0/-1 0 0 true [rcvd_in=com.mediatek.net.ip.MtkIpStoppedState, proc_in=StoppedState]
+
+IpManager.wlan0 connectivity packet log:
+
+Debug with python and scapy via:
+shell$ python
+>>> from scapy import all as scapy
+>>> scapy.Ether("<paste_hex_string>".decode("hex")).show2()
+
+mWifiConnectivityManager is not initialized
+
+WifiMetrics:
+mConnectionEvents:
+mWifiLogProto.numSavedNetworks=2
+mWifiLogProto.numOpenNetworks=1
+mWifiLogProto.numPersonalNetworks=1
+mWifiLogProto.numEnterpriseNetworks=0
+mWifiLogProto.numHiddenNetworks=0
+mWifiLogProto.numPasspointNetworks=0
+mWifiLogProto.isLocationEnabled=false
+mWifiLogProto.isScanningAlwaysEnabled=false
+mWifiLogProto.numNetworksAddedByUser=0
+mWifiLogProto.numNetworksAddedByApps=2
+mWifiLogProto.numNonEmptyScanResults=0
+mWifiLogProto.numEmptyScanResults=0
+mWifiLogProto.numOneshotScans=0
+mWifiLogProto.numBackgroundScans=0
+mScanReturnEntries:
+  SCAN_UNKNOWN: 0
+  SCAN_SUCCESS: 0
+  SCAN_FAILURE_INTERRUPTED: 0
+  SCAN_FAILURE_INVALID_CONFIGURATION: 0
+  FAILURE_WIFI_DISABLED: 0
+mSystemStateEntries: <state><screenOn> : <scansInitiated>
+  WIFI_UNKNOWN       ON: 0
+  WIFI_DISABLED      ON: 0
+  WIFI_DISCONNECTED  ON: 0
+  WIFI_ASSOCIATED    ON: 0
+  WIFI_UNKNOWN      OFF: 0
+  WIFI_DISABLED     OFF: 0
+  WIFI_DISCONNECTED OFF: 0
+  WIFI_ASSOCIATED   OFF: 0
+mWifiLogProto.numConnectivityWatchdogPnoGood=0
+mWifiLogProto.numConnectivityWatchdogPnoBad=0
+mWifiLogProto.numConnectivityWatchdogBackgroundGood=0
+mWifiLogProto.numConnectivityWatchdogBackgroundBad=0
+mWifiLogProto.numLastResortWatchdogTriggers=0
+mWifiLogProto.numLastResortWatchdogBadAssociationNetworksTotal=0
+mWifiLogProto.numLastResortWatchdogBadAuthenticationNetworksTotal=0
+mWifiLogProto.numLastResortWatchdogBadDhcpNetworksTotal=0
+mWifiLogProto.numLastResortWatchdogBadOtherNetworksTotal=0
+mWifiLogProto.numLastResortWatchdogAvailableNetworksTotal=0
+mWifiLogProto.numLastResortWatchdogTriggersWithBadAssociation=0
+mWifiLogProto.numLastResortWatchdogTriggersWithBadAuthentication=0
+mWifiLogProto.numLastResortWatchdogTriggersWithBadDhcp=0
+mWifiLogProto.numLastResortWatchdogTriggersWithBadOther=0
+mWifiLogProto.numLastResortWatchdogSuccesses=0
+mWifiLogProto.recordDurationSec=5635
+mWifiLogProto.rssiPollRssiCount: Printing counts for [-127, 0]
+  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+mWifiLogProto.rssiPollDeltaCount: Printing counts for [-127, 127]
+  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+mWifiLogProto.alertReasonCounts=()
+mWifiLogProto.numTotalScanResults=0
+mWifiLogProto.numOpenNetworkScanResults=0
+mWifiLogProto.numPersonalNetworkScanResults=0
+mWifiLogProto.numEnterpriseNetworkScanResults=0
+mWifiLogProto.numHiddenNetworkScanResults=0
+mWifiLogProto.numHotspot2R1NetworkScanResults=0
+mWifiLogProto.numHotspot2R2NetworkScanResults=0
+mWifiLogProto.numScans=0
+mWifiLogProto.WifiScoreCount: [0, 60]
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+mWifiLogProto.SoftApManagerReturnCodeCounts:
+  SUCCESS: 0
+  FAILED_GENERAL_ERROR: 0
+  FAILED_NO_CHANNEL: 0
+
+mWifiLogProto.numHalCrashes=0
+mWifiLogProto.numWificondCrashes=0
+mWifiLogProto.numWifiOnFailureDueToHal=0
+mWifiLogProto.numWifiOnFailureDueToWificond=0
+StaEventList:
+mWifiLogProto.numPasspointProviders=0
+mWifiLogProto.numPasspointProviderInstallation=0
+mWifiLogProto.numPasspointProviderInstallSuccess=0
+mWifiLogProto.numPasspointProviderUninstallation=0
+mWifiLogProto.numPasspointProviderUninstallSuccess=0
+mWifiLogProto.numPasspointProvidersSuccessfullyConnected=0
+mTotalSsidsInScanHistogram:{}
+mTotalBssidsInScanHistogram:{}
+mAvailableOpenSsidsInScanHistogram:{}
+mAvailableOpenBssidsInScanHistogram:{}
+mAvailableSavedSsidsInScanHistogram:{}
+mAvailableSavedBssidsInScanHistogram:{}
+mAvailableOpenOrSavedSsidsInScanHistogram:{}
+mAvailableOpenOrSavedBssidsInScanHistogram:{}
+mAvailableSavedPasspointProviderProfilesInScanHistogram:{}
+mAvailableSavedPasspointProviderBssidsInScanHistogram:{}
+mWifiLogProto.partialAllSingleScanListenerResults=0
+mWifiLogProto.fullBandAllSingleScanListenerResults=0
+mWifiAwareMetrics:
+mLastEnableUsageMs:0
+mLastEnableUsageInThisSampleWindowMs:0
+mAvailableTimeMs:0
+mHistogramAwareAvailableDurationMs:
+mLastEnableAwareMs:0
+mLastEnableAwareInThisSampleWindowMs:0
+mEnabledTimeMs:0
+mHistogramAwareEnabledDurationMs:
+mAttachDataByUid:
+mAttachStatusData:
+mHistogramAttachDuration:
+mMaxPublishInApp:0
+mMaxSubscribeInApp:0
+mMaxDiscoveryInApp:0
+mMaxPublishInSystem:0
+mMaxSubscribeInSystem:0
+mMaxDiscoveryInSystem:0
+mPublishStatusData:
+mSubscribeStatusData:
+mHistogramPublishDuration:
+mHistogramSubscribeDuration:
+mAppsWithDiscoverySessionResourceFailure:
+mMaxNdiInApp:0
+mMaxNdpInApp:0
+mMaxSecureNdpInApp:0
+mMaxNdiInSystem:0
+mMaxNdpInSystem:0
+mMaxSecureNdpInSystem:0
+mMaxNdpPerNdi:0
+mInBandNdpStatusData:
+mOutOfBandNdpStatusData:
+mNdpCreationTimeDuration:
+mNdpCreationTimeMin:-1
+mNdpCreationTimeMax:0
+mNdpCreationTimeSum:0
+mNdpCreationTimeSumSq:0
+mNdpCreationTimeNumSamples:0
+mHistogramNdpDuration:
+mPnoScanMetrics.numPnoScanAttempts=0
+mPnoScanMetrics.numPnoScanFailed=0
+mPnoScanMetrics.numPnoScanStartedOverOffload=0
+mPnoScanMetrics.numPnoScanFailedOverOffload=0
+mPnoScanMetrics.numPnoFoundNetworkEvents=0
+mWifiLogProto.connectToNetworkNotificationCount={}
+mWifiLogProto.connectToNetworkNotificationActionCount={}
+mWifiLogProto.openNetworkRecommenderBlacklistSize=0
+mWifiLogProto.isWifiNetworksAvailableNotificationOn=true
+mWifiLogProto.numOpenNetworkRecommendationUpdates=0
+mWifiLogProto.numOpenNetworkConnectMessageFailedToSend=0
+
+Dump of WifiBackupRestore
+
+WifiScoreReport:
+time,session,rssi,freq,linkspeed,tx_good,tx_retry,tx_bad,rx,s0,s1
+

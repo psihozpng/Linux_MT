@@ -1,0 +1,84 @@
+Character devices:
+  1 mem
+  2 pty
+  3 ttyp
+  5 /dev/tty
+  5 /dev/console
+  5 /dev/ptmx
+ 10 misc
+ 13 input
+ 14 sound
+ 29 fb
+ 90 mtd
+108 ppp
+116 alsa
+121 debug
+128 ptm
+136 pts
+153 mtk_wmt_wifi_chrdev
+154 mtk_wcn_detect
+160 Vcodec
+180 usb
+182 sec
+184 ccci0
+184 CCCI_IPC_DEV0
+184 ccci1_fs
+184 vir_chr0
+184 ccci_tty_drv0
+189 usb_device
+190 mtk_stp_wmt
+191 mtk_stp_GPS_chrdev
+192 mtk_stp_bt_chrdev
+196 devmap
+204 ttyMT
+228 gps
+229 fm
+230 emmcrpmb
+231 MT_pmic_adc_cali
+232 hidg
+233 hidraw
+234 ttyGS
+235 btif
+236 kd_camera_flashlight
+237 MAINAF
+238 kd_camera_hw_bus2
+239 kd_camera_hw
+240 camera-sysram
+241 camera-pipemgr
+242 camera-isp
+243 mtk_disp_mgr
+244 accdet
+245 mtk-adc-cali
+246 sched
+247 pmic_ftm
+248 rtc
+249 ccci_md_sta
+250 MTK_SMI
+251 mtk_cmdq
+252 sensor
+253 pmsg
+254 BOOT
+
+Block devices:
+259 blkext
+  7 loop
+  8 sd
+ 31 mtdblock
+ 65 sd
+ 66 sd
+ 67 sd
+ 68 sd
+ 69 sd
+ 70 sd
+ 71 sd
+128 sd
+129 sd
+130 sd
+131 sd
+132 sd
+133 sd
+134 sd
+135 sd
+179 mmc
+253 device-mapper
+254 zram

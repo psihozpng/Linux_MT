@@ -1,0 +1,13 @@
+Filesystem            Size  Used Avail Use% Mounted on
+magisk                987M  2.5M  985M   1% /sbin
+tmpfs                 987M  592K  987M   1% /dev
+/dev/block/mmcblk0p21 1.4G  1.3G   73M  96% /system
+/dev/block/mmcblk0p14 279M  131M  148M  48% /vendor
+tmpfs                 987M     0  987M   0% /mnt
+/dev/block/mmcblk0p23  13G  1.1G   11G  10% /data
+/dev/block/mmcblk0p22 104M  428K  104M   1% /cache
+/dev/block/mmcblk0p3  5.6M   60K  5.6M   2% /vendor/protect_f
+/dev/block/mmcblk0p4  5.6M   56K  5.6M   1% /vendor/protect_s
+/dev/block/mmcblk0p16  27M  960K   26M   4% /vendor/nvdata
+worker                987M     0  987M   0% /sbin/.magisk/worker
+/data/media            13G  1.1G   11G  10% /mnt/runtime/default/emulated

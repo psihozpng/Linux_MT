@@ -1,0 +1,5 @@
+total 0
+drwxr-xr-x 2 root root 0 2026-09-27 19:16 .
+drwxr-xr-x 4 root root 0 2026-09-27 17:42 ..
+lrwxrwxrwx 1 root root 0 2026-09-27 19:16 1-0:1.0 -> ../../../devices/platform/mt_usb/musb-hdrc.0.auto/usb1/1-0:1.0
+lrwxrwxrwx 1 root root 0 2026-09-27 19:16 usb1 -> ../../../devices/platform/mt_usb/musb-hdrc.0.auto/usb1

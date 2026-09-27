@@ -1,0 +1,7 @@
+[init.svc.surfaceflinger]: [running]
+[lys.settings.hidedisplaysize]: [1]
+[persist.sys.BUILD_DISPLAY_ID_OLD]: [LYS_F25C-B80FA-3G_S24Ultra_SX_HCT_20241029]
+[ro.boottime.surfaceflinger]: [5195195090]
+[ro.build.display.id]: [LYS_F25C-B80FA-3G_S24Ultra_SX_HCT_20241029]
+[ro.display.disable.default]: [yes]
+[ro.sf.lcd_density]: [240]

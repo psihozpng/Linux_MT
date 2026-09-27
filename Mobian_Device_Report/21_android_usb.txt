@@ -1,0 +1,16 @@
+total 0
+drwxr-xr-x  2 root root 0 2026-09-27 17:42 .
+drwxr-xr-x 65 root root 0 2026-09-27 17:42 ..
+lrwxrwxrwx  1 root root 0 2026-09-27 17:42 android0 -> ../../devices/virtual/android_usb/android0
+lrwxrwxrwx  1 root root 0 2026-09-27 19:16 f_accessory -> ../../devices/virtual/android_usb/android0/f_accessory
+lrwxrwxrwx  1 root root 0 2026-09-27 19:16 f_acm -> ../../devices/virtual/android_usb/android0/f_acm
+lrwxrwxrwx  1 root root 0 2026-09-27 19:16 f_audio_source -> ../../devices/virtual/android_usb/android0/f_audio_source
+lrwxrwxrwx  1 root root 0 2026-09-27 19:16 f_eem -> ../../devices/virtual/android_usb/android0/f_eem
+lrwxrwxrwx  1 root root 0 2026-09-27 19:16 f_ffs -> ../../devices/virtual/android_usb/android0/f_ffs
+lrwxrwxrwx  1 root root 0 2026-09-27 19:16 f_gser -> ../../devices/virtual/android_usb/android0/f_gser
+lrwxrwxrwx  1 root root 0 2026-09-27 19:16 f_hid -> ../../devices/virtual/android_usb/android0/f_hid
+lrwxrwxrwx  1 root root 0 2026-09-27 19:16 f_mass_storage -> ../../devices/virtual/android_usb/android0/f_mass_storage
+lrwxrwxrwx  1 root root 0 2026-09-27 19:16 f_midi -> ../../devices/virtual/android_usb/android0/f_midi
+lrwxrwxrwx  1 root root 0 2026-09-27 19:16 f_mtp -> ../../devices/virtual/android_usb/android0/f_mtp
+lrwxrwxrwx  1 root root 0 2026-09-27 19:16 f_ptp -> ../../devices/virtual/android_usb/android0/f_ptp
+lrwxrwxrwx  1 root root 0 2026-09-27 19:16 f_rndis -> ../../devices/virtual/android_usb/android0/f_rndis

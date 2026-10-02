@@ -1,0 +1,1345 @@
+ОТЧЕТ ПО ПРОЕКТУ MODIFICATION ANDROID/MT6580 -> PORTABLE LINUX PC
+Дата составления: 02.10.2026
+
+======================================================================
+1. ЦЕЛЬ ПРОЕКТА
+======================================================================
+
+Основная цель проекта — превратить реальный китайский смартфон на MediaTek MT6580
+в максимально самостоятельное портативное ARM Linux-устройство.
+
+Итоговая концепция:
+- собственное Linux-ядро;
+- собственный Device Tree;
+- использование реального boot/kernel/DT/DTBO дампа именно этого телефона;
+- постепенный отказ от Android userspace;
+- Debian ARMHF как промежуточная и, возможно, базовая Linux-среда;
+- графическая оболочка XFCE;
+- работа с LCD и touchscreen напрямую через Linux;
+- поддержка microSD;
+- Wi-Fi/Bluetooth/USB/аудио/датчиков/камер по мере портирования;
+- автоматический поворот экрана;
+- управление яркостью;
+- возможность запуска Linux-приложений;
+- потенциальный запуск Windows x86-приложений через Box86/Wine;
+- дальнейшая работа над аппаратными возможностями.
+
+ВАЖНЫЙ ПРИНЦИП:
+Проект не должен превращаться просто в Debian chroot внутри Android.
+Конечная задача — самостоятельная Linux-система с собственным ядром и
+минимально необходимым boot/userspace.
+
+======================================================================
+2. ИСТОЧНИКИ, КОТОРЫЕ СЧИТАЮТСЯ ДОСТОВЕРНЫМИ
+======================================================================
+
+Главный источник:
+- реальный телефон;
+- live-данные устройства;
+- PHONE_DUMP;
+- дампы разделов, снятые непосредственно с этого телефона.
+
+НЕ ИСПОЛЬЗОВАТЬ как источник прошивки:
+- папку MT6580S24;
+- чужие boot.img;
+- чужие LK/preloader;
+- чужие kernel/vendor images;
+- чужие recovery;
+- любые неизвестные образы, не принадлежащие этому аппарату.
+
+Причина:
+ранее было установлено, что содержимое MT6580S24 относится к другому/чужому
+варианту устройства и не должно использоваться для восстановления или
+построения нашего boot chain.
+
+Публичные GitHub-репозитории с MT6580 можно использовать только как
+справочные материалы для понимания структуры ядра, Device Tree и драйверов.
+
+======================================================================
+3. ИДЕНТИФИКАЦИЯ ТЕЛЕФОНА
+======================================================================
+
+ro.product.device:
+    b80fa_f25c_s24ultra_hct
+
+ro.product.name:
+    full_b80fa_f25c_s24ultra_hct
+
+ro.product.board:
+    b80fa_f25c_s24ultra_hct
+
+ro.board.platform:
+    mt6580
+
+SoC:
+    MediaTek MT6580
+
+Архитектура:
+    ARM 32-bit / ARMv7
+
+Android:
+    Android 8.1.0
+
+SDK:
+    27
+
+Kernel:
+    Linux 3.18.79
+
+Разрешение LCD:
+    576 x 1280
+
+Цвет:
+    32-bit
+
+Boot reason:
+    wdt_by_pass_pwk
+
+Bootloader:
+    unlocked: yes
+
+Root:
+    Magisk root получен
+
+SELinux:
+    live root-контекст наблюдался как:
+    u:r:magisk:s0
+
+Хранилище:
+    /data находится на f2fs
+    /data: примерно 13 GB total, около 11 GB free на момент проверки
+
+microSD:
+    рассматривается как важная часть будущей Linux-системы и расширения
+    хранилища.
+
+======================================================================
+4. ОС И ТЕКУЩАЯ LINUX-СРЕДА
+======================================================================
+
+На телефоне установлен Debian ARMHF chroot:
+
+Путь:
+    /data/local/debian
+
+Версия:
+    Debian 13.7
+
+Архитектура:
+    armhf
+
+uname:
+    armv7l
+
+Chroot:
+    работает.
+
+Основная проблема раннего этапа:
+    DNS/сеть внутри chroot.
+
+В Android использовался DNS:
+    192.168.49.1
+
+В Debian chroot разрешение имён работало некорректно, поэтому apt мог
+не разрешать доменные имена.
+
+Это отдельная userspace-проблема и не является доказательством отсутствия
+сетевого оборудования в Linux.
+
+======================================================================
+5. ГРАФИЧЕСКИЙ СТЕК, УЖЕ ИССЛЕДОВАННЫЙ НА ЖИВОМ УСТРОЙСТВЕ
+======================================================================
+
+На устройстве присутствуют:
+
+    /dev/graphics/fb0
+    /dev/mali
+    /dev/ion
+
+/proc/fb:
+    0 mtkfb
+
+Framebuffer:
+    fb0
+
+Ранее полученные параметры framebuffer:
+    xres = 576
+    yres = 1280
+    bpp = 32
+    xres_virtual = 576
+    yres_virtual = 1280
+
+Также наблюдался stride около:
+    2304 bytes
+
+Один из ранее полученных framebuffer-параметров:
+    размер области около 8,847,360 bytes
+
+В DT overlay найден отдельный framebuffer/VRAM-параметр:
+    около 0x1800000 = 24 MiB
+
+Графическая цепочка, установленная на основе live-данных и DT:
+
+    Mali-400
+        |
+        v
+    /dev/mali
+        |
+        v
+    GPU / ION / DMA-BUF
+        |
+        v
+    MediaTek display controller
+        |
+        v
+    mtkfb
+        |
+        v
+    /dev/graphics/fb0
+        |
+        v
+    MIPI DSI
+        |
+        v
+    LCD NT35590 AUO
+
+Android compositor:
+    SurfaceFlinger / HWC
+
+В Linux/Xorg экспериментах использовался fbdev через fb0.
+
+Уже было установлено, что после остановки SurfaceFlinger можно получить
+доступ к framebuffer и запускать Xorg.
+
+Пример ранее рабочей последовательности:
+    stop surfaceflinger
+    mount proc
+    Xorg :1 -nolisten tcp
+    DISPLAY=:1
+    xfwm4 &
+    xfdesktop &
+    xfce4-panel &
+
+На определённом этапе изображение на LCD появлялось.
+Также наблюдались красный экран/изменения framebuffer при прямой записи.
+
+Позже изображение пропадало/становилось чёрным, а некоторые действия,
+связанные с остановкой Android display stack, приводили к перезагрузке.
+
+ВАЖНЫЙ ВЫВОД:
+сам LCD и framebuffer уже доказаны как физически доступные из Linux/chroot.
+Проблема сейчас не в доказательстве возможности вывода изображения, а в
+создании корректного Linux display stack и управлении конфликтами Android HWC/
+SurfaceFlinger и kernel display driver.
+
+======================================================================
+6. ИССЛЕДОВАНИЕ MULTI-BUFFER / DISPLAY
+======================================================================
+
+В процессе экспериментов было установлено, что Android display stack
+использует несколько буферов/очередей.
+
+Рассматривались:
+- framebuffer;
+- BufferQueue;
+- gralloc;
+- HWC;
+- DMA-BUF;
+- ION;
+- несколько framebuffer/display buffers.
+
+Вопрос "можно ли перенаправить картинку в другой буфер" остаётся актуальным
+для дальнейшей оптимизации, но уже понятно, что простая запись в fb0 не
+означает полного контроля над физическим LCD, если Android display stack
+продолжает использовать тот же display controller.
+
+Следующий уровень решения:
+- либо полностью взять display controller под контроль Linux;
+- либо корректно отключить Android display stack;
+- либо создать отдельный Linux framebuffer/DRM path;
+- либо портировать необходимый MediaTek display driver.
+
+======================================================================
+7. BOOT IMAGE
+======================================================================
+
+С оригинального устройства был снят boot image:
+
+    boot-original.img
+
+Android boot header:
+    magic = ANDROID!
+
+Параметры:
+    kernel_size  = 5,691,632 bytes
+    ramdisk_size = 1,278,490 bytes
+    page_size    = 2048
+    dt_size      = 0
+
+Из boot.img извлечены:
+    kernel.raw
+    ramdisk.raw
+
+kernel.raw:
+- raw ARM32 kernel;
+- не найден стандартный gzip/lz4/xz/bz2 заголовок;
+- начало файла содержит ARM-инструкции;
+- встроенный IKCFG_ST/IKCFG_ED не найден.
+
+В kernel.raw найдены строки:
+    MT6580
+    mt6580
+    mtkfb
+    MALI
+    mali
+
+Не найдены ожидаемые названия некоторых конкретных touchscreen/LCD драйверов,
+поэтому по одному kernel.raw нельзя надёжно определить точную модель
+touch/LCD-драйвера.
+
+boot.img:
+    dt_size = 0
+
+Следовательно, Device Tree для Android boot image, вероятно, не находится
+в стандартном dtb-поле этого boot.img.
+
+======================================================================
+8. RAMDISK
+======================================================================
+
+Извлечён ramdisk.raw.
+
+Это gzip ramdisk.
+
+Основные каталоги:
+    .backup
+    acct
+    bugreports
+    cache
+    charger
+    config
+    d
+    data
+    default.prop
+    dev
+    etc
+    init
+    init.environ.rc
+    init.rc
+    init.usb.configfs.rc
+    init.usb.rc
+    init.zygote32.rc
+    mnt
+    oem
+    overlay.d
+    proc
+    sbin
+    sdcard
+    storage
+    sys
+    system
+    ueventd.rc
+    vendor
+
+В ramdisk обнаружены Magisk-изменения:
+    .backup
+    overlay.d/sbin/magisk32.xz
+    stub.xz
+
+Поэтому Magisk-файлы не следует считать оригинальной заводской конфигурацией.
+
+init.rc:
+- содержит стандартную Android инициализацию;
+- присутствует настройка прав для LCD backlight;
+- запускается boot animation;
+- прямой полноценной конфигурации fb0/mali/ion/touch там не обнаружено.
+
+ВАЖНЫЙ ВЫВОД:
+существенная аппаратная конфигурация находится не в init.rc, а в kernel,
+Device Tree/DTBO и vendor-частях.
+
+======================================================================
+9. UEVENTD И УСТРОЙСТВА
+======================================================================
+
+В ueventd.rc найдены:
+
+    subsystem graphics
+        devname uevent_devpath
+        dirname /dev/graphics
+
+    subsystem drm
+        devname uevent_devpath
+        dirname /dev/dri
+
+    subsystem input
+        devname uevent_devpath
+        dirname /dev/input
+
+Права:
+    /dev/dri/*      0666 root graphics
+    /dev/graphics/* 0660 root graphics
+    /dev/input/*    0660 root input
+
+В ueventd также имеются многочисленные старые/универсальные правила,
+включая правила для устройств, которые могут отсутствовать на данном
+аппарате.
+
+======================================================================
+10. РАЗДЕЛЫ ВНУТРЕННЕЙ ПАМЯТИ
+======================================================================
+
+Карта mmcblk0p* была получена через:
+
+    /sys/class/block/mmcblk0p*/uevent
+
+Полученная разметка:
+
+    p1   proinfo
+    p2   nvram
+    p3   protect1
+    p4   protect2
+    p5   seccfg
+    p6   lk
+    p7   lk2
+    p8   boot
+    p9   recovery
+    p10  para
+    p11  logo
+    p12  odmdtbo
+    p13  expdb
+    p14  vendor
+    p15  frp
+    p16  nvdata
+    p17  metadata
+    p18  oemkeystore
+    p19  secro
+    p20  keystore
+    p21  system
+    p22  cache
+    p23  userdata
+    p24  flashinfo
+
+Размеры, которые были отдельно проверены:
+
+    boot (p8):
+        32768 sectors * 512 = 16 MiB
+
+    odmdtbo (p12):
+        32768 sectors * 512 = 16 MiB
+
+    lk/lk2:
+        768 sectors = 384 KiB каждый
+
+Эти данные являются картой оригинального телефона.
+
+======================================================================
+11. KERNEL CONFIG
+======================================================================
+
+На live-системе:
+
+    /proc/config.gz
+
+существует и имеет размер около 24 KB.
+
+Файл был скопирован:
+    /sdcard/kernel-config.gz
+    /data/local/tmp/kernel-config.gz
+
+Получение через adb:
+    adb exec-out su -c "cat /data/local/tmp/kernel-config.gz" > kernel-config.gz
+
+Размер:
+    24405 bytes
+
+Gzip header:
+    1f 8b 08 ...
+
+При попытке распаковки Python gzip получалась ошибка:
+    zlib.error: invalid bit length repeat
+
+Это может быть связано с нестандартной Android-конфигурацией, повреждением
+копии или особенностями сжатия.
+
+Пока конфиг не следует считать успешно распарсенным.
+
+======================================================================
+12. ODMDTBO — КЛЮЧЕВОЙ ПРОРЫВ
+======================================================================
+
+Оригинальный раздел:
+
+    odmdtbo-original.img
+
+Размер:
+    16 MiB
+
+Начало содержит MediaTek-специфическую структуру, а не обычный стандартный
+Android DTBO magic непосредственно с offset 0.
+
+В начале обнаружены байты:
+    88 16 88 58 ...
+    89 16 89 58 ...
+
+ASCII:
+    dtbo
+
+Также найдено большое количество Device Tree fragment:
+
+    fragment@0
+    fragment@1
+    ...
+    fragment@25
+    fragment@27
+    fragment@30
+    fragment@34
+    ...
+    fragment@42
+    и другие.
+
+Внутри:
+    __overlay__
+
+Это подтверждает, что раздел содержит Device Tree overlay.
+
+======================================================================
+13. ИЗВЛЕЧЕНИЕ РЕАЛЬНОГО DTB
+======================================================================
+
+В odmdtbo-original.img был найден стандартный FDT magic:
+
+    d0 0d fe ed
+
+Он находится на:
+    offset 0x400
+
+Заголовок:
+
+    magic:
+        0xd00dfeed
+
+    totalsize:
+        0xb15b = 45403 bytes
+
+    off_dt_struct:
+        0x38
+
+    off_dt_strings:
+        0x9b50
+
+    off_mem_rsvmap:
+        0x28
+
+    version:
+        0x11 = 17
+
+    last_comp_version:
+        0x10
+
+    size_dt_strings:
+        0x160b = 5643
+
+    size_dt_struct:
+        0x9b18 = 39704
+
+Был извлечён:
+
+    device.dtb
+
+Команда:
+
+    python -c "d=open('odmdtbo-original.img','rb').read(); o=0x400; size=int.from_bytes(d[o+4:o+8],'big'); open('device.dtb','wb').write(d[o:o+size]); print('DTB:',hex(o),'size:',size,'end:',hex(o+size))"
+
+Результат:
+    DTB: 0x400
+    size: 45403
+    end: 0xb55b
+
+Проверка:
+    SIZE=45403
+    MAGIC=0xd00dfeed
+    TOTAL=45403
+    VERSION=17
+
+DTB был успешно декомпилирован dtc в:
+
+    device.dts
+
+dtc выдавал предупреждения:
+- unit_address_vs_reg
+- avoid_default_addr_size
+- gpios_property
+- interrupts_property
+- unique_unit_address
+и другие.
+
+Эти предупреждения ожидаемы для overlay/фрагмента и не означают,
+что декомпиляция провалилась.
+
+======================================================================
+14. DISPLAY DEVICE TREE
+======================================================================
+
+В device.dts:
+
+    atag,videolfb-islcmfound = <0x01>
+
+    atag,videolfb-lcmname = "nt35590_AUO"
+
+Таким образом, точное имя LCD из DT:
+    nt35590_AUO
+
+Display pinctrl содержит:
+    lcm_rst_out0_gpio
+    lcm_rst_out1_gpio
+    mode_te_gpio
+    mode_te_te
+    pwm_test_pin_mux_gpio66
+    mtkfb_default
+
+Есть состояния:
+    lcd_bias_enp_gpio_output_high
+    lcd_bias_enp_gpio_output_low
+    lcd_bias_enn_gpio_output_high
+    lcd_bias_enn_gpio_output_low
+    lcd_incell_tp_rst_high
+    lcd_incell_tp_rst_low
+    lcdrst_high
+    lcdrst_low
+
+Есть отдельный LCD bias I2C:
+
+    i2c_lcd_bias@3e
+
+    compatible = "mediatek,i2c_lcd_bias"
+
+Это указывает на адрес:
+    0x3e
+
+Есть aliases/ссылки:
+
+    i2c_lcd_bias_mtk =
+        "/fragment@32/__overlay__/i2c_lcd_bias@3e"
+
+    mtkfb =
+        "/fragment@17:target:0"
+
+    lcmbias =
+        "/fragment@22:target:0"
+
+Всё это позволяет восстановить существенную часть display-конфигурации.
+
+Предполагаемая цепочка:
+
+    MT6580 display subsystem
+          |
+          v
+        mtkfb
+          |
+          v
+       MIPI DSI
+          |
+          v
+    NT35590 AUO LCD
+
+LCD имеет отдельное управление bias/reset через GPIO/I2C.
+
+======================================================================
+15. TOUCHSCREEN
+======================================================================
+
+В Device Tree обнаружено:
+
+    compatible = "mediatek,cap_touch_ilitek"
+
+Touchscreen node:
+    cap_touch_ilitek@38
+
+I2C address:
+    0x38
+
+Это позволяет установить:
+
+    touchscreen controller:
+        Ilitek
+
+    I2C address:
+        0x38
+
+Максимальное число касаний:
+    tpd-max-touch-num = <0x05>
+
+То есть:
+    5 touch points
+
+Найдены состояния:
+    toucheint5default
+    toucheint@5
+    eintoutput0
+    eintoutput1
+    rstoutput0
+    rstoutput1
+
+Также:
+    vtouch-supply
+
+Ссылка:
+    cap_touch_ilitek_mtk =
+        "/fragment@33/__overlay__/cap_touch_ilitek@38"
+
+В aliases:
+    touch =
+        "/fragment@12:target:0"
+        "/fragment@36:target:0"
+        "/fragment@62:target:0"
+
+Есть ссылка на:
+    mt_pmic_vgp2_ldo_reg
+
+Это важно для будущего Linux-драйвера touchscreen и его питания.
+
+======================================================================
+16. СЕНСОРЫ
+======================================================================
+
+В DT обнаружены следующие I2C-адреса:
+
+    gsensor@18
+        0x18
+
+    gsensor_2@26
+        0x26
+
+    msensor@0d
+        0x0d
+
+    gyro@68
+        0x68
+
+    alsps@67
+        0x67
+
+Также обнаружены:
+    mediatek,gsensor
+    mediatek,gsensor_2
+    mediatek,alsps
+
+Пока точные модели микросхем не следует угадывать только по адресам.
+Для точного определения необходимо сопоставить live I2C/драйверы/исходный
+vendor kernel.
+
+======================================================================
+17. MMC / EMMC / MICROSD
+======================================================================
+
+В Device Tree есть конфигурации:
+
+    mmc0@default
+    mmc0@register_default
+
+    mmc1@default
+    mmc1_ins_default
+    mmc1_ins_cfg
+
+    mmc1@sdr104
+    mmc1@sdr50
+    mmc1@ddr50
+
+    mmc1@register_default
+
+То есть DT явно содержит несколько режимов MMC/SD.
+
+Также присутствуют состояния, связанные с card detect.
+
+Нужно дополнительно установить:
+- какой контроллер соответствует eMMC;
+- какой контроллер соответствует microSD;
+- точный GPIO card-detect;
+- какие pinctrl states нужны Linux kernel;
+- какие скорости реально поддерживает карта/контроллер.
+
+microSD является важной частью будущего Linux-проекта.
+
+======================================================================
+18. FINGERPRINT / SPI
+======================================================================
+
+Device Tree содержит:
+
+    finger_power_en1/0
+    finger_power_18v_en1/0
+
+SPI0 pinmux:
+    MISO
+    MOSI
+    CLK
+    CS
+
+Также:
+    finger_int_as_int
+
+Это подтверждает наличие конфигурации под fingerprint/SPI0.
+
+Точная модель fingerprint sensor пока не установлена.
+
+======================================================================
+19. ДРУГИЕ НАЙДЕННЫЕ УЗЛЫ
+======================================================================
+
+В DT также присутствуют:
+
+- vibrator;
+- keyboard/button backlight;
+- LCD backlight;
+- cameras;
+- flashlight;
+- audio;
+- USB;
+- Type-C/USB pin states;
+- hall sensor;
+- GPS LNA;
+- SIM hotplug;
+- PMIC/регуляторы;
+- ADC;
+- камеры;
+- LCD bias;
+- touch;
+- sensors;
+- MMC;
+- fingerprint.
+
+Найден:
+    mediatek,vibrator
+
+Найден:
+    hallint@6
+
+GPS LNA:
+    gpslna@0
+    gpslna@1
+    gpslna@2
+
+SIM hotplug:
+    MD1_SIM1_HOT_PLUG_EINT@0
+
+ADC:
+    mediatek,adc_channel
+
+======================================================================
+20. ЧТО УЖЕ ДОКАЗАНО
+======================================================================
+
+1. Телефон действительно работает на MT6580.
+2. Bootloader разблокирован.
+3. Получен root.
+4. Оригинальный boot.img снят с телефона.
+5. Оригинальный ramdisk извлечён.
+6. Оригинальный kernel.raw извлечён.
+7. Оригинальный odmdtbo.img снят.
+8. В odmdtbo найден реальный FDT/DTB.
+9. DTB успешно извлечён и декомпилирован.
+10. Точное имя LCD установлено:
+       nt35590_AUO
+11. Touchscreen установлен:
+       Ilitek, I2C 0x38
+12. Максимум touch points:
+       5
+13. LCD bias I2C:
+       0x3e
+14. Display pinctrl найден.
+15. mtkfb target найден.
+16. Несколько сенсорных I2C-адресов установлены.
+17. MMC1 содержит высокоскоростные режимы SDR104/SDR50/DDR50.
+18. microSD path присутствует в Device Tree.
+19. /dev/graphics/fb0 существует.
+20. mtkfb присутствует в kernel.
+21. /dev/mali и /dev/ion существуют.
+22. Linux framebuffer уже удалось использовать для физического LCD.
+23. Xorg/XFCE уже удавалось вывести на дисплей хотя бы временно.
+24. Debian ARMHF chroot работает.
+25. Значительная часть hardware topology уже восстановлена.
+
+======================================================================
+21. ЧТО ЕЩЁ НЕ ДОКАЗАНО / ТРЕБУЕТ РАБОТЫ
+======================================================================
+
+1. Полный оригинальный base Device Tree.
+2. Точные target-адреса всех overlay fragment.
+3. Полное содержимое __fixups__ и __symbols__ с привязкой к base DT.
+4. Оригинальный vendor kernel source.
+5. Полный исходник vendor display driver.
+6. Полный исходник touch driver.
+7. Точная модель всех сенсоров.
+8. Точная схема GPIO для всех периферийных устройств.
+9. Точная схема питания PMIC для всех устройств.
+10. Полная схема audio codec.
+11. Полная схема Wi-Fi/BT chipset.
+12. Полная схема camera sensors.
+13. Полный DRM/KMS Linux path для MT6580.
+14. Полноценное управление backlight в чистом Linux.
+15. Auto-rotation.
+16. Полный touchscreen input stack.
+17. Полный Wi-Fi/BT stack без Android userspace.
+18. Полный USB OTG/host/device stack.
+19. Полная suspend/resume схема.
+20. Полное управление питанием.
+21. Стабильный Linux boot без Android userspace.
+22. Надёжный shutdown/reboot.
+23. GPU acceleration в mainline/собственном Linux userspace.
+24. Box86/Wine и Windows x86 software.
+
+======================================================================
+22. ПОЧЕМУ НЕ НУЖНО СЕЙЧАС ИСКАТЬ СЛУЧАЙНУЮ ПРОШИВКУ
+======================================================================
+
+У нас уже есть настоящий boot/kernel/DT/DTBO от нужного телефона.
+
+Поэтому правильный путь:
+- не подбирать чужой ROM;
+- не брать чужой preloader;
+- не брать чужой LK;
+- не подменять boot.img чужим;
+- не использовать чужой DT как готовую прошивку.
+
+Чужие MT6580 проекты могут использоваться только для сравнения:
+- структуры kernel;
+- драйверов;
+- DTS;
+- MediaTek API;
+- MT6580 clock/power/display;
+- старых Linux 3.18 патчей.
+
+======================================================================
+23. ПУБЛИЧНЫЕ MT6580 ИСТОЧНИКИ ДЛЯ СПРАВКИ
+======================================================================
+
+Найдены/рассматривались:
+
+    Mysteryagr/MT6580-Kernel-3.18
+    MT6580 kernel 3.18.x, например для Wiko Lenny 3.
+
+    docs007/android_device_mediatek_mt6580_1
+    MT6580 Android Device Tree.
+
+    rtd1250/android_device_alps_hct6580
+    HCT/ALPS MT6580 Device Tree.
+
+    svoboda18/twrp_device_doogee_X5
+    MT6580 TWRP Device Tree.
+
+Эти проекты НЕ являются источником прошивки нашего телефона.
+
+Особенно важно:
+совпадение MT6580 не означает совместимость boot.img, DTB, LK или
+preloader.
+
+======================================================================
+24. NETHUNTER — КАК ИСПОЛЬЗОВАТЬ В ПРОЕКТЕ
+======================================================================
+
+Kali NetHunter не выбран как конечная ОС.
+
+Он рассматривается как источник инженерных наработок:
+- kernel patches;
+- USB Gadget;
+- OTG;
+- HID;
+- RNDIS;
+- USB Ethernet;
+- USB serial;
+- wireless/mac80211/cfg80211;
+- SDR/USB;
+- kexec/multiboot;
+- старые kernel 3.x patches.
+
+У NetHunter есть материалы по custom Android kernels и Kernel Builder.
+
+Официальные справочные страницы:
+    https://www.kali.org/docs/nethunter/nethunter-kernel/
+    https://www.kali.org/docs/nethunter/nethunter-components/
+    https://www.kali.org/docs/nethunter/porting-nethunter/
+
+Kernel Builder:
+    https://github.com/kimocoder/nethunter-kernel-builder
+
+Точного NetHunter support profile для:
+    b80fa_f25c_s24ultra_hct
+не найдено.
+
+Следовательно, NetHunter следует использовать как библиотеку методов,
+а не как готовую прошивку.
+
+======================================================================
+25. ТЕКУЩАЯ АРХИТЕКТУРА БУДУЩЕЙ СИСТЕМЫ
+======================================================================
+
+Предлагаемая концепция:
+
+BOOTLOADER
+    |
+    v
+Linux kernel 3.18.x / собственная ветка
+    |
+    +-- MT6580 SoC
+    +-- Device Tree
+    +-- display
+    +-- touch
+    +-- MMC/SD
+    +-- USB
+    +-- Wi-Fi/BT
+    +-- audio
+    +-- sensors
+    +-- power
+    +-- battery
+    |
+    v
+Linux userspace
+    |
+    v
+Debian ARMHF
+    |
+    +-- systemd/sysvinit
+    +-- input
+    +-- networking
+    +-- Xorg/Wayland
+    +-- XFCE
+    |
+    +-- Linux applications
+    |
+    +-- Box86
+           |
+           +-- Wine
+                  |
+                  +-- Windows x86 applications
+
+Это целевая архитектура, а не готовая рабочая конфигурация.
+
+======================================================================
+26. ПОРЯДОК РАБОТЫ, КОТОРЫЙ ИМЕЕТ СМЫСЛ ДАЛЬШЕ
+======================================================================
+
+ЭТАП 1 — ПОЛНЫЙ АНАЛИЗ DT
+--------------------------------
+- разобрать fragment@N;
+- определить target;
+- изучить __fixups__;
+- изучить __symbols__;
+- определить связи overlay -> base DT;
+- определить реальные GPIO/phandle;
+- выделить только используемые fragments;
+- отделить активные конфигурации от альтернативных.
+
+ЭТАП 2 — ПОИСК BASE DT
+--------------------------------
+Искать только в оригинальных данных телефона:
+- vendor;
+- kernel.raw;
+- другие оригинальные разделы;
+- возможные DTB/FDT внутри бинарных образов.
+
+Boot.img уже проверен:
+    dt_size = 0
+
+Поэтому искать DT только в boot header бессмысленно.
+
+ЭТАП 3 — ВОССТАНОВЛЕНИЕ ОРИГИНАЛЬНОЙ DTS
+--------------------------------
+Собрать:
+- SoC;
+- clocks;
+- pinctrl;
+- regulators;
+- display;
+- touch;
+- MMC;
+- USB;
+- I2C;
+- SPI;
+- sensors;
+- audio;
+- camera;
+- battery;
+- backlight.
+
+ЭТАП 4 — СОЗДАНИЕ СОБСТВЕННОГО DEVICE TREE
+--------------------------------
+Не копировать чужой DTS целиком.
+
+Создать минимальный DTS:
+- CPU;
+- RAM;
+- UART;
+- MMC;
+- framebuffer/display;
+- touch;
+- USB;
+- необходимые regulators.
+
+Сначала получить стабильный kernel boot.
+
+ЭТАП 5 — DISPLAY
+--------------------------------
+Цель:
+- Linux framebuffer/DRM;
+- NT35590 AUO;
+- backlight;
+- LCD bias;
+- reset;
+- TE;
+- стабильный вывод.
+
+ЭТАП 6 — TOUCH
+--------------------------------
+Цель:
+- Ilitek I2C 0x38;
+- IRQ;
+- reset;
+- 5 touches;
+- Linux input event.
+
+ЭТАП 7 — SD/MMC
+--------------------------------
+Цель:
+- eMMC;
+- microSD;
+- card detect;
+- стабильное монтирование.
+
+ЭТАП 8 — USB / NETWORK
+--------------------------------
+- USB host;
+- USB gadget;
+- Wi-Fi;
+- Bluetooth;
+- USB Ethernet/RNDIS при необходимости.
+
+ЭТАП 9 — AUDIO/SENSORS
+--------------------------------
+- audio codec;
+- accelerometer;
+- magnetometer;
+- gyro;
+- proximity/light;
+- hall;
+- vibrator.
+
+ЭТАП 10 — POWER
+--------------------------------
+- battery;
+- charging;
+- PMIC;
+- suspend/resume;
+- brightness.
+
+ЭТАП 11 — GRAPHICS ACCELERATION
+--------------------------------
+После стабильного 2D:
+- исследовать Mali-400;
+- определить vendor Mali driver;
+- решить вопрос с userspace;
+- при необходимости использовать старый vendor userspace;
+- позже исследовать альтернативы.
+
+ЭТАП 12 — ПОЛНЫЙ LINUX
+--------------------------------
+Убрать зависимость от Android userspace:
+- собственный init/userspace;
+- Linux device nodes;
+- systemd или другой init;
+- Debian rootfs;
+- Xorg/Wayland;
+- XFCE.
+
+ЭТАП 13 — BOX86/WINE
+--------------------------------
+Только после стабильной ARM Linux системы:
+- Box86;
+- Wine;
+- тестирование простых Windows x86 программ;
+- оценка производительности MT6580.
+
+======================================================================
+27. ВАЖНЫЕ РИСКИ
+======================================================================
+
+1. MT6580 старый и имеет много vendor-specific кода.
+2. Linux 3.18.79 сильно отличается от современных mainline kernels.
+3. MediaTek display stack сильно завязан на vendor kernel.
+4. Mali-400 требует отдельного внимания к userspace/kernel ABI.
+5. Android 8.1 использует старый graphics stack.
+6. Полная замена Android display stack может вызвать watchdog/reboot.
+7. Неверный DT может привести к зависанию или неработоспособности
+   периферии.
+8. Ошибки в PMIC/GPIO могут быть аппаратно опасными.
+9. Нельзя экспериментировать с preloader/LK без оригинальных резервных
+   копий.
+10. Нельзя прошивать неизвестные DT/boot образы только потому, что они
+    относятся к MT6580.
+
+======================================================================
+28. БЕЗОПАСНЫЙ РЕЖИМ РАЗРАБОТКИ
+======================================================================
+
+Пока работа ведётся в режиме:
+    READ / ANALYZE / EXTRACT
+
+Предпочтение:
+- читать разделы;
+- делать копии;
+- извлекать DT;
+- анализировать kernel;
+- проверять live sysfs/proc;
+- строить userspace;
+- запускать временные эксперименты.
+
+До появления полностью проверенного собственного boot chain:
+- не менять preloader;
+- не заменять LK;
+- не форматировать критические разделы;
+- не стирать NVRAM/NVDATA;
+- не прошивать чужой boot;
+- не прошивать чужой DT;
+- не менять partition layout.
+
+Оригинальные образы должны оставаться резервной точкой восстановления.
+
+======================================================================
+29. ГЛАВНЫЙ ТЕКУЩИЙ СТАТУС
+======================================================================
+
+Проект уже вышел из стадии "неизвестно, что внутри телефона".
+
+Теперь известны:
+- SoC;
+- Android/kernel;
+- partition map;
+- boot image;
+- ramdisk;
+- framebuffer;
+- Mali/ION;
+- mtkfb;
+- LCD;
+- touchscreen;
+- часть сенсоров;
+- MMC/SD states;
+- GPIO/pinctrl;
+- PMIC-related nodes;
+- overlay structure;
+- реальный DTB.
+
+Ключевой найденный компонент:
+    device.dtb
+из:
+    odmdtbo-original.img + offset 0x400
+
+Размер:
+    45403 bytes
+
+Это один из главных артефактов проекта.
+
+======================================================================
+30. СЛЕДУЮЩАЯ КОНКРЕТНАЯ ЗАДАЧА
+======================================================================
+
+Следующая работа должна начинаться не с прошивки.
+
+Приоритет №1:
+    полностью разобрать device.dts.
+
+Особенно:
+    __fixups__
+    __symbols__
+    fragment@N
+    target
+    target-path
+    phandle
+    pinctrl
+    regulators
+    display
+    touch
+    mmc
+
+Цель:
+получить таблицу вида:
+
+    FRAGMENT
+    TARGET
+    УСТРОЙСТВО
+    GPIO
+    I2C/SPI ADDRESS
+    PINCTRL
+    REGULATOR
+    НАЗНАЧЕНИЕ
+
+После этого можно искать base DT только для закрытия оставшихся пробелов.
+
+======================================================================
+31. КРАТКАЯ СХЕМА ПРОЕКТА
+======================================================================
+
+                ОРИГИНАЛЬНЫЙ ТЕЛЕФОН
+                         |
+          +--------------+--------------+
+          |                             |
+       BOOT                         ODMDTBO
+          |                             |
+      kernel.raw                    device.dtb
+          |                             |
+          +-------------+---------------+
+                        |
+                        v
+               АНАЛИЗ HARDWARE
+                        |
+        +---------------+----------------+
+        |               |                |
+      MT6580          DISPLAY           TOUCH
+        |           NT35590 AUO      Ilitek 0x38
+        |
+        +------ MMC/SD
+        +------ USB
+        +------ I2C/SPI
+        +------ Sensors
+        +------ Audio
+        +------ Power
+        |
+        v
+             СОБСТВЕННЫЙ LINUX KERNEL
+                        |
+                        v
+                 DEBIAN ARMHF
+                        |
+                        v
+                    XFCE/Xorg
+                        |
+                        +---- Linux apps
+                        |
+                        +---- Box86/Wine
+                        |
+                        v
+              ПОРТАТИВНЫЙ ARM PC
+
+======================================================================
+32. ИТОГ
+======================================================================
+
+На текущем этапе у проекта есть реальная аппаратная база и значительный
+объём первичных данных, снятых непосредственно с устройства.
+
+Самое важное достижение — получение и успешный разбор Device Tree overlay
+из оригинального odmdtbo. Благодаря этому уже точно установлены ключевые
+элементы железа, включая NT35590 AUO LCD и Ilitek touchscreen.
+
+Также доказано, что Linux userspace может получить доступ к физическому
+framebuffer телефона и выводить изображение на LCD.
+
+Проект теперь логично переводить из режима экспериментов с Android/chroot
+в режим систематического восстановления hardware description и построения
+собственного kernel + Device Tree.
+
+Главная ближайшая цель:
+    восстановить связи overlay -> base DT,
+    построить минимальный собственный DTS,
+    затем постепенно переносить периферию в собственный Linux kernel.
+
+КОНЕЦ ОТЧЁТА
